@@ -41,12 +41,27 @@
     <!-- Page header sticks to top of page -->
     <header class="container-fluid-top"></header>
 
-    <!-- Used to display messages from Django -->
+    <!-- Used to display messages from Django if any exist -->
     {% if messages %}
     <div class="message-container">
 
     </div>
     {% endif %}
-    
+
+    <!-- Additional header below main header -->
+    {% block page_header %}
+    {% endblock %}
+
+    <!-- Main content for the page will be displayed in the block below -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Additional JS  -->
+    {% block postloadjs %}
+    {% endblock %}
+
+
+
+
   </body>
 </html>

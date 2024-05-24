@@ -2,6 +2,18 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Additional sub-header block below main header, extended from base.html -->
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
 <!-- The block content below is injected into the main base.html template -->
 {% block content %}
 <div class="container h-100">
@@ -19,14 +31,11 @@
             </h2>
 
             <!-- Treat yourself now button -->
-            <h4>
-                <a href="" class="shop-now-button btn btn-success btn-lg rounded-1 py-3">Treat Yourself Now!</a>
-            </h4>
-
-
-
-
-
+            <div class="my-5">
+                <h4>
+                    <a href="" class="shop-now-button btn btn-success btn-lg rounded-1 py-3">Treat Yourself Now!</a>
+                </h4>
+            </div>
 
         </div>
 

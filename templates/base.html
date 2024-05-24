@@ -34,13 +34,19 @@
     {% block extra_js %}
     {% endblock %}
 
-
-
     <title>Chocelegance {% extra_title %}{% endblock %}</title>
   </head>
   <body>
-   
 
+    <!-- Page header sticks to top of page -->
+    <header class="container-fluid-top"></header>
 
+    <!-- Used to display messages from Django -->
+    {% if messages %}
+    <div class="message-container">
+
+    </div>
+    {% endif %}
+    
   </body>
 </html>

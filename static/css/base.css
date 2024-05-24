@@ -7,10 +7,13 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: "Urbanist", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
-/* from Bulma */
+/* from Bulma, used to ensure consistent styling of icons (centering etc) */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -27,17 +30,21 @@ body {
     width: fit-content;
 }
 
+
+/* Button styling to ensure consistency */
 .shop-now-button {
     background: black;
     color: white;
     min-width: 260px;
 }
 
+/* Button styling to ensure consistency */
 .btn-black {
     background: black;
     color: white;
 }
 
+/* Button styling to ensure consistency */
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -48,6 +55,9 @@ body {
     color: white;
 }
 
+
+
+/* Text styling  */
 .text-black {
     color: #000 !important;
 }
@@ -56,7 +66,8 @@ body {
     border: 1px solid black !important;
 }
 
-/* -------------------------------- Media Queries */
+
+/* -------------------------------- Media Queries ------------------------------- */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -79,3 +90,5 @@ body {
         padding-top: 164px;
     }
 }
+
+

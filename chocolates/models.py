@@ -46,6 +46,9 @@ class ChocolateCategory(models.Model):
         """
         return self.choc_category
 
+    class Meta:
+        verbose_name_plural = "Chocolate Categories"
+
 
 # Custom Model 3
 class Chocolate(models.Model):

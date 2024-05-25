@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 # Custom Model 1
 class DietaryType(models.Model):
     """
@@ -11,20 +10,24 @@ class DietaryType(models.Model):
     """
     dietary_type = models.CharField(max_length=200)
     dietary_description = models.TextField()
-    diet_friendly_name = models.CharField(max_length=200, null=True, blank=True)
+    diet_friendly_name = models.CharField(
+        max_length=200, null=True, blank=True
+    )
 
     def __str__(self):
         """
-        This function returns the model name for easier readibility in the admin panel
+        This function returns the model name for easier readibility
+        in the admin panel
         """
-        return self.name
+        return self.dietary_type
 
     def get_friendly_name(self):
         """
-        This function returns the friendly name for easier readibility where needed
+        This function returns the friendly name for easier readibility
+        where needed
         """
         return self.friendly_name
-        
+
 
 # Custom Model 2
 class ChocolateCategory(models.Model):
@@ -38,6 +41,41 @@ class ChocolateCategory(models.Model):
 
     def __str__(self):
         """
-        This function returns the model name for easier readibility in the admin panel
+        This function returns the model name for easier readibility in
+        the admin panel
         """
-        return self.name
+        return self.choc_category
+
+
+# Custom Model 3
+class Chocolate(models.Model):
+    """
+    The Chocolate Model will hold the details for all chocolates sold
+    by Chocelegance. This includes all the necessary details that
+    customers expect, such as price, description, image, ingredients,
+    macro-nutrional values etc.
+    """
+    choc_dietary_type = models.ForeignKey(
+        'DietaryType', null=True, blank=True, on_delete=models.SET_NULL
+    )
+    choc_category = models.ForeignKey(
+        'ChocolateCategory', null=True, blank=True, on_delete=models.SET_NULL
+    )
+    choc_name = models.CharField(max_length=200)
+    choc_description = models.TextField()
+    choc_image = models.ImageField(null=True, blank=True)
+    choc_image_url = models.URLField(max_length=2000, null=True, blank=True)
+    choc_price = models.FloatField()
+    choc_ingredients = models.TextField()
+    choc_fat = models.FloatField()
+    choc_protein = models.FloatField()
+    choc_carbs = models.FloatField()
+    choc_sugar = models.FloatField()
+
+    def __str__(self):
+        """
+        This function returns the model name for easier readibility in
+        the admin panel
+        """
+        return self.choc_name
+

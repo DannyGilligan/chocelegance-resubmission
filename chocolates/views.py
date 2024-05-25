@@ -14,4 +14,5 @@ def all_chocolates(request):
     context = {
         'chocolates': chocolates,
     }
+    
     return render(request, 'chocolates/chocolates.html', context)

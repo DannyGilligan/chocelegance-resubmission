@@ -3,7 +3,7 @@ from .models import Chocolate
 
 # Create your views here.
 
-def AllChocolates(request):
+def all_chocolates(request):
     """
     This view will show all chocolate, along with sorting
     and search queries

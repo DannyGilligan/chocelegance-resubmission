@@ -28,6 +28,12 @@ class DietaryType(models.Model):
         """
         return self.friendly_name
 
+    class Meta:
+        """
+        Model name to be displayed in admin panel
+        """
+        verbose_name_plural = "Dietary Types"
+
 
 # Custom Model 2
 class ChocolateCategory(models.Model):
@@ -47,6 +53,9 @@ class ChocolateCategory(models.Model):
         return self.choc_category
 
     class Meta:
+        """
+        Model name to be displayed in admin panel
+        """
         verbose_name_plural = "Chocolate Categories"
 
 

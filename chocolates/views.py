@@ -34,7 +34,7 @@ def all_chocolates(request):
                     lower_choc_name=Lower('choc_name')
                 )
             if sortkey == 'choc_category_display':
-                sortkey = 'choc_category_name'
+                sortkey = 'choc_category_display__choc_category_name'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']

@@ -33,6 +33,8 @@ def all_chocolates(request):
                 products = chocolates.annotate(
                     lower_choc_name=Lower('choc_name')
                 )
+            if sortkey == 'choc_category_display':
+                sortkey = 'choc_category_name'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']

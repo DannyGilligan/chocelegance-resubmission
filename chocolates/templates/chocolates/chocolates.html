@@ -41,32 +41,40 @@
             {% for chocolate in chocolates %}
             <!-- Creates a bootstrap card for each chocolate -->
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                <div class="card h-100 border-1">
-                    {% if chocolate.image %}
+                <div class="card h-100 border-0 rounded-2">
+
+                    <!-- Card image -->
+                    {% if chocolate.choc_image %}
                     <a href="">
-                        <img class="card-img-top img-fluid" src="{{ chocolate.image.url }}" alt="{{ chocolate.name }}">
+                        <img class="card-img-top img-fluid rounded-2" src="{{ chocolate.choc_image.url }}" alt="{{ chocolate.choc_name }}">
                     </a>
                     {% else %}
                     <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.webp" alt="{{ chocolate.name }}">
+                        <img class="card-img-top img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.webp" alt="{{ chocolate.choc_name }}">
                     </a>
                     {% endif %}
-                    <div class="card-body pb-0">
-                        <p class="mb-0">{{ chocolate.name }}</p>
+
+                    <!-- Card body -->
+                    <div class="card-body pb-0  rounded-2">
+                        <p class="mb-0">{{ chocolate.choc_name }}</p>
                     </div>
-                    <div class="card-footer bg-white pt-0 border-0 text-left">
+
+                    <!-- Card footer -->
+                    <div class="card-footer bg-white pt-0 border-0 text-left rounded-2">
                         <div class="row">
                             <div class="col">
-                                <p class="lead mb-0 text-left font-weight-bold">€{{ chocolate.price }}</p>
-                                {% if chocolate.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ chocolate.rating }} / 5</small>
+                                <p class="lead mb-0 text-left font-weight-bold">€{{ chocolate.choc_price }}</p>
+                                {% if chocolate.choc_rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ chocolate.choc_rating }} / 5</small>
                                 {% else %}
                                     <small class="text-muted">No Rating</small>
                                 {% endif %}
                             </div>
                         </div>
                     </div>
+
                 </div>
+                <!-- Card ends with closing div tag above -->
             </div>
             {% endfor %}
         </div>

@@ -4,7 +4,6 @@ from django.db.models import Q
 from .models import Chocolate, ChocolateCategory
 
 
-
 # Create your views here.
 
 def all_chocolates(request):
@@ -15,10 +14,12 @@ def all_chocolates(request):
     # Stores all items in the chocolate model in a 'chocolates' variable
     chocolates = Chocolate.objects.all()
 
-    # Loads the page with the query variable initially set to 'None' to avoid issues
+    # Loads the page with the query variable initially set
+    # to 'None' to avoid issues
     query = None
 
-    # Loads the page with the choc_category variable initially set to 'None' to avoid issues
+    # Loads the page with the choc_category variable initially
+    # set to 'None' to avoid issues
     categories = None
 
     # User Search query logic
@@ -27,9 +28,13 @@ def all_chocolates(request):
         # Category query used in menu links
         if 'choc_category_display' in request.GET:
             categories = request.GET['choc_category_display'].split(',')
-            chocolates = chocolates.filter(choc_category_display__choc_category_name__in=categories)
-            categories = ChocolateCategory.objects.filter(choc_category_name__in=categories)
-        
+            chocolates = chocolates.filter(
+                choc_category_display__choc_category_name__in=categories
+            )
+            categories = ChocolateCategory.objects.filter(
+                choc_category_name__in=categories
+            )
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -40,7 +45,9 @@ def all_chocolates(request):
 
             # If query is valid, uses 'Q' logic to process search
             # ( '|' = or, and 'icontains' makes term case insensitive)
-            queries = Q(choc_name__icontains=query) | Q(choc_description__icontains=query)
+            queries = Q(choc_name__icontains=query) | Q(
+                choc_description__icontains=query
+            )
             chocolates = chocolates.filter(queries)
 
     context = {

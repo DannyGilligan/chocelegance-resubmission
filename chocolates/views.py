@@ -19,7 +19,7 @@ def all_chocolates(request):
     query = None
 
     # Loads the page with the choc_category variable initially set to 'None' to avoid issues
-    choc_category_display = None
+    categories = None
 
     # User Search query logic
     if request.GET:

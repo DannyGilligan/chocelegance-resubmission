@@ -11,8 +11,9 @@ def all_chocolates(request):
     This view will show all chocolate, along with sorting
     and search queries
     """
-
+    # Stores all items in the chocolate model in a 'chocolates' variable
     chocolates = Chocolate.objects.all()
+    query = None
 
     # User Search query logic
     if request.GET:
@@ -26,10 +27,15 @@ def all_chocolates(request):
 
             # If query is valid, uses 'Q' logic to process search
             # ( '|' = or, and 'icontains' makes term case insensitive)
-            queries = Q(name_icontains=query) | Q(description_icontains=query)
+            queries = Q(choc_name__icontains=query) | Q(choc_description__icontains=query)
+            chocolates = chocolates.filter(queries)
 
     context = {
+        # chocolates variable is passed to the template
         'chocolates': chocolates,
+
+        # results from search query are passed to the template
+        'search_term': query,
     }
 
     return render(request, 'chocolates/chocolates.html', context)

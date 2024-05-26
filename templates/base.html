@@ -72,12 +72,12 @@
 
       <!-- Search form -->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-        <form method="GET" action="">
+        <form method="GET" action="{% url 'chocolates' %}">
           <div class="input-group w-100">
-            <input class="form-control border border-black rounded-0" type="text" name="q"
-              placeholder="Search our site">
+            <input class="form-control border border-black rounded-2" type="text" name="q"
+              placeholder="Search for chocolates..">
             <div class="input-group-append">
-              <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+              <button class="form-control btn btn-black border border-black rounded-2" type="submit">
                 <span class="icon">
                   <i class="fas fa-search"></i>
                 </span>
@@ -137,7 +137,7 @@
 
     </div>
 
-    <!-- Sub navbar, this used dtl tags to include the navigation html snippets from the includes folder -->
+    <!-- Sub navbar, this uses dtl tags to include the navigation html snippets from the 'includes' folder -->
     <div class="row bg-white">
       <nav class="navbar navbar-expand-lg navbar-light w-100">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -150,12 +150,11 @@
     </div>
 
     <!-- Free Shipping banner -->
-    <div id="delivery-banner" class="row text-center">
-      <div class="col bg-black text-white">
-          <h4 class="logo-font my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h4>                
-      </div>     
-
-  </div>
+    <div id="delivery-banner" class="row text-center rounded-2">
+      <div class="col bg-black text-white rounded-2 mt-1">
+        <h4 class="logo-font my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h4>
+      </div>
+    </div>
 
   </header>
 
@@ -171,7 +170,7 @@
 
   {% endblock %}
 
-  <!-- Main content for the page will be displayed in the block below -->
+  <!-- Main content for the page will be displayed in the block below, injected by other templates when base.html is extended -->
   {% block content %}
 
   {% endblock %}

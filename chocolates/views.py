@@ -14,16 +14,29 @@ def all_chocolates(request):
     # Stores all items in the chocolate model in a 'chocolates' variable
     chocolates = Chocolate.objects.all()
 
-    # Loads the page with the query variable initially set
+    # Loads the page with these query variable initially set
     # to 'None' to avoid issues
     query = None
-
-    # Loads the page with the choc_category variable initially
-    # set to 'None' to avoid issues
     categories = None
+    sort = None
+    direction = None
 
     # User Search query logic
     if request.GET:
+
+        # Sorting queries used in main-nav
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'choc_name':
+                sortkey = 'lower_choc_name'
+                products = chocolates.annotate(lower_choc_name=Lower('choc_name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            chocolates = chocolates.order_by(sortkey)
 
         # Category query used in menu links
         if 'choc_category_display' in request.GET:
@@ -50,10 +63,13 @@ def all_chocolates(request):
             )
             chocolates = chocolates.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'chocolates': chocolates,
         'search_term': query,
         'current_categories': categories,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'chocolates/chocolates.html', context)

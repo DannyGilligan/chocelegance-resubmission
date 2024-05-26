@@ -24,63 +24,87 @@
 <div class="container-fluid col-8 mx-auto">
     <!-- First row contains page title and selected categories  -->
     <div class="row">
-      <div class="col text-center mt-5">
-        <h2 class="logo-font">Chocolates</h2>
-        <hr class="w-50 mb-2">
-      </div>
+        <div class="col text-center mt-5">
+            <h2 class="logo-font">Chocolates</h2>
+            <hr class="w-50 mb-2">
+        </div>
     </div>
 
     <!-- Second row contains the chocolates, this row consists of another two rows -->
     <div class="row">
-      <div class="chocolate-container col-8 offset-1">
+        <div class="chocolate-container col-8 offset-1">
 
-        <div class="row mt-2 mb-2"></div>
+            <div class="row mt-2 mb-2"></div>
 
-        <!-- This row contains a DTL for loop to iterate through the chocolates context variable -->
-        <div class="row">
-            {% for chocolate in chocolates %}
-            <!-- Creates a bootstrap card for each chocolate -->
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-5">
-                <div class="card h-100 border-0 rounded-2">
+            <!-- This row contains a DTL for loop to iterate through the chocolates context variable -->
+            <div class="row">
+                {% for chocolate in chocolates %}
+                <!-- Creates a bootstrap card for each chocolate -->
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-5">
+                    <div class="card h-100 border-0 rounded-2">
 
-                    <!-- Card image -->
-                    {% if chocolate.choc_image %}
-                    <a href="{% url 'chocolate_detail' chocolate.id %}">
-                        <img class="card-img-top img-fluid rounded-2" src="{{ chocolate.choc_image.url }}" alt="{{ chocolate.choc_name }}">
-                    </a>
-                    {% else %}
-                    <a href="{% url 'chocolate_detail' chocolate.id %}">
-                        <img class="card-img-top img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.webp" alt="{{ chocolate.choc_name }}">
-                    </a>
-                    {% endif %}
+                        <!-- Card image -->
+                        {% if chocolate.choc_image %}
+                        <a href="{% url 'chocolate_detail' chocolate.id %}">
+                            <img class="card-img-top img-fluid rounded-2" src="{{ chocolate.choc_image.url }}"
+                                alt="{{ chocolate.choc_name }}">
+                        </a>
+                        {% else %}
+                        <a href="{% url 'chocolate_detail' chocolate.id %}">
+                            <img class="card-img-top img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.webp"
+                                alt="{{ chocolate.choc_name }}">
+                        </a>
+                        {% endif %}
 
-                    <!-- Card body -->
-                    <div class="card-body pb-0  rounded-2">
-                        <p class="mb-0">{{ chocolate.choc_name }}</p>
-                    </div>
+                        <!-- Card body -->
+                        <div class="card-body pb-0  rounded-2">
+                            <p class="mb-0">{{ chocolate.choc_name }}</p>
+                        </div>
 
-                    <!-- Card footer -->
-                    <div class="card-footer bg-white pt-0 border-0 text-left rounded-2">
-                        <div class="row">
-                            <div class="col">
-                                <p class="lead mb-0 text-left font-weight-bold">€{{ chocolate.choc_price }}</p>
-                                {% if chocolate.choc_rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ chocolate.choc_rating }} / 5</small>
-                                {% else %}
+                        <!-- Card footer -->
+                        <div class="card-footer bg-white pt-0 border-0 text-left rounded-2">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left font-weight-bold">€{{ chocolate.choc_price }}</p>
+                                    <!-- Displays the chocolate category below the price (e.g Dark, Milk, White etc) -->
+                                    {% if chocolate.choc_category_display %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'chocolates' %}?category={{ chocolates.choc_category_display.choc_category_name }}">
+                                            <i
+                                                class="fas fa-tag mr-2"></i>{{ chocolate.choc_category_display.choc_friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
+
+                                    <!-- Displays the diet type below the category (e.g Keto, Vegan, Gluten-Free etc) -->
+                                    {% if chocolate.choc_dietary_type %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'chocolates' %}?category={{ chocolates.choc_dietary_type.dietary_type }}">
+                                            <i
+                                                class="fa-solid fa-check text-success mr-2"></i>{{ chocolate.choc_dietary_type.diet_friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
+                                    {% if chocolate.choc_rating %}
+                                    <small class="text-muted"><i
+                                            class="fas fa-star mr-1"></i>{{ chocolate.choc_rating }} / 5</small>
+                                    {% else %}
                                     <small class="text-muted">No Rating</small>
-                                {% endif %}
+                                    {% endif %}
+                                </div>
                             </div>
                         </div>
+
                     </div>
-
+                    <!-- Card ends with closing div tag above -->
                 </div>
-                <!-- Card ends with closing div tag above -->
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
-        
 
-      </div>
+
+        </div>
     </div>
 
 </div>

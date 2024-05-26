@@ -1,4 +1,5 @@
 Need to adjust hero image
+make sure ids in nav bar make sense
 
 ## Table of Contents
 

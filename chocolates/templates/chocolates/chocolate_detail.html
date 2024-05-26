@@ -24,11 +24,12 @@
 <div class="container-fluid col-8 mx-auto">
     <!-- One row split into two columns  -->
     <div class="row">
+
         <!-- First column is the chocolate image container -->
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if chocolate.choc_image %}
-                <a href="{{ chocolate.image.url }}" target="_blank">
+                <a href="{{ chocolate.chco_image.url }}" target="_blank">
                     <img class="card-img-top img-fluid rounded-2" src="{{ chocolate.choc_image.url }}"
                         alt="{{ chocolate.choc_name }}">
                 </a>
@@ -41,6 +42,7 @@
             </div>
         </div>
 
+        <!-- Second column is the chocolate details container -->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ chocolate.choc_name }}</p>

@@ -30,7 +30,8 @@ class DietaryType(models.Model):
 
     class Meta:
         """
-        Model name to be displayed in admin panel (capitalises 'Types' for consistency)
+        Model name to be displayed in admin panel
+        (capitalises 'Types' for consistency)
         """
         verbose_name_plural = "Dietary Types"
 
@@ -75,7 +76,9 @@ class Chocolate(models.Model):
     )
     choc_name = models.CharField(max_length=200)
     choc_description = models.TextField()
-    choc_rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    choc_rating = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True
+    )
     choc_image = models.ImageField(null=True, blank=True)
     choc_image_url = models.URLField(max_length=2000, null=True, blank=True)
     choc_price = models.DecimalField(max_digits=5, decimal_places=2)
@@ -92,4 +95,3 @@ class Chocolate(models.Model):
         the admin panel
         """
         return self.choc_name
-

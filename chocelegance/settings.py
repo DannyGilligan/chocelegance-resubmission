@@ -70,7 +70,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # Required by AllAuth
+                'django.template.context_processors.request',  # AllAuth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -79,16 +79,16 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = [
-    
+
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by email
     'allauth.account.auth_backends.AuthenticationBackend',
-    
+
 ]
 
-SITE_ID = 1 # Required by AllAuth
+SITE_ID = 1  # Required by AllAuth
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 

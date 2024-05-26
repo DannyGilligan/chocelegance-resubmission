@@ -45,11 +45,11 @@
 
                     <!-- Card image -->
                     {% if chocolate.choc_image %}
-                    <a href="">
+                    <a href="{% url 'chocolate_detail' chocolate.id %}">
                         <img class="card-img-top img-fluid rounded-2" src="{{ chocolate.choc_image.url }}" alt="{{ chocolate.choc_name }}">
                     </a>
                     {% else %}
-                    <a href="">
+                    <a href="{% url 'chocolate_detail' chocolate.id %}">
                         <img class="card-img-top img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.webp" alt="{{ chocolate.choc_name }}">
                     </a>
                     {% endif %}

@@ -44,6 +44,9 @@ class ChocolateCategory(models.Model):
     (e.g, Dark Chocolate, Milk Chocolate and White Chocolate etc)
     """
     choc_category = models.CharField(max_length=200)
+    choc_friendly_name = models.CharField(
+        max_length=200, null=True, blank=True
+    )
     choc_category_desc = models.TextField()
 
     def __str__(self):
@@ -52,6 +55,13 @@ class ChocolateCategory(models.Model):
         the admin panel
         """
         return self.choc_category
+
+    def get_friendly_name(self):
+        """
+        This function returns the friendly name for easier readibility
+        where needed
+        """
+        return self.friendly_name
 
     class Meta:
         """

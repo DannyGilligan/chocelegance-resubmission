@@ -18,13 +18,13 @@ def all_chocolates(request):
     return render(request, 'chocolates/chocolates.html', context)
 
 
-def chocolate_detail(request, product_id):
+def chocolate_detail(request, chocolate_id):
     """
     This view will render the details for an individual chocolate 
     based on the chocolate id
     """
 
-    chocolate = get_object_or_404(Chocolate, pk=product_id)
+    chocolate = get_object_or_404(Chocolate, pk=chocolate_id)
 
     context = {
         'chocolate': chocolates,

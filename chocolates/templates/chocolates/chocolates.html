@@ -4,25 +4,77 @@
 
 <!-- Additional sub-header block below main header, extended from base.html -->
 {% block page_header %}
-    <div class="container header-container col-8 mx-auto">
-        <div class="row">
-            <div class="col">
-                
-            </div>
+<div class="container header-container col-8 mx-auto">
+    <div class="row">
+        <div class="col">
+
         </div>
     </div>
+</div>
 {% endblock %}
 
 
 <!-- The block content below is injected into the main base.html template -->
 {% block content %}
+<!-- Overlay div controls the background (changes it to all white) -->
 <div class="overlay">
-<div class="container col-8 mx-auto">
+</div>
+
+
+<div class="container-fluid col-8 mx-auto">
+    <!-- First row contains page title and selected categories  -->
     <div class="row">
-        <div class="col">
-            {{ chocolates }}
-        </div>
+      <div class="col text-center mt-5">
+        <h2 class="logo-font">Chocolates</h2>
+        <hr class="w-50 mb-2">
+      </div>
     </div>
+
+    <!-- Second row contains the chocolates, this row consists of another two rows -->
+    <div class="row">
+      <div class="chocolate-container col-8 offset-1">
+
+        <div class="row mt-2 mb-2"></div>
+
+        <!-- This row contains a DTL for loop to iterate through the chocolates context variable -->
+        <div class="row">
+            {% for chocolate in chocolates %}
+            <!-- Creates a bootstrap card for each chocolate -->
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-1">
+                    {% if chocolate.image %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ chocolate.image.url }}" alt="{{ chocolate.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ chocolate.name }}">
+                    </a>
+                    {% endif %}
+                    <div class="card-body pb-0">
+                        <p class="mb-0">{{ chocolate.name }}</p>
+                    </div>
+                    <div class="card-footer bg-white pt-0 border-0 text-left">
+                        <div class="row">
+                            <div class="col">
+                                <p class="lead mb-0 text-left font-weight-bold">${{ chocolate.price }}</p>
+                                {% if chocolate.rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ chocolate.rating }} / 5</small>
+                                {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+
+      </div>
+    </div>
+
 </div>
-</div>
+
 {% endblock %}

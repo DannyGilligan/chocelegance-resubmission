@@ -30,7 +30,7 @@ class DietaryType(models.Model):
 
     class Meta:
         """
-        Model name to be displayed in admin panel
+        Model name to be displayed in admin panel (capitalises 'Types' for consistency)
         """
         verbose_name_plural = "Dietary Types"
 
@@ -79,6 +79,7 @@ class Chocolate(models.Model):
     choc_image = models.ImageField(null=True, blank=True)
     choc_image_url = models.URLField(max_length=2000, null=True, blank=True)
     choc_price = models.DecimalField(max_digits=5, decimal_places=2)
+    choc_pieces = models.IntegerField(null=True, blank=True)
     choc_ingredients = models.TextField()
     choc_fat = models.FloatField()
     choc_protein = models.FloatField()

@@ -47,6 +47,18 @@
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ chocolate.choc_name }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">${{ chocolate.choc_price }}</p>
+
+                <!-- Displays the chocolate category below the price (e.g Dark, Milk, White etc) -->
+                {% if chocolate.choc_category_display %}
+                <p class="small mt-1 mb-0">
+                    <a class="text-muted"
+                        href="{% url 'chocolates' %}?category={{ chocolates.choc_category_display.choc_category_name }}">
+                        <i class="fas fa-tag mr-1"></i>{{ chocolate.choc_category_display.choc_friendly_name }}
+                    </a>
+                </p>
+                {% endif %}
+
+
                 {% if chocolate.choc_rating %}
                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ chocolate.choc_rating }} / 5</small>
                 {% else %}

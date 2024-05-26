@@ -1,5 +1,5 @@
 from django.contrib import admin
-# from .models import Chocolate, DietaryType
+from .models import ChocolateCategory, DietaryType
 
 # Register your models here.
 
@@ -20,32 +20,32 @@ from django.contrib import admin
 #     ordering = ('choc_name',)
 
 
-# class ChocolateCategoryAdmin(admin.ModelAdmin):
-#     """
-#     Controls the fields displayed to user in the admin
-#     panel list when viewing 'Chocolate Categories'
-#     """
-#     list_display = (
-#         'choc_category_name',
-#         'choc_category_desc',
-#     )
+class ChocolateCategoryAdmin(admin.ModelAdmin):
+    """
+    Controls the fields displayed to user in the admin
+    panel list when viewing 'Chocolate Categories'
+    """
+    list_display = (
+        'choc_friendly_name',
+        'choc_category_desc',
+    )
 
 
-# class DietaryTypeAdmin(admin.ModelAdmin):
-#     """
-#     Controls the fields displayed to user in the admin
-#     panel list when viewing 'Dietary Types'
-#     """
-#     list_display = (
-#         'dietary_type',
-#         'dietary_description',
-#     )
+class DietaryTypeAdmin(admin.ModelAdmin):
+    """
+    Controls the fields displayed to user in the admin
+    panel list when viewing 'Dietary Types'
+    """
+    list_display = (
+        'diet_friendly_name',
+        'dietary_description',
+    )
 
 
 
 
 # admin.site.register(Chocolate, ChocolateAdmin)
-# admin.site.register(ChocolateCategory, ChocolateCategoryAdmin)
-# admin.site.register(DietaryType, DietaryTypeAdmin)
+admin.site.register(ChocolateCategory, ChocolateCategoryAdmin)
+admin.site.register(DietaryType, DietaryTypeAdmin)
 
 

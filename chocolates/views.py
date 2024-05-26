@@ -27,7 +27,7 @@ def chocolate_detail(request, chocolate_id):
     chocolate = get_object_or_404(Chocolate, pk=chocolate_id)
 
     context = {
-        'chocolate': chocolates,
+        'chocolate': chocolate,
     }
     
     return render(request, 'chocolates/chocolate_detail.html', context)

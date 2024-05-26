@@ -26,6 +26,12 @@
     <div class="row">
         <div class="col text-center mt-5">
             <h2 class="logo-font">Chocolates</h2>
+
+            {% for c in current_categories %}
+            <a class="category-badge text-decoration-none" href="{% url 'chocolates' %}?category={{ c.choc_friendly_name }}">
+                <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.choc_friendly_name }}</span>
+            </a>
+        {% endfor %}
             <hr class="w-50 mb-2">
         </div>
     </div>
@@ -34,7 +40,37 @@
     <div class="row">
         <div class="chocolate-container col-8 offset-1">
 
-            <div class="row mt-2 mb-2"></div>
+            <div class="row mt-2 mb-2">
+                <!-- This div contains the sorting options, displays a drop down menu with the options -->
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                            <option value="price_asc" {% if current_sorting == 'choc_price_asc' %}selected{% endif %}>Price (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'choc_price_desc' %}selected{% endif %}>Price (high to low)</option>
+                            <option value="rating_asc" {% if current_sorting == 'choc_rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                            <option value="rating_desc" {% if current_sorting == 'choc_rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                            <option value="name_asc" {% if current_sorting == 'choc_name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'choc_name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                            <option value="category_asc" {% if current_sorting == 'choc_category_display_asc' %}selected{% endif %}>Category (A-Z)</option>
+                            <option value="category_desc" {% if current_sorting == 'choc_category_display_desc' %}selected{% endif %}>Category (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- This div contains the product count and search results -->
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        {% if search_term or current_categories or current_sorting != 'None_None' %}
+                            <span class="small"><a href="{% url 'chocolates' %}">Reset</a> | </span>
+                        {% endif %}
+                        {{ chocolates|length }} Chocolate{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
+                </div>
+
+
+
+            </div>
 
             <!-- This row contains a DTL for loop to iterate through the chocolates context variable -->
             <div class="row">
@@ -89,7 +125,7 @@
                                     {% endif %}
                                     {% if chocolate.choc_rating %}
                                     <small class="text-muted"><i
-                                            class="fas fa-star mr-1"></i>{{ chocolate.choc_rating }} / 5</small>
+                                            class="fas fa-star mr-1 text-warning"></i>{{ chocolate.choc_rating }} / 5</small>
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}

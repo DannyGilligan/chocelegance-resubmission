@@ -101,6 +101,14 @@ body {
     border: 1px solid #551b8c;
 }
 
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+
+
 /* -------------------------------- Media Queries ------------------------------- */
 
 /* Slightly larger container on xl screens */

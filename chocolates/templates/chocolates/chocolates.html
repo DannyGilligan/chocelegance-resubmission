@@ -48,7 +48,7 @@
                     </a>
                     {% else %}
                     <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ chocolate.name }}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.webp" alt="{{ chocolate.name }}">
                     </a>
                     {% endif %}
                     <div class="card-body pb-0">
@@ -57,7 +57,7 @@
                     <div class="card-footer bg-white pt-0 border-0 text-left">
                         <div class="row">
                             <div class="col">
-                                <p class="lead mb-0 text-left font-weight-bold">${{ chocolate.price }}</p>
+                                <p class="lead mb-0 text-left font-weight-bold">€{{ chocolate.price }}</p>
                                 {% if chocolate.rating %}
                                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ chocolate.rating }} / 5</small>
                                 {% else %}

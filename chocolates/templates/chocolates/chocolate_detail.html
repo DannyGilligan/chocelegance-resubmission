@@ -1,0 +1,49 @@
+<!-- This template is extended from the main base.html file located in the root templates directory -->
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Additional sub-header block below main header, extended from base.html -->
+{% block page_header %}
+<div class="container header-container col-8 mx-auto">
+    <div class="row">
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+<!-- The block content below is injected into the main base.html template -->
+{% block content %}
+<!-- Overlay div controls the background (changes it to all white) -->
+<div class="overlay">
+</div>
+
+
+<div class="container-fluid col-8 mx-auto">
+    <!-- One row split into two columns  -->
+    <div class="row">
+        <!-- First column is the chocolate image container -->
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if chocolate.choc_image %}
+                    <a href="{{ chocolate.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid rounded-2" src="{{ chocolate.choc_image.url }}" alt="{{ chocolate.choc_name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.webp" alt="{{ chocolate.choc_name }}">
+                    </a>
+                    {% endif %}
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

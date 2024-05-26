@@ -146,3 +146,29 @@
 </div>
 
 {% endblock %}
+
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('#sort-selector').change(function() {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
+
+        var selectedVal = selector.val();
+        if(selectedVal != "reset"){
+            var sort = selectedVal.split("_")[1];
+
+            currentURL.searchParams.set("sort", sort);
+            currentURL.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentURL.searchParams.delete("sort");
+            currentURL.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
+{% endblock %}

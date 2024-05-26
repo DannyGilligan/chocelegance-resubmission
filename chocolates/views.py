@@ -19,16 +19,16 @@ def all_chocolates(request):
     query = None
 
     # Loads the page with the choc_category variable initially set to 'None' to avoid issues
-    choc_category = None
+    choc_category_display = None
 
     # User Search query logic
     if request.GET:
 
         # Category query used in menu links
-        if 'choc_category' in request.GET:
-            categories = request.GET[choc_category].split(',')
-            chocolates = chocolates.filter(choc_category__choc_category__in=categories)
-            # categories = ChocolateCategory.objects.filter(choc_category__in=categories)
+        if 'choc_category_display' in request.GET:
+            categories = request.GET['choc_category_display'].split(',')
+            chocolates = chocolates.filter(choc_category_display__choc_category_name__in=categories)
+            categories = ChocolateCategory.objects.filter(choc_category_name__in=categories)
         
         if 'q' in request.GET:
             query = request.GET['q']
@@ -44,13 +44,8 @@ def all_chocolates(request):
             chocolates = chocolates.filter(queries)
 
     context = {
-        # chocolates variable is passed to the template
         'chocolates': chocolates,
-
-        # results from search query are passed to the template
         'search_term': query,
-
-        # list of chocolate categories
         'current_categories': categories,
     }
 

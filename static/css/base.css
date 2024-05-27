@@ -299,6 +299,7 @@ a.category-badge > span.badge:hover {
     background: #742557;
     border: 1px solid #ed82ed;
     box-shadow: 0 0px 10px #ed82ed;
+    text-decoration: none;
 }
 
 #keep-shopping-button a {

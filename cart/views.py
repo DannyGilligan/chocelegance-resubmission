@@ -12,7 +12,8 @@ def view_cart(request):
 
 def add_to_cart(request, item_id):
     """
-    This view will allow the user to add a quantitiy of a particular product to the cart
+    This view will allow the user to add a quantitiy
+    of a particular product to the cart
     """
 
     quantity = int(request.POST.get('quantity'))

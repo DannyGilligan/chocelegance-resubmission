@@ -4,22 +4,58 @@
 
 <!-- Additional sub-header block below main header, extended from base.html -->
 {% block page_header %}
-    <div class="container header-container col-8 mx-auto">
-        <div class="row">
-            <div class="col">
-                
-            </div>
+<div class="container header-container col-8 mx-auto">
+    <div class="row">
+        <div class="col">
+
         </div>
     </div>
+</div>
 {% endblock %}
 
 
 <!-- The block content below is injected into the main base.html template -->
 {% block content %}
+
+<div id="hero-image-container">
+
+    <!-- <div id="hero-image">
+        <img src="/media/hero-image-final.webp" alt="Chocelegance hero image showing chocolates enclosed in a heart">
+    </div> -->
+    <!-- <div id="hero-image-text-overlay"> -->
+
+        <!-- Hero image main text -->
+        <div id="hero-image-text-heading">
+            <p>
+                It's time to <strong>treat*</strong> yourself!
+            <p>
+        </div>
+
+        <!-- Hero image sub text -->
+        <div id="hero-image-text-sub-heading">
+            <p>
+                <strong>*Guaranteed guilt free</strong>
+            </p>
+        </div>
+
+        <!-- Treat yourself now button, links to all chocolates -->
+        <div id="shop-button">
+            <p>
+                <a href="{% url 'chocolates' %}">Treat Yourself Now!</a>
+            </p>
+        </div>
+
+    <!-- </div> -->
+</div>
+
+
 <div class="container h-100 col-8 mx-auto">
     <div class="row h-100 col-8 mx-auto">
 
-        <!-- Hero text overlay -->
+
+
+
+        <!-- Hero text overlay
         <div class="col-8 my-auto">
             <h1 class="display-2 logo-font text-black">
                 It's time to <strong>treat*</strong> yourself!
@@ -28,16 +64,17 @@
             <br>
             <h2 class="display-4 logo-font text-black">
                 <strong>*Guaranteed guilt free</strong>
-            </h2>
+            </h2> -->
 
-            <!-- Treat yourself now button, links to all chocolates -->
-            <div class="my-5">
+        <!-- Treat yourself now button, links to all chocolates -->
+        <!-- <div class="my-5">
                 <h4>
-                    <a href="{% url 'chocolates' %}" class="shop-now-button btn btn-success btn-lg rounded-1 py-3">Treat Yourself Now!</a>
+                    <a href="{% url 'chocolates' %}" class="shop-now-button btn btn-success btn-lg rounded-1 py-3">Treat
+                        Yourself Now!</a>
                 </h4>
             </div>
 
-        </div>
+        </div> -->
 
     </div>
 </div>

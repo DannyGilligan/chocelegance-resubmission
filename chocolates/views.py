@@ -39,7 +39,6 @@ def all_chocolates(request):
 
             # Sort by choc category (Dark, Milk, White etc)
             if sortkey == 'choc_category_display':
-                choc_category_display
                 sortkey = 'choc_category_display__choc_category_name'
 
             if 'direction' in request.GET:

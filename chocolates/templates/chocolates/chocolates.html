@@ -106,7 +106,7 @@
                                     {% if chocolate.choc_category_display %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
-                                            href="{% url 'chocolates' %}?category={{ chocolates.choc_category_display.choc_category_name }}">
+                                            href="{% url 'chocolates' %}?choc_category_display={{ chocolate.choc_category_display }}">
                                             <i
                                                 class="fas fa-tag mr-2"></i>{{ chocolate.choc_category_display.choc_friendly_name }}
                                         </a>
@@ -117,7 +117,7 @@
                                     {% if chocolate.choc_dietary_type %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
-                                            href="{% url 'chocolates' %}?category={{ chocolates.choc_dietary_type.dietary_type }}">
+                                            href="{% url 'chocolates' %}?choc_dietary_type={{ chocolate.choc_dietary_type }}">
                                             <i
                                                 class="fa-solid fa-check text-success mr-2"></i>{{ chocolate.choc_dietary_type.diet_friendly_name }}
                                         </a>

@@ -44,7 +44,7 @@
 
         <!-- Second column is the chocolate details container -->
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="product-details-container mb-5 mt-md-5">
+            <div class="chocolate-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ chocolate.choc_name }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">${{ chocolate.choc_price }}</p>
 
@@ -63,17 +63,49 @@
                 <p class="small mt-1 mb-0">
                     <a class="text-muted"
                         href="{% url 'chocolates' %}?category={{ chocolates.choc_dietary_type.dietary_type }}">
-                        <i class="fa-solid fa-check text-success mr-2"></i>{{ chocolate.choc_dietary_type.diet_friendly_name }}
+                        <i
+                            class="fa-solid fa-check text-success mr-2"></i>{{ chocolate.choc_dietary_type.diet_friendly_name }}
                     </a>
                 </p>
                 {% endif %}
 
                 {% if chocolate.choc_rating %}
-                <small class="text-muted"><i class="fas fa-star mr-2 text-warning"></i>{{ chocolate.choc_rating }} / 5</small>
+                <small class="text-muted"><i class="fas fa-star mr-2 text-warning"></i>{{ chocolate.choc_rating }} /
+                    5</small>
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
                 <p class="mt-3">{{ chocolate.choc_description }}</p>
+
+                <!-- Form starts here, uses POST method to add chocolate to bag -->
+                <form class="form" action="{% url 'add_to_cart' chocolate.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="mt-3"><strong>Quantity:</strong></p>
+                            <div class="form-group w-50">
+                                <div class="input-group">
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ chocolate.id }}" id="id_qty_{{ chocolate.id }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <a href="{% url 'chocolates' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
+                        </div>
+                        <!-- Hidden input containing current URL, allows redirect back to same page after chocolate added -->
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </div>
+                </form>
+                <!-- Form ends above here -->
+
             </div>
         </div>
 

@@ -22,7 +22,6 @@ html {
     position: relative;
     border-radius: 10px;
     border: 1px solid #551b8c;
-    border: 1px solid red;
 }
 
 
@@ -38,7 +37,6 @@ html {
     left: 25%;
     transform: translate(-50%, -50%);
     color: white;
-    border: 1px solid green;
 }
 
 #hero-image-text-sub-heading {
@@ -48,11 +46,10 @@ html {
     width: 30rem;
     text-align: left;
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 25%;
     transform: translate(-50%, -50%);
     color: white;
-    border: 1px solid orange;
 }
 
 /* shop-button {
@@ -85,31 +82,32 @@ html {
 link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 
 #shop-button {
-    text-decoration: none;
     width: 20rem;
-    text-align: center;
     /* background: #551b8c; */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 80%;
-    left: 19%;
-    text-decoration: none;
+    left: 20%;
     background: #551b8c;
     /* padding: 15px 40px; */
     border-radius: 15px;
     font-weight: normal;
-    text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    border: 1px solid #ed82ed;;
+    border: 1px solid #882bde;
     box-shadow: 0 0px 50px #ed82ed;
   }
 
 #shop-button:hover{
     background: #c71585;
+    border: 1px solid #ed82ed;
     box-shadow: 0 0px 100px #ed82ed;
 }
 
 #shop-button a {
+    padding-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     color: white;
     text-decoration: none;

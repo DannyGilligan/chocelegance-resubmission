@@ -20,7 +20,8 @@ def cart_contents(request):
     for item_id, quantity in cart.items():
         chocolate = get_object_or_404(Chocolate, pk=item_id)
         total += quantity * chocolate.choc_price
-        chocolate_count += quantity * cart_items.append({
+        chocolate_count += quantity
+        cart_items.append({
             'item_id': item_id,
             'quantity': quantity,
             'chocolate': chocolate,

@@ -29,12 +29,17 @@ def all_chocolates(request):
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
+
+            # Sort by choc_name 
             if sortkey == 'choc_name':
                 sortkey = 'lower_choc_name'
-                products = chocolates.annotate(
+                chocolates = chocolates.annotate(
                     lower_choc_name=Lower('choc_name')
                 )
+
+            # Sort by choc category (Dark, Milk, White etc)
             if sortkey == 'choc_category_display':
+                choc_category_display
                 sortkey = 'choc_category_display__choc_category_name'
 
             if 'direction' in request.GET:
@@ -43,7 +48,7 @@ def all_chocolates(request):
                     sortkey = f'-{sortkey}'
             chocolates = chocolates.order_by(sortkey)
 
-        # Category query used in menu links
+        # Category query used in menu links to view entire categories
         if 'choc_category_display' in request.GET:
             categories = request.GET['choc_category_display'].split(',')
             chocolates = chocolates.filter(

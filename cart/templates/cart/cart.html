@@ -4,17 +4,59 @@
 
 <!-- Additional sub-header block below main header, extended from base.html -->
 {% block page_header %}
-    <div class="container header-container col-8 mx-auto">
-        <div class="row">
-            <div class="col">
-                
-            </div>
+<div class="container header-container col-8 mx-auto">
+    <div class="row">
+        <div class="col">
+
         </div>
     </div>
+</div>
 {% endblock %}
 
 
 <!-- The block content below is injected into the main base.html template -->
 {% block content %}
 
+<!-- Div containing two rows with a single column each -->
+<div class="container mb-2">
+
+    <!-- Shopping bag heading -->
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">
+                Shopping Cart
+            </h2>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Table showing shopping cart contents -->
+    <div class="row">
+        <div class="col">
+            {% if cart_items %}
+            <!-- Table is only rendered if there is an item in the cart -->
+            <div class="table-responsive rounded-2">
+
+            </div>
+            {% else %}
+            <!-- If no item is in the cart, the message below is displayed instead -->
+            <p class="lead mb-5">
+                Your cart is empty!
+            </p>
+            <!-- Link to chocolates is shown when cart is empty -->
+            <a href="{% url 'chocolates' %}" class="btn btn-outline-black rounded-2 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span>
+                    Keep Shopping
+                </span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+
+
+</div>
 {% endblock %}

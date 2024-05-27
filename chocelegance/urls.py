@@ -23,4 +23,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')), # Required by AllAuth
     path('', include('home.urls')),
     path('chocolates/', include('chocolates.urls')),
+    path('cart/', include('cart.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

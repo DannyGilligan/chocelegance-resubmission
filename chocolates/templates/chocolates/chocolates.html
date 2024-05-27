@@ -157,18 +157,42 @@
 
         var selectedVal = selector.val();
         if(selectedVal != "reset"){
-            var sort = selectedVal.split("_")[1];
+            // Breaks the value in the option element into a string seperated by "_" (e.g value="price_asc" will become 2 items 'price' and 'asc') 
+            var sort = selectedVal.split("_")[0];
 
-            currentURL.searchParams.set("sort", sort);
-            currentURL.searchParams.set("direction", direction);
+            // Switch statement below will check the value in the first element of the array (index [0]) stored in the 'sort' variable
+            // and assign the correct value to the 'sort' variable to match the expected url construction (matching the model's parameters)
+            
+            switch(sort) {
+                case "price":
+                    sort = "choc_price";
+                    break;
+                case "rating":
+                    sort = "choc_rating";
+                    break;
+                case "name":
+                    sort = "choc_name";
+                    break;
+                default:
+                    sort = "choc_category_display";
+            }
+
+
+            // Breaks the value in the option element into a string seperated by "_" 
+            // (e.g value="choc_category_display" will become 3 items 'choc', 'category' and 'display')
+            // The 'slice(-1)'' ensures the last index (asc or desc) value is captured
+            var direction = selectedVal.split("_").slice(-1);
+
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
 
             window.location.replace(currentUrl);
         } else {
-            currentURL.searchParams.delete("sort");
-            currentURL.searchParams.delete("direction");
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
 
             window.location.replace(currentUrl);
         }
-    })
+    });
 </script>
 {% endblock %}

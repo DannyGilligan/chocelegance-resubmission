@@ -39,7 +39,7 @@ def cart_contents(request):
     context = {
         'cart_items': cart_items,
         'total': total,
-        'product_count': product_count,
+        'chocolate_count': chocolate_count,
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,

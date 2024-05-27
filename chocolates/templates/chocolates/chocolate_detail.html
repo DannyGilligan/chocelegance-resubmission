@@ -91,15 +91,20 @@
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <a href="{% url 'chocolates' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                <span class="icon">
+                        <div id="add-to-cart-button-container">
+
+                            <!-- Keep shopping button -->
+                            <a href="{% url 'chocolates' %}" id="keep-shopping-button">
+                                <span>
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
-                                <span class="text-uppercase">Keep Shopping</span>
+                                <span>
+                                    Keep Shopping
+                                </span>
                             </a>
+
                             <!-- Add to cart button -->
-                            <input type="submit" class="btt-button" value="Add to Cart">
+                            <input type="submit" id="add-to-cart-button" value="Add to Cart">
                         </div>
                         <!-- Hidden input containing current URL, allows redirect back to same page after chocolate added -->
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">

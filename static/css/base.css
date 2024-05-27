@@ -243,6 +243,74 @@ a.category-badge > span.badge:hover {
     color: white !important;
 }
 
+#add-to-cart-button-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+}
+
+#add-to-cart-button{
+    font-family: "Urbanist";
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    width: 10rem;
+    height: 3rem;
+    transform: translate(-50%, -50%);
+    background: #551b8c;
+    border-radius: 10px;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #882bde;
+    box-shadow: 0 0px 2px #ed82ed;
+    color: white;
+    padding-bottom: .3rem;
+}
+
+#add-to-cart-button:hover{
+    background: #c71585;
+    border: 1px solid #ed82ed;
+    box-shadow: 0 0px 10px #ed82ed;
+}
+
+
+
+#keep-shopping-button {
+    font-family: "Urbanist";
+    font-size: 1.1rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    width: 10rem;
+    height: 3rem;
+    transform: translate(-50%, -50%);
+    background: #9e7abe;
+    border-radius: 10px;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #882bde;
+    box-shadow: 0 0px 2px #ed82ed;
+    color: white;
+    text-align: center;
+}
+
+
+#keep-shopping-button:hover {
+    background: #742557;
+    border: 1px solid #ed82ed;
+    box-shadow: 0 0px 10px #ed82ed;
+}
+
+#keep-shopping-button a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 
 /* -------------------------------- Media Queries ------------------------------- */
 

@@ -107,6 +107,28 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.btt-button {
+    background: #882bde;
+    border: 1px solid #551b8c;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.btt-button i {
+    color: white;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+#back-to-top-icon {
+    color: white !important;
+}
 
 
 /* -------------------------------- Media Queries ------------------------------- */

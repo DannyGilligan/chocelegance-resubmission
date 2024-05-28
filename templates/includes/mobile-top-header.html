@@ -54,7 +54,7 @@
 
 <!-- This list item allows access to the shopping bag -->
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
+    <a class="{% if grand_total %}active-cart font-weight-bold{% else %}purple-text{% endif %} nav-link d-block d-lg-none"
         href="{% url 'view_cart' %}">
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>

@@ -339,11 +339,13 @@ a.category-badge > span.badge:hover {
 
 .toast-header > button {
     color: white;
+
 }
 
 .toast-body {
     background: #882bde;
     color: white;
+    border-top: 1px solid #c71585;
 }
 /* -------------------------------- Media Queries ------------------------------- */
 

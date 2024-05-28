@@ -309,7 +309,12 @@ a.category-badge > span.badge:hover {
 }
 
 
-
+.message-container {
+    position: fixed;
+    top: 5 rem;
+    right: 2 rem;
+    z-index: 9
+}
 
 
 

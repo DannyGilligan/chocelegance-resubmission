@@ -115,6 +115,12 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     max-width: 6rem;
 }
 
+#qty-input-table-cell {
+    max-width: 10rem;
+}
+
+
+
 /* from Bulma, used to ensure consistent styling of icons (centering etc) */
 .icon {
     align-items: center;

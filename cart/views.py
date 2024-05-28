@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 
 from chocolates.models import Chocolate
@@ -18,7 +18,7 @@ def add_to_cart(request, item_id):
     of a particular product to the cart
     """
 
-    chocolate = Chocolate.objects.get(pk=item_id)
+    chocolate = get_object_or_404(Chocolate, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
@@ -41,13 +41,16 @@ def adjust_cart(request, item_id):
     quantity of items in the cart
     """
 
+    chocolate = get_object_or_404(Chocolate, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
     if quantity > 0:
         cart[item_id] = quantity
+        messages.success(request, f'Updated {chocolate.choc_friendly_name} quantity to {cart[item_id]}')
     else:
         cart.pop(item_id)
+        messages.success(request, f'{chocolate.choc_friendly_name} has been removed from your cart')
 
     request.session['cart'] = cart
 

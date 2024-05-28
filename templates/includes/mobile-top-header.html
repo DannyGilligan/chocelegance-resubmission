@@ -46,10 +46,10 @@
             <a href="{% url 'account_logout' %}" class="dropdown-item purple-text">Chocolate Management</a>
             {% endif %}
             <a href="#" class="dropdown-item purple-text">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item purple-text">Logout</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item purple-text"><strong>Logout</strong></a>
             {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item purple-text">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item purple-text">Login</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item purple-text"><strong>Login</strong></a>
             {% endif %}
         </div>
     </li>

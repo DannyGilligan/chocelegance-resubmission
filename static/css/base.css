@@ -316,7 +316,9 @@ a.category-badge > span.badge:hover {
     z-index: 9
 }
 
-
+.custom-toast {
+    overflow: visible;
+}
 
 
 

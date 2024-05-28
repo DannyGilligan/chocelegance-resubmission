@@ -179,6 +179,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 .btn-purple {
     background: #551b8c;
     color: white;
+    border: 1px solid #551b8c;
 }
 
 /* Button styling to ensure consistency */
@@ -188,8 +189,10 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 .btn-purple:hover,
 .btn-purple:active,
 .btn-purple:focus {
-    background: #882bde;
+    background: #c71585;
     color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed
 }
 
 

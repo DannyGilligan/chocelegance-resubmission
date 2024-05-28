@@ -98,6 +98,7 @@ class Chocolate(models.Model):
     choc_price = models.DecimalField(max_digits=5, decimal_places=2)
     choc_pieces = models.IntegerField(null=True, blank=True)
     choc_ingredients = models.TextField()
+    choc_calories = models.FloatField(null=True, blank=True)
     choc_fat = models.FloatField()
     choc_protein = models.FloatField()
     choc_carbs = models.FloatField()

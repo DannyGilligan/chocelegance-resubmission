@@ -1,7 +1,7 @@
 <!-- This html file concerns the 'secondary' nav bar which provides the user with navigation through the products -->
 
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
+    <ul class="navbar-nav mx-auto">
 
         <!-- All Products drop down menu -->
         <li class="nav-item dropdown">
@@ -16,7 +16,7 @@
                     Rating</a>
                 <a href="{% url 'chocolates'%}?sort=choc_category_display&direction=asc"
                     class="dropdown-item purple-text">By Category</a>
-                <a href="{% url 'chocolates' %}" class="dropdown-item purple-text">All Products</a>
+                <a href="{% url 'chocolates' %}" class="dropdown-item purple-text"><strong>All Products</strong></a>
             </div>
         </li>
 
@@ -34,7 +34,7 @@
                 <a href="{% url 'chocolates' %}?choc_category_display=white_choc"
                     class="dropdown-item purple-text">White Chocolate</a>
                 <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc"
-                    class="dropdown-item purple-text">All Keto Chocolate</a>
+                    class="dropdown-item purple-text"><strong>All Keto</strong></a>
             </div>
         </li>
 
@@ -52,7 +52,7 @@
                 <a href="{% url 'chocolates' %}?choc_category_display=white_choc"
                     class="dropdown-item purple-text">White Chocolate</a>
                 <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc"
-                    class="dropdown-item purple-text">All Vegan Chocolate</a>
+                    class="dropdown-item purple-text"><strong>All Vegan</strong></a>
             </div>
         </li>
 
@@ -70,7 +70,7 @@
                 <a href="{% url 'chocolates' %}?choc_category_display=white_choc"
                     class="dropdown-item purple-text">White Chocolate</a>
                 <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc"
-                    class="dropdown-item purple-text">All Gluten-Free Chocolate</a>
+                    class="dropdown-item purple-text"><strong>All Gluten-Free</strong></a>
             </div>
         </li>
 
@@ -84,7 +84,7 @@
                 <a href="" class="dropdown-item purple-text">New Arrivals</a>
                 <a href="" class="dropdown-item purple-text">Deals</a>
                 <a href="" class="dropdown-item purple-text">Clearance</a>
-                <a href="" class="dropdown-item purple-text">All Specials</a>
+                <a href="" class="dropdown-item purple-text"><strong>All Specials</strong></a>
             </div>
         </li>
     </ul>

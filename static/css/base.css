@@ -25,9 +25,9 @@ body {
     padding: 0 !important;
 }
 
+
+/* Hero image adapted from W3Schools */
 #hero-image-container {
-    /* display: flex;
-    flex-direction: column; */
     align-items: left;
     width: 70%;
     margin-left: 15%;
@@ -76,31 +76,6 @@ body {
     color: white;
 }
 
-/* shop-button {
-    width: 20rem;
-    text-align: center; */
-    /* background: #551b8c; */
-    /* position: absolute;
-    transform: translate(-50%, -50%);
-    top: 80%;
-    left: 19%;
-    border: 1px solid #551b8c;
-    display: inline-block;
-    outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 7px;
-    background-color: #0070f3;
-    color: white;
-    font-weight: 400;
-    font-size: 16px;
-    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
-    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
-} */
-
 
 /* The glow effect for the shop button below was adapted from code by codepen user Kanishk Kunal 
 link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
@@ -138,18 +113,6 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 
 
 
-/* Need to adjust the hero image using the rules below */
-/* body {
-    background: url('/media/hero-image-final.webp') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: "Urbanist", Arial, Helvetica, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-} */
-
 /* from Bulma, used to ensure consistent styling of icons (centering etc) */
 .icon {
     align-items: center;
@@ -167,22 +130,22 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     width: fit-content;
 }
 
-
-/* Button styling to ensure consistency */
+/* Button styling to ensure consistency
 .shop-now-button {
     background: black;
     color: white;
     min-width: 260px;
-}
+} */
 
-/* Button styling to ensure consistency */
+/* Purple button styling to ensure consistency */
 .btn-purple {
     background: #551b8c;
     color: white;
     border: 1px solid #551b8c;
 }
 
-/* Button styling to ensure consistency */
+
+/* Purple button styling to ensure consistency */
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -218,6 +181,9 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     z-index: -1;
 }
 
+
+
+/* Free Delivery banner */
 #delivery-banner {
     border-radius: 10px;
     /* Background gradient effect generated from cssgradient.io */
@@ -237,8 +203,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 
 
 
-/* Used when displaying chocolates from multiple categories (e.g All Keto Chocolates, badges will be shown for Dark, Milk and White chocolates) */
-
+/* Badge is used when displaying chocolates from multiple categories (e.g All Keto Chocolates, badges will be shown for Dark, Milk and White chocolates) */
 .badge {
     background: #882bde !important;
     color: #fff !important;
@@ -277,6 +242,9 @@ a.category-badge > span.badge:hover {
     color: white !important;
 }
 
+
+/* Add to Cart button, used on product details page */
+
 #add-to-cart-button-container {
     display: flex;
     flex-direction: column-reverse;
@@ -309,6 +277,7 @@ a.category-badge > span.badge:hover {
 }
 
 
+/* Keep shopping button, used on product details page */
 
 #keep-shopping-button {
     font-family: "Urbanist";
@@ -442,9 +411,6 @@ a.category-badge > span.badge:hover {
     overflow-x: hidden;
     overflow-y: auto; /* Turns overflow into a scrollbar */
 }
-
-
-
 
 
 

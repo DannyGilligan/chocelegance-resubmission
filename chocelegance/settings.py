@@ -80,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-MESSAGE_STORAGE = 'django.contrib.messages.storage'
+MESSAGE_STORAGE = 'django.contrib.messages.storage.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
 

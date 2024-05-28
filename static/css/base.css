@@ -2,6 +2,11 @@ html {
     height: 100%;
 }
 
+body {
+    font-family: "Urbanist", Arial, Helvetica, sans-serif;
+}
+
+
 #hero-image-container {
     display: flex;
     flex-direction: column;
@@ -311,19 +316,31 @@ a.category-badge > span.badge:hover {
 
 .message-container {
     position: fixed;
-    top: 5 rem;
-    right: 2 rem;
-    z-index: 9
+    top: 50px;
+    right: 50px;
+    z-index: 9999999;
+    
 }
 
 .custom-toast {
     overflow: visible;
+    border-radius: 10px;
 }
 
 .toast-capper {
     height: .3rem;
 }
 
+.toast-header {
+    background: #551b8c;
+    color: white;
+    font-weight: 100;
+}
+
+.toast-body {
+    background: #882bde;
+    color: white;
+}
 /* -------------------------------- Media Queries ------------------------------- */
 
 /* Slightly larger container on xl screens */

@@ -5,67 +5,104 @@
 
         <!-- All Products drop down menu -->
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link mr-5 purple-text h4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link mr-5 purple-text h4" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Chocolates
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'chocolates'%}?sort=choc_price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'chocolates'%}?sort=choc_rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'chocolates'%}?sort=choc_category_display&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'chocolates' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'chocolates'%}?sort=choc_price&direction=asc" class="dropdown-item purple-text">By
+                    Price</a>
+                <a href="{% url 'chocolates'%}?sort=choc_rating&direction=desc" class="dropdown-item purple-text">By
+                    Rating</a>
+                <a href="{% url 'chocolates'%}?sort=choc_category_display&direction=asc"
+                    class="dropdown-item purple-text">By Category</a>
+                <a href="{% url 'chocolates' %}" class="dropdown-item purple-text">All Products</a>
             </div>
         </li>
 
         <!-- Keto chocolate drop down menu -->
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link mr-5 purple-text h4" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link mr-5 purple-text h4" href="#" id="clothing-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Keto
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="keto-chocolate-link">
-                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc" class="dropdown-item">Dark Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=milk_choc" class="dropdown-item">Milk Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=white_choc" class="dropdown-item">White Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc" class="dropdown-item">All Keto Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc" class="dropdown-item purple-text">Dark
+                    Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=milk_choc" class="dropdown-item purple-text">Milk
+                    Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=white_choc"
+                    class="dropdown-item purple-text">White Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc"
+                    class="dropdown-item purple-text">All Keto Chocolate</a>
             </div>
         </li>
 
         <!-- Vegan chocolate drop down menu -->
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link mr-5 purple-text h4" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link mr-5 purple-text h4" href="#" id="homeware-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Vegan
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="keto-chocolate-link">
-                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc" class="dropdown-item">Dark Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=milk_choc" class="dropdown-item">Milk Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=white_choc" class="dropdown-item">White Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc" class="dropdown-item">All Vegan Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc" class="dropdown-item purple-text">Dark
+                    Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=milk_choc" class="dropdown-item purple-text">Milk
+                    Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=white_choc"
+                    class="dropdown-item purple-text">White Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc"
+                    class="dropdown-item purple-text">All Vegan Chocolate</a>
             </div>
         </li>
 
         <!-- Gluten-free chocolate drop down menu -->
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link mr-5 purple-text h4" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link mr-5 purple-text h4" href="#" id="homeware-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Gluten-Free
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="keto-chocolate-link">
-                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc" class="dropdown-item">Dark Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=milk_choc" class="dropdown-item">Milk Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=white_choc" class="dropdown-item">White Chocolate</a>
-                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc" class="dropdown-item">All Gluten-Free Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc" class="dropdown-item purple-text">Dark
+                    Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=milk_choc" class="dropdown-item purple-text">Milk
+                    Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=white_choc"
+                    class="dropdown-item purple-text">White Chocolate</a>
+                <a href="{% url 'chocolates' %}?choc_category_display=dark_choc,milk_choc,white_choc"
+                    class="dropdown-item purple-text">All Gluten-Free Chocolate</a>
             </div>
         </li>
 
         <!-- Special Offers drop down menu -->
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link purple-text h4" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link purple-text h4" href="#" id="specials-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="" class="dropdown-item purple-text">New Arrivals</a>
+                <a href="" class="dropdown-item purple-text">Deals</a>
+                <a href="" class="dropdown-item purple-text">Clearance</a>
+                <a href="" class="dropdown-item purple-text">All Specials</a>
             </div>
         </li>
     </ul>
 </div>
+
+
+<script>
+    // JS code to add a transition effect to the drop down menu was copied
+    // directly from a StackOverflow post, link below:
+    // https://stackoverflow.com/questions/12115833/adding-a-slide-effect-to-bootstrap-dropdown
+
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+    $('.dropdown').on('show.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
+</script>

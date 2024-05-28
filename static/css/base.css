@@ -110,8 +110,10 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     text-decoration: none;
 }
 
-
-
+/* Input field used to adjust quantity of chocolates in cart */
+.qty_input {
+    max-width: 6rem;
+}
 
 /* from Bulma, used to ensure consistent styling of icons (centering etc) */
 .icon {

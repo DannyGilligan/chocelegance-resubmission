@@ -64,15 +64,20 @@ def remove_from_cart(request, item_id):
     """
 
     try:
+        chocolate = get_object_or_404(Chocolate, pk=item_id)
         cart = request.session.get('cart', {})
 
         cart.pop(item_id)
+        messages.success(request, f'{chocolate.choc_friendly_name} has been removed from your cart')
 
         request.session['cart'] = cart
 
         return HttpResponse(status=200)
 
     except Exception as e:
+        # Error message below will be displayed
+        # to avoid the view failing fail_silently
+        messages.error(request, f'Error encountered while removing item: {e}')
         return HttpResponse(status=500)
 
 

@@ -61,7 +61,7 @@
 <body>
 
   <!-- Main Page header sticks to top of page, contains logo, search form and shopping cart links -->
-  <header class="container-fluid fixed-top col-8">
+  <header class="container-fluid fixed-top" id="base-header">
     <!-- Top navbar -->
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
 
@@ -154,7 +154,7 @@
 
     <!-- Free Shipping banner -->
     <div id="delivery-banner" class="text-center">
-      <div class="col text-white mt-1">
+      <div class="text-white mt-1">
         <h4 class="my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
       </div>
     </div>

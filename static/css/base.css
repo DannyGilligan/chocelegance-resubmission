@@ -6,6 +6,11 @@ body {
     font-family: "Urbanist", Arial, Helvetica, sans-serif;
 }
 
+#base-header{
+    width: 70% !important;
+    border: 1px solid green;
+    padding: 0 !important;
+}
 
 #hero-image-container {
     /* display: flex;
@@ -212,8 +217,8 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     padding-bottom: .2rem;
     font-weight: 100;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #551b8c;
 }
 

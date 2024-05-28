@@ -357,6 +357,10 @@ a.category-badge > span.badge:hover {
     border-top: 1px solid #c71585;
 }
 
+.toast-free-delivery {
+    background: #c71585;
+}
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 
 
@@ -407,7 +411,7 @@ a.category-badge > span.badge:hover {
 }
 
 .bag-notification-wrapper {
-    height: 100px;
+    height: 120px;
     overflow-x: hidden;
     overflow-y: auto; /* Turns overflow into a scrollbar */
 }

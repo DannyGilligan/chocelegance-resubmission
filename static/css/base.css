@@ -337,6 +337,10 @@ a.category-badge > span.badge:hover {
     font-weight: 100;
 }
 
+.toast-header > button {
+    color: white;
+}
+
 .toast-body {
     background: #882bde;
     color: white;

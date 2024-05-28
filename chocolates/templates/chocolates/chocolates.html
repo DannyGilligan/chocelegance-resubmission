@@ -60,9 +60,9 @@
 
                 <!-- This div contains the product count and search results -->
                 <div class="col-12 col-md-6 order-md-first">
-                    <p class="text-muted mt-3 text-center text-md-left">
+                    <p class="active-cart mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <span class="small"><a href="{% url 'chocolates' %}">Return to Chocolates Home</a> | </span>
+                            <span class=""><a class="purple-text" href="{% url 'chocolates' %}">Return to Chocolates Home</a> | </span>
                         {% endif %}
                         {{ chocolates|length }} Result(s){% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
@@ -105,7 +105,7 @@
                                         <a class="text-muted"
                                             href="{% url 'chocolates' %}?choc_category_display={{ chocolate.choc_category_display }}">
                                             <i
-                                                class="fas fa-tag mr-2"></i>{{ chocolate.choc_category_display.choc_friendly_name }}
+                                                class="fas fa-tag mr-2 active-cart"></i>{{ chocolate.choc_category_display.choc_friendly_name }}
                                         </a>
                                     </p>
                                     {% endif %}

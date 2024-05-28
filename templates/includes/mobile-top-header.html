@@ -40,7 +40,7 @@
                 <p class="my-0">My Account</p>
             </div>
         </a>
-        <div class="dropdown-menu border" aria-labelledby="user-options">
+        <div class="dropdown-menu border-purple" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
             <a href="{% url 'account_logout' %}" class="dropdown-item purple-text">Chocolate Management</a>

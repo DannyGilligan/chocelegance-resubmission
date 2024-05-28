@@ -77,6 +77,7 @@ body {
 }
 
 
+
 /* The glow effect for the shop button below was adapted from code by codepen user Kanishk Kunal 
 link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 
@@ -110,14 +111,6 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     text-decoration: none;
 }
 
-/* Input field used to adjust quantity of chocolates in cart */
-.qty_input {
-    max-width: 6rem;
-}
-
-#qty-input-table-cell {
-    max-width: 10rem;
-}
 
 
 

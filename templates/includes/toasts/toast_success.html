@@ -27,7 +27,7 @@
             <p class="py-1">Your Cart Quantity: {{ chocolate_count }} items</p>
             <div class="bag-notification-wrapper">
                 {% for item in cart_items %}
-                    <div class="row">
+                    <div class="row mb-3">
 
                         <!-- Chocolate image -->
                         <div class="col-3 my-1">
@@ -42,7 +42,10 @@
                         <!-- Chocolate name and quantity -->
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.chocolate.choc_friendly_name }}</strong></p>
-                            <p class="my-0 small">Qty: {{ item.quantity }}</p>
+                            <p class="my-0 small">Quantity: {{ item.quantity }}</p>
+                            <p class="my-0 small">Protein: {{ chocolate.choc_protein }}</p>
+                            <p class="my-0 small">Carbs: {{ chocolate.choc_carbs }}</p>
+                            <p class="my-0 small">Fat: {{ chocolate.choc_fat }}</p>
                         </div>
                     </div>
                 {% endfor %}

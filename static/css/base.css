@@ -208,11 +208,11 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 #delivery-banner {
     border-radius: 10px;
     /* Background gradient effect generated from cssgradient.io */
-    background: rgb(237,130,237);
-    background: -moz-linear-gradient(153deg, rgba(237,130,237,1) 0%, rgba(199,21,128,1) 22%, rgba(199,21,128,1) 82%, rgba(237,130,237,1) 100%);
-    background: -webkit-linear-gradient(153deg, rgba(237,130,237,1) 0%, rgba(199,21,128,1) 22%, rgba(199,21,128,1) 82%, rgba(237,130,237,1) 100%);
-    background: linear-gradient(153deg, rgba(237,130,237,1) 0%, rgba(199,21,128,1) 22%, rgba(199,21,128,1) 82%, rgba(237,130,237,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed82ed",endColorstr="#ed82ed",GradientType=1); 
+    background: rgb(85,27,140);
+    background: -moz-linear-gradient(153deg, rgba(85,27,140,1) 11%, rgba(136,43,222,1) 36%, rgba(136,43,222,1) 64%, rgba(237,130,237,1) 100%);
+    background: -webkit-linear-gradient(153deg, rgba(85,27,140,1) 11%, rgba(136,43,222,1) 36%, rgba(136,43,222,1) 64%, rgba(237,130,237,1) 100%);
+    background: linear-gradient(153deg, rgba(85,27,140,1) 11%, rgba(136,43,222,1) 36%, rgba(136,43,222,1) 64%, rgba(237,130,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#551b8c",endColorstr="#ed82ed",GradientType=1); 
     padding-top: .2rem;
     padding-bottom: .2rem;
     font-weight: 100;

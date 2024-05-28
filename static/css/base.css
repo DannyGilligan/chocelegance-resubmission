@@ -320,7 +320,9 @@ a.category-badge > span.badge:hover {
     overflow: visible;
 }
 
-
+.toast-capper {
+    height: .3rem;
+}
 
 /* -------------------------------- Media Queries ------------------------------- */
 

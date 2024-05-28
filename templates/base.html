@@ -161,10 +161,12 @@
 
   </header>
 
-  <!-- Used to display messages from Django if any exist -->
+  <!-- Used to display Toast messages from if any have been generated -->
   {% if messages %}
   <div class="message-container">
-
+    {% for message in messages %}
+      {% include 'includes/toasts/toast_success.html' %}
+    {% endfor %}
   </div>
   {% endif %}
 

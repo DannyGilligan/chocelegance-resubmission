@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
-
+from django.contrib import messages
+from chocolates.models import Chocolate
 # Create your views here.
 
 

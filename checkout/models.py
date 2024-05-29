@@ -31,6 +31,18 @@ class Order(models.Model):
 
 
 
+    def _generate_order_number(self):
+        """
+        Private method (denoted by underscore), used only by the Order model.
+        This will generate a random, unique order number using the UUID package.
+        """
+        return uuid.uuid4().hex.upper() # String of 32 characters used as order number
+
+
+
+
+
+
 
 class OrderLineItem(models.Model):
     """

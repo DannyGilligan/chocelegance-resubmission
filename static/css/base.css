@@ -123,9 +123,6 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
 
 .main-logo-link {
     width: fit-content;
@@ -209,13 +206,19 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     box-shadow: 0 0px 10px #ed82ed;
 }
 
+
+
+/* ----------------------------------------- Styling for the heart symbol in the Chocelegance logo -------------------------- */
 .logo-heart-color {
     color: #c71585;
     text-shadow: 0 0px 15px #ed82ed;
 }
 
 
-/* Fade in animation was copied directly from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+/* 
+Fade in animation was copied directly from 
+https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/
+*/
 .logo-heart-color {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
@@ -240,11 +243,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 
 
 
-
-
-
-
-/* Free Delivery banner */
+/*------------------------------------------------------- Free Delivery banner --------------------------------------*/
 #delivery-banner {
     border-radius: 10px;
     /* Background gradient effect generated from cssgradient.io */
@@ -264,7 +263,9 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 
 
 
-/* Badge is used when displaying chocolates from multiple categories (e.g All Keto Chocolates, badges will be shown for Dark, Milk and White chocolates) */
+/* Badge is used when displaying chocolates from multiple categories 
+(e.g All Keto Chocolates, badges will be shown for Dark, Milk and White chocolates) */
+
 .badge {
     background: #882bde !important;
     color: #fff !important;
@@ -309,8 +310,7 @@ a.category-badge > span.badge:hover {
 #add-to-cart-button-container {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
+
     width: 20rem;
 }
 
@@ -318,9 +318,8 @@ a.category-badge > span.badge:hover {
     font-family: "Urbanist";
     font-size: 1.1rem;
     margin-top: 2rem;
-    width: 10rem;
+    width: 13rem;
     height: 3rem;
-    transform: translate(-50%, -50%);
     background: #551b8c;
     border-radius: 10px;
     font-weight: normal;
@@ -345,9 +344,8 @@ a.category-badge > span.badge:hover {
     font-size: 1.1rem;
     padding-top: .5rem;
     margin-top: .5rem;
-    width: 10rem !important;
+    width: 13rem !important;
     height: 3rem !important;
-    transform: translate(-50%, -50%);
     background: #9e7abe;
     border-radius: 10px;
     font-weight: normal;

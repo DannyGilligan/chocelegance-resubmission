@@ -214,11 +214,33 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     text-shadow: 0 0px 15px #ed82ed;
 }
 
+
+/* Fade in animation was copied directly from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+.logo-heart-color {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 /* Used to create a container for the chocolate image in chocolates.html */
 #cart-quantity-col{
     width: 15rem !important;
     padding-right: 3rem !important;
 }
+
+
+
+
 
 
 
@@ -359,6 +381,10 @@ a.category-badge > span.badge:hover {
     z-index: 9999999;
     
 }
+
+
+
+
 
 .custom-toast {
     overflow: visible;

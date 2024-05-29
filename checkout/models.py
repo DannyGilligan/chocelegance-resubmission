@@ -14,30 +14,42 @@ class Order(models.Model):
     available to the customer to review their activity over
     time.
     """
-    order_number = models.CharField(max_length=32, null=False, editable=False)  # Unique and permanent
+
+    order_number = models.CharField(
+        max_length=32, null=False, editable=False
+    )  # Unique and permanent
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     country = models.CharField(max_length=40, null=False, blank=False)
-    postcode = models.CharField(max_length=20, null=True, blank=True)  # Not mandatory
+    postcode = models.CharField(
+        max_length=20, null=True, blank=True
+    )  # Not mandatory
     town_or_city = models.CharField(max_length=40, null=False, blank=False)
     street_address1 = models.CharField(max_length=80, null=False, blank=False)
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
-    county = models.CharField(max_length=80, null=True, blank=True)  # Not mandatory
-    date = models.DateTimeField(auto_now_add=True)  # Automatically sets time order is added
-    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)  # Calculated field
-    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)  # Calculated field
-    grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)  # Calculated field
-
-
+    county = models.CharField(
+        max_length=80, null=True, blank=True
+    )  # Not mandatory
+    date = models.DateTimeField(
+        auto_now_add=True
+    )  # Automatically sets time order is added
+    delivery_cost = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False, default=0
+    )  # Calculated field
+    order_total = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0
+    )  # Calculated field
+    grand_total = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0
+    )  # Calculated field
 
     def _generate_order_number(self):
         """
         Private method (denoted by underscore), used only by the Order model.
-        This will generate a random, unique order number using the UUID package.
+        This will generate a random, unique order number using UUID package.
         """
-        return uuid.uuid4().hex.upper() # String of 32 characters used as order number
-
+        return uuid.uuid4().hex.upper()  # String of 32 characters as order no.
 
     def update_total(self):
         """
@@ -46,18 +58,21 @@ class Order(models.Model):
         """
 
         # Uses sum function for each line item total fields in the order
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.order_total = self.lineitems.aggregate(Sum("lineitem_total"))[
+            "lineitem_total__sum"
+        ]
 
         # Delivery total is calculated below
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            self.delivery_cost = (
+                self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            )
         else:
             self.delivery_cost = 0
 
-        # Grand total is calculated below (sum of order total and delivery cost)
+        # Grand total is calculated below (sum of order total & delivery cost)
         self.grand_total = self.order_total + self.delivery_cost
         self.save()
-
 
     def save(self, *args, **kwargs):
         """
@@ -79,8 +94,6 @@ class Order(models.Model):
         return self.order_number
 
 
-
-
 class OrderLineItem(models.Model):
     """
     This model will store details regarding each
@@ -88,11 +101,21 @@ class OrderLineItem(models.Model):
     the basis of calculating the delivery cost, order total
     and grand total of the order as a whole.
     """
-    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
-    chocolate = models.ForeignKey(Chocolate, null=False, blank=False, on_delete=models.CASCADE)
-    quantity = models.IntegerField(null=False, blank=False, default=0)
-    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)  # Calculated field
 
+    order = models.ForeignKey(
+        Order,
+        null=False,
+        blank=False,
+        on_delete=models.CASCADE,
+        related_name="lineitems",
+    )
+    chocolate = models.ForeignKey(
+        Chocolate, null=False, blank=False, on_delete=models.CASCADE
+    )
+    quantity = models.IntegerField(null=False, blank=False, default=0)
+    lineitem_total = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+    )  # Calculated field
 
     def save(self, *args, **kwargs):
         """
@@ -107,4 +130,5 @@ class OrderLineItem(models.Model):
 
     # Returns the chocolate name and the order number for each order line item
     def __str__(self):
-        return f'{self.chocolate.choc_friendly_name} on order {self.order.order_number}'
+        return f"{self.chocolate.choc_friendly_name} on \
+        order {self.order.order_number}"

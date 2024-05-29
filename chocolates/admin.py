@@ -3,6 +3,7 @@ from .models import Chocolate, ChocolateCategory, DietaryType
 
 # Register your models here.
 
+
 class ChocolateAdmin(admin.ModelAdmin):
     """
     Controls the fields displayed to user in the admin
@@ -42,10 +43,6 @@ class DietaryTypeAdmin(admin.ModelAdmin):
     )
 
 
-
-
 admin.site.register(Chocolate, ChocolateAdmin)
 admin.site.register(ChocolateCategory, ChocolateCategoryAdmin)
 admin.site.register(DietaryType, DietaryTypeAdmin)
-
-

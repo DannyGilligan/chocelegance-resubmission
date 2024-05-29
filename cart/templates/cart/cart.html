@@ -45,7 +45,7 @@
                         <tr>
                             <th scope="col" class="text-center"></th>
                             <th scope="col">Chocolate Name</th>
-                            <th scope="col">Price</th>
+                            <th scope="col">Item Price</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Subtotal</th>
                         </tr>
@@ -65,7 +65,7 @@
                         <td class="py-3">
                             <p class="my-0 purple-text">€{{ item.chocolate.choc_price }}</p>
                         </td>
-                        <td id="cart-quantity-col" class="py-3 w-25">
+                        <td id="cart-quantity-col" class="">
 
                             <!-- The form below allows user to adjust item quantity at the cart screen -->
                             <form method="POST" action="{% url 'adjust_cart' item.item_id %}" class="form update-form">

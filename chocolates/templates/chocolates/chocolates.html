@@ -28,7 +28,7 @@
             <!-- <h2 class="logo-font">Chocolates</h2> -->
 
             {% for c in current_categories %}
-            <a class="category-badge text-decoration-none" href="{% url 'chocolates' %}?category={{ c.choc_friendly_name }}">
+            <a class="category-badge text-decoration-none" href="{% url 'chocolates' %}?choc_category_display={{ c.choc_category_name }}">
                 <span class="p-2 mt-2 badge rounded-0 border">{{ c.choc_friendly_name }}</span>
             </a>
         {% endfor %}

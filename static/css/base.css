@@ -340,7 +340,7 @@ a.category-badge > span.badge:hover {
 
 /* Keep shopping button, used on product details page */
 
-#keep-shopping-button {
+.keep-shopping-button {
     font-family: "Urbanist";
     font-size: 1.1rem;
     padding-top: .5rem;
@@ -359,14 +359,14 @@ a.category-badge > span.badge:hover {
 }
 
 
-#keep-shopping-button:hover {
+.keep-shopping-button:hover {
     background: #742557;
     border: 1px solid #ed82ed;
     box-shadow: 0 0px 10px #ed82ed;
     text-decoration: none;
 }
 
-#keep-shopping-button a {
+.keep-shopping-button a {
     text-decoration: none;
 }
 

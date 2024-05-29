@@ -209,6 +209,10 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     box-shadow: 0 0px 10px #ed82ed;
 }
 
+.logo-heart-color {
+    color: #c71585;
+    text-shadow: 0 0px 15px #ed82ed;
+}
 
 /* Used to create a container for the chocolate image in chocolates.html */
 #cart-quantity-col{

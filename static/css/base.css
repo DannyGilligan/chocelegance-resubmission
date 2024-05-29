@@ -178,7 +178,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 
 /* Used to create a container for the chocolate image in chocolates.html */
 .choc-image-container {
-    margin-top: 4rem !important;
+    margin-top: 1.5rem !important;
     height: auto;
     width: auto;
     max-width: 28rem;
@@ -186,6 +186,34 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     overflow: hidden;
     box-shadow: 0 0px 10px #ed82ed;
 }
+
+/* Used to create a container for the chocolate image in chocolate_detail.html */
+.choc-image-container-detail {
+    height: auto;
+    width: auto;
+    max-width: 28rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0px 10px #ed82ed;
+}
+
+/* Used to create a container for the chocolate image in cart.html */
+.choc-image-container-cart {
+    height: auto;
+    width: auto;
+    max-width: 28rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0px 10px #ed82ed;
+}
+
+
+/* Used to create a container for the chocolate image in chocolates.html */
+#cart-quantity-col{
+    width: 15rem !important;
+    padding-right: 3rem !important;
+}
+
 
 
 /* Free Delivery banner */

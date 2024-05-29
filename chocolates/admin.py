@@ -27,6 +27,7 @@ class ChocolateCategoryAdmin(admin.ModelAdmin):
     list_display = (
         'choc_friendly_name',
         'choc_category_desc',
+        'choc_category_dietary_type',
     )
 
 

@@ -48,6 +48,9 @@ class ChocolateCategory(models.Model):
         max_length=200, null=True, blank=True
     )
     choc_category_desc = models.TextField()
+    choc_category_dietary_type = models.ForeignKey(
+        'DietaryType', null=True, blank=True, on_delete=models.SET_NULL
+    )
 
     def __str__(self):
         """

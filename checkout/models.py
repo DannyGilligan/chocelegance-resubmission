@@ -74,6 +74,7 @@ class Order(models.Model):
         # Once the order number is generated, it will be saved.
         super().save(*args, **kwargs)
 
+    # Returns the order number to display in the admin panel
     def __str__(self):
         return self.order_number
 
@@ -91,3 +92,19 @@ class OrderLineItem(models.Model):
     chocolate = models.ForeignKey(Chocolate, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)  # Calculated field
+
+
+    def save(self, *args, **kwargs):
+        """
+        Override the original save method to set the lineitem total
+        and update the order total.
+        """
+
+        # Multiplies the quantity by the price to arrive
+        # at a line item total
+        self.lineitem_total = self.chocolate.choc_price * self.quantity
+        super().save(*args, **kwargs)
+
+    # Returns the chocolate name and the order number for each order line item
+    def __str__(self):
+        return f'{self.chocolate.choc_friendly_name} on order {self.order.order_number}'

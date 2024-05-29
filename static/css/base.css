@@ -131,12 +131,6 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     width: fit-content;
 }
 
-/* Button styling to ensure consistency
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-} */
 
 /* Purple button styling to ensure consistency */
 .btn-purple {
@@ -182,6 +176,14 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     z-index: -1;
 }
 
+/* Used to create a container for the chocolate image in chocolates.html */
+#choc-image-container {
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0px 10px #ed82ed;
+}
 
 
 /* Free Delivery banner */

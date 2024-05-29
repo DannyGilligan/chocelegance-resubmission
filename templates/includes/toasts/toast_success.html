@@ -43,10 +43,7 @@
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.chocolate.choc_friendly_name }}</strong></p>
                             <p class="my-0 small">Quantity: {{ item.quantity }}</p>
-                            <p class="my-0 small">Calories: {{ chocolate.choc_calories }} kcal</p>
-                            <p class="my-0 small">Protein: {{ chocolate.choc_protein }} grams</p>
-                            <p class="my-0 small">Carbs: {{ chocolate.choc_carbs }} grams</p>
-                            <p class="my-0 small">Fat: {{ chocolate.choc_fat }} grams</p>
+                            <p class="my-0 small">Price per Item: €{{ chocolate.choc_price }}</p>
                         </div>
                     </div>
                 {% endfor %}

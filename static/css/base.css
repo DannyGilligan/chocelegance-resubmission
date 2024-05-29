@@ -345,8 +345,8 @@ a.category-badge > span.badge:hover {
     font-size: 1.1rem;
     padding-top: .5rem;
     margin-top: .5rem;
-    width: 10rem;
-    height: 3rem;
+    width: 10rem !important;
+    height: 3rem !important;
     transform: translate(-50%, -50%);
     background: #9e7abe;
     border-radius: 10px;
@@ -356,6 +356,7 @@ a.category-badge > span.badge:hover {
     box-shadow: 0 0px 2px #ed82ed;
     color: white;
     text-align: center;
+    display: inline-block;
 }
 
 
@@ -364,9 +365,11 @@ a.category-badge > span.badge:hover {
     border: 1px solid #ed82ed;
     box-shadow: 0 0px 10px #ed82ed;
     text-decoration: none;
+    color: white;
 }
 
 .keep-shopping-button a {
+    color: white;
     text-decoration: none;
 }
 

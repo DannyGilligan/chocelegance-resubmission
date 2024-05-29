@@ -177,7 +177,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 }
 
 /* Used to create a container for the chocolate image in chocolates.html */
-#choc-image-container {
+.choc-image-container {
     height: auto;
     width: auto;
     border-radius: 15px;

@@ -15,7 +15,7 @@ def cart_contents(request):
     cart_items = []
     total = 0
     chocolate_count = 0
-    cart = request.session.get('cart',{})
+    cart = request.session.get('cart', {})
 
     for item_id, quantity in cart.items():
         chocolate = get_object_or_404(Chocolate, pk=item_id)

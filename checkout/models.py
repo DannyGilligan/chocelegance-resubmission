@@ -42,6 +42,25 @@ class Order(models.Model):
 
 
 
+    def save(self, *args, **kwargs):
+        """
+        Override the original save method to set the order number
+        if it hasn't been set already.
+        """
+        if not self.order_number:
+            # If order does not have an order number,
+            # the _generate_order_number method will be called
+            # and the order number will be saved to the oder_number
+            # variable below.
+            self.order_number = self._generate_order_number()
+
+        # Once the order number is generated, it will be saved.
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.order_number
+
+
 
 
 class OrderLineItem(models.Model):

@@ -318,7 +318,7 @@ a.category-badge > span.badge:hover {
     font-family: "Urbanist";
     font-size: 1.1rem;
     margin-top: 2rem;
-    width: 13rem;
+    width: 15rem;
     height: 3rem;
     background: #551b8c;
     border-radius: 10px;
@@ -344,9 +344,9 @@ a.category-badge > span.badge:hover {
     font-size: 1.1rem;
     padding-top: .5rem;
     margin-top: .5rem;
-    width: 13rem !important;
+    width: 15rem !important;
     height: 3rem !important;
-    background: #9e7abe;
+    background: #882bde;
     border-radius: 10px;
     font-weight: normal;
     transition: all 0.2s ease-in-out;
@@ -359,7 +359,7 @@ a.category-badge > span.badge:hover {
 
 
 .keep-shopping-button:hover {
-    background: #742557;
+    background: #c71585;
     border: 1px solid #ed82ed;
     box-shadow: 0 0px 10px #ed82ed;
     text-decoration: none;

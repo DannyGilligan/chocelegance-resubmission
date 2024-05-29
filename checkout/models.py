@@ -39,7 +39,24 @@ class Order(models.Model):
         return uuid.uuid4().hex.upper() # String of 32 characters used as order number
 
 
+    def update_total(self):
+        """
+        Update grand total each time a line item is added,
+        accounting for delivery costs.
+        """
 
+        # Uses sum function for each line item total fields in the order
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+
+        # Delivery total is calculated below
+        if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
+            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+        else:
+            self.delivery_cost = 0
+
+        # Grand total is calculated below (sum of order total and delivery cost)
+        self.grand_total = self.order_total + self.delivery_cost
+        self.save()
 
 
     def save(self, *args, **kwargs):

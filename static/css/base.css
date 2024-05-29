@@ -178,8 +178,10 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 
 /* Used to create a container for the chocolate image in chocolates.html */
 .choc-image-container {
+    margin-top: 4rem !important;
     height: auto;
     width: auto;
+    max-width: 28rem;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0px 10px #ed82ed;

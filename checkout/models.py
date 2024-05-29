@@ -28,3 +28,18 @@ class Order(models.Model):
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)  # Calculated field
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)  # Calculated field
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)  # Calculated field
+
+
+
+
+class OrderLineItem(models.Model):
+    """
+    This model will store details regarding each
+    individual line item in an order. This will form
+    the basis of calculating the delivery cost, order total
+    and grand total of the order as a whole.
+    """
+    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
+    chocolate = models.ForeignKey(Chocolate, null=False, blank=False, on_delete=models.CASCADE)
+    quantity = models.IntegerField(null=False, blank=False, default=0)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)  # Calculated field

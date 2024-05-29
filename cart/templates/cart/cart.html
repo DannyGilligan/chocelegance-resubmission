@@ -106,7 +106,7 @@
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                         </td>
                         <td class="py-3">
-                            <p class="my-0 purple-text">€{{ item.chocolate.choc_price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0 purple-text"><strong>€{{ item.chocolate.choc_price | calc_subtotal:item.quantity }}</strong></p>
                         </td>
                     </tr>
                     {% endfor %}

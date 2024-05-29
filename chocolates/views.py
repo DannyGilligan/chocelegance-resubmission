@@ -30,7 +30,7 @@ def all_chocolates(request):
             sortkey = request.GET['sort']
             sort = sortkey
 
-            # Sort by choc_name 
+            # Sort by choc_name
             if sortkey == 'choc_name':
                 sortkey = 'lower_choc_name'
                 chocolates = chocolates.annotate(

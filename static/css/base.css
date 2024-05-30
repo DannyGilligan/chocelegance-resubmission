@@ -5,6 +5,8 @@ html {
 body {
     font-family: "Urbanist", Arial, Helvetica, sans-serif;
     background: white;
+    max-width: 80% !important;
+    margin: 0 auto;
 }
 
 
@@ -39,16 +41,14 @@ body {
 
 
 #base-header{
-    width: 70% !important;
+    width: 80% !important;
     padding: 0 !important;
 }
 
 
 /* Hero image adapted from W3Schools */
 #hero-image-container {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 100%;
     margin-top: 3rem;
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: url("/media/hero-image-final.webp");
@@ -60,7 +60,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: Absolute;
     border-radius: 10px;
     border: 1px solid #551b8c;
 }
@@ -109,7 +108,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     font-weight: normal;
     transition: all 0.2s ease-in-out;
     border: 1px solid #882bde;
-    box-shadow: 0 0px 50px #ed82ed;
+    box-shadow: 0 0px 15px #ed82ed;
   }
 
 #shop-button:hover{

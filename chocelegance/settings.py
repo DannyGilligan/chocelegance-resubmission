@@ -41,12 +41,18 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
+
     # Optional -- requires install using `django-allauth[socialaccount]`.
     'allauth.socialaccount',
+
     'home',
     'chocolates',
     'cart',
     'checkout',
+
+    # Other apps
+    'crispy_forms',
+
 ]
 
 MIDDLEWARE = [
@@ -60,6 +66,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'chocelegance.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {

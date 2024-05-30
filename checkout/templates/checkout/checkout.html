@@ -48,7 +48,7 @@
                         <!-- Chocolate image -->
                         <div class="col-2 mb-1">
                             <a href="{% url 'chocolate_detail' item.chocolate.id %}">
-                                {% if item.product.image %}
+                                {% if item.chocolate.choc_image %}
                                     <img class="w-100" src="{{ item.chocolate.choc_image.url }}" alt="{{ chocolate.choc_friendly_name }}">
                                 {% else %}
                                     <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ chocolate.choc_name }}">
@@ -59,7 +59,7 @@
                         <!-- Chocolate details -->
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.chocolate.choc_name }}</strong></p>
-                            <!-- <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p> -->
+                            <!-- <p class="my-0 small">Size: {% if item.chocolate.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p> -->
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
 

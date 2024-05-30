@@ -17,7 +17,7 @@ def checkout(request):
 
     # If the cart is empty, the code below will execute
     if not cart:
-        message.error(request, "Your cart is empty at the moment!")
+        messages.error(request, "Your cart is empty at the moment!")
         # Customer is redirected back to the chocolates page
         return redirect(reverse('chocolates'))
 

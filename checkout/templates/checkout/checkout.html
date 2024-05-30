@@ -31,7 +31,7 @@
             <div class="col-12 col-lg-6 order-lg-last mb-5">
 
                 <!-- Order Summary -->
-                <p class="text-muted">Order Summary ({{ chocolate_count }})</p>
+                <p class="text-muted">Order Summary: {{ chocolate_count }} items</p>
                 <div class="row">
                     <div class="col-7 offset-2">
                         <p class="mb-1 mt-0 small text-muted">Item</p>
@@ -65,7 +65,7 @@
 
                         <!-- Subtotal -->
                         <div class="col-3 text-right">
-                            <p class="my-0 small text-muted">${{ item.chocolate.choc_price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0 small text-muted">€{{ item.chocolate.choc_price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
                 {% endfor %}
@@ -79,9 +79,9 @@
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
-                        <p class="my-0">${{ total | floatformat:2 }}</p>
-                        <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0">€{{ total | floatformat:2 }}</p>
+                        <p class="my-0">€{{ delivery | floatformat:2 }}</p>
+                        <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
 							</span>
-							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+							<span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
 						</p>
 					</div>
                 </form>

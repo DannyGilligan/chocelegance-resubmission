@@ -5,7 +5,7 @@ html {
 body {
     font-family: "Urbanist", Arial, Helvetica, sans-serif;
     background: white;
-    max-width: 80% !important;
+    max-width: 72% !important;
     margin: 0 auto;
 }
 
@@ -41,7 +41,7 @@ body {
 
 
 #base-header{
-    width: 80% !important;
+    width: 72% !important;
     padding: 0 !important;
 }
 

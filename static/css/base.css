@@ -11,7 +11,7 @@ body {
 
 
 .chocelegance-logo-text {
-    font-size: 2.8rem;
+    font-size: 3.1rem;
 }
 
 .purple-text {
@@ -49,7 +49,7 @@ body {
 /* Hero image adapted from W3Schools */
 #hero-image-container {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 4.2rem;
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: url("/media/hero-image-final.webp");
   
@@ -100,12 +100,10 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 #shop-button {
     width: 20rem;
     position: relative;
-    /* transform: translate(-50%, -50%); */
     top: 20%;
     left: 10%;
     background: #551b8c;
     border-radius: 15px;
-    font-weight: normal;
     transition: all 0.2s ease-in-out;
     border: 1px solid #882bde;
     box-shadow: 0 0px 15px #ed82ed;
@@ -118,11 +116,11 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 }
 
 #shop-button a {
-    padding-top: .5rem;
+    padding-top: .7rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     text-decoration: none;
 }
@@ -256,7 +254,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         opacity: 0;
     }
     100% {
-        transform: scale(2.3);
+        transform: scale(2.5);
         opacity: 1;
     }
 }
@@ -287,6 +285,14 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #551b8c;
+}
+
+#main-nav {
+    margin-top: 1rem;
+}
+
+.navbar-nav > li {
+    margin-right: 5rem !important;
 }
 
 

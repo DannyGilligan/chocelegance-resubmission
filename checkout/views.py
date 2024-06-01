@@ -22,6 +22,15 @@ def checkout(request):
         # Customer is redirected back to the chocolates page
         return redirect(reverse('chocolates'))
 
+
+    # Gets the cart values from the cart_contents view
+    current_cart = cart_contents(request)
+
+    # Gets the total by accessing the grand total key
+    total = current_cart['grand_total']
+
+    # Rounds the number to two decimal places for processing payment
+    stripe_total = round(total * 100)
     order_form = OrderForm()
     template = 'checkout/checkout.html'
     context = {

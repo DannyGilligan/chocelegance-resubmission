@@ -7,9 +7,9 @@
 */
 
 
-var stripe_public_key = $('#id_stripe_public_key').text().slice(1, -1);
-var client_secret = $('#id_client_secret').text().slice(1, -1);
-var stripe = Stripe(stripe_public_key);
+var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
+var clientSecret = $('#id_client_secret').text().slice(1, -1);
+var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
 var style = {
     base: { 
@@ -18,7 +18,7 @@ var style = {
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
-            // The value 60 has been appended to the color code '#551b8c' below to change the opacity
+            // The value '60' has been appended to the color code '#551b8c' below to change the opacity
             color: '#551b8c60',
             fontFamily: '"Urbanist, "Helvetica Neue", Helvetica, sans-serif',
         },
@@ -53,3 +53,42 @@ card.addEventListener('change', function (event) {
 });
 
 
+// Handle form submit
+
+// Gets the form element and stores it
+var form = document.getElementById('payment-form');
+
+form.addEventListener('submit', function(ev) {
+
+    // Prevents the default 'POST' behaviour
+    ev.preventDefault();
+    card.update({ 'disabled': true});
+
+    // Prevents multiple submissions
+    $('#submit-button').attr('disabled', true);
+
+    // Sends card info securely using confirmCardPayment method
+    stripe.confirmCardPayment(clientSecret, {
+        payment_method: {
+            card: card,
+        }
+    }).then(function(result) {
+        if (result.error) {
+            var errorDiv = document.getElementById('card-errors');
+            var html = `
+                <div id=card-error-container>
+                    <span class="icon" role="alert">
+                    <i class="fas fa-times"></i>
+                    </span>
+                    <span>${result.error.message}</span>
+                </div>`;
+            $(errorDiv).html(html);
+            card.update({ 'disabled': false});
+            $('#submit-button').attr('disabled', false);
+        } else {
+            if (result.paymentIntent.status === 'succeeded') {
+                form.submit();
+            }
+        }
+    });
+});

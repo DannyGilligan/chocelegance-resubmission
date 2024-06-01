@@ -15,7 +15,7 @@ var elements = stripe.elements();
 var style = {
     base: {
         color: '#000',
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        fontFamily: '"Urbanist", "Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
@@ -23,7 +23,7 @@ var style = {
         }
     },
     invalid: {
-        color: '#882bde',
+        color: '#eb1c26',
         iconColor: '#dc3545'
     }
 };

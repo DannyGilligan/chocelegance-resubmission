@@ -56,3 +56,15 @@
     border: 1px solid #551b8c;
     border-radius: 10px;
 }
+
+
+#card-error-container {
+    width: fit-content;
+    border: 1px solid #551b8c;
+    background-color: #eb1c26;
+    color: white;
+    border-radius: 10px;
+    height: fit-content;
+    padding: .3rem;
+    padding-right: .6rem;
+}

@@ -60,7 +60,7 @@ class Order(models.Model):
         # Uses sum function for each line item total fields in the order
         self.order_total = self.lineitems.aggregate(Sum("lineitem_total"))[
             "lineitem_total__sum"
-        ]
+        ] or 0  # Sets line to 0 instead of none if empty, will cause error otherwise
 
         # Delivery total is calculated below
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:

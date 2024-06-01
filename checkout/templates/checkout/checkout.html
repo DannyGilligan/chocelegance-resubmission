@@ -94,14 +94,14 @@
 
                     <!-- Form is divided into 3 fieldset sections -->
                     <!-- First fieldset displays customer details -->
-                    <fieldset class="rounded px-3 mb-5">
+                    <fieldset class="rounded-lg px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto"> Your Details</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
 
                     <!-- Second fieldset displays delivery details -->
-                    <fieldset class="rounded px-3 mb-5">
+                    <fieldset class="rounded-lg px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Delivery Details</legend>
                         {{ order_form.phone_number | as_crispy_field }}
                         {{ order_form.country | as_crispy_field }}
@@ -112,7 +112,7 @@
                         {{ order_form.county | as_crispy_field }}
 
                         <!-- Allows authenticated users to save the information to their profile -->
-                        <div class="form-check form-check-inline float-right mr-0">
+                        <div class="rounded-lg form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my Chocelegance profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>

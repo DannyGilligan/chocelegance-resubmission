@@ -67,6 +67,10 @@ form.addEventListener('submit', function(ev) {
     // Prevents multiple submissions
     $('#submit-button').attr('disabled', true);
 
+    // Triggers loading overlay
+    $('#payment-form').fadeToggle(100);
+    $('#loading-overlay').fadeToggle(100);
+
     // Sends card info securely using confirmCardPayment method
     stripe.confirmCardPayment(clientSecret, {
         payment_method: {
@@ -83,6 +87,11 @@ form.addEventListener('submit', function(ev) {
                     <span>${result.error.message}</span>
                 </div>`;
             $(errorDiv).html(html);
+
+            // Loading overlay fade
+            $('#payment-form').fadeToggle(100);
+            $('#loading-overlay').fadeToggle(100);
+
             card.update({ 'disabled': false});
             $('#submit-button').attr('disabled', false);
         } else {

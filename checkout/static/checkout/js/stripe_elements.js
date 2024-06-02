@@ -62,7 +62,8 @@ var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function (ev) {
 
-    // Prevents the default 'POST' behaviour
+    // Prevents the default 'POST' behaviour when submit button
+    // is clicked
     ev.preventDefault();
     card.update({
         'disabled': true
@@ -149,7 +150,7 @@ form.addEventListener('submit', function (ev) {
     }).fail(function () {
         // If there's an error, just reload the page, the error will be in django messages
         location.reload();
-    })
+    });
 });
 
 

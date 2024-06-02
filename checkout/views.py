@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -28,8 +28,16 @@ def cache_checkout_data(request):
             'save_info': request.POST.get('save_info'),
             'username': request.user,
         })
+
+        # DEBUG PRINT STATEMENTS, DELETE BELOW!!!
+        print(stripe.api_key)
+        print(settings.STRIPE_PUBLIC_KEY)
+        print(settings.STRIPE_WH_SECRET)
+        # DEBUG PRINT STATEMENTS, DELETE ABOVE!!!
+
         return HttpResponse(status=200)
     except Exception as e:
+        print(e)
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)

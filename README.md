@@ -79,7 +79,17 @@ Prerequisties, installs, IDE, deployments, forking, cloning, heroku, AWS, Stripe
 ### Required Installs
 
 Django 3.2.25<br>
-Django AllAuth 0.14.0
+Django AllAuth 0.14.0<br>
+asgiref==3.8.1<br>
+django-crispy-forms==1.14.0<br>
+oauthlib==3.2.2<br>
+pillow==10.3.0<br>
+python3-openid==3.2.0<br>
+pytz==2024.1<br>
+requests-oauthlib==2.0.0<br>
+setuptools==67.4.0<br>
+sqlparse==0.5.0<br>
+stripe==9.9.0<br>
 
 
 

@@ -76,8 +76,11 @@ def checkout(request):
 
         # If form is valid, it will be saved
         if order_form.is_valid():
-            order = order_form.save()
-
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_cart = json.dumps(cart)
+            order.save()
             # Iterate through the cart items to create each line item
             for item_id, item_data in cart.items():
                 try:

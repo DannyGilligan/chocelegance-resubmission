@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
@@ -8,8 +9,30 @@ from chocolates.models import Chocolate
 from cart.contexts import cart_contents
 
 import stripe
+import json
 
-# Create your views here.
+
+@require_POST
+def cache_checkout_data(request):
+    """
+    This view will cache user and transaction
+    data during the checkout process and
+    determine if the user had the save info
+    box checked
+    """
+    try:
+        pid = request.POST.get('client_secret').split('_secret')[0]
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe.PaymentIntent.modify(pid, metadata={
+            'cart': json.dumps(request.session.get('cart', {})),
+            'save_info': request.POST.get('save_info'),
+            'username': request.user,
+        })
+        return HttpResponse(status=200)
+    except Exception as e:
+        messages.error(request, 'Sorry, your payment cannot be \
+            processed right now. Please try again later.')
+        return HttpResponse(content=e, status=400)
 
 
 def checkout(request):
@@ -23,7 +46,8 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
-    # Checks if the request method is 'POST', to handle the submission of the payment
+    # Checks if the request method is 'POST', to handle
+    # the submission of the payment
     if request.method == 'POST':
         cart = request.session.get('cart', {})
 
@@ -68,14 +92,17 @@ def checkout(request):
                     #         order_line_item.save()
                 except Chocolate.DoesNotExist:
                     messages.error(request, (
-                        "One of the chocolates in your cart wasn't found in our database. "
+                        "One of the chocolates in your cart wasn't \
+                            found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_cart'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success', args=[
+                order.order_number
+            ]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')

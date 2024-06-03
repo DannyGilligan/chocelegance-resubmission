@@ -1,0 +1,9 @@
+#profile-update-form .form-control {
+    color: #551b8c;
+}
+
+
+.profile-form-input::placeholder {
+    color: #551b8c;
+    opacity: .6;
+}

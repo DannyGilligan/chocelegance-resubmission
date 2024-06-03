@@ -291,6 +291,11 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     margin-right: 5rem !important;
 }
 
+/* Styles placeholder text shown in search bar */
+input[name='q']::placeholder {
+    color: #551b8c;
+    opacity: .6;
+}
 
 
 /* Badge is used when displaying chocolates from multiple categories 

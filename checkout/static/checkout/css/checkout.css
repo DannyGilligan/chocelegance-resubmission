@@ -7,9 +7,30 @@
 }
 
 #payment-form .form-control, #card-element {
-    color: #551b8c;
+    
     border: 1px solid #551b8c;
 }
+
+/* #id_country {
+    border: 5px solid #551b8c;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    color: red;
+} */
+
+
+/* Used for the options in the Country drop down menu in checkout.html */
+select,
+select option {
+    color: #551b8c;
+    
+}
+
+/* Style the default option with a lower opacity for consistency */
+select:invalid {
+    color: #551b8c90 !important;
+}
+
+
 
 .StripeElement,
 .stripe-style-input {

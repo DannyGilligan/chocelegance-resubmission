@@ -7,3 +7,12 @@
     color: #551b8c;
     opacity: .6;
 }
+
+#id_default_country,
+#id_default_country option:not(first-child) {
+    color: #551b8c;
+}
+
+#id_default_country option:first-child {
+    color: #551b8c60;
+}

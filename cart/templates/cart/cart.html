@@ -54,17 +54,30 @@
                     <!-- This row oops through the items in the cart and retrieves specific details -->
                     {% for item in cart_items %}
                     <tr>
+                        <!-- Chocolate image -->
                         <td class="p-3 w-25">
+                            {% if item.product.image %}
                             <div class="choc-image-container-cart">
-                                <img class="img-fluid rounded" src="{{ item.chocolate.choc_image.url }}">
+                                <img class="img-fluid rounded" src="{{ item.chocolate.choc_image.url }}" alt="{{ item.chocolate.choc_friendly_name }}">
                             </div>
+                            {% else %}
+                            <div class="choc-image-container-cart">
+                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.webp" alt="{{ item.chocolate.choc_friendly_name }}">
+                            </div>
+                            {% endif %}
                         </td>
+
+                        <!-- Chocolate friendly name -->
                         <td class="py-3">
                             <p class="my-0 purple-text">{{ item.chocolate.choc_friendly_name }}</p>
                         </td>
+
+                        <!-- Chocolate price -->
                         <td class="py-3">
                             <p class="my-0 purple-text">€{{ item.chocolate.choc_price }}</p>
                         </td>
+
+                        <!-- Quantity -->
                         <td id="cart-quantity-col" class="">
 
                             <!-- The form below allows user to adjust item quantity at the cart screen -->

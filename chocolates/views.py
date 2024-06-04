@@ -108,7 +108,7 @@ def add_chocolate(request):
     """
     # Prevents anyone who is not a superuser accessing this view
     if not request.user.is_superuser:
-        message.error(request, "Sorry, that page is only for the Chocolluminati!")
+        messages.error(request, "Sorry, that page is only for the Chocolluminati!")
         return redirect(reverse('home'))
 
 

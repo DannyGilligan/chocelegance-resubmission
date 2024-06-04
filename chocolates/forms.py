@@ -1,6 +1,7 @@
 from django import forms
-from .models import Chocolate, ChocolateCategory
 from .widgets import CustomClearableFileInput
+from .models import Chocolate, ChocolateCategory
+
 
 
 class ChocolateForm(forms.ModelForm):
@@ -11,7 +12,7 @@ class ChocolateForm(forms.ModelForm):
         # This dunder string will include all fields
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    choc_image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
 
     # Overrides the original __init__ method to make changes to the fields
     def __init__(self, *args, **kwargs):

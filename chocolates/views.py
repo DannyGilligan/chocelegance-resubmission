@@ -109,10 +109,10 @@ def add_chocolate(request):
         # FILES allows image to be captures
         form = ChocolateForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            chocolate = form.save()
             messages.success(request, 'Chocolate added!')
-            # Redirect user back to add_chocolate view
-            return redirect(reverse('add_chocolate'))
+            # Redirect user to the detail page of the chocolate they just added
+            return redirect(reverse('chocolate_detail', args[chocolate.id]))
         else:
             messages.error(request, 'Failed to add Chocolate.\
             Please ensure the form is valid.')

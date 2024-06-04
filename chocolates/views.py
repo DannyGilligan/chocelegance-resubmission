@@ -122,3 +122,48 @@ def add_chocolate(request):
     }
 
     return render(request, template, context)
+
+
+def edit_chocolate(request, chocolate_id):
+    """
+    This view allows superuser to edit chocolates in the model/database
+    """
+    
+    # Stores the selected chocolate from the Chocolate model in a 'chocolate' variable
+    chocolate = get_object_or_404(Chocolate, pk=chocolate_id)
+
+    # Insantiates a Chocolate Form using the selected Chocolate in the 'chocolate' variable
+    # Result is a prefilled form
+    form = ChocolateForm(instance=chocolate)
+
+    # Lets user know they're about to edit a product
+    messages.info(request, f'You are about to edit {chocolate.choc_friendly_name}')
+
+    template = 'chocolates/edit_chocolate.html'
+    context = {
+        'form': form,
+        'chocolate': chocolate,
+    }
+
+    return render(request, template, context)
+
+
+
+
+    # if request.method == 'POST':
+    #     form = ChocolateForm(request.POST, request.FILES)  # FILES allows image to be captures
+    #     if form.is_valid():
+    #         form.save()
+    #         messages.success(request, 'Chocolate added!')
+    #         return redirect(reverse('add_chocolate'))  # Redirect user back to add_product view
+    #     else:
+    #         messages.error(request, 'Failed to add Chocolate. Please ensure the form is valid.')
+    # else:
+    #     form = ChocolateForm()
+
+    # template = 'chocolates/add_chocolate.html'
+    # context = {
+    #     'form': form,
+    # }
+
+    # return render(request, template, context)

@@ -186,7 +186,7 @@ def edit_chocolate(request, chocolate_id):
     return render(request, template, context)
 
 
-def delete_product(request, chocolate_id):
+def delete_chocolate(request, chocolate_id):
     """
     This view will allow superuser to delete chocolates from the model/database
     """

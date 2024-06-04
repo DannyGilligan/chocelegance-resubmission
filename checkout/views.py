@@ -6,6 +6,8 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from chocolates.models import Chocolate
+from profiles.forms import UserProfileForm
+from profiles.models import UserProfile
 from cart.contexts import cart_contents
 
 import stripe
@@ -147,7 +149,25 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        order_form = OrderForm()
+        # Prefills form on checkout page with default delivery details
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                order_form = OrderForm(initial={
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                    'phone_number': profile.default_phone_number,
+                    'country': profile.default_country,
+                    'postcode': profile.default_postcode,
+                    'town_or_city': profile.default_town_or_city,
+                    'street_address1': profile.default_street_address1,
+                    'street_address2': profile.default_street_address2,
+                    'county': profile.default_county,
+                })
+            except UserProfile.DoesNotExist:
+                order_form = OrderForm()
+        else:
+            order_form = OrderForm()
 
     # Error message will be displayed if the public key is missing
     if not stripe_public_key:

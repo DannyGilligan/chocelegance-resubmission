@@ -193,5 +193,5 @@ STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 
 # Default address to send confirmation emails from
-DEFAULT_FROM_EMAIL = chocelegance@example.com
+DEFAULT_FROM_EMAIL = 'chocelegance@example.com'
 

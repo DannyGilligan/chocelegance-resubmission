@@ -101,8 +101,21 @@ def chocolate_detail(request, chocolate_id):
 
 
 def add_chocolate(request):
-    """ Allows superuser to add chocolates to the model/database """
-    form = ChocolateForm()
+    """
+    This view allows superuser to add chocolates to the model/database
+    """
+    
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)  # FILES allows image to be captures
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Chocolate added!')
+            return redirect(reverse('add_chocolate'))  # Redirect user back to add_product view
+        else:
+            messages.error(request, 'Failed to add Chocolate. Please ensure the form is valid.')
+    else:
+        form = ChocolateFormForm()
+
     template = 'chocolates/add_chocolate.html'
     context = {
         'form': form,

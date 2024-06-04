@@ -28,9 +28,12 @@
             <form method="POST" action="{% url 'add_chocolate' %}" class="form mb-3" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy}}
+                <div>
+                    <a class="btn btn-success rounded" href="{% url 'chocolates' %}">Cancel</a>
+                    <button class="btn btn-info rounded" type="submit">Add Chocolate</button>
+                </div>
             </form>
-                <a class="btn btn-success rounded" href="{% url 'chocolates' %}">Cancel</a>
-                <button class="btn btn-info rounded" type="submit">Add Chocolate</button>
+            
         </div>
     </div>
 </div>

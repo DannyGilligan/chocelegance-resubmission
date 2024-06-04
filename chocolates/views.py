@@ -106,7 +106,7 @@ def add_chocolate(request):
     """
     
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)  # FILES allows image to be captures
+        form = ChocolateForm(request.POST, request.FILES)  # FILES allows image to be captures
         if form.is_valid():
             form.save()
             messages.success(request, 'Chocolate added!')
@@ -114,7 +114,7 @@ def add_chocolate(request):
         else:
             messages.error(request, 'Failed to add Chocolate. Please ensure the form is valid.')
     else:
-        form = ChocolateFormForm()
+        form = ChocolateForm()
 
     template = 'chocolates/add_chocolate.html'
     context = {

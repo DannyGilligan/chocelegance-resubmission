@@ -217,10 +217,15 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 offset-lg-4 col-md-6 offset-3 text-center">
-                    <a href="{% url 'chocolates' %}" class="btn btn-purple rounded-lg my-2 w-75">
-  
-                        <p>Back to Chocolates!</p>
-                    </a>
+                    {% if from_profile %}
+                        <a href="{% url 'profile' %}" class="btn btn-purple rounded-lg my-2 w-75">
+                            <p>Back to Profile!</p>
+                        </a>
+                    {% else %}
+                        <a href="{% url 'chocolates' %}" class="btn btn-purple rounded-lg my-2 w-75">
+                            <p>Back to Chocolates!</p>
+                        </a>
+                    {% endif %}
                 </div>
             </div>
         </div>

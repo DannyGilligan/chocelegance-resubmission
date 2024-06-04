@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Chocolate, ChocolateCategory
+from .forms import ChocolateForm
 
 
 # Create your views here.
@@ -97,3 +98,14 @@ def chocolate_detail(request, chocolate_id):
     }
 
     return render(request, 'chocolates/chocolate_detail.html', context)
+
+
+def add_chocolate(request):
+    """ Allows superuser to add chocolates to the model/database """
+    form = ChocolateForm()
+    template = 'chocolates/add_chocolate.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

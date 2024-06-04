@@ -104,15 +104,18 @@ def add_chocolate(request):
     """
     This view allows superuser to add chocolates to the model/database
     """
-    
+
     if request.method == 'POST':
-        form = ChocolateForm(request.POST, request.FILES)  # FILES allows image to be captures
+        # FILES allows image to be captures
+        form = ChocolateForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             messages.success(request, 'Chocolate added!')
-            return redirect(reverse('add_chocolate'))  # Redirect user back to add_product view
+            # Redirect user back to add_chocolate view
+            return redirect(reverse('add_chocolate'))
         else:
-            messages.error(request, 'Failed to add Chocolate. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add Chocolate.\
+            Please ensure the form is valid.')
     else:
         form = ChocolateForm()
 
@@ -128,8 +131,9 @@ def edit_chocolate(request, chocolate_id):
     """
     This view allows superuser to edit chocolates in the model/database
     """
-    
-    # Stores the selected chocolate from the Chocolate model in a 'chocolate' variable
+
+    # Stores the selected chocolate from
+    # the Chocolate model in a 'chocolate' variable
     chocolate = get_object_or_404(Chocolate, pk=chocolate_id)
 
     # When submit button is clicked, the POST logic below will be triggered
@@ -140,14 +144,17 @@ def edit_chocolate(request, chocolate_id):
             messages.success(request, 'Changes saved successfully!')
             return redirect(reverse('chocolate_detail', args=[chocolate.id]))
         else:
-            messages.error(request, 'Changes not saved. Please ensure that the entered details are valid.')
+            messages.error(request, 'Changes not saved. \
+            Please ensure that the entered details are valid.')
     else:
-        # Insantiates a Chocolate Form using the selected Chocolate in the 'chocolate' variable
+        # Insantiates a Chocolate Form using the
+        # selected Chocolate in the 'chocolate' variable
         # Result is a prefilled form
         form = ChocolateForm(instance=chocolate)
 
-        # Lets user know they're about to edit a product
-        messages.info(request, f'You are about to edit {chocolate.choc_friendly_name}')
+        # Lets user know they're about to edit a chocolate
+        messages.info(request, f'You are about to \
+        edit {chocolate.choc_friendly_name}')
 
     template = 'chocolates/edit_chocolate.html'
     context = {
@@ -157,17 +164,17 @@ def edit_chocolate(request, chocolate_id):
 
     return render(request, template, context)
 
-
-
-
     if request.method == 'POST':
-        form = ChocolateForm(request.POST, request.FILES)  # FILES allows image to be captures
+        # FILES allows image to be captures
+        form = ChocolateForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             messages.success(request, 'Chocolate added!')
-            return redirect(reverse('add_chocolate'))  # Redirect user back to add_product view
+            # Redirect user back to add_chocolate view
+            return redirect(reverse('add_chocolate'))
         else:
-            messages.error(request, 'Failed to add Chocolate. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add Chocolate. \
+            Please ensure the form is valid.')
     else:
         form = ChocolateForm()
 

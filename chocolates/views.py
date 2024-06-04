@@ -106,6 +106,11 @@ def add_chocolate(request):
     """
     This view allows superuser to add chocolates to the model/database
     """
+    # Prevents anyone who is not a superuser accessing this view
+    if not request.user.is_superuser:
+        message.error(request, "Sorry, this page is only for the Chocolluminati!")
+        return redirect(reverse('home'))
+
 
     if request.method == 'POST':
         # FILES allows image to be captures
@@ -134,6 +139,10 @@ def edit_chocolate(request, chocolate_id):
     """
     This view allows superuser to edit chocolates in the model/database
     """
+    # Prevents anyone who is not a superuser accessing this view
+    if not request.user.is_superuser:
+        message.error(request, "Sorry, this page is only for the Chocolluminati!")
+        return redirect(reverse('home'))
 
     # Stores the selected chocolate from
     # the Chocolate model in a 'chocolate' variable
@@ -193,6 +202,10 @@ def delete_chocolate(request, chocolate_id):
     """
     This view will allow superuser to delete chocolates from the model/database
     """
+    # Prevents anyone who is not a superuser accessing this view
+    if not request.user.is_superuser:
+        message.error(request, "Sorry, this page is only for the Chocolluminati!")
+        return redirect(reverse('home'))
 
     chocolate = get_object_or_404(Chocolate, pk=chocolate_id)
     chocolate.delete()

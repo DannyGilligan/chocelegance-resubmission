@@ -12,6 +12,7 @@ import time
 
 
 class StripeWH_Handler:
+    print("****Hello from inside StripeWH_Handler!!!****")
     """Handle Stripe webhooks"""
 
     def __init__(self, request):
@@ -41,6 +42,7 @@ class StripeWH_Handler:
         """
         Handle a generic/unknown/unexpected webhook event
         """
+        print("****Hello from inside handle_event!!!****")
         return HttpResponse(
             content=f'Unhandled webhook received: {event["type"]}',
             status=200)
@@ -53,6 +55,7 @@ class StripeWH_Handler:
         pid = intent.id 
         cart = intent.metadata.cart 
         save_info = intent.metadata.save_info
+        
         
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
@@ -163,6 +166,7 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.payment_failed webhook from Stripe
         """
+        print("****Hello from inside handle_payment_intent_payment_failed!!!****")
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)

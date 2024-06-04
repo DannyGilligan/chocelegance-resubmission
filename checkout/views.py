@@ -5,6 +5,7 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
+
 from chocolates.models import Chocolate
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
@@ -35,11 +36,11 @@ def cache_checkout_data(request):
         print(stripe.api_key)
         print(settings.STRIPE_PUBLIC_KEY)
         print(settings.STRIPE_WH_SECRET)
+        print(pid)
         # DEBUG PRINT STATEMENTS, DELETE ABOVE!!!
 
         return HttpResponse(status=200)
     except Exception as e:
-        print(e)
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
@@ -94,15 +95,15 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
-                    # else:
-                    #     for size, quantity in item_data['items_by_size'].items():
-                    #         order_line_item = OrderLineItem(
-                    #             order=order,
-                    #             product=product,
-                    #             quantity=quantity,
-                    #             product_size=size,
-                    #         )
-                    #         order_line_item.save()
+                    else:
+                        for size, quantity in item_data['items_by_size'].items():
+                            order_line_item = OrderLineItem(
+                                order=order,
+                                product=product,
+                                quantity=quantity,
+                                product_size=size,
+                            )
+                            order_line_item.save()
                 except Chocolate.DoesNotExist:
                     messages.error(request, (
                         "One of the chocolates in your cart wasn't \

@@ -16,7 +16,7 @@ class ChocolateForm(forms.ModelForm):
         categories = ChocolateCategory.objects.all()
         friendly_names = [(choc.id, choc.get_choc_friendly_name()) for choc in categories]
         # Updates the form to use the choc category friendly names instead of ids
-        self.fields['category'].choices = friendly_names
+        self.fields['choc_category_display'].choices = friendly_names
         # Adds classes to the fields to allow styling for consistency
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-purple rounded'

@@ -77,6 +77,14 @@
                 {% endif %}
                 <p class="mt-3">{{ chocolate.choc_description }}</p>
 
+                <!-- Edit and delete buttons are displayed if user is superuser -->
+                {% request.user.is_superuser %}
+                <small class="ml-2">
+                    <a href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                    <a class=text-danger href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
+                </small>
+                {% endif %}
+
                 <!-- Form starts here, uses POST method to add chocolate to bag -->
                 <form class="form" action="{% url 'add_to_cart' chocolate.id %}" method="POST">
                     {% csrf_token %}

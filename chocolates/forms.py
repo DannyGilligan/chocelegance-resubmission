@@ -13,7 +13,7 @@ class ChocolateForm(forms.ModelForm):
     # Overrides the original __init__ method to make changes to the fields
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        categories = ChocolateCategoryCategory.objects.all()
+        categories = ChocolateCategory.objects.all()
         friendly_names = [(choc.id, choc.get_choc_friendly_name()) for choc in categories]
         # Updates the form to use the choc category friendly names instead of ids
         self.fields['category'].choices = friendly_names

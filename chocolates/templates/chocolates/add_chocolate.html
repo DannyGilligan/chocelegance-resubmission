@@ -2,30 +2,37 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">Chocolate Management</h2>
-                <h5>Add a Chocolate!</h5>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="logo-font mb-4">Chocolate Management</h2>
+            <h5>Add a Chocolate!</h5>
+            <hr>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-12 col-md-6">
+
+            <!-- Form used to add chocolate details, enctype attribute allows images to be uploaded -->
+            <form method="POST" action="{% url 'add_chocolate' %}" class="form mb-3" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy}}
+            </form>
+                <a class="btn btn-success rounded" href="{% url 'chocolates' %}">Cancel</a>
+                <button class="btn btn-info rounded" type="submit">Add Chocolate</button>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
-
-

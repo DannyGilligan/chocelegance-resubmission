@@ -184,3 +184,14 @@ def edit_chocolate(request, chocolate_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, chocolate_id):
+    """
+    This view will allow superuser to delete chocolates from the model/database
+    """
+
+    chocolate = get_object_or_404(Chocoate, pk=chocolate_id)
+    chocolate.delete()
+    messages.success(request, 'Chocolate has been deleted!')
+    return redirect(reverse('chocolates'))

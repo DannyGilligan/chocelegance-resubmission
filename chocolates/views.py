@@ -112,7 +112,7 @@ def add_chocolate(request):
             chocolate = form.save()
             messages.success(request, 'Chocolate added!')
             # Redirect user to the detail page of the chocolate they just added
-            return redirect(reverse('chocolate_detail', args[chocolate.id]))
+            return redirect(reverse('chocolate_detail', args=[chocolate.id]))
         else:
             messages.error(request, 'Failed to add Chocolate.\
             Please ensure the form is valid.')

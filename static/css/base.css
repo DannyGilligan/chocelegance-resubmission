@@ -534,6 +534,45 @@ a.category-badge > span.badge:hover {
 }
 
 
+/* Styling for custom image field in Chocolate Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #551b8c;
+    border-radius: 10px !important;
+    color: white;
+    background-color: #882bde;
+}
+
+.btn-file:hover {
+    background-color: #c71585;
+    color: white;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 5px;
+    border-color: #551b8c;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #c71585;
+    border-color: #551b8c;
+    border-radius: 5px;
+}
+
+
+
 /* -------------------------------------- Media Queries -------------------------------------- */
 
 /* Slightly larger container on xl screens */

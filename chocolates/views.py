@@ -108,7 +108,7 @@ def add_chocolate(request):
     """
     # Prevents anyone who is not a superuser accessing this view
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, that page is only for the Chocolluminati!")
+        messages.error(request, "Sorry, that page is for the Chocolluminati only")
         return redirect(reverse('home'))
 
 
@@ -141,7 +141,7 @@ def edit_chocolate(request, chocolate_id):
     """
     # Prevents anyone who is not a superuser accessing this view
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, that page is only for the Chocolluminati!")
+        messages.error(request, "Sorry, that page is for the Chocolluminati only")
         return redirect(reverse('home'))
 
     # Stores the selected chocolate from
@@ -204,7 +204,7 @@ def delete_chocolate(request, chocolate_id):
     """
     # Prevents anyone who is not a superuser accessing this view
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, that page is only for the Chocolluminati!")
+        messages.error(request, "Sorry, that page is for the Chocolluminati only")
         return redirect(reverse('home'))
 
     chocolate = get_object_or_404(Chocolate, pk=chocolate_id)

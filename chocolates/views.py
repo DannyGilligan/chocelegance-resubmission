@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Chocolate, ChocolateCategory
 from .forms import ChocolateForm
+from django.contrib.auth.decorators import login_required  # Provides security layer!
 
 
 # Create your views here.
@@ -100,6 +101,7 @@ def chocolate_detail(request, chocolate_id):
     return render(request, 'chocolates/chocolate_detail.html', context)
 
 
+@login_required
 def add_chocolate(request):
     """
     This view allows superuser to add chocolates to the model/database
@@ -127,6 +129,7 @@ def add_chocolate(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_chocolate(request, chocolate_id):
     """
     This view allows superuser to edit chocolates in the model/database
@@ -185,7 +188,7 @@ def edit_chocolate(request, chocolate_id):
 
     return render(request, template, context)
 
-
+@login_required
 def delete_chocolate(request, chocolate_id):
     """
     This view will allow superuser to delete chocolates from the model/database

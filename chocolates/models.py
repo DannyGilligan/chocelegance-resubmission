@@ -59,12 +59,12 @@ class ChocolateCategory(models.Model):
         """
         return self.choc_category_name
 
-    def get_friendly_name(self):
+    def get_choc_friendly_name(self):
         """
         This function returns the friendly name for easier readibility
         where needed
         """
-        return self.friendly_name
+        return self.choc_friendly_name
 
     class Meta:
         """

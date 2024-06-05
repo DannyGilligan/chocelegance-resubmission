@@ -3,6 +3,13 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav mx-auto">
 
+        <!-- Displays home link on smaller screens -->
+        <li class="nav-item d-block d-md-none">
+            <a class="font-weight-bold nav-link mr-5 purple-text-transition h4" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
+
         <!-- All Products drop down menu -->
         <li class="nav-item dropdown">
             <a class="font-weight-bold nav-link mr-5 purple-text-transition h4" href="#" id="all-products-link"

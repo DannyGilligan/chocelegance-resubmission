@@ -21,16 +21,21 @@ body {
     font-size: 3.1rem;
 }
 
-/* Container for navbar */
-#base-header{
-    width: 98% !important;
-    padding: 0 !important;
-}
 
+
+/* ------------------------------------------------------------------------------------------------------------------------------ Nav Items Styling */
 
 /* #main-nav {
     margin-top: .3rem;
 } */
+
+/* Container for navbar */
+#base-header{
+    width: 98% !important;
+    padding: 0 !important;
+    height: 1rem !important;
+}
+
 
 .nav-link {
     padding: .6rem;

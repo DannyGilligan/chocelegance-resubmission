@@ -17,10 +17,6 @@ body {
 }
 
 
-.chocelegance-logo-text {
-    font-size: 3.1rem;
-}
-
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Nav Items Styling */
@@ -82,6 +78,39 @@ input[name='q']::placeholder {
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Heart Logo Styling */
+
+.chocelegance-logo-text {
+    font-size: 3.1rem;
+}
+
+#mobile-logo {
+    font-family: "Urbanist";
+    text-align: left;
+    position: relative;
+    top: 1%;
+    left: 5%;
+    color: white;
+    text-shadow: #ed82ed 0px 0 3px;
+}
+
+#mobile-logo a h2 {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.mobile-logo-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c71585;
+    text-shadow: 0 0px 4px white;
+    margin-left: 1rem;
+    padding-top: .1rem;
+    animation: heartFadeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 
 .logo-heart {
     display: flex;

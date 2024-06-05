@@ -87,7 +87,7 @@ input[name='q']::placeholder {
     font-family: "Urbanist";
     text-align: left;
     position: relative;
-    top: 1%;
+    top: .5%;
     left: 5%;
     color: white;
     text-shadow: #ed82ed 0px 0 3px;
@@ -95,7 +95,7 @@ input[name='q']::placeholder {
 
 #mobile-logo a h2 {
     color: white;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
 }
 
 .mobile-logo-heart {
@@ -211,7 +211,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     background-image: linear-gradient(rgba(85,27,140,1), rgba(255,255,255,0)), url("/media/hero-image-final.webp");
   
     /* Set a specific height */
-    height: 35rem;
+    height: 33.5rem;
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -226,26 +226,26 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 #hero-image-text-heading {
     font-family: "Urbanist";
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
     font-weight: 300;
     width: 40rem;
-    height: 20rem;
+    height: 5rem;
     text-align: left;
     position: relative;
-    top: 10%;
+    top: 6%;
     left: 10%;
     color: white;
     text-shadow: #ed82ed 0px 0 5px;
 }
 
 #hero-image-text-sub-heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: "Urbanist";
     font-weight: 100;
     width: 20rem;
     text-align: left;
     position: relative;
-    top: 10%;
+    top: 43%;
     left: 10%;
     color: white;
     text-shadow: #ed82ed 0px 0 5px;
@@ -261,7 +261,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 #treat-yourself-button {
     width: 15rem;
     position: relative;
-    top: 15%;
+    top: 45%;
     left: 10%;
     background: #551b8c;
     border-radius: 15px;
@@ -725,9 +725,11 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 
+/* ------------------------------------------------------------------------------------------------------------------------------ All Auth Styling*/
 
-
-/* Allauth form formatting */
+.allauth-form-inner-content {
+    margin-top: 7rem;
+}
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */

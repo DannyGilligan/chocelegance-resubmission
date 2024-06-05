@@ -115,3 +115,33 @@ select:invalid {
     background: #ed82ed;
     opacity: .2;
 }
+
+
+.loading-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c71585;
+    text-shadow: 0 0px 2px #ed82ed;
+    margin-left: 1rem;
+    padding-top: .2rem;
+    animation: loadingHeartFadeIn ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* 
+Fade in animation was adapted from 
+https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/
+*/
+
+@keyframes loadingHeartFadeIn {
+    0% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 1;
+    }
+}

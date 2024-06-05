@@ -101,6 +101,10 @@ class Order(models.Model):
     def __str__(self):
         return self.order_number
 
+    # Sorts the orders by most recent first
+    class Meta:
+        ordering = ['-date']
+
 
 class OrderLineItem(models.Model):
     """

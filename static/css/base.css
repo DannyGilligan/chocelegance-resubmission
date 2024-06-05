@@ -61,7 +61,7 @@ input[name='q']::placeholder {
 }
 
 .header-container {
-    padding: 4.2rem !important;
+    padding-top: 135px;
 }
 
 .overlay {
@@ -714,7 +714,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 /* padding below navbar when collapsed on mobile */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .header-container {
         padding-top: 180px;
     }
@@ -722,23 +722,29 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     body {
         height: calc(100vh - 116px);
     }
-}
+} */
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ All Auth Styling*/
 
 .allauth-form-inner-content {
-    margin-top: 7rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.allauth-form-inner-content a {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #c71585 !important; /* text-secondary */
 }
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    color: #551b8c; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
+    border-color: #551b8c;
+    border-radius: 10px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {

@@ -199,6 +199,29 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
     border: 1px solid #ed82ed;
 }
 
+.choc-image-container:hover {
+    animation: ShadowFadeIn ease .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* 
+Fade in animation was adapted from 
+https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/
+*/
+
+@keyframes ShadowFadeIn {
+0% {
+    box-shadow: 0 0px 10px #ed82ed;
+}
+100% {
+    box-shadow: 0 0px 25px #ed82ed;
+}
+}
+
+
+
+
 /* Used to create a container for the chocolate image in chocolate_detail.html */
 .choc-image-container-detail {
     height: auto;

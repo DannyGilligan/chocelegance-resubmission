@@ -360,8 +360,8 @@ a.category-badge > span.badge:hover {
 
 #toast-checkout-button {
     font-family: "Urbanist";
-    font-size: 1.1rem;
-    margin-top: 2rem;
+    font-size: .9rem;
+    margin-top: .3rem;
     width: 100%;
     height: auto;
     background: #551b8c;
@@ -527,6 +527,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 .toast-free-delivery {
     background: #c71585;
+    border-radius: 10px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */

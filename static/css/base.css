@@ -358,6 +358,29 @@ a.category-badge > span.badge:hover {
 }
 
 
+#toast-checkout-button {
+    font-family: "Urbanist";
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    background: #551b8c;
+    border-radius: 10px;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #882bde;
+    box-shadow: 0 0px 2px #ed82ed;
+    color: white;
+    padding-bottom: .4rem;
+    padding-bottom: .5rem;
+}
+
+#toast-checkout-button:hover{
+    background: #c71585;
+    border: 1px solid #ed82ed;
+    box-shadow: 0 0px 10px #ed82ed;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------ Icon Styling */
 
 /* from Bulma, used to ensure consistent styling of icons (centering etc) */
@@ -498,8 +521,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     background: #882bde;
     color: white;
     border-top: 1px solid #c71585;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .toast-free-delivery {

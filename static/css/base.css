@@ -149,11 +149,10 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 #hero-image-container {
     width: 100%;
     margin-top: 4.2rem;
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: url("/media/hero-image-final.webp");
+    background-image: linear-gradient(rgba(85,27,140,1), rgba(255,255,255,0)), url("/media/hero-image-final.webp");
   
     /* Set a specific height */
-    height: 42rem;
+    height: 30rem;
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -167,8 +166,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 #hero-image-text-heading {
     font-family: "Urbanist";
-    font-size: 3rem !important;
-    font-weight: 200;
+    font-size: 3.5rem !important;
+    font-weight: 300;
     width: 40rem;
     height: 20rem;
     text-align: left;
@@ -187,7 +186,6 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     position: relative;
     top: 10%;
     left: 10%;
-    /* transform: translate(-50%, -50%); */
     color: white;
 }
 

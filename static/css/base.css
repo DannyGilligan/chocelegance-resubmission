@@ -200,7 +200,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 }
 
 .choc-image-container:hover {
-    animation: ShadowFadeIn ease .2s;
+    animation: ShadowFadeIn ease-in-out .3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

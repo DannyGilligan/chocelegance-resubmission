@@ -528,6 +528,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 .toast-free-delivery {
     background: #c71585;
     border-radius: 10px;
+    height: auto;
+    font-size: .9rem;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */

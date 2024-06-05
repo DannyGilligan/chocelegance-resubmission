@@ -356,10 +356,8 @@ a.category-badge > span.badge:hover {
 #add-to-cart-button-container {
     display: flex;
     flex-direction: column-reverse;
-
-    width: 20rem;
+    margin-left: 1.5rem;
 }
-
 #add-to-cart-button{
     font-family: "Urbanist";
     font-size: 1.1rem;
@@ -499,7 +497,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 .choc-image-container-detail {
     height: auto;
     width: auto;
-    max-width: 28rem;
+    max-width: 25rem;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0px 10px #ed82ed;
@@ -525,6 +523,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     width: 15rem !important;
     padding-right: 3rem !important;
 }
+
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Toast Message Styling */
@@ -692,14 +692,14 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 /* ------------------------------------------------------------------------------------------------------------------------------ Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
-}
+} */
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -711,7 +711,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     .header-container {
         padding-top: 164px;
     }
-}
+} */
 
 /* padding below navbar when collapsed on mobile */
 /* @media (max-width: 991px) {

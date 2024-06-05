@@ -148,11 +148,11 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 /* Hero image adapted from W3Schools */
 #hero-image-container {
     width: 100%;
-    margin-top: 4.2rem;
+    margin-top: 1rem;
     background-image: linear-gradient(rgba(85,27,140,1), rgba(255,255,255,0)), url("/media/hero-image-final.webp");
   
     /* Set a specific height */
-    height: 30rem;
+    height: 35rem;
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -161,6 +161,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     border-radius: 10px;
     border: 1px solid #551b8c;
     overflow: hidden;
+    margin-bottom: .4rem;
 }
 
 
@@ -175,6 +176,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     top: 10%;
     left: 10%;
     color: white;
+    text-shadow: #ed82ed 0px 0 5px;
 }
 
 #hero-image-text-sub-heading {
@@ -187,6 +189,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     top: 10%;
     left: 10%;
     color: white;
+    text-shadow: #ed82ed 0px 0 5px;
 }
 
 
@@ -199,7 +202,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 #treat-yourself-button {
     width: 15rem;
     position: relative;
-    top: 20%;
+    top: 15%;
     left: 10%;
     background: #551b8c;
     border-radius: 15px;

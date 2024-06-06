@@ -122,26 +122,25 @@
                             
                             <div id="quantity-form-group" class="form-group">
                                 <p class="mt-3 purple-text text-center"><strong>Select Quantity:</strong></p>
-                                <div class="input-group">
+                                <div class="input-group input-group-{{ chocolate.id }}">
 
                                     <!-- Button to reduce number of chocolates -->
                                     <div class="input-group-prepend">
-                                        <button class="decrement-qty btn btn-black rounded-0"
-                                            data-item_id="{{ chocolate.id }}" id="decrement-qty_{{ chocolate.id }}">
+                                        <button class="decrement-qty btn rounded-lg decrement-qty_{{ chocolate.id }}" 
+                                        data-item_id="{{ chocolate.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-minus purple-text font-weight-bold"></i>
                                             </span>
                                         </button>
                                     </div>
 
-                                    <input class="form-control qty_input text-center border-purple rounded-lg" type="number" name="quantity" value="1"
-                                        min="1" max="99" data-item_id="{{ chocolate.id }}"
-                                        id="id_qty_{{ chocolate.id }}">
+                                    <input class="form-control qty_input id_qty_{{ chocolate.id }} text-center border-purple rounded-lg" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ chocolate.id }}">
 
                                     <!-- Button to increase number of chocolates -->
                                     <div class="input-group-append">
-                                        <button class="increment-qty btn btn-black rounded-0"
-                                            data-item_id="{{ chocolate.id }}" id="increment-qty_{{ chocolate.id }}">
+                                        <button class="increment-qty btn rounded-lg increment-qty_{{ chocolate.id }}"
+                                            data-item_id="{{ chocolate.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-plus purple-text font-weight-bold"></i>
                                             </span>

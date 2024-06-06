@@ -50,7 +50,9 @@ class Order(models.Model):
         max_digits=10, decimal_places=2, null=False, default=0
     )  # Calculated field
     original_cart = models.TextField(null=False, blank=False, default='')
-    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    stripe_pid = models.CharField(
+        max_length=254, null=False, blank=False, default=''
+    )
 
     def _generate_order_number(self):
         """
@@ -68,7 +70,7 @@ class Order(models.Model):
         # Uses sum function for each line item total fields in the order
         self.order_total = self.lineitems.aggregate(Sum("lineitem_total"))[
             "lineitem_total__sum"
-        ] or 0  # Sets line to 0 instead of none if empty, will cause error otherwise
+        ] or 0  # Sets to 0 instead of none if empty, causes error otherwise
 
         # Delivery total is calculated below
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:

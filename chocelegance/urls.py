@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')), # Required by AllAuth
+    path('accounts/', include('allauth.urls')),  # Required by AllAuth
     path('', include('home.urls')),
     path('chocolates/', include('chocolates.urls')),
     path('cart/', include('cart.urls')),

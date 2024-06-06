@@ -4,7 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Chocolate, ChocolateCategory
 from .forms import ChocolateForm
-from django.contrib.auth.decorators import login_required  # Provides security layer!
+from django.contrib.auth.decorators import login_required  # security layer!
 
 
 # Create your views here.
@@ -108,9 +108,9 @@ def add_chocolate(request):
     """
     # Prevents anyone who is not a superuser accessing this view
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, that page is for the Chocolluminati only")
+        messages.error(request, "Sorry, that page is for the \
+Chocolluminati only")
         return redirect(reverse('home'))
-
 
     if request.method == 'POST':
         # FILES allows image to be captures
@@ -141,7 +141,8 @@ def edit_chocolate(request, chocolate_id):
     """
     # Prevents anyone who is not a superuser accessing this view
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, that page is for the Chocolluminati only")
+        messages.error(request, "Sorry, that page is \
+for the Chocolluminati only")
         return redirect(reverse('home'))
 
     # Stores the selected chocolate from
@@ -197,6 +198,7 @@ def edit_chocolate(request, chocolate_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_chocolate(request, chocolate_id):
     """
@@ -204,7 +206,8 @@ def delete_chocolate(request, chocolate_id):
     """
     # Prevents anyone who is not a superuser accessing this view
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, that page is for the Chocolluminati only")
+        messages.error(request, "Sorry, that page \
+is for the Chocolluminati only")
         return redirect(reverse('home'))
 
     chocolate = get_object_or_404(Chocolate, pk=chocolate_id)

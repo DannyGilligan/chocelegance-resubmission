@@ -98,5 +98,3 @@ def remove_from_cart(request, item_id):
         # to avoid the view failing fail_silently
         messages.error(request, f"Error encountered while removing item: {e}")
         return HttpResponse(status=500)
-
-

@@ -6,7 +6,6 @@ from .forms import UserProfileForm
 
 # Create your views here.
 
-from django.shortcuts import render
 from checkout.models import Order
 
 
@@ -21,7 +20,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Your profile has been updated!')
         else:
-            message.error(request, 'Update failed. Please check the details submitted are correct')
+            messages.error(request, 'Update failed. Please check \
+                the details submitted are correct')
     else:
         form = UserProfileForm(instance=profile)
 

@@ -7,7 +7,7 @@ class CheckoutConfig(AppConfig):
 
     def ready(self):
         """
-        When line item is saved or delted,
+        When line item is saved or deleted,
         this will trigger the updating of
         order totals automatically by calling
         the relevent model method.

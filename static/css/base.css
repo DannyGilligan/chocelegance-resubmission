@@ -851,8 +851,32 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Media Queries */
 
+/* Media Query with min-width at 642px */
+@media (min-width: 642px) {
 
-/* Slightly larger container on xl screens */
+    #hero-image-container {
+        background-image: url("/media/hero-image-final.webp");
+    }
+
+    #hero-image-text-heading {
+        top: 3%;
+        font-size: 4rem !important;
+        text-shadow: #ed82ed 0px 0 0px;
+    }
+
+    #hero-image-text-sub-heading {
+        top: 56%;
+        font-size: 1.4rem;
+        text-shadow: #ed82ed 0px 0 0px;
+    }
+
+    #treat-yourself-button {
+        width: 20rem;
+        top: 56%;
+        }
+} 
+
+/* Media Query with min-width at 992px */
 @media (min-width: 992px) {
     .header-container {
     padding: 110px;

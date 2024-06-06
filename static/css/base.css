@@ -846,6 +846,35 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Media Queries */
 
+
+/* Slightly larger container on xl screens */
+@media (min-width: 992px) {
+    .header-container {
+    padding: 110px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+
+  .fixed-top-desktop-only {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .chocelegance-logo-text {
+    top: 1rem !important;
+    font-size: 2.3rem;
+  }
+} 
+
+
+
+
 /* Slightly larger container on xl screens */
 /* @media (min-width: 1200px) {
   .container {
@@ -853,31 +882,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
   }
 } */
 
-/* fixed top navbar only on medium and up */
-/* @media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
 
-    .header-container {
-        padding-top: 164px;
-    }
-} */
-
-/* padding below navbar when collapsed on mobile */
-/* @media (max-width: 991px) {
-    .header-container {
-        padding-top: 180px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-} */
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ All Auth Styling*/

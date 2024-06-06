@@ -7,7 +7,7 @@
 
 <head>
 
-  <!-- This block will serve as the core meta -->
+  <!-- This block will serve as the core meta, from base.html -->
   {% block meta %}
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="utf-8">
@@ -18,7 +18,7 @@
   {% endblock %}
 
 
-  <!-- This block will serve as the core css -->
+  <!-- This block will serve as the core css, from base.html -->
   {% block corecss %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -35,7 +35,7 @@
   {% endblock %}
 
 
-  <!-- This block will serve as the core js -->
+  <!-- This block will serve as the core js, from base.html -->
   {% block corejs %}
   <script src="https://kit.fontawesome.com/58ae2fa04e.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -62,19 +62,19 @@
 
 <body>
 
-  <!-- Main Page header sticks to top of page, contains logo, search form and shopping cart links -->
+  <!-- Main Page header sticks to top of page, contains logo, search form and shopping cart links, from base.html -->
   <header class="container-fluid fixed-top" id="base-header">
     <!-- Top navbar -->
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
 
-      <!-- Logo -->
+      <!-- Logo, from base.html -->
       <div class="col-12 col-lg-4 my-auto py-2 py-lg-0 text-center text-lg-left ">
         <a href="{% url 'home' %}" class="nav-link main-logo-link d-inline-flex">
-          <h2 class="purple-text my-1 chocelegance-logo-text"><strong>chocelegance</strong></h2><span class="small logo-heart">&#10084</span>
+          <h2 class="purple-text my-1 chocelegance-logo-text"><strong>chocelegance</strong></h2><span class="small logo-heart">&#10084;</span>
         </a>
       </div>
 
-      <!-- Search form -->
+      <!-- Search form, from base.html -->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <form method="GET" action="{% url 'chocolates' %}">
           <div class="input-group w-100">
@@ -91,11 +91,11 @@
         </form>
       </div>
 
-      <!-- Shopping cart and account container-->
+      <!-- Shopping cart and account container, from base.html-->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right-my-1">
 
-          <!-- My Account -->
+          <!-- My Account, from base.html -->
           <li class="list-inline-item dropdown">
             <a class="purple-text nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
@@ -105,7 +105,7 @@
               </div>
             </a>
 
-            <!-- Account log in dtl logic -->
+            <!-- Account log in dtl logic, from base.html -->
             <div class="dropdown-menu border-purple" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
                   {% if request.user.is_superuser %}
@@ -120,7 +120,7 @@
             </div>
           </li>
 
-          <!-- Shopping cart -->
+          <!-- Shopping cart, from base.html -->
           <li class="list-inline-item">
             <a class="{% if grand_total %}active-cart font-weight-bold{% else %}purple-text{% endif %} nav-link"
               href="{% url 'view_cart' %}">
@@ -142,7 +142,7 @@
 
     </div>
 
-    <!-- Sub navbar, this uses dtl tags to include the navigation html snippets from the 'includes' folder -->
+    <!-- Sub navbar, this uses dtl tags to include the navigation html snippets from the 'includes' folder, from base.html -->
     <div class="row bg-white purple-text">
       <nav class="navbar navbar-expand-lg navbar-light w-100">
         <button class="navbar-toggler purple-text border-purple" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -154,7 +154,7 @@
       </nav>
     </div>
 
-    <!-- Free Shipping banner -->
+    <!-- Free Shipping banner, from base.html -->
     <div id="delivery-banner" class="text-center">
       <div class="text-white mt-1">
         <h4 class="my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
@@ -163,7 +163,7 @@
 
   </header>
 
-  <!-- Used to display Toast messages from if any have been generated -->
+  <!-- Used to display Toast messages from if any have been generated, from base.html -->
   {% if messages %}
   <div class="message-container">
     {% for message in messages %}

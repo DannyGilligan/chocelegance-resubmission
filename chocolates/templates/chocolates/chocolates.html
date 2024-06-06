@@ -22,7 +22,7 @@
 
 
 <div class="container-fluid col-12 col-md-8 col-lg-10 mt-2 mx-auto">
-    <!-- First row contains page title and selected categories  -->
+    <!-- First row contains page title and selected categories, from chocolates.html  -->
     <div class="row">
         <div class="col text-center mt-2 purple-text">
             <h2>Chocolates</h2>
@@ -35,12 +35,12 @@
         </div>
     </div>
 
-    <!-- Second row contains the chocolates, this row consists of another two rows -->
+    <!-- Second row contains the chocolates, this row consists of another two rows, from chocolates.html -->
     <div class="row">
         <div class="chocolate-container col-12">
 
             <div class="row mt-3 mb-2">
-                <!-- This div contains the sorting options, displays a drop down menu with the options -->
+                <!-- This div contains the sorting options, displays a drop down menu with the options, from chocolates.html -->
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector" class="custom-select custom-select-sm rounded-lg border-purple purple-text border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
 
-                <!-- This div contains the product count and search results -->
+                <!-- This div contains the product count and search results, from chocolates.html -->
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="active-cart mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
@@ -68,14 +68,14 @@
                 </div>
             </div>
 
-            <!-- This row contains a DTL for loop to iterate through the chocolates context variable -->
+            <!-- This row contains a DTL for loop to iterate through the chocolates context variable, from chocolates.html -->
             <div class="row">
                 {% for chocolate in chocolates %}
-                <!-- Creates a bootstrap card for each chocolate -->
+                <!-- Creates a bootstrap card for each chocolate, from chocolates.html -->
                 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="card h-100 border-0 rounded-2">
 
-                        <!-- Card image -->
+                        <!-- Card image, from chocolates.html -->
                         {% if chocolate.choc_image %}
                         <div class="choc-image-container">
                             <a href="{% url 'chocolate_detail' chocolate.id %}">
@@ -90,20 +90,20 @@
                         </a>
                         {% endif %}
 
-                        <!-- Card body -->
+                        <!-- Card body, from chocolates.html -->
                         <div class="card-body pb-0 mb-2 rounded-2">
-                            <a a href="{% url 'chocolate_detail' chocolate.id %}" class="purple-text-transition text-decoration-none h3">{{ chocolate.choc_friendly_name }}</a>
+                            <a href="{% url 'chocolate_detail' chocolate.id %}" class="purple-text-transition text-decoration-none h3">{{ chocolate.choc_friendly_name }}</a>
                         </div>
 
-                        <!-- Card footer -->
+                        <!-- Card footer, from chocolates.html -->
                         <div class="card-footer bg-white pt-0 border-0 text-left rounded-2">
                             <div class="row">
                                 <div class="col">
 
-                                    <!-- Chocolate price -->
+                                    <!-- Chocolate price, from chocolates.html -->
                                     <p class="mb-2 text-left purple-text">€{{ chocolate.choc_price }}</p>
 
-                                    <!-- Edit and delete buttons are displayed if user is superuser -->
+                                    <!-- Edit and delete buttons are displayed if user is superuser, from chocolates.html -->
                                     {% if request.user.is_superuser %}
                                     <div id="super-user-options-container-main">
                                         <p id="super-user-options-text-main" class="purple-text">
@@ -116,7 +116,7 @@
                                     </div>
                                     {% endif %}
 
-                                    <!-- Displays the chocolate category below the price (e.g Dark, Milk, White etc) -->
+                                    <!-- Displays the chocolate category below the price (e.g Dark, Milk, White etc), from chocolates.html -->
                                     {% if chocolate.choc_category_display %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
@@ -129,7 +129,7 @@
 
                                     
 
-                                    <!-- Displays the diet type below the category (e.g Keto, Vegan, Gluten-Free etc) -->
+                                    <!-- Displays the diet type below the category (e.g Keto, Vegan, Gluten-Free etc), from chocolates.html -->
                                     {% if chocolate.choc_dietary_type %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
@@ -140,7 +140,7 @@
                                     </p>
                                     {% endif %}
 
-                                    <!-- Displays the chocolate rating -->
+                                    <!-- Displays the chocolate rating, from chocolates.html -->
                                     {% if chocolate.choc_rating %}
                                     <small class="text-muted"><i
                                             class="fas fa-star mr-1 text-warning"></i>{{ chocolate.choc_rating }} / 5</small>
@@ -155,7 +155,7 @@
                         </div>
 
                     </div>
-                    <!-- Card ends with closing div tag above -->
+                    <!-- Card ends with closing div tag above, from chocolates.html -->
                 </div>
                 {% endfor %}
             </div>

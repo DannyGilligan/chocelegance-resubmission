@@ -2,7 +2,7 @@
     <div class="arrow-up arrow-success rounded-2"></div>
     <div class="w-100 toast-capper bg-success rounded-2"></div>
 
-    <!-- Toast header -->
+    <!-- Toast header, from toast_success.html -->
     <div class="toast-header rounded-2">
         <strong class="mr-auto">Success!</strong>
         <button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast" aria-label="Close">
@@ -10,7 +10,7 @@
         </button>
     </div>
 
-    <!-- Toast body -->
+    <!-- Toast body, from toast_success.html -->
     <div class="toast-body rounded-2">
         <div class="row">
             <!-- The success message will be shown in the message container in base.html -->
@@ -20,16 +20,16 @@
            </div>
        </div>
 
-       <!-- DTL logic to display shopping cart items -->
+       <!-- DTL logic to display shopping cart items, from toast_success.html -->
        {% if grand_total and not on_profile_page %}
 
-            <!-- Cart total quantity -->
+            <!-- Cart total quantity, from toast_success.html -->
             <p class="py-1">Your Cart Quantity: {{ chocolate_count }} items</p>
             <div class="bag-notification-wrapper">
                 {% for item in cart_items %}
                     <div class="row mb-3">
 
-                        <!-- Chocolate image -->
+                        <!-- Chocolate image, from toast_success.html -->
                         <div class="col-3 my-1">
                             {% if item.chocolate.choc_image %}
                             <img class="w-100 rounded-lg" src="{{ item.chocolate.choc_image.url }}" alt="{{ item.chocolate.choc_friendly_name }}">
@@ -39,7 +39,7 @@
                         </div>
 
 
-                        <!-- Chocolate name and quantity -->
+                        <!-- Chocolate name and quantity, from toast_success.html -->
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.chocolate.choc_friendly_name }}</strong></p>
                             <p class="my-0 small">Quantity: {{ item.quantity }}</p>
@@ -49,13 +49,13 @@
                 {% endfor %}
             </div>
 
-            <!-- Grand total and checkout link -->
+            <!-- Grand total and checkout link, from toast_success.html -->
             <div class="row">
                 <div class="col">
-                    <strong><p class="mt-3 mb-1">
+                    <p class="mt-3 mb-1"><strong>
                         Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
                         <span class="float-right">€{{ total|floatformat:2 }}</span>
-                    </p></strong>
+                    </strong></p>
                     {% if free_delivery_delta > 0 %}
                         <p class="my-2 p-2 toast-free-delivery shadow-sm text-center">
                             Spend <strong>€{{ free_delivery_delta }}</strong> more to get free delivery!

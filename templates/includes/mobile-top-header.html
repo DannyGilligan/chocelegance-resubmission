@@ -1,7 +1,7 @@
 <!-- This html file includes 3 list items to be used on the mobile version of the navbar -->
 
 
-<!-- This list item provides a button to open the search bar -->
+<!-- This list item provides a button to open the search bar, from mobile-top-header.html. -->
 <ul class="m-0 p-0">
     <li class="list-inline-item m-0 p-0">
         <a class="nav-link d-block d-lg-none purple-text" href="#" id="mobile-search" data-toggle="dropdown"
@@ -12,7 +12,7 @@
             </div>
         </a>
 
-        <!-- Search form -->
+        <!-- Search form, from mobile-top-header.html. -->
         <div class="dropdown-menu border-0 w-100 p-3 rounded-lg my-0" aria-labelledby="mobile-search">
             <form class="form" method="GET" action="{% url 'chocolates' %}">
                 <div class="input-group w-100">
@@ -31,8 +31,9 @@
         </div>
     </li>
 
-    <!-- This list item allows user to open the My Account drop down menu -->
+    <!-- This list item allows user to open the My Account drop down menu, from mobile-top-header.html. -->
     <li class="list-inline-item dropdown m-0 p-0">
+        <!-- Link to 'My Account', from mobile-top-header.html. -->
         <a class="purple-text nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -40,6 +41,7 @@
                 <p class="my-0">My Account</p>
             </div>
         </a>
+        <!-- DTL logic to give user based options to log in, from mobile-top-header.html. -->
         <div class="dropdown-menu border-purple" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
@@ -54,7 +56,7 @@
         </div>
     </li>
 
-    <!-- This list item allows access to the shopping bag -->
+    <!-- This list item allows access to the shopping bag, from mobile-top-header.html. -->
     <li class="list-inline-item m-0 p-0">
         <a class="{% if grand_total %}active-cart font-weight-bold{% else %}purple-text{% endif %} nav-link d-block d-lg-none"
             href="{% url 'view_cart' %}">

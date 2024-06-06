@@ -1,6 +1,6 @@
-html {
-    height: 100%;
-}
+/* html {
+    height: calc(100vh - 800px);
+} */
 
 
 /* Link to google font used https://fonts.google.com/specimen/Urbanist */
@@ -462,6 +462,7 @@ link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
 (e.g All Keto Chocolates, badges will be shown for Dark, Milk and White chocolates) */
 
 .badge {
+    border: 1px solid #551b8c !important;
     background: #882bde !important;
     color: #fff !important;
     border-radius: 5px !important;
@@ -471,7 +472,7 @@ a.category-badge > span.badge:hover {
     background: #c71585 !important;
     color: #fff !important;
     border-radius: 5px !important;
-    border: 1px solid #ed82ed;
+    border: 1px solid #ed82ed !important;
     box-shadow: 0 0px 10px #ed82ed;
 }
 

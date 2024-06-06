@@ -92,7 +92,7 @@
 
                         <!-- Card body -->
                         <div class="card-body pb-0  rounded-2">
-                            <p class="mb-2 purple-text h4">{{ chocolate.choc_friendly_name }}</p>
+                            <a a href="{% url 'chocolate_detail' chocolate.id %}" class="mb-2 purple-text-transition text-decoration-none h4">{{ chocolate.choc_friendly_name }}</a>
                         </div>
 
                         <!-- Card footer -->

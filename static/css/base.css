@@ -161,7 +161,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Text, Border & Background Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ Text, Border Containers, Background Styling */
 
 /* Custom color of text used throughout site */
 .purple-text {
@@ -206,7 +206,9 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     border-radius: 15px;
 }
 
-
+.order-history-row {
+    font-size: .8rem !important;
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
@@ -919,12 +921,27 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Media Queries */
 
+
+/* Media Query with min-width at 487px */
+@media (min-width: 478px) {
+
+    .order-history-row {
+        font-size: .9rem !important;
+    }
+}
+
+
+
 /* Media Query with min-width at 642px */
 @media (min-width: 642px) {
 
     #hero-image-container {
         background-image: url("/media/hero-image-final.webp");
         height: 40rem;
+    }
+
+    .order-history-row {
+        font-size: 1rem !important;
     }
 }
 

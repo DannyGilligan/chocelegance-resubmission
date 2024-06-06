@@ -21,7 +21,7 @@
 </div>
 
 
-<div class="container-fluid col-12 col-lg-6 col-md-8 mt-2 mx-auto">
+<div class="container-fluid col-12 col-lg-8 col-md-8 mt-2 mx-auto">
     <!-- First row contains page title and selected categories  -->
     <div class="row">
         <div class="col text-center mt-4">
@@ -99,7 +99,23 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left rounded-2">
                             <div class="row">
                                 <div class="col">
+
+                                    <!-- Chocolate price -->
                                     <p class="mb-2 text-left purple-text">€{{ chocolate.choc_price }}</p>
+
+                                    <!-- Edit and delete buttons are displayed if user is superuser -->
+                                    {% if request.user.is_superuser %}
+                                    <div id="super-user-options-container-main">
+                                        <p id="super-user-options-text-main" class="purple-text">
+                                            Superuser options:
+                                        </p>
+                                        <div id="Superuser-options-main">
+                                        <a id="edit-button-main" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                                        <a id="delete-button-main" href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+
                                     <!-- Displays the chocolate category below the price (e.g Dark, Milk, White etc) -->
                                     {% if chocolate.choc_category_display %}
                                     <p class="small mt-1 mb-0">
@@ -110,6 +126,8 @@
                                         </a>
                                     </p>
                                     {% endif %}
+
+                                    
 
                                     <!-- Displays the diet type below the category (e.g Keto, Vegan, Gluten-Free etc) -->
                                     {% if chocolate.choc_dietary_type %}
@@ -130,18 +148,7 @@
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
 
-                                    <!-- Edit and delete buttons are displayed if user is superuser -->
-                                    {% if request.user.is_superuser %}
-                                    <div id="super-user-options-container-main">
-                                        <p id="super-user-options-text-main" class="purple-text">
-                                            Superuser options:
-                                        </p>
-                                        <div id="Superuser-options-main">
-                                        <a id="edit-button-main" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
-                                        <a id="delete-button-main" href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
-                                        </div>
-                                    </div>
-                                    {% endif %}
+
 
                                 </div>
                             </div>

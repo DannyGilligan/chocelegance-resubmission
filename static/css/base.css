@@ -99,14 +99,19 @@ input[name='q']::placeholder {
     text-align: left;
     position: relative;
     top: .5%;
-    left: 5%;
+    left: 10%;
     color: white;
     text-shadow: #ed82ed 0px 0 3px;
 }
 
+#mobile-logo a {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #mobile-logo a h2 {
     color: white;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 .mobile-logo-heart {

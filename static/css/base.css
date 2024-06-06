@@ -9,8 +9,25 @@ body {
     background: white;
     max-width: 98% !important;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
+#main-nav {
+    margin-top: .3rem;
+    border: 1px solid red;
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for navbar */
+#base-header{
+    max-width: 98%;
+    padding: 0 !important;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .main-logo-link {
     width: fit-content;
@@ -21,17 +38,11 @@ body {
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Nav Items Styling */
 
-/* #main-nav {
-    margin-top: .3rem;
-} */
 
-/* Container for navbar */
-#base-header{
-    width: 98% !important;
-    padding: 0 !important;
-    height: 1rem !important;
+.navbar ul {
+    margin: 0;
+    padding: 0;
 }
-
 
 .nav-link {
     padding: .6rem;
@@ -174,12 +185,16 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     background: #551b8c !important
 }
 
+#quantity-form-group {
+    width: 17rem;
+}
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
 
 #delivery-banner {
-    border-radius: 10px;
+    border-radius: 5px;
     /* Background gradient effect generated from cssgradient.io */
     background: rgb(85,27,140);
     background: -moz-linear-gradient(153deg, rgba(85,27,140,1) 34%, rgba(136,43,222,1) 81%);
@@ -251,6 +266,68 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     text-shadow: #ed82ed 0px 0 5px;
 }
 
+
+/* ------------------------------------------------------------------------------------------------------------------------------ Super User Option Styling */
+
+#super-user-options-container {
+    border: 1px solid #551b8c;
+    border-radius: 10px;
+    width: 17rem;
+    padding: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#super-user-options-container p {
+    font-weight: bold;
+}
+
+#Superuser-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+#edit-button-detail {
+    padding-top: .2rem;
+    text-align: center;
+    display: inline-block;
+    width: 6rem;
+    height: 2rem;
+    background: #551b8c;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #882bde;
+    color: white;
+    text-decoration: none;
+}
+
+#edit-button-detail:hover{
+    background: #c71585;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed
+}
+
+#delete-button-detail {
+    padding-top: .2rem;
+    text-align: center;
+    display: inline-block;
+    width: 6rem;
+    height: 2rem;
+    background: #882bde;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #551b8c;
+    color: white;
+    text-decoration: none;
+}
+
+#delete-button-detail:hover{
+    background: #c71585;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Button Styling */
@@ -507,10 +584,9 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 /* Used to create a container for the chocolate image in cart.html */
 .choc-image-container-cart {
     height: auto;
-    width: auto;
     margin-left: auto;
     margin-right: auto;
-    max-width: 15rem;
+    max-width: 10rem;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0px 10px #ed82ed;

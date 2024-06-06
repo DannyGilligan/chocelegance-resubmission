@@ -2,8 +2,8 @@
 
 
 <!-- This list item provides a button to open the search bar -->
-<ul>
-    <li class="list-inline-item">
+<ul class="m-0 p-0">
+    <li class="list-inline-item m-0 p-0">
         <a class="nav-link d-block d-lg-none purple-text" href="#" id="mobile-search" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -32,7 +32,7 @@
     </li>
 
     <!-- This list item allows user to open the My Account drop down menu -->
-    <li class="list-inline-item dropdown">
+    <li class="list-inline-item dropdown m-0 p-0">
         <a class="purple-text nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -55,7 +55,7 @@
     </li>
 
     <!-- This list item allows access to the shopping bag -->
-    <li class="list-inline-item">
+    <li class="list-inline-item m-0 p-0">
         <a class="{% if grand_total %}active-cart font-weight-bold{% else %}purple-text{% endif %} nav-link d-block d-lg-none"
             href="{% url 'view_cart' %}">
             <div class="text-center">

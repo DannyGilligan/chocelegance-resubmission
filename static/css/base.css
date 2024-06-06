@@ -421,6 +421,58 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 
+.choc-mgmt-button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 16rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.cancel-choc-mgmt {
+    text-align: center;
+    width: 5rem;
+    height: 2.4rem;
+    background: #551b8c;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #882bde;
+    color: white;
+    text-decoration: none !important;
+    font-weight: 300 !important;
+    padding-top: .3rem;
+}
+
+.cancel-choc-mgmt:hover {
+    background: #c71585;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed
+}
+
+
+.update-choc-mgmt {
+    text-align: center;
+    width: 10rem;
+    height: 2.4rem !important;
+    background: #882bde;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #551b8c;
+    color: white;
+    text-decoration: none;
+    font-weight: 300 !important;
+    padding-top: .1rem;
+}
+
+.update-choc-mgmt:hover {
+    background: #c71585;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed
+}
+
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Button Styling */
 

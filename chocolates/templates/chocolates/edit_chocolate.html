@@ -13,11 +13,9 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6">
-            <hr>
-            <h2 class="logo-font mb-4">Chocolate Management</h2>
-            <h5>Edit a Chocolate!</h5>
-            <hr>
+        <div class="col-12 col-md-6 mt-5">
+            <h2 class="purple-text mb-4">Chocolate Management</h2>
+            <h5 class="bright-purple-text">Edit a Chocolate!</h5>
         </div>
     </div>
 
@@ -25,7 +23,7 @@
         <div class="col-12 col-md-6">
 
             <!-- Form used to add chocolate details, enctype attribute allows images to be uploaded -->
-            <form method="POST" action="{% url 'edit_chocolate' chocolate.id %}" class="form mb-3" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_chocolate' chocolate.id %}" class="form mb-3 purple-text font-weight-bold" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
                     {% if field.name != 'choc_image' %}
@@ -34,9 +32,9 @@
                         {{ field }}
                     {% endif %}
                 {% endfor %}
-                <div>
-                    <a class="btn btn-success rounded" href="{% url 'chocolates' %}">Cancel</a>
-                    <button class="btn btn-info rounded" type="submit">Update Chocolate</button>
+                <div class="choc-mgmt-button-container">
+                    <a class="cancel-choc-mgmt" href="{% url 'chocolates' %}">Cancel</a>
+                    <button class="update-choc-mgmt" type="submit">Update Chocolate</button>
                 </div>
             </form>
             

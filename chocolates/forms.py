@@ -25,4 +25,4 @@ class ChocolateForm(forms.ModelForm):
         self.fields['choc_category_display'].choices = friendly_names
         # Adds classes to the fields to allow styling for consistency
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-purple rounded'
+            field.widget.attrs['class'] = 'border-purple border-radius-10 purple-text'

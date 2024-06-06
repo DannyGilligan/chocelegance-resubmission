@@ -17,12 +17,12 @@
 <div class="overlay"></div>
 <div class="container">
 
-    <!-- Thank you message displayed below -->
+    <!-- Thank you message displayed below, from checkout_success.html -->
     <div class="row">
         <div class="col">
             <br>
             <h2 class="purple-text large mb-4 text-center">Thank You!<br><br><span
-                    class="small logo-heart">&#10084</span></h2>
+                    class="small logo-heart">&#10084;</span></h2>
             <br>
             <p class="purple-text text-center">Your order information is below. A confirmation email will be sent to
                 <strong>{{ order.email }}</strong>.</p>
@@ -32,7 +32,7 @@
     <div class="row">
         <div class="col-lg-8 offset-lg-2 col-sm-12">
 
-            <!-- Order confirmation displayed below -->
+            <!-- Order confirmation displayed below, from checkout_success.html -->
             <div class="order-confirmation-wrapper p-4 border-purple">
                 <div class="row mt-4">
                     <div class="col">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
 
-                <!-- Order number -->
+                <!-- Order number, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Order Number</p>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <!-- Order date -->
+                <!-- Order date, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Order Date</p>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <!-- Order details -->
+                <!-- Order details, from checkout_success.html -->
                 <div class="row mt-4">
                     <div class="col">
                         <h5 class="purple-text font-weight-bold">
@@ -83,14 +83,14 @@
                 </div>
                 {% endfor %}
 
-                <!-- Delivery details -->
+                <!-- Delivery details, from checkout_success.html -->
                 <div class="row mt-4">
                     <div class="col">
                         <h5 class="purple-text font-weight-bold">Delivering To:</h5>
                     </div>
                 </div>
 
-                <!-- Full name -->
+                <!-- Full name, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Full Name</p>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
 
-                <!-- Address line 1 -->
+                <!-- Address line 1, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Address 1</p>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
 
-                <!-- Address line 2 -->
+                <!-- Address line 2, from checkout_success.html -->
                 {% if order.street_address2 %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -122,7 +122,7 @@
                 </div>
                 {% endif %}
 
-                <!-- County -->
+                <!-- County, from checkout_success.html -->
                 {% if order.county %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -134,7 +134,7 @@
                 </div>
                 {% endif %}
 
-                <!-- Town/City -->
+                <!-- Town/City, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Town or City</p>
@@ -144,7 +144,7 @@
                     </div>
                 </div>
 
-                <!-- Postcode -->
+                <!-- Postcode, from checkout_success.html -->
                 {% if order.postcode %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -156,7 +156,7 @@
                 </div>
                 {% endif %}
 
-                <!-- Country -->
+                <!-- Country, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Country</p>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
 
-                <!-- Phone number -->
+                <!-- Phone number, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Phone Number</p>
@@ -176,14 +176,14 @@
                     </div>
                 </div>
 
-                <!-- Billing information -->
+                <!-- Billing information, from checkout_success.html -->
                 <div class="row mt-4">
                     <div class="col">
                         <h5 class="purple-text font-weight-bold">Billing Info:</h5>
                     </div>
                 </div>
 
-                <!-- Order total -->
+                <!-- Order total, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Order Total</p>
@@ -193,7 +193,7 @@
                     </div>
                 </div>
 
-                <!-- Delivery cost -->
+                <!-- Delivery cost, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Delivery cost</p>
@@ -203,7 +203,7 @@
                     </div>
                 </div>
 
-                <!-- Grand total -->
+                <!-- Grand total, from checkout_success.html -->
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 purple-text">Grand Total</p>
@@ -231,6 +231,5 @@
         {% endif %}
     </div>
 </div>
-</div>
-</div>
+
 {% endblock %}

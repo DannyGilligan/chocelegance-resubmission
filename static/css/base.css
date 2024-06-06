@@ -164,6 +164,11 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     color: #551b8c !important;
 }
 
+
+.bright-purple-text {
+    color: #c71585 !important;
+}
+
 /* Changes color of purple text on hover, used in main menu headings */
 .purple-text-transition {
     color: #551b8c !important;

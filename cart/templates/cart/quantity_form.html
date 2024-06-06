@@ -3,26 +3,26 @@
     {% csrf_token %}
 
     <div class="form-group">
-        <div class="input-group">
+        <div class="input-group input-group-{{ item.item_id }}">
 
             <!-- Button to reduce number of chocolates -->
             <div class="input-group-prepend">
-                <button class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }}"
-                    data-item_id="{{ item.item_id }}">
+                <button class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }}" 
+                data-item_id="{{ item.item_id }}">
                     <span>
                         <i class="fas fa-minus fa-sm purple-text font-weight-bold"></i>
                     </span>
                 </button>
             </div>
 
-            <input class="form-control qty_input text-center border-purple rounded-lg id_qty_{{ item.item_id }}"
-                type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                data-item_id="{{ item.item_id }}">
+            <!-- Input field showing quantity -->
+            <input class="form-control rounded-lg form-control-sm text-center purple-text border-purple qty_input id_qty_{{ item.item_id }}" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99"
+            data-item_id="{{ item.item_id }}">
 
             <!-- Button to increase number of chocolates -->
             <div class="input-group-append">
-                <button class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ item.item_id }}"
-                    data-item_id="{{ item.item_id }}">
+                <button class="increment-qty btn btn-sm rounded-sm increment-qty_{{ item.item_id }}"
+                    data-item_id="{{ item.item_id }}" data-size="{{ item.size }}">
                     <span>
                         <i class="fas fa-plus fa-sm purple-text font-weight-bold"></i>
                     </span>

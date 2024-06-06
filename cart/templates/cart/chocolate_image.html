@@ -1,0 +1,11 @@
+
+<!-- Chocolate image -->
+{% if item.chocolate.choc_image %}
+<div class="choc-image-container-cart">
+    <img class="img-fluid rounded" src="{{ item.chocolate.choc_image.url }}" alt="{{ item.chocolate.choc_friendly_name }}">
+</div>
+{% else %}
+<div class="choc-image-container-cart">
+    <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.webp" alt="{{ item.chocolate.choc_friendly_name }}">
+</div>
+{% endif %}

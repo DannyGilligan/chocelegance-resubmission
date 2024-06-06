@@ -56,20 +56,12 @@
                     <tr>
                         <!-- Chocolate image -->
                         <td class="p-3 w-25">
-                            {% if item.chocolate.choc_image %}
-                            <div class="choc-image-container-cart">
-                                <img class="img-fluid rounded" src="{{ item.chocolate.choc_image.url }}" alt="{{ item.chocolate.choc_friendly_name }}">
-                            </div>
-                            {% else %}
-                            <div class="choc-image-container-cart">
-                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.webp" alt="{{ item.chocolate.choc_friendly_name }}">
-                            </div>
-                            {% endif %}
+                            {% include "cart/chocolate_image.html" %}
                         </td>
 
                         <!-- Chocolate friendly name -->
                         <td class="py-3">
-                            <p class="my-0 purple-text">{{ item.chocolate.choc_friendly_name }}</p>
+                            {% include "cart/chocolate_info.html" %}
                         </td>
 
                         <!-- Chocolate price -->
@@ -81,42 +73,7 @@
                         <td id="cart-quantity-col" class="">
 
                             <!-- The form below allows user to adjust item quantity at the cart screen -->
-                            <form method="POST" action="{% url 'adjust_cart' item.item_id %}" class="form update-form">
-                                {% csrf_token %}
-                                
-                                <div class="form-group">
-                                    <div class="input-group">
-    
-                                        <!-- Button to reduce number of chocolates -->
-                                        <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-sm btn-black rounded-0"
-                                                data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
-                                                <span>
-                                                    <i class="fas fa-minus fa-sm purple-text font-weight-bold"></i>
-                                                </span>
-                                            </button>
-                                        </div>
-    
-                                        <input class="form-control qty_input text-center border-purple rounded-lg" type="number" name="quantity" value="{{ item.quantity }}"
-                                            min="1" max="99" data-item_id="{{ item.item_id }}"
-                                            id="id_qty_{{ item.item_id }}">
-    
-                                        <!-- Button to increase number of chocolates -->
-                                        <div class="input-group-append">
-                                            <button class="increment-qty btn btn-sm btn-black rounded-0"
-                                                data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
-                                                <span>
-                                                    <i class="fas fa-plus fa-sm purple-text font-weight-bold"></i>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </form>
-                            <!-- Form ends above this line -->
-                            <a class="update-link text-success"><small>Update</small></a>
-                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                            {% include "cart/quantity_form.html" %}
                         </td>
                         <td class="py-3">
                             <p class="my-0 purple-text"><strong>€{{ item.chocolate.choc_price | calc_subtotal:item.quantity }}</strong></p>
@@ -127,33 +84,14 @@
                     <!-- This row renders the details of the transaction total -->
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
-                            <h6><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
-                            <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
-                            <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
-                            {% if free_delivery_delta > 0 %}
-                            <p class="mb-1 text-danger">
-                                Psst.. You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong>
-                                more!
-                            </p>
-                            {% endif %}
+                            {% include "cart/cart_total.html" %}
                         </td>
                     </tr>
 
                     <!-- This row renders the checkout link -->
                     <tr>
                         <td colspan="5" class="text-right">
-                            <a href="{% url 'chocolates' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                                <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
-                                </span>
-                                <span class="text-uppercase">Keep Shopping</span>
-                            </a>
-                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                                <span class="text-uppercase">Secure Checkout</span>
-                                <span class="icon">
-                                    <i class="fas fa-lock"></i>
-                                </span>
-                            </a>
+                            {% include "cart/checkout_buttons.html" %}
                         </td>
                     </tr>
                 </table>

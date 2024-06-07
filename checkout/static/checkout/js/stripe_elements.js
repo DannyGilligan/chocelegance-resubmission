@@ -16,7 +16,7 @@ var style = {
         color: '#000',
         fontFamily: '"Urbanist", "Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
-        fontSize: '16px',
+        fontSize: '14px',
         '::placeholder': {
             // The value '60' has been appended to the color code '#551b8c' below to change the opacity
             color: '#551b8c60',

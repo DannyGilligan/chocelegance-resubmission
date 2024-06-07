@@ -235,6 +235,19 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 } */
 
+
+.checkout-button-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-quantity-input {
+    max-width: 15rem !important;
+}
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
 
 #delivery-banner {
@@ -749,6 +762,21 @@ a.category-badge>span.badge:hover {
     box-shadow: 0 0px 10px #ed82ed;
     color: white;
 }
+
+
+.cart-free-delivery {
+    background: #ed82ed;
+    color: #551b8c !important;
+    border-radius: 10px;
+    height: 3rem;
+    font-size: .9rem;
+    width: 17.5rem;
+    border: 1px solid #551b8c;
+    padding: .1rem;
+}
+
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------ Icon Styling */
 
 /* from Bulma, used to ensure consistent styling of icons (centering etc) */
@@ -1027,6 +1055,24 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         font-size: 1rem !important;
     }
 }
+
+/* Media Query with min-width at 767px */
+@media (min-width: 767px) {
+
+    .checkout-button-container {
+        float: right !important;
+    }
+    
+}
+
+
+.checkout-button-container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+
 
 /* Media Query with min-width at 992px */
 @media (min-width: 992px) {

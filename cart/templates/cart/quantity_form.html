@@ -1,4 +1,5 @@
 <!-- The form below allows user to adjust item quantity at the cart screen -->
+ <div class="mobile-quantity-input">
 <form method="POST" action="{% url 'adjust_cart' item.item_id %}" class="form update-form">
     {% csrf_token %}
 
@@ -36,3 +37,4 @@
 <a class="update-link text-success"><small>Update</small></a>
 <a class="remove-item text-danger float-right"
     id="remove_{{ item.item_id }}"><small>Remove</small></a>
+</div>

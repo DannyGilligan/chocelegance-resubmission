@@ -1,13 +1,18 @@
 <!-- This row renders the checkout link -->
-<a href="{% url 'chocolates' %}" class="btn cart-keep-shopping-button">
-    <span class="icon">
-        <i class="fas fa-chevron-left"></i>
-    </span>
-    <span class="text-uppercase">Keep Shopping</span>
-</a>
-<a href="{% url 'checkout' %}" class="btn cart-checkout-button">
-    <span class="text-uppercase">Secure Checkout</span>
-    <span class="icon">
-        <i class="fas fa-lock"></i>
-    </span>
-</a>
+ <div class="checkout-button-container">
+    {% if free_delivery_delta > 0 %}
+    <p class="float-right cart-free-delivery mb-0 text-center">
+        Psst.. You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong>
+        more!
+    </p>
+    {% endif %}
+    <a href="{% url 'chocolates' %}" class="btn cart-keep-shopping-button">
+        <span class="text-uppercase">Keep Shopping</span>
+    </a>
+    <a href="{% url 'checkout' %}" class="btn cart-checkout-button">
+        <span class="text-uppercase">Secure Checkout</span>
+        <span class="icon">
+            <i class="fas fa-lock"></i>
+        </span>
+    </a>
+</div>

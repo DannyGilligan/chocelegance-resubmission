@@ -49,7 +49,10 @@
                     <!-- Second row includes checkout buttons and summary -->
                     <div class="col">
                         {% include "cart/checkout_buttons.html" %}
-                        <p class="purple-text mb-3">A summary of your cart contents is shown below</p>
+                        
+                    </div>
+                    <div class="row col-12 mt-3">
+                        <p class="purple-text mb-5 px-2">The chocolates in your cart are shown below.<br>Our AI algorithm detected that you have very good taste...</p>
                     </div>
                 </div>
 
@@ -57,26 +60,26 @@
                 {% for item in cart_items %}
 
                 <!-- Chocolate image -->
-                <div class="row col-12 col-sm-6 mb-5">
+                <div class="row col-12 col-sm-6">
                     {% include "cart/chocolate_image.html" %}
                 </div>
 
                 <!-- Chocolate info -->
-                <div class="row col-12 col-sm-6 mb-5">
+                <div class="row col-12 col-sm-6">
                     {% include "cart/chocolate_info.html" %}
                 </div>
 
                 <!-- Chocolate Price -->
-                <div class="row col-12 col-sm-6 order-sm-last">
-                    <p class="my-0">Price p/item: €{{ item.chocolate.choc_price }}</p>
-                    <p><strong>Subtotal: </strong>€{{ item.chocolate.choc_price | calc_subtotal:item.quantity }}</p>
+                <div class="row col-12 col-sm-6 order-sm-last purple-text">
+                    <p class="my-0 pr-5">Price p/item: €{{ item.chocolate.choc_price }}</p>
+                    <p><strong>Subtotal: €{{ item.chocolate.choc_price | calc_subtotal:item.quantity }}</strong></p>
                 </div>
 
                 <!-- Quantity form -->
                 <div class="col-12 col-sm-6">
                     {% include "cart/quantity_form.html" %}
                 </div>
-                <div class="row"><div class="col"><hr></div></div>
+                <div class="row"><div class="col"><hr class="mb-5"></div></div>
 
                 {% endfor %}
                 <div class="btt-button shadow-sm rounded-2 border border-purple">
@@ -107,12 +110,12 @@
                     {% for item in cart_items %}
                     <tr>
                         <!-- Chocolate image -->
-                        <td class="p-3 w-25">
+                        <td class="py-3 w-25">
                             {% include "cart/chocolate_image.html" %}
                         </td>
 
                         <!-- Chocolate friendly name -->
-                        <td class="py-3">
+                        <td class="py-0">
                             {% include "cart/chocolate_info.html" %}
                         </td>
 

@@ -1,7 +1,46 @@
 <!-- This row renders the details of the transaction total -->
-<h6><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
-<h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
-<h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+<h6 class="purple-text"><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
+
+<h6 class="bright-purple-text"><strong>Delivery: €{{ delivery|floatformat:2 }}</strong></h6>
+
+<h4 class="mt-2 purple-text"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+
+
+
+<div class="cart-summary-container">
+
+        <div class="cart-summary-row">
+            <div class="cart-total-name">
+                <h6>Cart Total</h6>
+            </div>
+
+            <div class="cart-total-amount">
+                €{{ total|floatformat:2 }}
+            </div>
+        </div>
+
+        <div class="cart-summary-row">
+            <div class="cart-total-name">
+                <h6>Delivery</h6>
+            </div>
+
+            <div class="cart-total-amount">
+                €{{ delivery|floatformat:2 }}
+            </div>
+        </div>
+
+        <div class="cart-summary-row">
+            <div class="cart-summary-row">
+                <h6><strong>Order Total</strong></h6>
+            </div>
+
+            <div class="cart-total-amount">
+                <strong>€{{ grand_total|floatformat:2 }}</strong>
+            </div>
+        </div>
+</div>
+
+
 {% if free_delivery_delta > 0 %}
 <p class="mb-1 text-danger">
     Psst.. You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong>

@@ -211,6 +211,30 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 
+/* .cart-summary-container {
+    border: 1px solid #551b8c;
+    border-radius: 10px;
+    width: 33rem;
+    float: right;
+} */
+
+/* .cart-summary-row {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .3rem;
+}
+
+.cart-total-name {
+    text-align: start;
+    width: 7rem;
+    float: left !important;
+}
+
+.cart-total-amount {
+
+} */
+
 /* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
 
 #delivery-banner {
@@ -666,6 +690,65 @@ a.category-badge>span.badge:hover {
     box-shadow: 0 0px 10px #ed82ed;
 }
 
+
+.cart-keep-shopping-button {
+    font-family: "Urbanist";
+    font-size: 1.1rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    width: 17.5rem !important;
+    height: 3rem !important;
+    background: #882bde;
+    border-radius: 10px;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #551b8c;
+    box-shadow: 0 0px 2px #ed82ed;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.cart-keep-shopping-button:hover {
+    background: #c71585;
+    border: 1px solid #ed82ed;
+    box-shadow: 0 0px 10px #ed82ed;
+    text-decoration: none;
+    color: white;
+}
+
+.cart-keep-shopping-button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.cart-checkout-button {
+    text-decoration: none;
+    font-family: "Urbanist";
+    font-size: 1.1rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    padding-bottom: .5rem;
+    width: 17.5rem !important;
+    height: 3rem !important;
+    background: #551b8c;
+    border-radius: 10px;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #551b8c;
+    box-shadow: 0 0px 2px #ed82ed;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.cart-checkout-button:hover {
+    background: #c71585;
+    border: 1px solid #ed82ed;
+    box-shadow: 0 0px 10px #ed82ed;
+    color: white;
+}
 /* ------------------------------------------------------------------------------------------------------------------------------ Icon Styling */
 
 /* from Bulma, used to ensure consistent styling of icons (centering etc) */

@@ -765,8 +765,8 @@ a.category-badge>span.badge:hover {
 
 
 .cart-free-delivery {
-    background: #ed82ed;
-    color: #551b8c !important;
+    background: #c71585;
+    color: white !important;
     border-radius: 10px;
     height: 3rem;
     font-size: .9rem;
@@ -869,8 +869,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 .message-container {
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 5px;
+    right: 3px;
     z-index: 9999999;
     /* Fade in animation was copied directly from
     https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
@@ -896,8 +896,6 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 .toast-capper {
     height: .3rem;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
 
 .toast-header {
@@ -921,8 +919,6 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     background: #882bde;
     color: white;
     border-top: 1px solid #c71585;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .toast-free-delivery {
@@ -978,6 +974,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 .arrow-dark {
     border-bottom-color: #343a40 !important;
 }
+
+
 
 .bag-notification-wrapper {
     height: 120px;
@@ -1062,6 +1060,14 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     .checkout-button-container {
         float: right !important;
     }
+
+    
+    /* Toast positioning */
+    .message-container {
+        top: 50px;
+        right: 50px;
+    }
+
     
 }
 

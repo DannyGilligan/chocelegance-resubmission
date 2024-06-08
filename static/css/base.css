@@ -210,6 +210,10 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     font-size: .8rem !important;
 }
 
+.order-number {
+    font-size: .9rem;
+}
+
 
 /* .cart-summary-container {
     border: 1px solid #551b8c;
@@ -1040,6 +1044,10 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     .order-history-row {
         font-size: .9rem !important;
     }
+
+    .order-number {
+        font-size: 1rem;
+    }
 }
 
 
@@ -1168,6 +1176,12 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     /* Container for navbar */
     #base-header {
         max-width: 1200px;
+    }
+
+    /* Toast positioning */
+    .message-container {
+        top: 50px;
+        right: 300px;
     }
 }
 

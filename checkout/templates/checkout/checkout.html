@@ -71,15 +71,17 @@
 
                 <!-- Order summary and delivery cost -->
                 <div class="row text-right checkout-total-text">
-                    <div class="col-7 offset-2">
-                        <p class="my-0 purple-text">Order Total:</p>
-                        <p class="my-0 bright-purple-text">Delivery:</p>
-                        <p class="my-0 purple-text font-weight-bold">Grand Total:</p>
+                    <div class="col-7 offset-2 pr-0">
+                        <p class="pr-2 my-1 purple-text">Cart Total: </p>
+                        <p class="pr-2 my-1 bright-purple-text">Delivery: </p>
+                        <hr class="my-1">
+                        <h5 class="pr-2 my-1 purple-text">Order Total: </h5>
                     </div>
-                    <div class="col-3 checkout-total-text">
-                        <p class="my-0 purple-text">€{{ total | floatformat:2 }}</p>
-                        <p class="my-0 bright-purple-text">€{{ delivery | floatformat:2 }}</p>
-                        <p class="my-0 purple-text font-weight-bold"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
+                    <div class="col-3 checkout-total-text pl-0">
+                        <p class="pr-2 my-1 purple-text">€{{ total | floatformat:2 }}</p>
+                        <p class="pr-2 my-1 bright-purple-text">€{{ delivery | floatformat:2 }}</p>
+                        <hr class="my-1">
+                        <h5 class="pr-2 my-1 purple-text"><strong>€{{ grand_total | floatformat:2 }}</strong></h5>
                     </div>
                 </div>
             </div>

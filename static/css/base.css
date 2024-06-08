@@ -214,6 +214,10 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     font-size: .9rem;
 }
 
+.checkout-total-text {
+    font-size: 1.2;
+}
+
 
 /* .cart-summary-container {
     border: 1px solid #551b8c;
@@ -251,6 +255,22 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     max-width: 15rem !important;
 }
 
+/* Changes color of save info checkbox on checkout page */
+input[id="id-save-info"] {
+    accent-color: #c71585;
+  }
+
+
+.charge-notification {
+    background: #c71585;
+    color: white !important;
+    border-radius: 10px;
+    height: 3rem;
+    font-size: .9rem;
+    width: 17.5rem;
+    border: 1px solid #551b8c;
+    padding: .1rem;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
 
@@ -1078,6 +1098,11 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         top: 50px;
         right: 50px;
     }
+
+    .checkout-total-text {
+        font-size: 1.3rem !important;
+    }
+    
 
     
 }

@@ -13,7 +13,7 @@ var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
 var style = {
     base: {
-        color: '#000',
+        color: '#551b8c',
         fontFamily: '"Urbanist", "Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
         fontSize: '14px',

@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def index(request):
+def about(request):
     """
     This view will return the about page
     """

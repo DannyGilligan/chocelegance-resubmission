@@ -37,7 +37,7 @@
 
             <!-- Cart layout below to be displayed on mobile devices only!! -->
             <div class="d-block d-md-none">
-                <!-- Two rows with a single full width column -->
+                <!-- Two  rows with a single full width column -->
                 <div class="row">
                     <!-- First row includes Cart total -->
                     <div class="col">
@@ -49,10 +49,11 @@
                     <!-- Second row includes checkout buttons and summary -->
                     <div class="col">
                         {% include "cart/checkout_buttons.html" %}
-                        
                     </div>
+
                     <div class="row col-12 mt-3">
-                        <p class="purple-text mb-5 mt-4 pl-3">The chocolates in your cart are shown below.<br>Our AI algorithm detected that you have very good taste...</p>
+                        <p class="purple-text mb-5 mt-4 pl-3">The chocolates in your cart are shown below.<br>Our AI
+                            algorithm detected that you have very good taste...</p>
                     </div>
                 </div>
 
@@ -79,13 +80,17 @@
                 <div class="col-12 col-sm-6">
                     {% include "cart/quantity_form.html" %}
                 </div>
-                <div class="row"><div class="col"><hr class="mb-5"></div></div>
+                <div class="row">
+                    <div class="col">
+                        <hr class="mb-5">
+                    </div>
+                </div>
 
                 {% endfor %}
                 <div class="btt-button shadow-sm rounded-2 border border-purple">
                     <a class="btt-link d-flex h-100">
                         <i id="back-to-top-icon" class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-                    </a>	
+                    </a>
                 </div>
 
             </div>
@@ -182,8 +187,8 @@
 
 <!-- Back to Top button JS logic -->
 <script type="text/javascript">
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0);
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
     });
 
     // JS Code block validated in JS Hint, no errors

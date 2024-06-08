@@ -112,7 +112,7 @@
                         <!-- Allows authenticated users to save the information to their profile -->
                         <div class="rounded-lg form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
-								<label class="form-check-label bright-purple-text" for="id-save-info">Save this delivery information to my Chocelegance profile</label>
+								<label class="form-check-label save-info-text bright-purple-text" for="id-save-info">Save this delivery information to my Chocelegance profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label purple-text" for="id-save-info">

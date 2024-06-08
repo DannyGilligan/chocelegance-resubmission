@@ -258,8 +258,14 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 /* Changes color of save info checkbox on checkout page */
 input[id="id-save-info"] {
     accent-color: #c71585;
+    height: 1rem;
+    width: 1rem;
   }
 
+.checkout-button-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .charge-notification {
     background: #c71585;
@@ -269,8 +275,14 @@ input[id="id-save-info"] {
     font-size: .9rem;
     width: 17.5rem;
     border: 1px solid #551b8c;
-    padding: .1rem;
+    padding: .6rem;
 }
+
+.save-info-text {
+    display: flex;
+    align-items:flex-end;
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
 
@@ -1192,15 +1204,21 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
     body {
         max-width: 1200px !important;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #main-nav {
         max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     /* Container for navbar */
     #base-header {
         max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* Toast positioning */

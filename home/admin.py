@@ -11,7 +11,7 @@ class TestimonialAdmin(admin.ModelAdmin):
     fields = ('testimonial_user', 'testimonial_user_display', 'testimonial_text', 'testimonial_date', 'testimonial_publish')
 
 
-    list_display = ('testimonial_user', 'testimonial_text', 'testimonial_date',)
+    list_display = ('testimonial_user_display', 'testimonial_date', 'testimonial_text',)
 
     ordering = ('-testimonial_date',)  # Most recent first
 

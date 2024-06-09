@@ -35,7 +35,7 @@ class Testimonial(models.Model):
         This function returns the model name for easier readibility
         in the admin panel
         """
-        return self.testimonial_user
+        return self.testimonial_user_display
 
     class Meta:
         """

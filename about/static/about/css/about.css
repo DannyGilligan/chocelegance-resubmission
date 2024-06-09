@@ -1,8 +1,94 @@
-.about-outer-container {
-    background-color: aqua !important;
+/* #faq-accordion {
+    border: 1px solid white;
 }
 
 .card-header {
-    background-color: white !important;
-    border: 3px solid red;
+    background-color: #551b8c !important;
+    border: 4px solid white;
+    border-radius: 10px !important;
+    margin-bottom: .3rem;
 }
+
+.card-header button {
+    color: white !important;
+}
+
+
+
+.card-header::after {
+    background-color: #882bde !important;
+}
+
+.card-body {
+    margin-bottom: .3rem;
+} */
+
+
+/* 1111111111111 */
+
+.accordion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.card-header {
+    padding: 0 !important; /*test*/
+    border: 3px solid white;
+    background-color: #551b8c !important;
+    color: white;
+    width: 100%;
+    min-height: 3rem;
+    border-radius: 10px !important;
+}
+
+
+
+.btn.btn-link{ /*test*/
+    text-align: left;
+    width: 100%;
+    /* padding: 1.4rem 1.25 rem;
+    min-width: 18rem; */
+    border-radius: 10px !important;
+    min-height: 3rem;
+    color: white !important;
+}
+
+/* 
+The code to change the accordion header once clicked was adapted from the stackoverflow
+post linked here: https://stackoverflow.com/questions/75398511/style-header-of-bootstrap-accordion-that-has-the-class-collapse-show */
+#accordion .card .card-header button.btn.btn-link:not(.collapsed){ /*test*/
+    background-color: #c71585;
+    border-radius: 10px !important;
+    min-height: 3rem;
+}
+
+#accordion .card .card-header button.btn.btn-link:hover {
+    background-color:#c71585;
+}
+
+.accordion-card-body {
+    padding: 1rem;
+    color: #551b8c;
+    background-color: white;
+    border: none !important;
+}
+
+
+/* Removes underline on hover */
+.btn-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Removes underline when open */
+.btn-link:focus {
+    color: white;
+    text-decoration: none;
+}
+

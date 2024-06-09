@@ -48,7 +48,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
-   <!-- Stripe JS https://docs.stripe.com/payments/accept-a-payment?platform=web&ui=elements#web-collect-payment-details -->
+  <!-- Stripe JS https://docs.stripe.com/payments/accept-a-payment?platform=web&ui=elements#web-collect-payment-details -->
   <script src="https://js.stripe.com/v3/"></script>
 
   {% endblock %}
@@ -70,7 +70,8 @@
       <!-- Logo, from base.html -->
       <div class="col-12 col-lg-4 my-auto py-2 py-lg-0 text-center text-lg-left ">
         <a href="{% url 'home' %}" class="nav-link main-logo-link d-inline-flex">
-          <h2 class="purple-text my-1 chocelegance-logo-text"><strong>chocelegance</strong></h2><span class="small logo-heart">&#10084;</span>
+          <h2 class="purple-text my-1 chocelegance-logo-text"><strong>chocelegance</strong></h2><span
+            class="small logo-heart">&#10084;</span>
         </a>
       </div>
 
@@ -97,25 +98,27 @@
 
           <!-- My Account, from base.html -->
           <li class="list-inline-item dropdown">
-            <a class="purple-text nav-link" href="#" id="user-options-main-nav" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
+            <a class="purple-text nav-link" href="#" id="user-options-main-nav" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
                 <div><i class="fas fa-user fa-lg"></i></div>
                 <p class="my-0">My Account</p>
+
               </div>
             </a>
 
             <!-- Account log in dtl logic, from base.html -->
             <div class="dropdown-menu border-purple" aria-labelledby="user-options-main-nav">
-                {% if request.user.is_authenticated %}
-                  {% if request.user.is_superuser %}
-                  <a href="{% url 'add_chocolate' %}" class="dropdown-item purple-text">Chocolate Management</a>
-                  {% endif %}
-                <a href="{% url 'profile' %}" class="dropdown-item purple-text">My Profile</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item purple-text"><strong>Logout</strong></a>
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+              <p class="dropdown-login-status py-0 my-0 bright-purple-text">Logged in as {{ user }}</p>
+              <a href="{% url 'add_chocolate' %}" class="dropdown-item purple-text">Chocolate Management</a>
+              {% endif %}
+              <a href="{% url 'profile' %}" class="dropdown-item purple-text">My Profile</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item purple-text"><strong>Logout</strong></a>
               {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item purple-text">Register</a>
-                <a href="{% url 'account_login' %}" class="dropdown-item purple-text"><strong>Login</strong></a>
+              <a href="{% url 'account_signup' %}" class="dropdown-item purple-text">Register</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item purple-text"><strong>Login</strong></a>
               {% endif %}
             </div>
           </li>
@@ -145,8 +148,8 @@
     <!-- Sub navbar, this uses dtl tags to include the navigation html snippets from the 'includes' folder, from base.html -->
     <div class="row bg-white purple-text">
       <nav class="navbar navbar-expand-lg navbar-light w-100">
-        <button class="navbar-toggler purple-text border-purple" type="button" data-toggle="collapse" data-target="#main-nav"
-          aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler purple-text border-purple" type="button" data-toggle="collapse"
+          data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon purple-text"></span>
         </button>
         {% include 'includes/mobile-top-header.html' %}

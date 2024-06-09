@@ -1108,6 +1108,14 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     .order-number {
         font-size: 1rem;
     }
+
+    .carousel-blockquote blockquote{
+        font-size: 1.1rem !important;
+    }
+    
+    .carousel-blockquote figcaption{
+        font-size: 1rem;
+    }
 }
 
 

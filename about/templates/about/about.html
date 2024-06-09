@@ -94,16 +94,17 @@
             <div id="accordion" class="accordion-container">
 
                 {% for faq in faqs %}
-                            {% if faq.faq_publish == "Yes" %}
+                {% if faq.faq_publish == "Yes" %}
                 <div class=" mx-auto mb-5 w-100" id="faq-accordion">
-                    
+
                     <div class="card">
-                        
+
                         <!-- Accordiong header containing question text -->
                         <div class="card-header border-0" id="headingOne">
                             <h2 class="mb-0">
-                                <button class="accordion-btn btn btn-link w-100 text-left collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapse_{{faq.id }}" aria-expanded="false" aria-controls="collapse_{{faq.id }}">
+                                <button class="accordion-btn btn btn-link w-100 text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse_{{faq.id }}" aria-expanded="false"
+                                    aria-controls="collapse_{{faq.id }}">
                                     {{ faq.faq_question }}
                                 </button>
                             </h2>
@@ -116,10 +117,10 @@
                                 {{ faq.faq_answer }}
                             </div>
                         </div>
-                        
+
                     </div>
                     {% endif %}
-                        {% endfor %}
+                    {% endfor %}
 
 
 

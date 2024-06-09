@@ -14,7 +14,7 @@ class Faq(models.Model):
 
     CHOICES = (
         ("Yes", "Yes"),
-        ("No", "Yes"),
+        ("No", "No"),
     )
 
     faq_question = models.CharField(max_length=500, null=False, blank=False)

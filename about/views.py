@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Faq
 
 # Create your views here.
 
@@ -13,5 +14,5 @@ def about(request):
     context = {
         'faqs': faqs,
     }
-    
-    return render(request, 'about/about.html')
+
+    return render(request, 'about/about.html', context)

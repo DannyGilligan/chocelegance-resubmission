@@ -1230,7 +1230,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     /* Toast positioning */
     .message-container {
         top: 50px;
-        right: 300px;
+        right: 150px;
     }
 }
 

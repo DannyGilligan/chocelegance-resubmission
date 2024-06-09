@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Testimonial
+from testimonials.models import Testimonial
 
 # Create your views here.
 

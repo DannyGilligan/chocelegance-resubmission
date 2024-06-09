@@ -17,9 +17,9 @@ class Faq(models.Model):
         ("No", "Yes"),
     )
 
-    faq_question = models.CharField(max_length=500)
+    faq_question = models.CharField(max_length=500, null=False, blank=False)
     faq_answer = models.TextField()
-    faq_publish = models.CharField(max_length=3, choices=CHOICES)
+    faq_publish = models.CharField(null=False, blank=False, max_length=3, choices=CHOICES)
 
     def __str__(self):
         """

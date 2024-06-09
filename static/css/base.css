@@ -284,6 +284,11 @@ input[id="id-save-info"] {
     align-items:flex-end;
 }
 
+.testimonial-header{
+    margin: 0 auto;
+    max-width: 30rem;
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
 

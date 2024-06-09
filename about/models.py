@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-# Custom Model 1
+# Custom Model 4
 class Faq(models.Model):
     """
     The FAQ model will hold all the questions and answers

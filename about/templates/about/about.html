@@ -93,30 +93,33 @@
 
             <div id="accordion" class="accordion-container">
 
-                <div class=" mx-auto mb-5 w-100" id="faq-accordion">
-                    <div class="card">
-                        {% for faq in faqs %}
+                {% for faq in faqs %}
                             {% if faq.faq_publish == "Yes" %}
+                <div class=" mx-auto mb-5 w-100" id="faq-accordion">
+                    
+                    <div class="card">
+                        
                         <!-- Accordiong header containing question text -->
                         <div class="card-header border-0" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="accordion-btn btn btn-link w-100 text-left collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    data-target="#collapse_{{faq.id }}" aria-expanded="false" aria-controls="collapse_{{faq.id }}">
                                     {{ faq.faq_question }}
                                 </button>
                             </h2>
                         </div>
 
                         <!-- Accordiong body containing answer text -->
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                        <div id="collapse_{{faq.id }}" class="collapse" aria-labelledby="headingOne"
                             data-parent="#faq-accordion">
                             <div class="accordion-card-body purple-text border-0">
                                 {{ faq.faq_answer }}
                             </div>
                         </div>
-                        {% endif %}
-                        {% endfor %}
+                        
                     </div>
+                    {% endif %}
+                        {% endfor %}
 
 
 

@@ -43,7 +43,6 @@ body {
 
 .nav-link {
     padding: .6rem;
-    padding-top: 1.2rem;
 }
 
 .nav-link i {
@@ -1197,6 +1196,10 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     .allauth-form-inner-content {
         margin-top: 10rem !important;
         border: 1px solid red;;
+    }
+
+    .main-logo-link {
+        padding-bottom: 1.1rem !important;
     }
 }
 

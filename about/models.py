@@ -26,7 +26,7 @@ class Faq(models.Model):
         This function returns the model name for easier readibility
         in the admin panel
         """
-        return self.Faq
+        return self.faq_question
 
     class Meta:
         """

@@ -17,7 +17,8 @@ We've got your phone number on file as {{ order.phone_number }}.
 
 If you have any questions, feel free to contact us at {{ contact_email }}.
 
-Thank you for your order! We hope you enjoy the chocolates as much as we do making them.
+Thank you for your order. We hope you enjoy eating the chocolates as much as we do making them!
+
 
 Best wishes,
 

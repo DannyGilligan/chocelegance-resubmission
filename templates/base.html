@@ -111,14 +111,15 @@
             <div class="dropdown-menu border-purple" aria-labelledby="user-options-main-nav">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-              <p class="dropdown-login-status py-0 my-0 bright-purple-text">Logged in as {{ user }}</p>
               <a href="{% url 'add_chocolate' %}" class="dropdown-item purple-text">Chocolate Management</a>
               {% endif %}
               <a href="{% url 'profile' %}" class="dropdown-item purple-text">My Profile</a>
-              <a href="{% url 'account_logout' %}" class="dropdown-item purple-text"><strong>Logout</strong></a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item purple-text">Logout</a>
+              <p class="dropdown-login-status bright-purple-text"><strong>Logged in as {{ user }}</strong></p>
               {% else %}
               <a href="{% url 'account_signup' %}" class="dropdown-item purple-text">Register</a>
               <a href="{% url 'account_login' %}" class="dropdown-item purple-text"><strong>Login</strong></a>
+              
               {% endif %}
             </div>
           </li>

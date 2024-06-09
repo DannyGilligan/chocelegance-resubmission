@@ -49,6 +49,7 @@
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item purple-text">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item purple-text"><strong>Logout</strong></a>
+            <p class="dropdown-login-status bright-purple-text"><strong>Logged in as {{ user }}</strong></p>
             {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item purple-text">Register</a>
             <a href="{% url 'account_login' %}" class="dropdown-item purple-text"><strong>Login</strong></a>

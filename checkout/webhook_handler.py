@@ -19,9 +19,7 @@ class StripeWH_Handler:
         self.request = request
 
     def _send_confirmation_email(self, order):
-        """
-        Private method, sends the user a confirmation email
-        """
+        """Send the user a confirmation email"""
         cust_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
@@ -29,13 +27,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-
+        
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )
+        )        
 
     def handle_event(self, event):
         """
@@ -114,8 +112,8 @@ class StripeWH_Handler:
             # Sends the confirmation email
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | \
-SUCCESS: Verified order already in database',
+                content=(f'Webhook received: {event["type"]} | \
+SUCCESS: Verified order already in database'),
                 status=200)
         else:
             order = None
@@ -136,13 +134,13 @@ SUCCESS: Verified order already in database',
                 )
                 for item_id, item_data in json.loads(cart).items():
                     chocolate = Chocolate.objects.get(id=item_id)
-                    if isinstance(item_data, int):
-                        order_line_item = OrderLineItem(
-                            order=order,
-                            chocolate=chocolate,
-                            quantity=item_data,
-                        )
-                        order_line_item.save()
+                    # if isinstance(item_data, int):
+                    order_line_item = OrderLineItem(
+                        order=order,
+                        chocolate=chocolate,
+                        quantity=item_data,
+                    )
+                    order_line_item.save()
 
             except Exception as e:
                 if order:

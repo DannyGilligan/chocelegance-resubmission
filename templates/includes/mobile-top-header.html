@@ -3,6 +3,34 @@
 
 <!-- This list item provides a button to open the search bar, from mobile-top-header.html. -->
 <ul class="m-0 p-0">
+    
+
+    <!-- This list item allows user to open the My Account drop down menu, from mobile-top-header.html. -->
+    <li class="list-inline-item dropdown m-0 p-0">
+        <!-- Link to 'My Account', from mobile-top-header.html. -->
+        <a class="purple-text nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-user fa-lg"></i></div>
+                <p class="my-0">My Account</p>
+            </div>
+        </a>
+        <!-- DTL logic to give user based options to log in, from mobile-top-header.html. -->
+        <div class="dropdown-menu border-purple" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'add_chocolate' %}" class="dropdown-item purple-text">Chocolate Management</a>
+            {% endif %}
+            <a href="{% url 'profile' %}" class="dropdown-item purple-text">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item purple-text">Logout</a>
+            <p class="dropdown-login-status bright-purple-text"><strong>Logged in as {{ user }}</strong></p>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item purple-text">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item purple-text"><strong>Login</strong></a>
+            {% endif %}
+        </div>
+    </li>
+
     <li class="list-inline-item m-0 p-0">
         <a class="nav-link d-block d-lg-none purple-text" href="#" id="mobile-search" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -28,32 +56,6 @@
                     </div>
                 </div>
             </form>
-        </div>
-    </li>
-
-    <!-- This list item allows user to open the My Account drop down menu, from mobile-top-header.html. -->
-    <li class="list-inline-item dropdown m-0 p-0">
-        <!-- Link to 'My Account', from mobile-top-header.html. -->
-        <a class="purple-text nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <div class="text-center">
-                <div><i class="fas fa-user fa-lg"></i></div>
-                <p class="my-0">My Account</p>
-            </div>
-        </a>
-        <!-- DTL logic to give user based options to log in, from mobile-top-header.html. -->
-        <div class="dropdown-menu border-purple" aria-labelledby="user-options">
-            {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-            <a href="{% url 'add_chocolate' %}" class="dropdown-item purple-text">Chocolate Management</a>
-            {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item purple-text">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item purple-text"><strong>Logout</strong></a>
-            <p class="dropdown-login-status bright-purple-text"><strong>Logged in as {{ user }}</strong></p>
-            {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item purple-text">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item purple-text"><strong>Login</strong></a>
-            {% endif %}
         </div>
     </li>
 

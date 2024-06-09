@@ -1101,6 +1101,10 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         margin-left: auto;
         margin-right: auto;
     }
+
+    .list-inline-item {
+        font-size: 1.3rem;
+    }
 }
 
 /* Media Query with min-width at 767px */

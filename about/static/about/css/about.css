@@ -1,0 +1,8 @@
+.about-outer-container {
+    background-color: aqua !important;
+}
+
+.card-header {
+    background-color: white !important;
+    border: 3px solid red;
+}

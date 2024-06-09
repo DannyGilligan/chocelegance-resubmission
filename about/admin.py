@@ -1,4 +1,5 @@
 from django.contrib import admin
+from .models import Faq
 
 # Register your models here.
 
@@ -11,7 +12,4 @@ class FaqAdmin(admin.ModelAdmin):
 
     list_display = ('faq_question', 'faq_publish',)
 
-    ordering = ('faq_publish',)  # Published FAQs shown first
-
-
-admin.site.register(FaqAdmin)
+admin.site.register(Faq, FaqAdmin)

@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 # Custom Model 1
-class faq(models.Model):
+class Faq(models.Model):
     """
     The FAQ model will hold all the questions and answers
     that will be injected into the about template (If the
@@ -19,23 +19,14 @@ class faq(models.Model):
 
     faq_question = models.CharField(max_length=500)
     faq_answer = models.TextField()
-    faq_publish = models.CharField(
-        max_length=3, choices=CHOICES
-    )
+    faq_publish = models.CharField(max_length=3, choices=CHOICES)
 
     def __str__(self):
         """
         This function returns the model name for easier readibility
         in the admin panel
         """
-        return self.faq
-
-    def get_friendly_name(self):
-        """
-        This function returns the friendly name for easier readibility
-        where needed
-        """
-        return self.friendly_name
+        return self.Faq
 
     class Meta:
         """

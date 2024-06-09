@@ -96,6 +96,7 @@
                 <div class=" mx-auto mb-5 w-100" id="faq-accordion">
                     <div class="card">
                         {% for faq in faqs %}
+                            {% if faq.faq_publish == "Yes" %}
                         <!-- Accordiong header containing question text -->
                         <div class="card-header border-0" id="headingOne">
                             <h2 class="mb-0">
@@ -113,6 +114,7 @@
                                 {{ faq.faq_answer }}
                             </div>
                         </div>
+                        {% endif %}
                         {% endfor %}
                     </div>
 

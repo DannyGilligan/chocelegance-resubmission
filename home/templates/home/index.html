@@ -65,9 +65,9 @@
     </p>
 </div>
 <!-- Testimonial carousel -->
-<div id="carouselExampleControls" class="carousel slide my-5 px-3" data-ride="carousel">
+<div id="carousel-controls" class="carousel slide my-5 px-3" data-ride="carousel">
 
-    <div class="carousel-inner">
+    <div class="carousel-inner carousel-blockquote">
 
         <!-- Loops through Testimonial mode -->
         {% for testimonial in testimonials %}
@@ -78,9 +78,7 @@
             <!-- Testimonial displayed in blockquote -->
             <figure>
                 <blockquote class="blockquote purple-text">
-                    <p>
-                        "{{ testimonial.testimonial_text }}"
-                    </p>
+                        <strong class="bright-purple-text">"</strong> {{ testimonial.testimonial_text }} <strong class="bright-purple-text">"</strong>
                 </blockquote>
 
                 <figcaption class="blockquote-footer bright-purple-text">
@@ -96,9 +94,7 @@
             <!-- Testimonial displayed in blockquote -->
             <figure>
                 <blockquote class="blockquote purple-text">
-                    <p>
                         "{{ testimonial.testimonial_text }}"
-                    </p>
                 </blockquote>
 
                 <figcaption class="blockquote-footer bright-purple-text">
@@ -121,11 +117,11 @@
     </div>
 
 
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon purple-text" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next purple-text" href="#carouselExampleControls" role="button" data-slide="next">
+    <a class="carousel-control-next purple-text" href="#carousel-controls" role="button" data-slide="next">
         <span class="carousel-control-next-icon purple-text" aria-hidden="true"></span>
         <span class="sr-only bright-purple-text">Next</span>
     </a>

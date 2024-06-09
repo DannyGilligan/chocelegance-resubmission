@@ -289,6 +289,28 @@ input[id="id-save-info"] {
     max-width: 30rem;
 }
 
+.carousel-blockquote{
+    height: 18rem;
+    min-width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid greenyellow;
+}
+
+.carousel-blockquote blockquote{
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-blockquote figcaption{
+    width: 18rem;
+    font-size: 1rem;
+}
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
 
@@ -1111,6 +1133,23 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     .list-inline-item {
         font-size: 1.3rem;
     }
+
+        /*
+    Styling for carousel buttons was adapted from the code linked below:
+    https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel
+    */
+
+    .carousel-control-next-icon:after {
+        content: '>';
+        font-size: 2rem;
+        color: #c71585;
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 2rem;
+        color: #c71585;
+    }
 }
 
 /* Media Query with min-width at 767px */
@@ -1207,6 +1246,12 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
     .main-logo-link {
         padding-bottom: 1.1rem !important;
+    }
+
+    #carousel-controls {
+        max-width: 45rem !important;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

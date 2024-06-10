@@ -26,12 +26,14 @@ class ChocolateCategoryAdmin(admin.ModelAdmin):
     panel list when viewing 'Chocolate Categories'
     """
     list_display = (
-        'choc_friendly_name',
-        'choc_category_desc',
+        'choc_category_friendly_name',
         'choc_category_dietary_type',
+        'choc_category_desc',
     )
 
-    prepopulated_fields = {"choc_category_name": ("choc_friendly_name",)}
+    fields = ('choc_category_friendly_name', 'choc_category_desc', 'choc_category_dietary_type', 'choc_category_name')
+
+    prepopulated_fields = {"choc_category_name": ("choc_category_friendly_name",)}
 
 
 class DietaryTypeAdmin(admin.ModelAdmin):
@@ -43,6 +45,8 @@ class DietaryTypeAdmin(admin.ModelAdmin):
         'diet_friendly_name',
         'dietary_description',
     )
+
+    fields = ('diet_friendly_name', 'dietary_description', 'dietary_type')
 
     prepopulated_fields = {"dietary_type": ("diet_friendly_name",)}
 

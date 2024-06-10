@@ -44,7 +44,7 @@ class ChocolateCategory(models.Model):
     (e.g, Dark Chocolate, Milk Chocolate and White Chocolate etc)
     """
     choc_category_name = models.SlugField(default="", max_length=200, null=True, blank=True)
-    choc_friendly_name = models.CharField(
+    choc_category_friendly_name = models.CharField(
         max_length=200, null=True, blank=True
     )
     choc_category_desc = models.TextField()

@@ -97,6 +97,7 @@ def chocolate_detail(request, chocolate_id):
     # If the method is POST, then a review is being sent to the back end
     # This will trigger the code block below to capture the review data
     if request.method == 'POST':
+        review_content = None
         choc_rating = request.POST.get('choc_rating', 3)
         review_content = request.POST.get('review_content', '')
 
@@ -110,8 +111,6 @@ def chocolate_detail(request, chocolate_id):
                 created_by_user=request.user
             )
             messages.success(request, 'Review added!')
-
-            # return redirect('chocolate/chocolate_detail.html', pk=chocolate_id)
 
     context = {
         'chocolate': chocolate,

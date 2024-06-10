@@ -90,10 +90,10 @@
                         </label>
                         <select name="choc_rating">
                             <option value="1">1 </option>
-                            <option value="1">2</option>
-                            <option value="1" selected>3</option>
-                            <option value="1">4</option>
-                            <option value="1">5</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
 
@@ -118,7 +118,7 @@
 
                 <!-- This section will display reviews that have been submitted, displayed to all user regardless of log in status -->
 
-                <p class="mt-3">What other chocolate lovers have said about <span class="bright-purple-text">{{ chocolate.choc_friendly_name }}</span>!</p>
+                <p class="mt-3">Here's what other chocolate lovers have said about <span class="bright-purple-text">{{ chocolate.choc_friendly_name }}</span>!</p>
 
                 <!-- Loop through the chocolate_detail view's context (chocolate) from views.py and accesses
                 the ChocolateReview model via the related name 'choc_reviews' to retrieve the review data

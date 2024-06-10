@@ -34,6 +34,8 @@ class ChocolateAdmin(admin.ModelAdmin):
               'choc_carbs',
               'choc_sugar')
 
+    prepopulated_fields = {"choc_name": ("choc_friendly_name",)}
+
     ordering = ('choc_name',)
 
 

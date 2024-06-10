@@ -44,6 +44,8 @@ class DietaryTypeAdmin(admin.ModelAdmin):
         'dietary_description',
     )
 
+    prepopulated_fields = {"dietary_type": ("diet_friendly_name",)}
+
 
 admin.site.register(Chocolate, ChocolateAdmin)
 admin.site.register(ChocolateCategory, ChocolateCategoryAdmin)

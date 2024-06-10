@@ -31,6 +31,8 @@ class ChocolateCategoryAdmin(admin.ModelAdmin):
         'choc_category_dietary_type',
     )
 
+    prepopulated_fields = {"slug": ("choc_friendly_name")}
+
 
 class DietaryTypeAdmin(admin.ModelAdmin):
     """

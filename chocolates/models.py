@@ -64,7 +64,7 @@ class ChocolateCategory(models.Model):
         This function returns the friendly name for easier readibility
         where needed
         """
-        return self.choc_friendly_name
+        return self.choc_category_friendly_name
 
     class Meta:
         """

@@ -397,16 +397,23 @@ input[id="id-save-info"] {
     text-align: center;
 }
 
-#super-user-options-container p {
-    font-weight: bold;
+#super-user-delete-container {
+    border: 1px solid #551b8c;
+    border-radius: 10px;
+    width: 17rem;
+    padding: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-#Superuser-options {
+
+.superuser-options {
     display: flex;
     justify-content: space-between;
 }
 
-#edit-button-detail {
+.edit-button-detail {
     padding-top: .2rem;
     text-align: center;
     display: inline-block;
@@ -418,16 +425,18 @@ input[id="id-save-info"] {
     border: 1px solid #882bde;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
-#edit-button-detail:hover {
+.edit-button-detail:hover {
     background: #c71585;
     color: white;
     box-shadow: 0 0px 10px #ed82ed;
-    border: 1px solid #ed82ed
+    border: 1px solid #ed82ed;
+    text-decoration: none;
 }
 
-#delete-button-detail {
+.delete-button-detail {
     padding-top: .2rem;
     text-align: center;
     display: inline-block;
@@ -439,16 +448,24 @@ input[id="id-save-info"] {
     border: 1px solid #551b8c;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
-#delete-button-detail:hover {
+.delete-button-detail:hover {
+    background: #c71585;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed;
+    text-decoration: none;
+}
+
+.allauth-form-inner-content:hover {
     background: #c71585;
     color: white;
     box-shadow: 0 0px 10px #ed82ed;
     border: 1px solid #ed82ed
 }
 
-/* Sep */
 
 #super-user-options-container-main {
     border: 1px solid #551b8c;
@@ -462,11 +479,7 @@ input[id="id-save-info"] {
 
 }
 
-/* #super-user-options-container-main p {
-    font-weight: bold;
-} */
-
-#super-user-options-text-main {
+.super-user-options-text-main {
     margin-bottom: .4rem;
     text-align: center;
 }

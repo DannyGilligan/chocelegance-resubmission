@@ -171,13 +171,27 @@
 
                 <!-- Edit and delete buttons are displayed if user is superuser -->
                 {% if request.user.is_superuser %}
+
+                <!-- This section will display the initial delete button, which when clicked will hide this secion and display the real delete button instead -->
                 <div id="super-user-options-container">
-                    <p id="super-user-options-text" class="purple-text">
+                    <p class="super-user-options-text purple-text">
                         Superuser options:
                     </p>
-                    <div id="Superuser-options">
-                    <a id="edit-button-detail" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
-                    <a id="delete-button-detail" href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
+                    <div class="superuser-options">
+                    <a class="edit-button-detail" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                    <p id="pre-delete-button" class="delete-button-detail">Delete</p>
+                    </div>
+                </div>
+
+                <!-- Once the delete button is clicked, the original container will be hidden and this one will be displayed instead -->
+                <div id="super-user-delete-container" style="display: none;">
+                    <p class="super-user-options-text bright-purple-text font-weight-bold">
+                        Are you really sure?
+                    </p>
+                    <div class="superuser-options">
+                    <a class="delete-button-detail" href="{% url 'delete_chocolate' chocolate.id %}">Yes, delete</a>
+                    <p id="cancel-delete-button" class="edit-button-detail">No, cancel</a>
+                    
                     </div>
                 </div>
                 {% endif %}
@@ -187,6 +201,23 @@
 
     </div>
 </div>
+
+<script type="text/javascript">
+    // This provides a defence against accidental product deletion by hiding the
+    // edit and delete buttons when the delete button is clicked, and displaying
+    // a confirmation dialogue box instead
+    document.getElementById("pre-delete-button").onclick = function() {
+            document.getElementById("super-user-options-container").style.display = "none";
+            document.getElementById("super-user-delete-container").style.display = "block";
+        };
+    
+    document.getElementById("cancel-delete-button").onclick = function() {  
+        document.getElementById("super-user-delete-container").style.display = "none";
+        document.getElementById("super-user-options-container").style.display = "block";
+    };
+
+    // JS Code block validated in JS Hint, no errors
+</script>
 
 {% endblock %}
 

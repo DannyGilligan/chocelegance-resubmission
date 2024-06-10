@@ -58,7 +58,7 @@
     <h3 class="purple-text text-center font-weight-bold mt-5">Testimonials</h3>
     <p class="purple-text text-center mt-3">
         We like to think we offer the best hand crafted, <strong class="bright-purple-text">diet friendly</strong> chocolates in town. But we also think that self
-        praise, is no praise.
+        praise, is no praise...
     </p>
     <p class="purple-text text-center mt-1">
         So read what our customers have to say about us instead!
@@ -71,48 +71,44 @@
 
         <!-- Loops through Testimonial mode -->
         {% for testimonial in testimonials %}
+            <!-- Checks if testimonial_publish field has been set to "Yes" and renders content if it is -->
+            {% if testimonial.testimonial_publish == "Yes" %}
+                <!-- DTL If statement will determine if testimonial is first in the loop and adds the 'active' attribute if it is, needed for carousel to operate -->
+                {% if forloop.first %}
+                
+                <div class="carousel-item active">
+                    <!-- Testimonial displayed in blockquote -->
+                    <figure>
+                        <blockquote class="blockquote purple-text">
+                                <strong class="bright-purple-text">"</strong> {{ testimonial.testimonial_text }} <strong class="bright-purple-text">"</strong>
+                        </blockquote>
 
-        {% if forloop.first %}
-        <!-- DTL If statement will determine if testimonial is first in the loop and apply the 'active' attribute if it is -->
-        <div class="carousel-item active">
-            <!-- Testimonial displayed in blockquote -->
-            <figure>
-                <blockquote class="blockquote purple-text">
-                        <strong class="bright-purple-text">"</strong> {{ testimonial.testimonial_text }} <strong class="bright-purple-text">"</strong>
-                </blockquote>
+                        <figcaption class="blockquote-footer bright-purple-text">
+                            {{ testimonial.testimonial_user_display }}
+                            <span>
+                                , {{ testimonial.testimonial_date }}
+                            </span>
+                        </figcaption>
+                    </figure>
+                </div>
+                {% else %}
+                <div class="carousel-item">
+                    <!-- Testimonial displayed in blockquote -->
+                    <figure>
+                        <blockquote class="blockquote purple-text">
+                            <strong class="bright-purple-text">"</strong> {{ testimonial.testimonial_text }} <strong class="bright-purple-text">"</strong>
+                        </blockquote>
 
-                <figcaption class="blockquote-footer bright-purple-text">
-                    {{ testimonial.testimonial_user_display }}
-                    <span>
-                        , {{ testimonial.testimonial_date }}
-                    </span>
-                </figcaption>
-            </figure>
-        </div>
-        {% else %}
-        <div class="carousel-item">
-            <!-- Testimonial displayed in blockquote -->
-            <figure>
-                <blockquote class="blockquote purple-text">
-                    <strong class="bright-purple-text">"</strong> {{ testimonial.testimonial_text }} <strong class="bright-purple-text">"</strong>
-                </blockquote>
-
-                <figcaption class="blockquote-footer bright-purple-text">
-                    {{ testimonial.testimonial_user_display }}
-                    <span>
-                        , {{ testimonial.testimonial_date }}
-                    </span>
-                </figcaption>
-            </figure>
-        </div>
-
-
-
-
-        {% endif %}
-
-
-
+                        <figcaption class="blockquote-footer bright-purple-text">
+                            {{ testimonial.testimonial_user_display }}
+                            <span>
+                                , {{ testimonial.testimonial_date }}
+                            </span>
+                        </figcaption>
+                    </figure>
+                </div>
+                {% endif %}
+            {% endif %}
         {% endfor %}
     </div>
 

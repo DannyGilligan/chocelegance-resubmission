@@ -43,7 +43,7 @@ class ChocolateCategory(models.Model):
     chocolate categories offered by Chocelegance and their description
     (e.g, Dark Chocolate, Milk Chocolate and White Chocolate etc)
     """
-    choc_category_name = models.CharField(max_length=200)
+    choc_category_name = models.SlugField(default="", max_length=200, null=True, blank=True)
     choc_friendly_name = models.CharField(
         max_length=200, null=True, blank=True
     )

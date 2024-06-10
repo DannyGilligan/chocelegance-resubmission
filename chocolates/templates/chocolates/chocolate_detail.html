@@ -124,20 +124,22 @@
                 the ChocolateReview model via the related name 'choc_reviews' to retrieve the review data
                 and render it on the page, below chocolate image -->
                 {% for review in chocolate.choc_reviews.all %}
-                    <div class="mt-3">
+                    {% if review.publish_review == "Yes" %}
+                        <div class="mt-3">
 
-                        <!-- Review content -->
-                        <p>
-                        <span class="bright-purple-text">"</span>
-                        {{ review.review_content}}
-                        <span class="bright-purple-text">"</span>
-                        </p>
+                            <!-- Review content -->
+                            <p>
+                            <span class="bright-purple-text">"</span>
+                            {{ review.review_content}}
+                            <span class="bright-purple-text">"</span>
+                            </p>
 
-                        <!-- Review rating -->
-                        <p>
-                            Rating: {{ review.choc_rating }}
-                        </p>
-                    </div>
+                            <!-- Review rating -->
+                            <p>
+                                Rating: {{ review.choc_rating }}
+                            </p>
+                        </div>
+                    {% endif %}
                 {% endfor %}
 
 

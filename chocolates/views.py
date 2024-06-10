@@ -94,6 +94,24 @@ def chocolate_detail(request, chocolate_id):
 
     chocolate = get_object_or_404(Chocolate, pk=chocolate_id)
 
+    # If the method is POST, then a review is being sent to the back end
+    # This will trigger the code block below to capture the review data
+    if request.method == 'POST':
+        choc_rating = request.POST.get('choc_rating', 3)
+        review_content = request.POST.get('review_content', '')
+
+        # If the review has content, it will be saved in the
+        # ChocolateReview model
+        if review_content:
+            choc_review = ChocolateReview.objects.create(
+                chocolate=chocolate,
+                choc_rating=choc_rating,
+                review_content=review_content,
+                created_by_user=request.user
+            )
+
+            return redirect('chocolate', pk=chocolate_id)
+
     context = {
         'chocolate': chocolate,
     }

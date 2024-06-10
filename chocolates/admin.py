@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Chocolate, ChocolateCategory, DietaryType
+from .models import Chocolate, ChocolateCategory, DietaryType, ChocolateReview
 
 # Register your models here.
 
@@ -77,6 +77,21 @@ class DietaryTypeAdmin(admin.ModelAdmin):
     prepopulated_fields = {"dietary_type": ("diet_friendly_name",)}
 
 
+class ChocolateReviewAdmin(admin.ModelAdmin):
+    """
+    Controls the fields displayed to user in the admin
+    panel list when viewing 'Chocolate Reviews'
+    """
+    list_display = (
+        'chocolate',
+        'choc_rating',
+        'created_by_user',
+    )
+
+    fields = ('chocolate', 'choc_rating', 'review_content', 'created_by_user', 'created_date')
+
+
 admin.site.register(Chocolate, ChocolateAdmin)
 admin.site.register(ChocolateCategory, ChocolateCategoryAdmin)
 admin.site.register(DietaryType, DietaryTypeAdmin)
+admin.site.register(ChocolateReview, ChocolateReviewAdmin)

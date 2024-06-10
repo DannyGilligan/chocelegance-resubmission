@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Chocolate, ChocolateCategory
+from .models import Chocolate, ChocolateCategory, ChocolateReview
 from .forms import ChocolateForm
 from django.contrib.auth.decorators import login_required  # security layer!
 
@@ -109,8 +109,9 @@ def chocolate_detail(request, chocolate_id):
                 review_content=review_content,
                 created_by_user=request.user
             )
+            messages.success(request, 'Review added!')
 
-            return redirect('chocolate', pk=chocolate_id)
+            # return redirect('chocolate/chocolate_detail.html', pk=chocolate_id)
 
     context = {
         'chocolate': chocolate,

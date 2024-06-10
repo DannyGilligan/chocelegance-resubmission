@@ -8,7 +8,7 @@ class DietaryType(models.Model):
     dietary types that are catered to by Chocelegance along with
     their descriptions (e.g, Keto, Vegan, Gluten-Free etc)
     """
-    dietary_type = models.CharField(max_length=200)
+    dietary_type = models.SlugField(default="", max_length=200, null=True, blank=True)
     dietary_description = models.TextField()
     diet_friendly_name = models.CharField(
         max_length=200, null=True, blank=True

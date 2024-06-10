@@ -46,6 +46,13 @@
 
 {% block postloadjs %}
     {{ block.super }}
+
+    <!-- Hides the 'choc_name' field from the user, this field is an automatically prepopulated 'slug' field based on what is manually entered in the 'choc_friendly_name' field -->
+    <script>
+        document.getElementById('div_id_choc_name').style.display = 'none';
+    </script>
+
+    <!-- Script to handle the custom select image field -->
     <script type="text/javascript">
         $('#new-image').change(function() {
             var file = $('#new-image')[0].files[0];

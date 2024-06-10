@@ -88,7 +88,7 @@ class Chocolate(models.Model):
         'ChocolateCategory', null=True, blank=True, on_delete=models.SET_NULL
     )
 
-    choc_name = models.CharField(max_length=200)
+    choc_name = models.SlugField(default="", max_length=200, null=True, blank=True)
     choc_friendly_name = models.CharField(
         max_length=200, null=True, blank=True
     )

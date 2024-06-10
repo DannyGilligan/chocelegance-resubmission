@@ -467,7 +467,7 @@ input[id="id-save-info"] {
 }
 
 
-#super-user-options-container-main {
+.super-user-options-container-main {
     border: 1px solid #551b8c;
     border-radius: 10px;
     width: 100%;
@@ -479,7 +479,7 @@ input[id="id-save-info"] {
 
 }
 
-#super-user-delete-container-main {
+.super-user-delete-container-main {
     border: 1px solid #551b8c;
     border-radius: 10px;
     width: 100%;
@@ -489,13 +489,14 @@ input[id="id-save-info"] {
     margin-bottom: .6rem;
     height: 4.3rem;
 }
+
 
 .super-user-options-text-main {
     margin-bottom: .4rem;
     text-align: center;
 }
 
-#Superuser-options-main {
+.superuser-options-main {
     font-size: .9rem;
     display: flex;
     justify-content: space-evenly;
@@ -523,8 +524,7 @@ input[id="id-save-info"] {
     text-decoration: none;
 }
 
-.delete-button-main {
-
+.pre-delete-button-main {
     text-align: center;
     display: inline-block;
     width: 5rem;
@@ -536,6 +536,31 @@ input[id="id-save-info"] {
     border: 1px solid #551b8c;
     color: white;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.pre-delete-button-main:hover {
+    background: #c71585;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.delete-button-main {
+    text-align: center;
+    display: inline-block;
+    width: 5rem;
+    margin-left: .1rem;
+    height: 1.4rem;
+    background: #882bde;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #551b8c;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .delete-button-main:hover {
@@ -544,8 +569,32 @@ input[id="id-save-info"] {
     box-shadow: 0 0px 10px #ed82ed;
     border: 1px solid #ed82ed;
     text-decoration: none;
+    cursor: pointer;
 }
 
+.cancel-delete-button-main {
+    text-align: center;
+    display: inline-block;
+    width: 5rem;
+    margin-right: .1rem;
+    height: 1.4rem;
+    background: #551b8c;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #882bde;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancel-delete-button-main:hover {
+    background: #c71585;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .choc-mgmt-button-container {
     display: flex;

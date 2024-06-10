@@ -28,10 +28,11 @@
             <h2>Chocolate Menu</h2>
 
             {% for c in current_categories %}
-            <a class="category-badge text-decoration-none" href="{% url 'chocolates' %}?choc_category_display={{ c.choc_category_name }}">
+            <a class="category-badge text-decoration-none"
+                href="{% url 'chocolates' %}?choc_category_display={{ c.choc_category_name }}">
                 <span class="p-2 mt-2 badge rounded-0 border">{{ c.choc_category_friendly_name }}</span>
             </a>
-        {% endfor %}
+            {% endfor %}
         </div>
     </div>
 
@@ -43,16 +44,29 @@
                 <!-- This div contains the sorting options, displays a drop down menu with the options, from chocolates.html -->
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
-                        <select id="sort-selector" class="custom-select custom-select-sm rounded-lg border-purple purple-text border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                            <option value="price_asc" {% if current_sorting == 'choc_price_asc' %}selected{% endif %}>Price (low to high)</option>
-                            <option value="price_desc" {% if current_sorting == 'choc_price_desc' %}selected{% endif %}>Price (high to low)</option>
-                            <option value="rating_asc" {% if current_sorting == 'choc_rating_asc' %}selected{% endif %}>Rating (low to high)</option>
-                            <option value="rating_desc" {% if current_sorting == 'choc_rating_desc' %}selected{% endif %}>Rating (high to low)</option>
-                            <option value="name_asc" {% if current_sorting == 'choc_name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                            <option value="name_desc" {% if current_sorting == 'choc_name_desc' %}selected{% endif %}>Name (Z-A)</option>
-                            <option value="category_asc" {% if current_sorting == 'choc_category_display_asc' %}selected{% endif %}>Category (A-Z)</option>
-                            <option value="category_desc" {% if current_sorting == 'choc_category_display_desc' %}selected{% endif %}>Category (Z-A)</option>
+                        <select id="sort-selector"
+                            class="custom-select custom-select-sm rounded-lg border-purple purple-text border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                            </option>
+                            <option value="price_asc" {% if current_sorting == 'choc_price_asc' %}selected{% endif %}>
+                                Price (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'choc_price_desc' %}selected{% endif %}>
+                                Price (high to low)</option>
+                            <option value="rating_asc" {% if current_sorting == 'choc_rating_asc' %}selected{% endif %}>
+                                Rating (low to high)</option>
+                            <option value="rating_desc"
+                                {% if current_sorting == 'choc_rating_desc' %}selected{% endif %}>Rating (high to low)
+                            </option>
+                            <option value="name_asc" {% if current_sorting == 'choc_name_asc' %}selected{% endif %}>Name
+                                (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'choc_name_desc' %}selected{% endif %}>
+                                Name (Z-A)</option>
+                            <option value="category_asc"
+                                {% if current_sorting == 'choc_category_display_asc' %}selected{% endif %}>Category
+                                (A-Z)</option>
+                            <option value="category_desc"
+                                {% if current_sorting == 'choc_category_display_desc' %}selected{% endif %}>Category
+                                (Z-A)</option>
                         </select>
                     </div>
                 </div>
@@ -61,9 +75,11 @@
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="active-cart mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <span class=""><a class="purple-text" href="{% url 'chocolates' %}">Return to Chocolates Home</a> | </span>
+                        <span class=""><a class="purple-text" href="{% url 'chocolates' %}">Return to Chocolates
+                                Home</a> | </span>
                         {% endif %}
-                        {{ chocolates|length }} Result(s){% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        {{ chocolates|length }} Result(s){% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
             </div>
@@ -92,7 +108,8 @@
 
                         <!-- Card body, from chocolates.html -->
                         <div class="card-body pb-0 mb-2 rounded-2">
-                            <a href="{% url 'chocolate_detail' chocolate.id %}" class="purple-text-transition text-decoration-none h3">{{ chocolate.choc_friendly_name }}</a>
+                            <a href="{% url 'chocolate_detail' chocolate.id %}"
+                                class="purple-text-transition text-decoration-none h3">{{ chocolate.choc_friendly_name }}</a>
                         </div>
 
                         <!-- Card footer, from chocolates.html -->
@@ -105,24 +122,26 @@
 
                                     <!-- Edit and delete buttons are displayed if user is superuser, from chocolates.html -->
                                     {% if request.user.is_superuser %}
-                                    <div id="super-user-options-container-main">
+                                    <div class="super-user-options-container-main">
                                         <p class="super-user-options-text-main purple-text">
                                             Superuser options:
                                         </p>
-                                        <div id="Superuser-options-main">
-                                        <a class="edit-button-main" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
-                                        <a class="delete-button-main" href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
+                                        <div class="superuser-options-main">
+                                            <a class="edit-button-main"
+                                                href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                                            <p class="pre-delete-button-main">Delete</p>
                                         </div>
                                     </div>
 
 
-                                    <div id="super-user-delete-container-main">
+                                    <div class="super-user-delete-container-main" style="display: none;">
                                         <p class="super-user-options-text-main bright-purple-text">
                                             Are you really sure?
                                         </p>
-                                        <div id="Superuser-options-main">
-                                        <a class="edit-button-main" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
-                                        <a class="delete-button-main" href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
+                                        <div class="superuser-options-main">
+                                            <a class="delete-button-main"
+                                                href="{% url 'delete_chocolate' chocolate.id %}">Yes</a>
+                                            <p class="cancel-delete-button-main">Cancel</p>
                                         </div>
                                     </div>
 
@@ -139,7 +158,7 @@
                                     </p>
                                     {% endif %}
 
-                                    
+
 
                                     <!-- Displays the diet type below the category (e.g Keto, Vegan, Gluten-Free etc), from chocolates.html -->
                                     {% if chocolate.choc_dietary_type %}
@@ -155,7 +174,8 @@
                                     <!-- Displays the chocolate rating, from chocolates.html -->
                                     {% if chocolate.choc_rating %}
                                     <small class="text-muted"><i
-                                            class="fas fa-star mr-1 text-warning"></i>{{ chocolate.choc_rating }} / 5</small>
+                                            class="fas fa-star mr-1 text-warning"></i>{{ chocolate.choc_rating }} /
+                                        5</small>
                                     {% else %}
                                     <small class="text-muted mb-5">No Rating</small>
                                     {% endif %}
@@ -180,7 +200,7 @@
 <div class="btt-button shadow-sm rounded-2 border border-purple">
     <a class="btt-link d-flex h-100">
         <i id="back-to-top-icon" class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-    </a>	
+    </a>
 </div>
 
 {% endblock %}
@@ -188,30 +208,51 @@
 
 {% block postloadjs %}
 {{ block.super }}
-
+<!-- Script for displaying dialogue box when clicking delete in super user options -->
 <script type="text/javascript">
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0);
+
+    // accesses the parent divs via the 'this' keyword to hide and display the relevant containers when the 'delete' button is clicked
+    $('.pre-delete-button-main').click(function (e) {
+        this.parentNode.parentNode.style.display = "none";
+        this.parentNode.parentNode.nextElementSibling.style.display = "block";
+    });
+
+    // accesses the parent divs via the 'this' keyword to hide and display the relevant containers when the 'No' button is clicked
+    $('.cancel-delete-button-main').click(function (e) {
+        this.parentNode.parentNode.style.display = "none";
+        this.parentNode.parentNode.previousElementSibling.style.display = "block";
+    });
+
+
+    // JS Code block validated in JS Hint, no errors
+</script>
+
+
+<!-- Script for back to top button -->
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
     });
 
     // JS Code block validated in JS Hint, no errors
-    
 </script>
 
+
+<!-- Script to handle the logic for the sorting the chocolate categories -->
 <script type="text/javascript">
-    $('#sort-selector').change(function() {
+    $('#sort-selector').change(function () {
         var selector = $(this);
         var currentUrl = new URL(window.location);
 
         var selectedVal = selector.val();
-        if(selectedVal != "reset"){
+        if (selectedVal != "reset") {
             // Breaks the value in the option element into a string seperated by "_" (e.g value="price_asc" will become 2 items 'price' and 'asc') 
             var sort = selectedVal.split("_")[0];
 
             // Switch statement below will check the value in the first element of the array (index [0]) stored in the 'sort' variable
             // and assign the correct value to the 'sort' variable to match the expected url construction (matching the model's parameters)
-            
-            switch(sort) {
+
+            switch (sort) {
                 case "price":
                     sort = "choc_price";
                     break;

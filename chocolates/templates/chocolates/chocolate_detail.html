@@ -43,32 +43,7 @@
                 {% endif %}
             </div>
 
-            <!-- Edit and delete buttons are displayed if user is superuser -->
-            {% if request.user.is_superuser %}
-
-            <!-- This section will display the initial delete button, which when clicked will hide this secion and display the real delete button instead -->
-            <div id="super-user-options-container">
-                <p class="super-user-options-text purple-text">
-                    Superuser options:
-                </p>
-                <div class="superuser-options">
-                    <a class="edit-button-detail" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
-                    <p id="pre-delete-button" class="delete-button-detail">Delete</p>
-                </div>
-            </div>
-
-            <!-- Once the delete button is clicked, the original container will be hidden and this one will be displayed instead -->
-            <div id="super-user-delete-container" style="display: none;">
-                <p class="super-user-options-text bright-purple-text">
-                    Are you really sure?
-                </p>
-                <div class="superuser-options">
-                    <a class="delete-button-detail" href="{% url 'delete_chocolate' chocolate.id %}">Yes, delete</a>
-                    <p id="cancel-delete-button" class="edit-button-detail">No, cancel</a>
-
-                </div>
-            </div>
-            {% endif %}
+            
 
             <!-- Review section -->
             <div class="mt-4 w-100 purple-text">
@@ -285,9 +260,38 @@
                 </form>
                 <!-- Form ends above here -->
 
+                <!-- Edit and delete buttons are displayed if user is superuser -->
+            {% if request.user.is_superuser %}
+
+            <!-- This section will display the initial delete button, which when clicked will hide this secion and display the real delete button instead -->
+            <div id="super-user-options-container">
+                <p class="super-user-options-text purple-text">
+                    Superuser options:
+                </p>
+                <div class="superuser-options">
+                    <a class="edit-button-detail" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                    <p id="pre-delete-button" class="delete-button-detail">Delete</p>
+                </div>
+            </div>
+
+            <!-- Once the delete button is clicked, the original container will be hidden and this one will be displayed instead -->
+            <div id="super-user-delete-container" style="display: none;">
+                <p class="super-user-options-text bright-purple-text">
+                    Are you really sure?
+                </p>
+                <div class="superuser-options">
+                    <a class="delete-button-detail" href="{% url 'delete_chocolate' chocolate.id %}">Yes, delete</a>
+                    <p id="cancel-delete-button" class="edit-button-detail">No, cancel</a>
+
+                </div>
+            </div>
+            {% endif %}
+
 
 
             </div>
+
+            
         </div>
 
     </div>

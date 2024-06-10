@@ -171,7 +171,7 @@ class ChocolateReview(models.Model):
     choc_rating = models.IntegerField(default=3)
 
     # The text content of the review
-    review_content = models.TextField()
+    review_content = models.TextField(null=True, blank=True)
 
     # The user who left the review
     created_by_user = models.ForeignKey(User, related_name="choc_reviews", on_delete=models.CASCADE)

@@ -52,8 +52,8 @@
                 {% if chocolate.choc_category_display %}
                 <p class="small mt-1 mb-0">
                     <a class="text-muted"
-                        href="{% url 'chocolates' %}?category={{ chocolates.choc_category_display.choc_category_name }}">
-                        <i class="fas fa-tag mr-2 active-cart"></i>{{ chocolate.choc_category_display.choc_friendly_name }}
+                        href="{% url 'chocolates' %}?category={{ chocolate.choc_category_display.choc_category_name }}">
+                        <i class="fas fa-tag mr-2 active-cart"></i>{{ chocolate.choc_category_display.choc_category_friendly_name }}
                     </a>
                 </p>
                 {% endif %}
@@ -185,7 +185,7 @@
 
                 <!-- Once the delete button is clicked, the original container will be hidden and this one will be displayed instead -->
                 <div id="super-user-delete-container" style="display: none;">
-                    <p class="super-user-options-text bright-purple-text font-weight-bold">
+                    <p class="super-user-options-text bright-purple-text">
                         Are you really sure?
                     </p>
                     <div class="superuser-options">
@@ -201,6 +201,13 @@
 
     </div>
 </div>
+
+
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
 
 <script type="text/javascript">
     // This provides a defence against accidental product deletion by hiding the
@@ -219,9 +226,5 @@
     // JS Code block validated in JS Hint, no errors
 </script>
 
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
 {% include 'chocolates/includes/quantity_input_script.html' %}
 {% endblock %}

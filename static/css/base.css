@@ -479,6 +479,17 @@ input[id="id-save-info"] {
 
 }
 
+#super-user-delete-container-main {
+    border: 1px solid #551b8c;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 26rem;
+    padding: .3rem;
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+    height: 4.3rem;
+}
+
 .super-user-options-text-main {
     margin-bottom: .4rem;
     text-align: center;
@@ -490,7 +501,7 @@ input[id="id-save-info"] {
     justify-content: space-evenly;
 }
 
-#edit-button-main {
+.edit-button-main {
     text-align: center;
     display: inline-block;
     width: 5rem;
@@ -504,14 +515,15 @@ input[id="id-save-info"] {
     text-decoration: none;
 }
 
-#edit-button-main:hover {
+.edit-button-main:hover {
     background: #c71585;
     color: white;
     box-shadow: 0 0px 10px #ed82ed;
-    border: 1px solid #ed82ed
+    border: 1px solid #ed82ed;
+    text-decoration: none;
 }
 
-#delete-button-main {
+.delete-button-main {
 
     text-align: center;
     display: inline-block;
@@ -526,11 +538,12 @@ input[id="id-save-info"] {
     text-decoration: none;
 }
 
-#delete-button-main:hover {
+.delete-button-main:hover {
     background: #c71585;
     color: white;
     box-shadow: 0 0px 10px #ed82ed;
-    border: 1px solid #ed82ed
+    border: 1px solid #ed82ed;
+    text-decoration: none;
 }
 
 

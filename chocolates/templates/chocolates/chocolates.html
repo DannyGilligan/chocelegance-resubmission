@@ -29,7 +29,7 @@
 
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'chocolates' %}?choc_category_display={{ c.choc_category_name }}">
-                <span class="p-2 mt-2 badge rounded-0 border">{{ c.choc_friendly_name }}</span>
+                <span class="p-2 mt-2 badge rounded-0 border">{{ c.choc_category_friendly_name }}</span>
             </a>
         {% endfor %}
         </div>
@@ -106,14 +106,26 @@
                                     <!-- Edit and delete buttons are displayed if user is superuser, from chocolates.html -->
                                     {% if request.user.is_superuser %}
                                     <div id="super-user-options-container-main">
-                                        <p id="super-user-options-text-main" class="purple-text">
+                                        <p class="super-user-options-text-main purple-text">
                                             Superuser options:
                                         </p>
                                         <div id="Superuser-options-main">
-                                        <a id="edit-button-main" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
-                                        <a id="delete-button-main" href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
+                                        <a class="edit-button-main" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                                        <a class="delete-button-main" href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
                                         </div>
                                     </div>
+
+
+                                    <div id="super-user-delete-container-main">
+                                        <p class="super-user-options-text-main bright-purple-text">
+                                            Are you really sure?
+                                        </p>
+                                        <div id="Superuser-options-main">
+                                        <a class="edit-button-main" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                                        <a class="delete-button-main" href="{% url 'delete_chocolate' chocolate.id %}">Delete</a>
+                                        </div>
+                                    </div>
+
                                     {% endif %}
 
                                     <!-- Displays the chocolate category below the price (e.g Dark, Milk, White etc), from chocolates.html -->
@@ -122,7 +134,7 @@
                                         <a class="text-muted"
                                             href="{% url 'chocolates' %}?choc_category_display={{ chocolate.choc_category_display }}">
                                             <i
-                                                class="fas fa-tag mr-2 active-cart"></i>{{ chocolate.choc_category_display.choc_friendly_name }}
+                                                class="fas fa-tag mr-2 active-cart"></i>{{ chocolate.choc_category_display.choc_category_friendly_name }}
                                         </a>
                                     </p>
                                     {% endif %}

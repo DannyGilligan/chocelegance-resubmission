@@ -17,6 +17,23 @@ class ChocolateAdmin(admin.ModelAdmin):
         'choc_image',
     )
 
+    fields = ('choc_friendly_name',
+              'choc_name',
+              'choc_dietary_type',
+              'choc_category_display',
+              'choc_description',
+              'choc_rating',
+              'choc_image',
+              'choc_image_url',
+              'choc_price',
+              'choc_pieces',
+              'choc_ingredients',
+              'choc_calories',
+              'choc_fat',
+              'choc_protein',
+              'choc_carbs',
+              'choc_sugar')
+
     ordering = ('choc_name',)
 
 

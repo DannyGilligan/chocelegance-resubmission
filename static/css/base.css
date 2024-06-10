@@ -390,8 +390,9 @@ input[id="id-save-info"] {
 #super-user-options-container {
     border: 1px solid #551b8c;
     border-radius: 10px;
-    width: 17rem;
-    padding: 1.3rem;
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -400,8 +401,9 @@ input[id="id-save-info"] {
 #super-user-delete-container {
     border: 1px solid #551b8c;
     border-radius: 10px;
-    width: 17rem;
-    padding: 1.3rem;
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -411,6 +413,7 @@ input[id="id-save-info"] {
 .superuser-options {
     display: flex;
     justify-content: space-between;
+    height: 2rem;
 }
 
 .edit-button-detail {
@@ -490,6 +493,10 @@ input[id="id-save-info"] {
     height: 4.3rem;
 }
 
+.super-user-options-text{
+    margin-bottom: .4rem;
+}
+
 
 .super-user-options-text-main {
     margin-bottom: .4rem;
@@ -552,7 +559,7 @@ input[id="id-save-info"] {
     text-align: center;
     display: inline-block;
     width: 5rem;
-    margin-left: .1rem;
+    margin-right: .1rem;
     height: 1.4rem;
     background: #882bde;
     border-radius: 5px;
@@ -576,7 +583,7 @@ input[id="id-save-info"] {
     text-align: center;
     display: inline-block;
     width: 5rem;
-    margin-right: .1rem;
+    margin-left: .1rem;
     height: 1.4rem;
     background: #551b8c;
     border-radius: 5px;
@@ -1252,8 +1259,6 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         font-size: 1.3rem !important;
     }
     
-
-    
 }
 
 
@@ -1373,6 +1378,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         top: 50px;
         right: 150px;
     }
+
 }
 
 

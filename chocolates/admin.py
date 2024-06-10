@@ -11,6 +11,7 @@ class ChocolateAdmin(admin.ModelAdmin):
     """
     list_display = (
         'choc_friendly_name',
+        'choc_name',
         'choc_dietary_type',
         'choc_category_display',
         'choc_price',

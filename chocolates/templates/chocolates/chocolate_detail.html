@@ -40,7 +40,35 @@
                 </a>
                 {% endif %}
             </div>
+
+            <!-- Edit and delete buttons are displayed if user is superuser -->
+            {% if request.user.is_superuser %}
+
+            <!-- This section will display the initial delete button, which when clicked will hide this secion and display the real delete button instead -->
+            <div id="super-user-options-container">
+                <p class="super-user-options-text purple-text">
+                    Superuser options:
+                </p>
+                <div class="superuser-options">
+                    <a class="edit-button-detail" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                    <p id="pre-delete-button" class="delete-button-detail">Delete</p>
+                </div>
+            </div>
+
+            <!-- Once the delete button is clicked, the original container will be hidden and this one will be displayed instead -->
+            <div id="super-user-delete-container" style="display: none;">
+                <p class="super-user-options-text bright-purple-text">
+                    Are you really sure?
+                </p>
+                <div class="superuser-options">
+                    <a class="delete-button-detail" href="{% url 'delete_chocolate' chocolate.id %}">Yes, delete</a>
+                    <p id="cancel-delete-button" class="edit-button-detail">No, cancel</a>
+
+                </div>
+            </div>
+            {% endif %}
         </div>
+
 
         <!-- Second column is the chocolate details container -->
         <div class="col-12 col-md-6 col-lg-4">
@@ -53,7 +81,8 @@
                 <p class="small mt-1 mb-0">
                     <a class="text-muted"
                         href="{% url 'chocolates' %}?category={{ chocolate.choc_category_display.choc_category_name }}">
-                        <i class="fas fa-tag mr-2 active-cart"></i>{{ chocolate.choc_category_display.choc_category_friendly_name }}
+                        <i
+                            class="fas fa-tag mr-2 active-cart"></i>{{ chocolate.choc_category_display.choc_category_friendly_name }}
                     </a>
                 </p>
                 {% endif %}
@@ -61,7 +90,8 @@
                 <!-- Displays the diet type below the category (e.g Keto, Vegan, Gluten-Free etc) -->
                 {% if chocolate.choc_dietary_type %}
                 <p class="small mt-1 mb-0">
-                    <i class="fa-solid fa-check text-success mr-2"></i><span class="text-muted">{{ chocolate.choc_dietary_type.diet_friendly_name }}</span>
+                    <i class="fa-solid fa-check text-success mr-2"></i><span
+                        class="text-muted">{{ chocolate.choc_dietary_type.diet_friendly_name }}</span>
                 </p>
                 {% endif %}
 
@@ -77,7 +107,7 @@
                     {{ chocolate.choc_description }}
                 </p>
 
-                
+
                 <!-- Pieces per item -->
                 <p class="mt-3 purple-text ">
                     <span class="font-weight-bold">No. of pieces:</span> {{ chocolate.choc_pieces }}
@@ -119,23 +149,25 @@
                     {% csrf_token %}
                     <div class="form-row">
                         <div class="col-12">
-                            
+
                             <div id="quantity-form-group" class="form-group">
                                 <p class="mt-3 purple-text text-center"><strong>Select Quantity:</strong></p>
                                 <div class="input-group input-group-{{ chocolate.id }}">
 
                                     <!-- Button to reduce number of chocolates -->
                                     <div class="input-group-prepend">
-                                        <button class="decrement-qty btn rounded-lg decrement-qty_{{ chocolate.id }}" 
-                                        data-item_id="{{ chocolate.id }}">
+                                        <button class="decrement-qty btn rounded-lg decrement-qty_{{ chocolate.id }}"
+                                            data-item_id="{{ chocolate.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-minus purple-text font-weight-bold"></i>
                                             </span>
                                         </button>
                                     </div>
 
-                                    <input class="form-control qty_input id_qty_{{ chocolate.id }} text-center border-purple rounded-lg" type="number" name="quantity" value="1"
-                                        min="1" max="99" data-item_id="{{ chocolate.id }}">
+                                    <input
+                                        class="form-control qty_input id_qty_{{ chocolate.id }} text-center border-purple rounded-lg"
+                                        type="number" name="quantity" value="1" min="1" max="99"
+                                        data-item_id="{{ chocolate.id }}">
 
                                     <!-- Button to increase number of chocolates -->
                                     <div class="input-group-append">
@@ -169,39 +201,13 @@
                 </form>
                 <!-- Form ends above here -->
 
-                <!-- Edit and delete buttons are displayed if user is superuser -->
-                {% if request.user.is_superuser %}
 
-                <!-- This section will display the initial delete button, which when clicked will hide this secion and display the real delete button instead -->
-                <div id="super-user-options-container">
-                    <p class="super-user-options-text purple-text">
-                        Superuser options:
-                    </p>
-                    <div class="superuser-options">
-                    <a class="edit-button-detail" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
-                    <p id="pre-delete-button" class="delete-button-detail">Delete</p>
-                    </div>
-                </div>
-
-                <!-- Once the delete button is clicked, the original container will be hidden and this one will be displayed instead -->
-                <div id="super-user-delete-container" style="display: none;">
-                    <p class="super-user-options-text bright-purple-text">
-                        Are you really sure?
-                    </p>
-                    <div class="superuser-options">
-                    <a class="delete-button-detail" href="{% url 'delete_chocolate' chocolate.id %}">Yes, delete</a>
-                    <p id="cancel-delete-button" class="edit-button-detail">No, cancel</a>
-                    
-                    </div>
-                </div>
-                {% endif %}
 
             </div>
         </div>
 
     </div>
 </div>
-
 
 
 {% endblock %}
@@ -213,12 +219,12 @@
     // This provides a defence against accidental product deletion by hiding the
     // edit and delete buttons when the delete button is clicked, and displaying
     // a confirmation dialogue box instead
-    document.getElementById("pre-delete-button").onclick = function() {
-            document.getElementById("super-user-options-container").style.display = "none";
-            document.getElementById("super-user-delete-container").style.display = "block";
-        };
-    
-    document.getElementById("cancel-delete-button").onclick = function() {  
+    document.getElementById("pre-delete-button").onclick = function () {
+        document.getElementById("super-user-options-container").style.display = "none";
+        document.getElementById("super-user-delete-container").style.display = "block";
+    };
+
+    document.getElementById("cancel-delete-button").onclick = function () {
         document.getElementById("super-user-delete-container").style.display = "none";
         document.getElementById("super-user-options-container").style.display = "block";
     };

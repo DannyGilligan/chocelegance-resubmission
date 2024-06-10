@@ -184,5 +184,6 @@ class ChocolateReview(models.Model):
         null=False,
         blank=False,
         max_length=3,
-        choices=CHOICES
+        choices=CHOICES,
+        default="No"
     )

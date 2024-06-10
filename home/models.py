@@ -4,6 +4,3 @@ from profiles.models import UserProfile
 from django_countries.fields import CountryField
 
 # Create your models here.
-
-
-

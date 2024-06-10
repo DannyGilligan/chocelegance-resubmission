@@ -5,7 +5,6 @@ from profiles.models import UserProfile
 # Create your models here.
 
 
-
 # Custom model 5
 
 class Testimonial(models.Model):
@@ -24,10 +23,20 @@ class Testimonial(models.Model):
     )
 
     testimonial_user = models.ForeignKey(User, on_delete=models.CASCADE)
-    testimonial_user_display = models.CharField(max_length=50, null=False, blank=False)
+    testimonial_user_display = models.CharField(
+        max_length=50,
+        null=False,
+        blank=False
+    )
+
     testimonial_text = models.TextField()
     testimonial_date = models.DateField(null=False, blank=False)
-    testimonial_publish = models.CharField(null=False, blank=False, max_length=3, choices=CHOICES)
+    testimonial_publish = models.CharField(
+        null=False,
+        blank=False,
+        max_length=3,
+        choices=CHOICES
+    )
 
     def __str__(self):
         """

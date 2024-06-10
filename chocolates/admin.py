@@ -51,9 +51,15 @@ class ChocolateCategoryAdmin(admin.ModelAdmin):
         'choc_category_desc',
     )
 
-    fields = ('choc_category_friendly_name', 'choc_category_desc', 'choc_category_dietary_type', 'choc_category_name')
+    fields = ('choc_category_friendly_name',
+              'choc_category_desc',
+              'choc_category_dietary_type',
+              'choc_category_name'
+              )
 
-    prepopulated_fields = {"choc_category_name": ("choc_category_friendly_name",)}
+    prepopulated_fields = {
+        "choc_category_name": ("choc_category_friendly_name",)
+        }
 
 
 class DietaryTypeAdmin(admin.ModelAdmin):

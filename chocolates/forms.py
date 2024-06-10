@@ -10,11 +10,11 @@ class ChocolateForm(forms.ModelForm):
         model = Chocolate
         # This dunder string will include all fields
         fields = '__all__'
-        
 
     choc_image = forms.ImageField(label='Image',
                                   required=False,
-                                  widget=CustomClearableFileInput)
+                                  widget=CustomClearableFileInput
+                                  )
 
     # Overrides the original __init__ method to make changes to the fields
     def __init__(self, *args, **kwargs):

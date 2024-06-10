@@ -8,7 +8,13 @@ class DietaryType(models.Model):
     dietary types that are catered to by Chocelegance along with
     their descriptions (e.g, Keto, Vegan, Gluten-Free etc)
     """
-    dietary_type = models.SlugField(default="", max_length=200, null=True, blank=True)
+    dietary_type = models.SlugField(
+        default="",
+        max_length=200,
+        null=True,
+        blank=True
+        )
+
     dietary_description = models.TextField()
     diet_friendly_name = models.CharField(
         max_length=200, null=True, blank=True
@@ -43,7 +49,9 @@ class ChocolateCategory(models.Model):
     chocolate categories offered by Chocelegance and their description
     (e.g, Dark Chocolate, Milk Chocolate and White Chocolate etc)
     """
-    choc_category_name = models.SlugField(default="", max_length=200, null=True, blank=True)
+    choc_category_name = models.SlugField(
+        default="", max_length=200, null=True, blank=True
+    )
     choc_category_friendly_name = models.CharField(
         max_length=200, null=True, blank=True
     )
@@ -82,29 +90,54 @@ class Chocolate(models.Model):
     macro-nutrional values etc.
     """
     choc_dietary_type = models.ForeignKey(
-        'DietaryType', null=True, blank=True, on_delete=models.SET_NULL
-    )
-    choc_category_display = models.ForeignKey(
-        'ChocolateCategory', null=True, blank=True, on_delete=models.SET_NULL
+        'DietaryType',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL
     )
 
-    choc_name = models.SlugField(default="", max_length=200, null=True, blank=True)
+    choc_category_display = models.ForeignKey(
+        'ChocolateCategory',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL
+    )
+
+    choc_name = models.SlugField(
+        default="",
+        max_length=200,
+        null=True,
+        blank=True
+    )
+
     choc_friendly_name = models.CharField(
         max_length=200, null=True, blank=True
     )
+
     choc_description = models.TextField()
+
     choc_rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True
     )
+
     choc_image = models.ImageField(null=True, blank=True)
+
     choc_image_url = models.URLField(max_length=2000, null=True, blank=True)
+
     choc_price = models.DecimalField(max_digits=5, decimal_places=2)
+
     choc_pieces = models.IntegerField(null=True, blank=True)
+
     choc_ingredients = models.TextField()
+
     choc_calories = models.FloatField(null=True, blank=True)
+
     choc_fat = models.FloatField()
+
     choc_protein = models.FloatField()
+
     choc_carbs = models.FloatField()
+
     choc_sugar = models.FloatField()
 
     def __str__(self):
@@ -113,3 +146,6 @@ class Chocolate(models.Model):
         the admin panel
         """
         return self.choc_name
+
+
+# Custom Model 4

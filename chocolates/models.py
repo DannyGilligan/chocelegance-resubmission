@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 # Custom Model 1
@@ -149,3 +150,24 @@ class Chocolate(models.Model):
 
 
 # Custom Model 4
+
+class ChocolateReview(models.Model):
+    """
+    This ChocolateReview model will hold the reviews and ratings on
+    the chocolates left by users of the site
+    """
+
+    # Chocolate as a foreign key from the Chocolate model
+    chocolate = models.ForeignKey(Chocolate, related_name="choc_reviews", on_delete=models.CASCADE)
+
+    # Ratings will be an integer, defaulting to 3 (range 1 to 5)
+    choc_rating = models.IntegerField(default=3)
+
+    # The text content of the review
+    review_content = models.TextField()
+
+    # The user who left the review
+    created_by_user = models.ForeignKey(User, related_name="choc_reviews", on_delete=models.CASCADE)
+
+    # The date the review was left
+    created_date = models.DateTimeField(auto_now_add=True)

@@ -75,9 +75,11 @@
                 <h3>
                     Reviews
                 </h3>
-                
+
+                <!-- If user is logged in, this section will be displayed allowing them to leave a review -->
+
                 {% if request.user.is_authenticated %}
-                <P class="mt-3">Would you like to leave a review for this chocolate?</P> 
+                <P class="mt-3">Would you like to leave a review for this chocolate?</P>
                 <form method="POST" action=".">
                     {% csrf_token %}
 
@@ -112,9 +114,35 @@
                     </div>
 
                 </form>
-            {% endif %}
+                {% endif %}
 
-                
+                <!-- This section will display reviews that have been submitted, displayed to all user regardless of log in status -->
+
+                <p class="mt-3">What other chocolate lovers have said about <span class="bright-purple-text">{{ chocolate.choc_friendly_name }}</span>!</p>
+
+                <!-- Loop through the chocolate_detail view's context (chocolate) from views.py and accesses
+                the ChocolateReview model via the related name 'choc_reviews' to retrieve the review data
+                and render it on the page, below chocolate image -->
+                {% for review in chocolate.choc_reviews.all %}
+                    <div class="mt-3">
+
+                        <!-- Review content -->
+                        <p>
+                        <span class="bright-purple-text">"</span>
+                        {{ review.review_content}}
+                        <span class="bright-purple-text">"</span>
+                        </p>
+
+                        <!-- Review rating -->
+                        <p>
+                            Rating: {{ review.choc_rating }}
+                        </p>
+                    </div>
+                {% endfor %}
+
+
+
+
             </div>
 
 

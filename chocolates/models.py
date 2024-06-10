@@ -151,11 +151,18 @@ class Chocolate(models.Model):
 
 # Custom Model 4
 
+
+
 class ChocolateReview(models.Model):
     """
     This ChocolateReview model will hold the reviews and ratings on
     the chocolates left by users of the site
     """
+
+    CHOICES = (
+        ("Yes", "Yes"),
+        ("No", "No"),
+    )
 
     # Chocolate as a foreign key from the Chocolate model
     chocolate = models.ForeignKey(Chocolate, related_name="choc_reviews", on_delete=models.CASCADE)
@@ -171,3 +178,11 @@ class ChocolateReview(models.Model):
 
     # The date the review was left
     created_date = models.DateTimeField(auto_now_add=True)
+
+    # Publish to site will default to 'No' in order to allow for admin approval
+    publish_review = models.CharField(
+        null=False,
+        blank=False,
+        max_length=3,
+        choices=CHOICES
+    )

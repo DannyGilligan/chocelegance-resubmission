@@ -88,7 +88,9 @@ class ChocolateReviewAdmin(admin.ModelAdmin):
         'created_by_user',
     )
 
-    fields = ('chocolate', 'choc_rating', 'review_content', 'created_by_user', 'created_date')
+    fields = ('chocolate', 'choc_rating', 'review_content', 'created_by_user')
+
+    ordering = ('-created_date',)
 
 
 admin.site.register(Chocolate, ChocolateAdmin)

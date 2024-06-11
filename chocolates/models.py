@@ -117,6 +117,10 @@ class Chocolate(models.Model):
 
     choc_description = models.TextField()
 
+    choc_rating = models.DecimalField(
+        max_digits=3, decimal_places=2, null=True, blank=True
+    )
+
     choc_image = models.ImageField(null=True, blank=True)
 
     choc_image_url = models.URLField(max_length=2000, null=True, blank=True)

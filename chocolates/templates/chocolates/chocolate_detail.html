@@ -51,10 +51,14 @@
                 </h3>
 
                 <!-- This section will display reviews that have been submitted, displayed to all user regardless of log in status -->
-
-                <p class="mt-3">Here's what other chocolate lovers are saying about <span
-                        class="bright-purple-text"><strong>{{ chocolate.choc_friendly_name }}</strong></span>!</p>
-
+                {% if chocolate.choc_reviews.count > 0 %}
+                    <p class="mt-3">Here's what other chocolate lovers are saying about <span
+                            class="bright-purple-text"><strong>{{ chocolate.choc_friendly_name }}</strong></span>!</p>
+                {% else %}
+                    <p class="mt-3">Oh! There are no reviews yet for <span
+                        class="bright-purple-text"><strong>{{ chocolate.choc_friendly_name }}</strong></span>.<br>
+                        <br>Perhaps you'll be the first?</p>
+                {% endif %}
                 <!-- Loop through the chocolate_detail view's context (chocolate) from views.py and accesses
                 the ChocolateReview model via the related name 'choc_reviews' to retrieve the review data
                 and render it on the page, below chocolate image -->

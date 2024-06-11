@@ -148,17 +148,23 @@ class Chocolate(models.Model):
         choc_reviews) and summing up the ratings, then dividing by
         the count of ratings
         """
+
         choc_reviews_total = 0
 
-        for choc_review in self.choc_reviews.all():
-            choc_reviews_total += choc_review.choc_rating
+        # 'choc_reviews' is the related name of the
+        # ChocolateReview model, where the ratings are stored
+        for review in self.choc_reviews.all():
+            choc_reviews_total += review.choc_rating
 
-        if choc_reviews_total > 0:
+        if self.choc_reviews.count() > 0:
+            self.choc_rating = choc_reviews_total / self.choc_reviews.count()
             return choc_reviews_total / self.choc_reviews.count()
 
         return 0
 
-        
+    def save(self, *args, **kwargs):
+        self.choc_rating = self.get_choc_rating()
+        super(Chocolate, self).save(*args, **kwargs)
 
     def __str__(self):
         """
@@ -169,7 +175,6 @@ class Chocolate(models.Model):
 
 
 # Custom Model 4
-
 
 class ChocolateReview(models.Model):
     """
@@ -183,24 +188,31 @@ class ChocolateReview(models.Model):
     )
 
     # Chocolate as a foreign key from the Chocolate model
-    chocolate = models.ForeignKey(Chocolate, related_name="choc_reviews", on_delete=models.CASCADE)
+    chocolate = models.ForeignKey(
+        Chocolate, related_name="choc_reviews",
+        on_delete=models.CASCADE
+        )
 
     # Ratings will be an integer, defaulting to 3 (range 1 to 5)
-    choc_rating = models.IntegerField(default=3)
+    choc_rating = models.IntegerField(null=True, blank=True, default=3)
 
     # The text content of the review
     review_content = models.TextField(null=True, blank=True)
 
     # The user who left the review
-    created_by_user = models.ForeignKey(User, related_name="choc_reviews", on_delete=models.CASCADE)
+    created_by_user = models.ForeignKey(
+        User, related_name="choc_reviews",
+        on_delete=models.CASCADE
+        )
 
     # The date the review was left
     created_date = models.DateTimeField(auto_now_add=True)
 
-    # Publish to site will default to 'No' in order to allow for admin approval
+    # Publish to site will default to 'No'
+    # in order to allow for admin approval
     publish_review = models.CharField(
-        null=False,
-        blank=False,
+        null=True,
+        blank=True,
         max_length=3,
         choices=CHOICES,
         default="No"

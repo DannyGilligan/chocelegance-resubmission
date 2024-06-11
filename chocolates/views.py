@@ -133,7 +133,7 @@ def chocolate_detail(request, chocolate_id):
             return redirect(reverse('chocolates'))
         
         else:
-            messages.error(request, 'The review appeared to be empty, please try again')
+            messages.error(request, 'The review appeared to be empty, make sure to fill out the text box and try again!')
             return redirect(reverse('chocolates'))
 
 

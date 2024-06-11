@@ -117,10 +117,6 @@ class Chocolate(models.Model):
 
     choc_description = models.TextField()
 
-    choc_rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True
-    )
-
     choc_image = models.ImageField(null=True, blank=True)
 
     choc_image_url = models.URLField(max_length=2000, null=True, blank=True)
@@ -141,6 +137,25 @@ class Chocolate(models.Model):
 
     choc_sugar = models.FloatField()
 
+    def get_choc_rating(self):
+        """
+        This function will calculate the rating for each chocolate
+        by accessing the ChocolateReview model (using the related name
+        choc_reviews) and summing up the ratings, then dividing by
+        the count of ratings
+        """
+        choc_reviews_total = 0
+
+        for choc_review in self.choc_reviews.all():
+            choc_reviews_total += choc_review.choc_rating
+
+        if choc_reviews_total > 0:
+            return choc_reviews_total / self.choc_reviews.count()
+
+        return 0
+
+        
+
     def __str__(self):
         """
         This function returns the model name for easier readibility in
@@ -150,7 +165,6 @@ class Chocolate(models.Model):
 
 
 # Custom Model 4
-
 
 
 class ChocolateReview(models.Model):

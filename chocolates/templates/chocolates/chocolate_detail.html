@@ -53,7 +53,7 @@
                 <!-- This section will display reviews that have been submitted, displayed to all user regardless of log in status -->
 
                 <p class="mt-3">Here's what other chocolate lovers are saying about <span
-                        class="bright-purple-text">{{ chocolate.choc_friendly_name }}</span>!</p>
+                        class="bright-purple-text"><strong>{{ chocolate.choc_friendly_name }}</strong></span>!</p>
 
                 <!-- Loop through the chocolate_detail view's context (chocolate) from views.py and accesses
                 the ChocolateReview model via the related name 'choc_reviews' to retrieve the review data
@@ -116,19 +116,13 @@
                             <textarea class="w-100 border-0 review-textarea purple-text" name="review_content"></textarea>
                         </div>
                     </div>
-
+                    <p class="small mt-2">If you've already left a review for this chocolate, this will overwrite the existing review.</p>
                     <div>
-                        <button class="mt-1 submit-review-button">Submit</button>
+                        <button class="mt-0 submit-review-button">Submit</button>
                     </div>
-
                 </form>
                 {% endif %}
             </div>
-
-
-
-
-
         </div>
         <!-- First column ends above this line -->
 
@@ -158,10 +152,10 @@
                 {% endif %}
 
                 {% if chocolate.choc_rating %}
-                <small class="text-muted"><i class="fas fa-star mr-2 text-warning"></i>{{ chocolate.choc_rating }} /
+                <small class="text-muted"><i class="fas fa-star mr-2 text-warning"></i>{{ chocolate.get_choc_rating }} stars out of
                     5</small>
                 {% else %}
-                <small class="text-muted">No Rating</small>
+                <small class="text-muted">No rating yet!</small>
                 {% endif %}
 
                 <!-- Chocolate description -->

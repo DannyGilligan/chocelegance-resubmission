@@ -404,7 +404,7 @@ input[id="id-save-info"] {
     width: 100%;
     max-width: 17.5rem !important;
     padding: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -656,6 +656,7 @@ input[id="id-save-info"] {
 
 .review-textarea {
     max-width: 20rem;
+    height: 6rem;
 }
 
 .review-section-container {

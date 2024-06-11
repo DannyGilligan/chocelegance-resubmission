@@ -91,7 +91,7 @@
 
             <!-- Submit Review section -->
             <!-- If user is logged in, this section will be displayed allowing them to leave a review -->
-            <div class="mt-4 w-100 purple-text border-purple border-radius-10 px-3 py-3 submit-review-container">
+            <div class="mt-4 w-100 purple-text border-radius-10 px-3 py-3 submit-review-container">
                 {% if request.user.is_authenticated %}
                 <P class="mt-1">Would you like to leave a short review for this chocolate?</P>
                 <form method="POST" action=".">
@@ -128,7 +128,7 @@
 
                 {% else %}
 
-                <div class="mt-4 w-100 purple-text border-purple border-radius-10 px-3 pb-2 pt-0 submit-review-container">
+                <div class="mt-4 w-100 purple-text border-radius-10 px-3 pb-2 pt-0 submit-review-container">
                     <p>
                         <a class="text-white" href="{% url 'account_login' %}"><strong>Login</strong></a> or <a class="text-white" href="{% url 'account_signup' %}"><strong>register</strong></a> to submit a review!
                     </p>

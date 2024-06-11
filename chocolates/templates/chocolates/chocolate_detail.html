@@ -27,9 +27,7 @@
     <!-- One row split into two columns  -->
     <div class="row">
 
-        
-
-        <!-- First column is the chocolate image container, super user optoins and review section -->
+        <!-- First column is the chocolate image container, display review section and submit review section -->
         <div class="col-12 col-md-6 col-lg-6 col-xl-4 offset-xl-2 mb-4">
             <h2 class="mb-4 d-md-none purple-text">{{ chocolate.choc_friendly_name }}</h2>
             <div class="choc-image-container-detail">
@@ -46,18 +44,52 @@
                 {% endif %}
             </div>
 
-            
-
-            <!-- Review section -->
+            <!-- Display Review section -->
             <div class="mt-4 w-100 purple-text border-purple border-radius-10 px-2 py-3 review-section-container">
                 <h3>
                     Reviews
                 </h3>
 
-                <!-- If user is logged in, this section will be displayed allowing them to leave a review -->
+                <!-- This section will display reviews that have been submitted, displayed to all user regardless of log in status -->
 
+                <p class="mt-3">Here's what other chocolate lovers are saying about <span
+                        class="bright-purple-text">{{ chocolate.choc_friendly_name }}</span>!</p>
+
+                <!-- Loop through the chocolate_detail view's context (chocolate) from views.py and accesses
+                the ChocolateReview model via the related name 'choc_reviews' to retrieve the review data
+                and render it on the page, below chocolate image -->
+                {% for review in chocolate.choc_reviews.all %}
+                {% if review.publish_review == "Yes" %}
+                <div class="mt-4">
+
+                    <!-- Review content -->
+                    <p class="pl-2 pb-1 mb-0">
+                        <span class="bright-purple-text">"</span>
+                        {{ review.review_content}}
+                        <span class="bright-purple-text">"</span>
+                    </p>
+
+                    <!-- Review rating -->
+                    <p class="pl-2 mb-0 small">
+                        Rating: <strong>{{ review.choc_rating }} / 5</strong>
+                    </p>
+
+                    <!-- Review user -->
+                    <p class="pl-2">
+                        <span class="small">Left by <span
+                                class="bright-purple-text">{{ review.created_by_user }}</span>, on
+                            {{ review.created_date }}</span>
+                    </p>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+            <!-- Submit Review section -->
+            <!-- If user is logged in, this section will be displayed allowing them to leave a review -->
+            <div class="mt-4 w-100 purple-text border-purple border-radius-10 px-3 py-3 submit-review-container">
                 {% if request.user.is_authenticated %}
-                <P class="mt-3">Would you like to leave a review for this chocolate?</P>
+                <P class="mt-1">Would you like to leave a review for this chocolate?</P>
                 <form method="POST" action=".">
                     {% csrf_token %}
 
@@ -80,52 +112,17 @@
                         <label>
                             Your thoughts..
                         </label>
-                        <div class="border-purple border-radius-10 p-2 mb-2">
-                            <textarea class="w-100 border-0 review-textarea" name="review_content"></textarea>
+                        <div class="bg-white border-purple border-radius-10 p-2 mb-2">
+                            <textarea class="w-100 border-0 review-textarea purple-text" name="review_content"></textarea>
                         </div>
                     </div>
 
                     <div>
-                        <button>Submit</button>
+                        <button class="mt-1 submit-review-button">Submit</button>
                     </div>
 
                 </form>
                 {% endif %}
-
-                <!-- This section will display reviews that have been submitted, displayed to all user regardless of log in status -->
-
-                <p class="mt-3">Here's what other chocolate lovers are saying about <span class="bright-purple-text">{{ chocolate.choc_friendly_name }}</span>!</p>
-
-                <!-- Loop through the chocolate_detail view's context (chocolate) from views.py and accesses
-                the ChocolateReview model via the related name 'choc_reviews' to retrieve the review data
-                and render it on the page, below chocolate image -->
-                {% for review in chocolate.choc_reviews.all %}
-                    {% if review.publish_review == "Yes" %}
-                        <div class="mt-4">
-
-                            <!-- Review content -->
-                            <p class="p-1 mb-0">
-                            <span class="bright-purple-text">"</span>
-                            {{ review.review_content}}
-                            <span class="bright-purple-text">"</span>
-                            </p>
-
-                            <!-- Review rating -->
-                            <p class="p-1 mb-0 small">
-                                Rating: <strong>{{ review.choc_rating }} / 5</strong>
-                            </p>
-
-                            <!-- Review user -->
-                            <p class="p-1">
-                                <span class="small">Left by <span class="bright-purple-text">{{ review.created_by_user }}</span>, on {{ review.created_date }}</span>
-                            </p>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-
-
-
-
             </div>
 
 
@@ -267,37 +264,37 @@
                 <!-- Form ends above here -->
 
                 <!-- Edit and delete buttons are displayed if user is superuser -->
-            {% if request.user.is_superuser %}
+                {% if request.user.is_superuser %}
 
-            <!-- This section will display the initial delete button, which when clicked will hide this secion and display the real delete button instead -->
-            <div id="super-user-options-container">
-                <p class="super-user-options-text purple-text">
-                    Superuser options:
-                </p>
-                <div class="superuser-options">
-                    <a class="edit-button-detail" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
-                    <p id="pre-delete-button" class="delete-button-detail">Delete</p>
+                <!-- This section will display the initial delete button, which when clicked will hide this secion and display the real delete button instead -->
+                <div id="super-user-options-container">
+                    <p class="super-user-options-text purple-text">
+                        Superuser options:
+                    </p>
+                    <div class="superuser-options">
+                        <a class="edit-button-detail" href="{% url 'edit_chocolate' chocolate.id %}">Edit</a>
+                        <p id="pre-delete-button" class="delete-button-detail">Delete</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Once the delete button is clicked, the original container will be hidden and this one will be displayed instead -->
-            <div id="super-user-delete-container" style="display: none;">
-                <p class="super-user-options-text bright-purple-text">
-                    Are you really sure?
-                </p>
-                <div class="superuser-options">
-                    <a class="delete-button-detail" href="{% url 'delete_chocolate' chocolate.id %}">Yes, delete</a>
-                    <p id="cancel-delete-button" class="edit-button-detail">No, cancel</a>
+                <!-- Once the delete button is clicked, the original container will be hidden and this one will be displayed instead -->
+                <div id="super-user-delete-container" style="display: none;">
+                    <p class="super-user-options-text bright-purple-text">
+                        Are you really sure?
+                    </p>
+                    <div class="superuser-options">
+                        <a class="delete-button-detail" href="{% url 'delete_chocolate' chocolate.id %}">Yes, delete</a>
+                        <p id="cancel-delete-button" class="edit-button-detail">No, cancel</a>
 
+                    </div>
                 </div>
-            </div>
-            {% endif %}
+                {% endif %}
 
 
 
             </div>
 
-            
+
         </div>
 
     </div>

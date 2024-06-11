@@ -1,7 +1,5 @@
-/* html {
-    height: calc(100vh - 800px);
-} */
 
+/* ------------------------------------------------------------------------------------------------------------------------------ MAIN BODY SECTIONS STYLING */
 
 /* Link to google font used https://fonts.google.com/specimen/Urbanist */
 body {
@@ -33,7 +31,7 @@ body {
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Nav Items Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ NAV ITEMS STYLING */
 
 
 .navbar ul {
@@ -87,7 +85,7 @@ input[name='q']::placeholder {
     padding-left: 1.5rem;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Heart Logo Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ HEART LOGO STYLING */
 
 .chocelegance-logo-text {
     font-size: 3.1rem;
@@ -162,7 +160,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Text, Border Containers, Background Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ UTILITIES STYLING (TEXT, BORDERS, CONTAINERS, BACKGROUNDS) */
 
 /* Custom color of text used throughout site */
 .purple-text {
@@ -216,34 +214,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 .checkout-total-text {
-    font-size: 1.2;
+    font-size: 1.2rem;
 }
-
-
-/* .cart-summary-container {
-    border: 1px solid #551b8c;
-    border-radius: 10px;
-    width: 33rem;
-    float: right;
-} */
-
-/* .cart-summary-row {
-    
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: .3rem;
-}
-
-.cart-total-name {
-    text-align: start;
-    width: 7rem;
-    float: left !important;
-}
-
-.cart-total-amount {
-
-} */
-
 
 .checkout-button-container {
     display: flex;
@@ -311,7 +283,7 @@ input[id="id-save-info"] {
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Free Delivery Banner Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ FREE DELIVERY BANNER STYLING */
 
 #delivery-banner {
     border-radius: 10px;
@@ -335,7 +307,7 @@ input[id="id-save-info"] {
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Hero Image Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ HERO IMAGE STYLING */
 
 /* Hero image adapted from W3Schools */
 #hero-image-container {
@@ -385,7 +357,7 @@ input[id="id-save-info"] {
 }
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Super User Option Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ SUPER USER OPTIONS STYLING (EDIT & DELETE FUNCTIONS) */
 
 #super-user-options-container {
     border: 1px solid #551b8c;
@@ -686,7 +658,7 @@ input[id="id-save-info"] {
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Button Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ BUTTON STYLING */
 
 /* The glow effect for the shop button below was adapted from code by codepen user Kanishk Kunal 
 link to code is here https://codepen.io/kanishkkunal/pen/obGojO */
@@ -950,7 +922,7 @@ a.category-badge>span.badge:hover {
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Icon Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ ICON STYLING */
 
 /* from Bulma, used to ensure consistent styling of icons (centering etc) */
 .icon {
@@ -968,7 +940,7 @@ a.category-badge>span.badge:hover {
 }
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Chocolate Images/Container Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ CHOCOLATE IMAGE STYLING */
 
 /* Used to create a container for the chocolate image in chocolates.html */
 .choc-image-container {
@@ -1002,7 +974,6 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         box-shadow: 0 0px 25px #ed82ed;
     }
 }
-
 
 
 /* Used to create a container for the chocolate image in chocolate_detail.html */
@@ -1040,7 +1011,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Toast Message Styling */
+/* ------------------------------------------------------------------------------------------------------------------------------ TOAST MESSAGE STYLING */
 
 .message-container {
     position: fixed;
@@ -1205,8 +1176,108 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 
+/* ------------------------------------------------------------------------------------------------------------------------------ ALLAUTH TEMPLATES STYLING */
 
-/* ------------------------------------------------------------------------------------------------------------------------------ Media Queries */
+.allauth-form-inner-content {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #551b8c;
+    /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #551b8c;
+    border-radius: 10px;
+    color: #551b8c;
+}
+
+.allauth-form-inner-content .form-check-label {
+    color: #551b8c;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+    
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #551b8c;
+    opacity: .6;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    /* btn */
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: red;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.sign-in-home-button {
+    color: white;
+    background-color: #551b8c;
+    border-radius: 10px;
+}
+
+.sign-in-home-button:hover {
+    background: #c71585;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed;
+    text-decoration: none;
+}
+
+.primaryAction {
+    color: white;
+    background-color: #882bde !important;
+    border-radius: 10px !important;
+}
+
+.primaryAction:hover {
+    background: #c71585 !important;
+    color: white;
+    box-shadow: 0 0px 10px #ed82ed;
+    border: 1px solid #ed82ed !important;
+    text-decoration: none;
+}
+
+.secondaryAction {
+    margin-top: 3rem !important;
+    color: #551b8c;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ MEDIA QUERIES */
 
 
 /* Media Query with min-width at 487px */
@@ -1412,101 +1483,3 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------ All Auth Styling*/
-
-.allauth-form-inner-content {
-    margin-top: 3rem;
-    width: 100%;
-}
-
-
-
-.allauth-form-inner-content p {
-    margin-top: 1.5rem;
-    /* mt-4 */
-    color: #551b8c;
-    /* text-secondary */
-}
-
-.allauth-form-inner-content input {
-    border-color: #551b8c;
-    border-radius: 10px;
-    color: #551b8c;
-}
-
-.allauth-form-inner-content .form-check-label {
-    color: #551b8c;
-}
-
-.allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
-    
-}
-
-.allauth-form-inner-content input::placeholder {
-    color: #551b8c;
-    opacity: .6;
-}
-
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-    /* btn */
-    display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: red;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
-
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {
-    color: #fff;
-    background-color: #222;
-    border-color: #222;
-}
-
-.sign-in-home-button {
-    color: white;
-    background-color: #551b8c;
-    border-radius: 10px;
-}
-
-.sign-in-home-button:hover {
-    background: #c71585;
-    color: white;
-    box-shadow: 0 0px 10px #ed82ed;
-    border: 1px solid #ed82ed;
-    text-decoration: none;
-}
-
-.primaryAction {
-    color: white;
-    background-color: #882bde !important;
-    border-radius: 10px !important;
-}
-
-.primaryAction:hover {
-    background: #c71585 !important;
-    color: white;
-    box-shadow: 0 0px 10px #ed82ed;
-    border: 1px solid #ed82ed !important;
-    text-decoration: none;
-}
-
-.secondaryAction {
-    margin-top: 3rem !important;
-    color: #551b8c;
-}

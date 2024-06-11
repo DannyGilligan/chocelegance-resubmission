@@ -11,12 +11,6 @@
     border: 1px solid #551b8c;
 }
 
-/* #id_country {
-    border: 5px solid #551b8c;
-    box-shadow: 0 1px 3px 0 #e6ebf1;
-    color: red;
-} */
-
 
 /* Used for the options in the Country drop down menu in checkout.html */
 select,
@@ -123,8 +117,6 @@ select:invalid {
     align-items: center;
     color: #c71585;
     text-shadow: 0 0px 2px #ed82ed;
-    /* margin-left: 1rem;
-    padding-top: .2rem; */
     animation: loadingHeartFadeIn ease 1.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

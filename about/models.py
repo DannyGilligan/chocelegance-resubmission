@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-# Custom Model 4
+# Custom Model 5
 
 
 class Faq(models.Model):

@@ -163,11 +163,11 @@
                 </p>
                 {% endif %}
 
-                {% if chocolate.choc_rating %}
+                {% if chocolate.choc_reviews.count > 0 %}
                 <small class="text-muted"><i class="fas fa-star mr-2 text-warning"></i>{{ chocolate.get_choc_rating }} stars out of
                     5</small>
                 {% else %}
-                <small class="text-muted">No rating yet!</small>
+                <small class="text-muted"><i class="fas fa-solid fa-circle-info text-muted pr-2"></i>No rating yet!</small>
                 {% endif %}
 
                 <!-- Chocolate description -->

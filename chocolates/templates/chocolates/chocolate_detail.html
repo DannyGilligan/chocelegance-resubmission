@@ -89,28 +89,28 @@
             <!-- If user is logged in, this section will be displayed allowing them to leave a review -->
             <div class="mt-4 w-100 purple-text border-purple border-radius-10 px-3 py-3 submit-review-container">
                 {% if request.user.is_authenticated %}
-                <P class="mt-1">Would you like to leave a review for this chocolate?</P>
+                <P class="mt-1">Would you like to leave a short review for this chocolate?</P>
                 <form method="POST" action=".">
                     {% csrf_token %}
 
                     <!-- Rating from 1 to 5, drop down menu -->
                     <div>
-                        <label>
-                            Your rating (5 being the tastiest!)
+                        <label class="pr-5">
+                            Select a rating (out of 5)
                         </label>
                         <select name="choc_rating">
-                            <option value="1">1 </option>
-                            <option value="2">2</option>
-                            <option value="3" selected>3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
+                            <option class="purple-text px-2" value="1">1 </option>
+                            <option class="purple-text px-2" value="2">2</option>
+                            <option class="purple-text px-2" value="3" selected>3</option>
+                            <option class="purple-text px-2" value="4">4</option>
+                            <option class="purple-text px-2" value="5">5</option>
                         </select>
                     </div>
 
                     <!-- Review text content -->
                     <div>
                         <label>
-                            Your thoughts..
+                            Your thoughts...
                         </label>
                         <div class="bg-white border-purple border-radius-10 p-2 mb-2">
                             <textarea class="w-100 border-0 review-textarea purple-text" name="review_content"></textarea>

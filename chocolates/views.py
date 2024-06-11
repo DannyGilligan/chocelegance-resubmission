@@ -94,8 +94,6 @@ def chocolate_detail(request, chocolate_id):
 
     chocolate = get_object_or_404(Chocolate, pk=chocolate_id)
 
-    review_content = ''
-
     # If the method is POST, then a review is being sent to the back end
     # This will trigger the code block below to capture the review data
     if request.method == 'POST':
@@ -106,12 +104,26 @@ def chocolate_detail(request, chocolate_id):
         # If the review has content, it will be saved in the
         # ChocolateReview model
         if review_content:
-            choc_review = ChocolateReview.objects.create(
-                chocolate=chocolate,
-                choc_rating=choc_rating,
-                review_content=review_content,
-                created_by_user=request.user
-            )
+
+            # Checks if there are more than one review for the same chocolate, by the same user (only one should be displayed)
+            choc_reviews = ChocolateReview.objects.filter(created_by_user=request.user, chocolate=chocolate)
+
+            if choc_reviews.count() > 0:
+                # Assigns the first review by the user for the same chocolate
+                choc_review = choc_reviews.first()
+                choc_review.choc_rating = choc_rating
+                choc_review.review_content = review_content
+                # Set the publish status to "No"
+                choc_review.publish_review = "No"
+                # Save the review
+                choc_review.save()
+            else:
+                choc_review = ChocolateReview.objects.create(
+                    chocolate=chocolate,
+                    choc_rating=choc_rating,
+                    review_content=review_content,
+                    created_by_user=request.user
+                )
             messages.success(request, 'Thank you! Your review will be approved shortly.')
 
             context = {
@@ -119,6 +131,11 @@ def chocolate_detail(request, chocolate_id):
             }
             
             return redirect(reverse('chocolates'))
+        
+        else:
+            messages.error(request, 'The review appeared to be empty, please try again')
+            return redirect(reverse('chocolates'))
+
 
     context = {
         'chocolate': chocolate,

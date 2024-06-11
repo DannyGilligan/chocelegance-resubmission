@@ -163,6 +163,11 @@ class Chocolate(models.Model):
         return 0
 
     def save(self, *args, **kwargs):
+        """
+        This function overrides the save method to update
+        the choc_rating value with the calculated value
+        after reviews submissions
+        """
         self.choc_rating = self.get_choc_rating()
         super(Chocolate, self).save(*args, **kwargs)
 

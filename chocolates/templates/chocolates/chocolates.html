@@ -86,8 +86,12 @@
                 </div>
             </div>
 
+            <!-- Checks if there are chocolates model is not empty -->
+            {% if chocolates%}
             <!-- This row contains a DTL for loop to iterate through the chocolates context variable, from chocolates.html -->
             <div class="row">
+            
+                <!-- Loops through chocolates if it is not empty -->
                 {% for chocolate in chocolates %}
                 <!-- Creates a bootstrap card for each chocolate, from chocolates.html -->
                 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
@@ -183,8 +187,15 @@
                     <!-- Card ends with closing div tag above, from chocolates.html -->
                 </div>
                 {% endfor %}
+            
             </div>
-
+            {% else %}
+                {% if user.is_superuser %}
+                <h4 class="purple-text text-center mt-5">There are not chocolates saved to the database.<br><br>Please use the Chocolate Management menu to add some.</h4>
+                {% else %}
+                <h4 class="purple-text text-center mt-5">There are currently no chocolates ready!<br><br>We're making them as quickly as possible, please check back soon..</h4>
+                {% endif %}
+            {% endif %}
         </div>
     </div>
 </div>

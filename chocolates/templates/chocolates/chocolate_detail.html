@@ -125,6 +125,14 @@
                         <button class="mt-0 submit-review-button">Submit</button>
                     </div>
                 </form>
+
+                {% else %}
+
+                <div class="mt-4 w-100 purple-text border-purple border-radius-10 px-3 py-1 submit-review-container">
+                    <p>
+                        <a class="text-white" href="{% url 'account_login' %}"><strong>Login</strong></a> or <a class="text-white" href="{% url 'account_signup' %}"><strong>register</strong></a> to submit a review!
+                    </p>
+                </div>
                 {% endif %}
             </div>
         </div>

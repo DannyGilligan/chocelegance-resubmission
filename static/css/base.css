@@ -179,6 +179,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     height: 6rem;
     padding-top: .3rem;
     padding-bottom: .3rem;
+    margin-top: 20rem !important;
 }
 
 .footer-content {

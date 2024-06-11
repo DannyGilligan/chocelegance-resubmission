@@ -164,8 +164,9 @@
                 {% endif %}
 
                 {% if chocolate.choc_reviews.count > 0 %}
-                <small class="text-muted"><i class="fas fa-star mr-2 text-warning"></i>{{ chocolate.get_choc_rating }} stars out of
-                    5</small>
+                <small class="text-muted"><i class="fas fa-star mr-2 text-warning"></i><strong class="bright-purple-text">{{ chocolate.get_choc_rating }}</strong> stars out of 5</small>
+                <br>
+                <small class="text-muted"><i class="fas fa-solid fa-circle-info purple-text pr-2"></i>{{ chocolate.choc_reviews.count }} Review(s) submitted</small>
                 {% else %}
                 <small class="text-muted"><i class="fas fa-solid fa-circle-info text-muted pr-2"></i>No rating yet!</small>
                 {% endif %}

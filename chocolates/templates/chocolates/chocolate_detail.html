@@ -23,12 +23,15 @@
 </div>
 
 
-<div class="container-fluid col-12 col-md-10 col-lg-10 mt-5 mx-auto">
+<div class="container-fluid col-12 col-md-10 col-lg-10 mt-4 mx-auto">
     <!-- One row split into two columns  -->
     <div class="row">
 
+        
+
         <!-- First column is the chocolate image container, super user optoins and review section -->
         <div class="col-12 col-md-6 col-lg-6 col-xl-4 offset-xl-2 mb-4">
+            <h2 class="mb-4 d-md-none purple-text">{{ chocolate.choc_friendly_name }}</h2>
             <div class="choc-image-container-detail">
                 {% if chocolate.choc_image %}
                 <a href="{{ chocolate.choc_image.url }}" target="_blank">
@@ -46,7 +49,7 @@
             
 
             <!-- Review section -->
-            <div class="mt-4 w-100 purple-text">
+            <div class="mt-4 w-100 purple-text border-purple border-radius-10 p-3 review-section-container">
                 <h3>
                     Reviews
                 </h3>
@@ -78,7 +81,7 @@
                             Your thoughts..
                         </label>
                         <div class="border-purple border-radius-10 p-2 mb-2">
-                            <textarea class="w-100 border-0" name="review_content"></textarea>
+                            <textarea class="w-100 border-0 review-textarea" name="review_content"></textarea>
                         </div>
                     </div>
 
@@ -101,19 +104,19 @@
                         <div class="mt-4">
 
                             <!-- Review content -->
-                            <p class="py-0 mb-0">
+                            <p class="p-1 mb-0">
                             <span class="bright-purple-text">"</span>
                             {{ review.review_content}}
                             <span class="bright-purple-text">"</span>
                             </p>
 
                             <!-- Review rating -->
-                            <p class="py-0 mb-0 small">
+                            <p class="p-1 mb-0 small">
                                 Rating: <strong>{{ review.choc_rating }} / 5</strong>
                             </p>
 
                             <!-- Review user -->
-                            <p class="py-0">
+                            <p class="p-1">
                                 <span class="small">Left by <span class="bright-purple-text">{{ review.created_by_user }}</span>, on {{ review.created_date }}</span>
                             </p>
                         </div>
@@ -135,7 +138,7 @@
         <!-- Second column is the chocolate details container -->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="chocolate-details-container mb-5">
-                <h2 class="mb-2 purple-text">{{ chocolate.choc_friendly_name }}</h2>
+                <h2 class="mb-2 d-none d-md-block purple-text">{{ chocolate.choc_friendly_name }}</h2>
                 <p class="lead mb-2 text-left font-weight-bold purple-text">€{{ chocolate.choc_price }}</p>
 
                 <!-- Displays the chocolate category below the price (e.g Dark, Milk, White etc) -->

@@ -402,7 +402,7 @@ input[id="id-save-info"] {
     border: 1px solid #551b8c;
     border-radius: 10px;
     width: 100%;
-    max-width: 25rem;
+    max-width: 17.5rem !important;
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -654,7 +654,13 @@ input[id="id-save-info"] {
     border: 1px solid #ed82ed
 }
 
+.review-textarea {
+    max-width: 20rem;
+}
 
+.review-section-container {
+    max-width: 25rem !important;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------ Button Styling */
 

@@ -49,7 +49,7 @@
             
 
             <!-- Review section -->
-            <div class="mt-4 w-100 purple-text border-purple border-radius-10 p-3 review-section-container">
+            <div class="mt-4 w-100 purple-text border-purple border-radius-10 px-2 py-3 review-section-container">
                 <h3>
                     Reviews
                 </h3>
@@ -94,7 +94,7 @@
 
                 <!-- This section will display reviews that have been submitted, displayed to all user regardless of log in status -->
 
-                <p class="mt-3">Here's what other chocolate lovers have said about <span class="bright-purple-text">{{ chocolate.choc_friendly_name }}</span>!</p>
+                <p class="mt-3">Here's what other chocolate lovers are saying about <span class="bright-purple-text">{{ chocolate.choc_friendly_name }}</span>!</p>
 
                 <!-- Loop through the chocolate_detail view's context (chocolate) from views.py and accesses
                 the ChocolateReview model via the related name 'choc_reviews' to retrieve the review data

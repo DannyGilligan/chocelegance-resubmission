@@ -75,7 +75,7 @@
 
                     <!-- Review rating -->
                     <p class="pl-2 mb-0 small">
-                        Rating: <strong>{{ review.choc_rating }} / 5</strong>
+                        <i class="fas fa-star mr-2 text-warning"></i><strong>{{ chocolate.get_choc_rating|floatformat:0 }}</strong> stars out of 5
                     </p>
 
                     <!-- Review user -->

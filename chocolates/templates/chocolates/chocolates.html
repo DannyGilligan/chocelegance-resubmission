@@ -170,7 +170,7 @@
                                     <!-- Displays the chocolate rating, from chocolates.html -->
                                     {% if chocolate.choc_rating %}
                                     <small class="text-muted"><i
-                                            class="fas fa-star mr-1 text-warning"></i>{{ chocolate.choc_rating }} /
+                                            class="fas fa-star mr-1 text-warning"></i>{{ chocolate.get_choc_rating }} /
                                         5</small>
                                     {% else %}
                                     <small class="text-muted mb-5">No Rating</small>

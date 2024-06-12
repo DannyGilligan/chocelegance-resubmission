@@ -131,6 +131,7 @@ WSGI_APPLICATION = 'chocelegance.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
+# IF the environment is heroku, the database will be ElephantSQL, else it wil be the local sqlite3
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -189,7 +190,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 if 'USE_AWS' in os.environ:
 
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'chocelegance'
+    AWS_STORAGE_BUCKET_NAME = 'chocelegance-resubmission'
     AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')

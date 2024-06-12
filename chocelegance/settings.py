@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-pwdg!vj8&x4gq@sm)vs0ow^ek*o3p&h^!4nrnww3b^2yd(^70u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-dannygillig-choceleganc-c6jjjedbcgc.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-dannygillig-choceleganc-c6jjjedbcgc.ws-eu114.gitpod.io',
+                 '*.herokuapp.com']
 
 
 # Application definition
@@ -130,12 +131,18 @@ WSGI_APPLICATION = 'chocelegance.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation

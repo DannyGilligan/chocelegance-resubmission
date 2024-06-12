@@ -12,10 +12,10 @@ def view_cart(request):
     """
     This view will return the shopping cart contents page
     """
-    chocolates = Chocolate.objects.all()
+    chocolate = Chocolate.objects.all()
 
     context = {
-        'chocolates': chocolates,
+        'chocolate': chocolate,
     } 
 
     return render(request, "cart/cart.html", context)

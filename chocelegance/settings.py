@@ -28,8 +28,7 @@ SECRET_KEY = 'django-insecure-pwdg!vj8&x4gq@sm)vs0ow^ek*o3p&h^!4nrnww3b^2yd(^70u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-dannygillig-choceleganc-c6jjjedbcgc.ws-eu114.gitpod.io',
-                 '*.herokuapp.com']
+ALLOWED_HOSTS = ['8000-dannygillig-choceleganc-c6jjjedbcgc.ws-eu114.gitpod.io', '*.herokuapp.com', 'chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com']
 
 
 # Application definition

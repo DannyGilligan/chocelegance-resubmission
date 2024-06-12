@@ -1,1 +1,1 @@
-web: gunicorn chocelegance-resubmission.wsgi:application
+web: gunicorn chocelegance.wsgi:application

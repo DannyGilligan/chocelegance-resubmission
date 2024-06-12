@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com']
+ALLOWED_HOSTS = ['8000-dannygillig-choceleganc-c6jjjedbcgc.ws-eu114.gitpod.io', 'localhost', 'chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com']
 
 
 # Application definition

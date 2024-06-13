@@ -33,7 +33,8 @@
             <figure>
                 <blockquote class="blockquote purple-text">
                     <p>
-                        <strong class="bright-purple-text">"</strong> Every individual piece of chocolate crafted at Chocelegance is intended to be a unique
+                        <strong class="bright-purple-text">"</strong> Every individual piece of chocolate crafted at
+                        Chocelegance is intended to be a unique
                         experience. A symphony of delight, rich in flavour and a celebration of taste. When
                         you eat our chocolates, you should taste all the notes that our organic cocoa beans have to
                         offer! <strong class="bright-purple-text">"</strong>
@@ -75,8 +76,10 @@
         </div>
     </div>
 
+    <!-- FAQ Accordion container -->
     <div class="faq-container col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
         <div class="faq-text mt-5">
+
             <h2 class="purple-text text-center">FAQs</h2>
             <br>
             <p class="purple-text">
@@ -90,13 +93,13 @@
             <br>
 
             <!-- Accordion section containing the questions and answers -->
-
             <div id="accordion" class="accordion-container">
 
                 {% for faq in faqs %}
                 {% if faq.faq_publish == "Yes" %}
-                <div class=" mx-auto mb-5 w-100" id="faq-accordion">
+                <div class="mx-auto mb-5 w-100" id="faq-accordion">
 
+                    <!-- FAQ Accordion card -->
                     <div class="card">
 
                         <!-- Accordiong header containing question text -->
@@ -123,9 +126,14 @@
                     {% endfor %}
                 </div>
             </div>
+            <!-- Accordion div is closed above this line -->
+
+
+
         </div>
     </div>
-</div>
+    <!-- FAQ div is closed above this line -->
 
+</div>
 
 {% endblock %}

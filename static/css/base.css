@@ -171,7 +171,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     top: 100vh;
     left: 1%;
     width: 98%;
-    font-size: .7rem;
+    font-size: .6rem;
 
     /* Background gradient effect generated from cssgradient.io */
     background: rgb(85, 27, 140);
@@ -188,7 +188,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 .footer-content {
-    padding: .7rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -311,7 +312,8 @@ input[id="id-save-info"] {
 }
 
 .testimonial-header{
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 8rem !important;
     max-width: 30rem;
 }
 
@@ -1367,7 +1369,6 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 @media (min-width: 548px) {
 
     .footer-content {
-        padding: .7rem;
         font-size: .8rem;
         justify-content: space-evenly;
     }

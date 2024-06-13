@@ -23,4 +23,10 @@ def privacypolicy(request):
     """
     return render(request, 'home/privacy.html')
 
+def terms(request):
+    """
+    This simple view will return the terms and conditions page
+    """
+    return render(request, 'home/terms.html')
+
 

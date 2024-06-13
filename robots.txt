@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Sitemap: https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/sitemap.xml

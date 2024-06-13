@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/accounts/login/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/cart/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?sort=choc_price&amp;direction=asc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?sort=choc_rating&amp;direction=desc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?sort=choc_category_display&amp;direction=asc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=keto_dark_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=keto_milk_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=keto_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=keto_dark_choc,keto_milk_choc,keto_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=vegan_dark_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=vegan_milk_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=vegan_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=vegan_dark_choc,vegan_milk_choc,vegan_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=gluten_free_dark_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=gluten_free_milk_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=gluten_free_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?choc_category_display=gluten_free_dark_choc,gluten_free_milk_choc,gluten_free_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/about/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/8/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/4/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/9/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/18/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/3/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/11/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/14/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/10/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/17/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/16/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/12/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/7/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/5/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/2/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/6/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/13/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/15/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/19/</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=vegan_dark_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=keto_milk_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=gluten_free_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=keto_dark_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=vegan_milk_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=gluten_free_dark_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=gluten_free_milk_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=vegan_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/?category=keto_white_choc</loc>
+  <lastmod>2024-06-13T22:26:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

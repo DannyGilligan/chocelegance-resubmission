@@ -89,7 +89,12 @@ class ChocolateReviewAdmin(admin.ModelAdmin):
         'publish_review',
     )
 
-    fields = ('chocolate', 'choc_rating', 'review_content', 'created_by_user', 'publish_review')
+    fields = ('chocolate',
+              'choc_rating',
+              'review_content',
+              'created_by_user',
+              'publish_review'
+              )
 
     ordering = ('-created_date',)
 

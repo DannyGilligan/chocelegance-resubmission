@@ -16,7 +16,7 @@ def view_cart(request):
 
     context = {
         'chocolate': chocolate,
-    } 
+    }
 
     return render(request, "cart/cart.html", context)
 

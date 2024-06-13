@@ -97,7 +97,7 @@ def chocolate_detail(request, chocolate_id):
     # If the method is POST, then a review is being sent to the back end
     # This will trigger the code block below to capture the review data
     if request.method == 'POST':
-        
+
         choc_rating = request.POST.get('choc_rating', 3)
         review_content = request.POST.get('review_content', '')
 
@@ -105,11 +105,16 @@ def chocolate_detail(request, chocolate_id):
         # ChocolateReview model
         if review_content:
 
-            # Checks if there are more than one review for the same chocolate, by the same user (only one should be displayed)
-            choc_reviews = ChocolateReview.objects.filter(created_by_user=request.user, chocolate=chocolate)
+            # Checks if there are more than one review for
+            # the same chocolate, by the same user
+            # (only one should be displayed)
+            choc_reviews = ChocolateReview.objects.filter(
+                created_by_user=request.user, chocolate=chocolate
+            )
 
             if choc_reviews.count() > 0:
-                # Assigns the first review by the user for the same chocolate
+                # Assigns the first review by the user for the
+                # same chocolate
                 choc_review = choc_reviews.first()
                 choc_review.choc_rating = choc_rating
                 choc_review.review_content = review_content
@@ -124,18 +129,18 @@ def chocolate_detail(request, chocolate_id):
                     review_content=review_content,
                     created_by_user=request.user
                 )
-            messages.success(request, 'Thank you! Your review will be approved shortly.')
+            messages.success(request, 'Thank you! Your review \
+will be approved shortly.')
 
             context = {
                 'chocolate': chocolate,
             }
-            
-            return redirect(reverse('chocolates'))
-        
-        else:
-            messages.error(request, 'The review appeared to be empty, make sure to fill out the text box and try again!')
-            # Comment: If this doesn't work then add "return redirect(reverse('chocolates'))" at the end of the else statement
 
+            return redirect(reverse('chocolates'))
+
+        else:
+            messages.error(request, 'The review appeared \
+to be empty, make sure to fill out the text box and try again!')
 
     context = {
         'chocolate': chocolate,
@@ -161,7 +166,8 @@ Chocolluminati only")
         if form.is_valid():
             chocolate = form.save()
             messages.success(request, 'Chocolate added!')
-            # Redirect user to the detail page of the chocolate they just added
+            # Redirect user to the detail page of
+            # the chocolate they just added
             return redirect(reverse('chocolate_detail', args=[chocolate.id]))
         else:
             messages.error(request, 'Failed to add Chocolate.\
@@ -245,7 +251,8 @@ for the Chocolluminati only")
 @login_required
 def delete_chocolate(request, chocolate_id):
     """
-    This view will allow superuser to delete chocolates from the model/database
+    This view will allow superuser to delete
+    chocolates from the model/database
     """
     # Prevents anyone who is not a superuser accessing this view
     if not request.user.is_superuser:

@@ -92,12 +92,17 @@
             </p>
             <br>
 
+
+            <!-- ******************************************** DEBUGGING BELOW ********************************************-->
+
+
             <!-- Accordion section containing the questions and answers -->
             <div id="accordion" class="accordion-container">
 
-                {% for faq in faqs %}
-                {% if faq.faq_publish == "Yes" %}
+
                 <div class="mx-auto mb-5 w-100" id="faq-accordion">
+                    {% for faq in faqs %}
+                    {% if faq.faq_publish == "Yes" %}
 
                     <!-- FAQ Accordion card -->
                     <div class="card">
@@ -106,15 +111,15 @@
                         <div class="card-header border-0" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="accordion-btn btn btn-link w-100 text-left collapsed" type="button"
-                                    data-toggle="collapse" data-target="#collapse_{{faq.id }}" aria-expanded="false"
-                                    aria-controls="collapse_{{faq.id }}">
+                                    data-toggle="collapse" data-target="#collapse_{{faq.id}}" aria-expanded="false"
+                                    aria-controls="collapse_{{faq.id}}">
                                     {{ faq.faq_question }}
                                 </button>
                             </h2>
                         </div>
 
                         <!-- Accordiong body containing answer text -->
-                        <div id="collapse_{{faq.id }}" class="collapse" aria-labelledby="headingOne"
+                        <div id="collapse_{{faq.id}}" class="collapse" aria-labelledby="headingOne"
                             data-parent="#faq-accordion">
                             <div class="accordion-card-body purple-text border-0">
                                 {{ faq.faq_answer }}
@@ -129,6 +134,7 @@
             <!-- Accordion div is closed above this line -->
 
 
+            <!-- ******************************************** DEBUGGING ABOVE ******************************************** -->
 
         </div>
     </div>

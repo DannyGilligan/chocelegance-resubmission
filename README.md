@@ -36,6 +36,7 @@ Business and customer goals, marketing and Facebook mockup.
 
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->
+
 ## Design 
 
 An overview of the key design aspects is included below.
@@ -46,10 +47,11 @@ An overview of the key design aspects is included below.
 4 primary colours are used throughout the site, these colours were chosen based on appropriateness, aesthetics and accessibility.
 <br>
 <br>
+
 <!-- Table showing the 4 primary colour details -->
 <table>
 <tr><th>Colour</th><th>Details</th></tr>
-<!-- New row below -->
+
 <tr>
 <td>
 <br>
@@ -59,21 +61,21 @@ An overview of the key design aspects is included below.
 </td>
 <td>Purple<br><br>Hex: #551b8c<br><br>Primary colour used thoughout site for text, borders, container backgrounds and buttons.</td>
 </tr>
-<!-- New row below -->
+
 <tr><td>
 <br>
 
 ![color-2](documentation/primary-colour-2.webp)
 <br><br>
 </td><td><br>Light Purple<br><br>Hex: #882bde<br><br>Used for secondary button actions.</td></tr>
-<!-- New row below -->
+
 <tr><td>
 <br>
 
 ![color-3](documentation/primary-colour-3.webp)
 <br><br>
 </td><td>Bright Purple/Violet<br><br>Hex: #c71585<br><br>Used for chocolate containers, text highlights and button glow effects.</td></tr>
-<!-- New row below -->
+
 <tr><td>
 <br>
 
@@ -137,8 +139,15 @@ The site uses the official font named 'FWWC 2023' to stay consistent with the br
 
 </td></tr>
 </table> 
+<br>
+<br>
+<br>
 </details>
-<!-- spacer -->
+<!-- Font section ends above this line -->
+
+
+
+
 <details>
   <summary><b> Responsiveness </b></summary>
 <br>
@@ -166,7 +175,15 @@ https://ui.dev/amiresponsive
 </td>
 </tr>
 </table> 
+
+<br>
+<br>
+<br>
 </details>
+<!-- Responsiveness section ends above this line -->
+
+
+
 <!-- spacer -->
 <details>
   <summary><b> Wireframes </b></summary>

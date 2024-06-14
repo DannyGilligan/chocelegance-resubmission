@@ -43,13 +43,55 @@ An overview of the key design aspects is included below.
 <details>
   <summary><b> Colour Scheme </b></summary>
 <br>
-4 primary colours used throughout the site, these colours were chosen based on appropriateness and aesthetics, purple has a traditional association with chocolate (to my mind), this can be seen in popular brands such as Cadbury and Milka, which are two of my favourites!
+4 primary colours used throughout the site, these colours were chosen based on appropriateness, aesthetics and accessibility.
+
+
+<!-- Table showing the 4 primary colour details -->
+<table>
+<tr><th>Colour</th><th>Details</th></tr>
+<!-- New row below -->
+<tr>
+<td>
+<br>
+
+![color-1](documentation/primary-colour-1.webp)
+<br><br>
+</td>
+<td>Purple<br><br>Hex: #551b8c<br><br>Primary colour used thoughout site for text, borders, container backgrounds and buttons.</td>
+</tr>
+<!-- New row below -->
+<tr><td>
+<br>
+
+![color-2](documentation/primary-colour-2.webp)
+<br><br>
+</td><td><br>Light Purple<br><br>Hex: #882bde<br><br>Used for secondary button actions.</td></tr>
+<!-- New row below -->
+<tr><td>
+<br>
+
+![color-3](documentation/primary-colour-3.webp)
+<br><br>
+</td><td>Bright Purple/Violet<br><br>Hex: #c71585<br><br>Used for chocolate containers, text highlights and button glow effects.</td></tr>
+<!-- New row below -->
+<tr><td>
+<br>
+
+![color-4](documentation/primary-colour-4.webp)
+<br><br>
+</td><td>Light Violet/Pink<br><br>Hex: #ed82ed<br><br>Used for box shadows and glow effects.</td></tr>
+
+</table>
+
+<br><br>
+purple has a traditional association with chocolate which can be seen in popular brands such as Cadbury and Milka (which are two of my favourites!).
 <br><br>
 The more vibrant shades of bright purple/violet have associations with romance, as exemplified by tradional Valentine's day colour schemese.
 <br><br>
 The colour scheme also provides good contrast when reading text to improve accessibility.
 <br><br>
 
+<!-- Table showing brand examples to justify colour scheme -->
 <table>
 <tr><th>Cadbury Brand</th><th>Milka Brand</th><th>Valentine's Day Example</th></tr>
 
@@ -69,67 +111,19 @@ The colour scheme also provides good contrast when reading text to improve acces
 ![cadbury example](documentation/valentines-day-example.webp)
 </td>
 </tr>
-
-</table>
-
-
-
-
-<table>
-<tr><th>Colour</th><th>Details</th></tr>
-<!-- spacer -->
-<tr><td>
-<br>
-
-![Coquelicot](assets/documentation/colour_1.webp)
-<br><br>
-</td>
-<td>Name: Coquelicot<br><br>Hex: #E83800<br><br>RGB: (232, 56, 0)<br><br>CMYK: 0, 0.758, 1, 0.090</td>
-</tr>
-<!-- spacer -->
-<tr><td>
-<br>
-
-![Eggshell](assets/documentation/colour_2.webp)
-<br><br>
-</td><td><br>Name: Eggshell<br><br>Hex: #EEEDCE<br><br>RGB: (238, 237, 206)<br><br>CMYK: 0, 0.004, 0.134, 0.066</td></tr>
-<!-- spacer -->
-<tr><td>
-<br>
-
-![Web Forest Green](assets/documentation/colour_3.webp)
-<br><br>
-</td><td>Name: Web Forest Green<br><br>Hex: #2F852B<br><br>RGB: (47, 133, 43)<br><br>CMYK: 0.646, 0, 0.676, 0.478</td></tr>
-<!-- spacer -->
-<tr><td>
-<br>
-
-![Web Forest Green](assets/documentation/colour_4.webp)
-<br><br>
-</td><td>Name: Light Carmine Pink<br><br>Hex: #ED6877<br><br>RGB: (237, 104, 119)<br><br>CMYK: 0, 0.561, 0.497, 0.070</td></tr>
-<!-- spacer -->
-<tr><td>
-<br>
-
-![Web Forest Green](assets/documentation/colour_5.webp)
-<br><br>
-</td><td>Name: American Yellow<br><br>Hex: #F3BC00<br><br>RGB: (243, 188, 0)<br><br>CMYK: 0, 0.226, 1, 0.047</td></tr>
-<!-- spacer -->
-<tr><td>
-<br>
-
-![Web Forest Green](assets/documentation/colour_6.webp)
-<br><br>
-</td><td>Name: Dodger Blue<br><br>Hex: #2C86FF<br><br>RGB: (44, 134, 255)<br><br>CMYK: 0.827, 0.474, 0, 0</td></tr>
-<!-- spacer -->
 </table>
 </details>
-<!-- Colour Scheme section ends here -->
-<!-- spacer -->
+
+
+
+
+
+
 <details>
-  <summary><b> Font </b></summary>
-<br>
-<table>
+<summary><b> Font </b></summary>
+
+
+
 <tr><th> <b>FWWC 2023 Official Font</b> </th></tr>
 <tr><td>
 The site uses the official font named 'FWWC 2023' to stay consistent with the brand identity of the event. The source of the font download has been linked in the Credits section.

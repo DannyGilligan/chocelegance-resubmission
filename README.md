@@ -6,7 +6,7 @@
 
 * [Introduction](#introduction)
 * [Features](#features)
-* [Process Flows](#process-flows)
+* [Design](#design)
 * [User Stories](#user-stories)
 * [Bugs](#bugs)
 * [Manual Testing](#manual-testing)
@@ -43,13 +43,15 @@ An overview of the key design aspects is included below.
 <details>
   <summary><b> Colour Scheme </b></summary>
 <br>
-4 primary colours used throughout the site, these colours were chosen based on appropriateness, purple has a traditional association with chocolates (to my mind), this can be seen in popular brands such as Cadbury and Milka, which are two of my favourite!. The more vibrant shades of bright purple/violet have associations with romance, as exemplified by tradional Valentine's day colour schemese.
+4 primary colours used throughout the site, these colours were chosen based on appropriateness and aesthetics, purple has a traditional association with chocolate (to my mind), this can be seen in popular brands such as Cadbury and Milka, which are two of my favourites!
+<br><br>
+The more vibrant shades of bright purple/violet have associations with romance, as exemplified by tradional Valentine's day colour schemese.
 <br><br>
 The colour scheme also provides good contrast when reading text to improve accessibility.
 <br><br>
 
 <table>
-<tr><th>Cadbury Example</th><th>Milk Example</th><th>Valentine's Day Example</th></tr>
+<tr><th>Cadbury Brand</th><th>Milka Brand</th><th>Valentine's Day Example</th></tr>
 
 <tr>
 <td>
@@ -145,14 +147,27 @@ The site uses the official font named 'FWWC 2023' to stay consistent with the br
 <br>
 <table>
 <tr><th> <b>Am I Responsive?</b> </th></tr>
-<tr><td>
-The site was designed following the principles of mobile first design. All initial CSS style rules were implemented for use on mobile devices with a min-width screen size of 320px, from there the layout was adapted as needed for progressively larger screens using media queries. <br><br>Flexbox functionality was utilised for the 'containers' used throughout the site which helped immensely in achieving the desired level of responsiveness. The screenshot below was taken from the site:<br><br> https://ui.dev/amiresponsive<br><br>
-</td></tr>
-<tr><td>
+<tr>
+<td>
+The site was designed following the principles of mobile first design. All initial CSS style rules were implemented for use on mobile devices with a min-width screen size of 320px, from there the layout was adapted as needed for progressively larger screens using media queries.
+<br>
+<br>
+The screenshot below was taken from the site:
+<br>
+<br>
+https://ui.dev/amiresponsive
+<br>
+<br>
+</td>
+</tr>
 
-![Official Font](assets/documentation/amiresponsive.webp)
+<tr>
+<td>
 
-</td></tr>
+![am i responsive](documentation/am-i-responsive.webp)
+
+</td>
+</tr>
 </table> 
 </details>
 <!-- spacer -->

@@ -192,7 +192,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 .footer-socials {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1rem;
     padding-bottom: .2rem !important;
 }
@@ -206,6 +206,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 .footer-newsletter {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: .2rem !important;
@@ -221,7 +222,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     padding-right: .7rem;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -1414,7 +1415,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
     .footer-content {
         font-size: .8rem;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .footer-newsletter {
@@ -1561,8 +1562,19 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         margin-right: auto;
     }
 
+    .footer-socials {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
     .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
         font-size: .9rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .footer-newsletter {

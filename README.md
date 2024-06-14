@@ -1,5 +1,4 @@
-Need to adjust hero image
-make sure ids in nav bar make sense
+![hero image](documentation/readme-hero-image.webp)
 
 ## Table of Contents
 

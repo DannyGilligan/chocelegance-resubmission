@@ -328,9 +328,10 @@ input[id="id-save-info"] {
 }
 
 .testimonial-header{
+    font-size: 1.1rem;
     margin: auto;
     margin-top: 8rem !important;
-    max-width: 30rem;
+    max-width: 32rem;
 }
 
 .carousel-blockquote{

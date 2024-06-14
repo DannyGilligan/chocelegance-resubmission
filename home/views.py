@@ -17,16 +17,16 @@ def index(request):
 
     return render(request, 'home/index.html', context)
 
+
 def privacypolicy(request):
     """
     This simple view will return the privacy policy page
     """
     return render(request, 'home/privacy.html')
 
+
 def terms(request):
     """
     This simple view will return the terms and conditions page
     """
     return render(request, 'home/terms.html')
-
-

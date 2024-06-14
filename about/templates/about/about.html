@@ -108,7 +108,7 @@
                     <div class="card">
 
                         <!-- Accordiong header containing question text -->
-                        <div class="card-header border-0" id="headingOne">
+                        <div class="card-header border-0" id="heading{{faq.id}}">
                             <h2 class="mb-0">
                                 <button class="accordion-btn btn btn-link w-100 text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapse_{{faq.id}}" aria-expanded="false"
@@ -119,7 +119,7 @@
                         </div>
 
                         <!-- Accordiong body containing answer text -->
-                        <div id="collapse_{{faq.id}}" class="collapse" aria-labelledby="headingOne"
+                        <div id="collapse_{{faq.id}}" class="collapse" aria-labelledby="heading{{faq.id}}"
                             data-parent="#faq-accordion">
                             <div class="accordion-card-body purple-text border-0">
                                 {{ faq.faq_answer }}

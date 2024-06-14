@@ -1,5 +1,7 @@
 ![hero image](documentation/readme-hero-image.webp)
-
+<br>
+<br>
+<br>
 ## Table of Contents
 
 * [Introduction](#introduction)
@@ -18,6 +20,15 @@
 
 
 ## Introduction
+
+Chocelegance if the 5th and final project submission as part of the Code Institute DIploma in Full Stack Software Engineering.
+<br><br>
+It is an e-Commerce platform built using the Django framework, HTML 5, CSS 3, Javascript, Python, Heroku, Stripe and AWS.
+<br><br>
+The site allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements).
+<br>
+<br>
+<br>
 
 ## Business Model
 

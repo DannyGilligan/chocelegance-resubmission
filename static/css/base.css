@@ -182,9 +182,11 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
-    height: 8rem;
+    height: 9rem;
     padding-top: .3rem;
     margin-top: 6rem !important;
+    padding-left: .7rem;
+    padding-right: .7rem;
 }
 
 .footer-content {
@@ -192,7 +194,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     padding-right: .7rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -211,6 +213,11 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     color: white;
     box-shadow: 0 0px 25px #ed82ed;
     text-decoration: none;
+}
+
+.footer-newsletter {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -1372,6 +1379,10 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         font-size: .8rem;
         justify-content: space-evenly;
     }
+
+    .footer-newsletter {
+        font-size: .8rem;
+    }
 }
 
 /* Media Query with min-width at 642px */
@@ -1514,6 +1525,10 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     }
 
     .footer-content {
+        font-size: .9rem;
+    }
+
+    .footer-newsletter {
         font-size: .9rem;
     }
 }

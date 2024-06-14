@@ -43,9 +43,9 @@ An overview of the key design aspects is included below.
 <details>
   <summary><b> Colour Scheme </b></summary>
 <br>
-4 primary colours used throughout the site, these colours were chosen based on appropriateness, aesthetics and accessibility.
-
-
+4 primary colours are used throughout the site, these colours were chosen based on appropriateness, aesthetics and accessibility.
+<br>
+<br>
 <!-- Table showing the 4 primary colour details -->
 <table>
 <tr><th>Colour</th><th>Details</th></tr>
@@ -83,10 +83,10 @@ An overview of the key design aspects is included below.
 
 </table>
 
-<br><br>
+<br>
 purple has a traditional association with chocolate which can be seen in popular brands such as Cadbury and Milka (which are two of my favourites!).
 <br><br>
-The more vibrant shades of bright purple/violet have associations with romance, as exemplified by tradional Valentine's day colour schemese.
+The more vibrant shades of bright purple/violet have associations with romance, as exemplified by tradional Valentine's day colour schemes.
 <br><br>
 The colour scheme also provides good contrast when reading text to improve accessibility.
 <br><br>
@@ -112,8 +112,11 @@ The colour scheme also provides good contrast when reading text to improve acces
 </td>
 </tr>
 </table>
+<br>
+<br>
+<br>
 </details>
-
+<!-- Colour scheme section section ends above this line -->
 
 
 

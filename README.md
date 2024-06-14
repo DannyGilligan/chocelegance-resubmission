@@ -90,8 +90,7 @@ purple has a traditional association with chocolate which can be seen in popular
 <br><br>
 The more vibrant shades of bright purple/violet have associations with romance, as exemplified by tradional Valentine's day colour schemes.
 <br><br>
-The colour scheme also provides good contrast when reading text to improve accessibility.
-<br><br>
+
 
 <!-- Table showing brand examples to justify colour scheme -->
 <table>
@@ -129,13 +128,13 @@ The colour scheme also provides good contrast when reading text to improve acces
 
 
 
-<tr><th> <b>FWWC 2023 Official Font</b> </th></tr>
+<tr><th> <b>Urbanist (from Google Fonts)</b> </th></tr>
 <tr><td>
-The site uses the official font named 'FWWC 2023' to stay consistent with the brand identity of the event. The source of the font download has been linked in the Credits section.
+The site uses the 'Urbanist' front from Google Fonts. This font was chosen as I felt it's appearance was clean, crisp and modern.
 </td></tr>
 <tr><td>
 
-![Official Font](assets/documentation/features06_official_font.webp)
+![Official Font](documentation/readme-hero-image.webp)
 
 </td></tr>
 </table> 

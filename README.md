@@ -29,7 +29,7 @@ Chocelegance is the 5th and final project submission as part of the Code Institu
 It is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, registering a user profile and email verification, generating email confirmations upon successful purchases, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
 <br><br>
 The site was built using the Django framework, HTML 5, CSS 3, Javascript, Bootstrap, Python, Heroku, ElephantSQL, Stripe and AWS.
-<br>
+<br><br>
 A link to the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/).
 <br>
 <br>

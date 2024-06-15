@@ -1670,10 +1670,11 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     }
 
     .footer {
-        height: 15.5rem;
+        height: 20rem;
     }
 
     .footer-socials {
+        margin-top: 1rem;
         font-size: 1.3rem !important;
         margin-left: auto;
         margin-right: auto;
@@ -1692,7 +1693,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     }
 
     .footer-newsletter {
-        font-size: .9rem;
+        font-size: 1rem;
+        margin-top: 1rem;
     }
 }
 

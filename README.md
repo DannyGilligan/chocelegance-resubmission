@@ -86,7 +86,7 @@ An overview of the key design aspects is included below.
 </table>
 
 <br>
-purple has a traditional association with chocolate which can be seen in popular brands such as Cadbury and Milka (which are two of my favourites!).
+Purple has a traditional association with chocolate which can be seen in popular brands such as Cadbury and Milka (which are two of my favourites!).
 <br><br>
 The more vibrant shades of bright purple/violet have associations with romance, as exemplified by tradional Valentine's day colour schemes.
 <br><br>
@@ -130,11 +130,11 @@ The more vibrant shades of bright purple/violet have associations with romance, 
 
 <tr><th> <b>Urbanist (from Google Fonts)</b> </th></tr>
 <tr><td>
-The site uses the 'Urbanist' front from Google Fonts. This font was chosen as I felt it's appearance was clean, crisp and modern.
+The site uses the 'Urbanist' front from Google Fonts. This font was chosen as I felt it's appearance was clean, crisp and modern and consistent with the Chocelegance brand.
 </td></tr>
 <tr><td>
 
-![Official Font](documentation/readme-hero-image.webp)
+![Chocelegance font](documentation/urbanist-font-example.webp)
 
 </td></tr>
 </table> 

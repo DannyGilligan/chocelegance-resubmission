@@ -143,7 +143,7 @@ An example is the hero section, which includes an SEO optimised heading and butt
 </tr>
 </table>
 <br>
-The SEO keywords have been included in the head of the base.html file, in the 'names' and 'description' meta tags to further improve the SEO aspect of the site.
+The SEO keywords have been included in the head of the base.html file, in the <b>'keywords'</b> and <b>'description'</b> meta tags to further improve the SEO aspect of the site.
 <br><br>
 
 ![seo-meta-tags](documentation/seo-meta-attributes.webp)
@@ -373,37 +373,37 @@ ERD
 <li>
 <b>Faq Model</b>
 <br>
-This model holds the questions and answers that are displayed to the user in the 'About' page. This content is updated by the superuser directly from the admin panel.
+This model holds the questions and answers that are displayed to the user in the 'About' page. This content is updated by the superuser directly from the admin panel. Located in 'About' app.
 </li>
 <br>
 <li>
 <b>ChocolateReview Model</b>
 <br>
-This model holds the chocolate reviews that are added by the user in the chocolate details page. The reviews are submitted with the 'publish' status set to 'No', once reviewed by the superuser in the admin panel, the 'publish' status can then be set to 'Yes', which will trigger the review to be displayed on the site.
+This model holds the chocolate reviews that are added by the user in the chocolate details page. The reviews are submitted with the 'publish' status set to 'No', once reviewed by the superuser in the admin panel, the 'publish' status can then be set to 'Yes', which will trigger the review to be displayed on the site. Located in 'Chocolate' app.
 </li>
 <br>
 <li>
 <b>Chocolate Model</b>
 <br>
-This model holds all the relevant details about the chocolates sold on the site. This model can be created, updated, edited and deleted by a superuser directly from the site without the need to log in to the admin panel.
+This model holds all the relevant details about the chocolates sold on the site. This model can be created, updated, edited and deleted by a superuser directly from the site without the need to log in to the admin panel. Located in 'Chocolate' app.
 </li>
 <br>
 <li>
 <b>ChocolateCategory Model</b>
 <br>
-This model holds the different categories of chocolates sold on the site (e.g Dark Vegan Chocolate, Milk Gluten-Free Chocolate etc). These values are updated from the admin panel.
+This model holds the different categories of chocolates sold on the site (e.g Dark Vegan Chocolate, Milk Gluten-Free Chocolate etc). These values are updated from the admin panel. Located in 'Chocolate' app.
 </li>
 <br>
 <li>
 <b>Testimonial Model</b>
 <br>
-This model holds the testimonials that are injected into the home page carousel. This content is updated in the admin panel by a superuser.
+This model holds the testimonials that are injected into the home page carousel. This content is updated in the admin panel by a superuser. Located in 'Home' app.
 </li>
 <br>
 <li>
 <b>DietaryType Model</b>
 <br>
-This model holds the different dietary types that are catered to (e.g Keto, Vegan, Gluten-Free). This content is updated in the admin panel by a superuser.
+This model holds the different dietary types that are catered to (e.g Keto, Vegan, Gluten-Free). This content is updated in the admin panel by a superuser. Located in 'Chocolate' app.
 </li>
 </ol>
 

@@ -1,6 +1,7 @@
 ## Chocelegance
 
 ![hero image](documentation/readme-hero-image.webp)
+
 <br>
 <br>
 <br>
@@ -18,10 +19,11 @@
 * [Technologies Used](#technologies-used)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
-<br>
-<br>
-<br>
 
+
+<br>
+<br>
+<br>
 
 ## Introduction
 
@@ -32,6 +34,12 @@ It is an e-Commerce platform that allows an artisan chocolatier to sell hand cra
 The site was built using the Django framework, HTML 5, CSS 3, Javascript, Bootstrap, Python, Heroku, ElephantSQL, Stripe and AWS.
 <br><br>
 A link to the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/).
+
+<br>
+
+[Back to Top](#chocelegance)
+
+<br>
 <br>
 <br>
 
@@ -106,7 +114,6 @@ The remaining keywords were then checked in wordtracker for relevance, see scree
 </tr>
 </table>
 <br>
-<br>
 An example of the keyword research on [wordtracker.com](https://www.wordtracker.com/) is shown below.
 <br><br>
 
@@ -120,7 +127,45 @@ An example of the keyword research on [wordtracker.com](https://www.wordtracker.
 <br>
 </details>
 
+<details>
+  <summary><b> SEO Improvements </b></summary>
+<br>
+The keywords identified during the research stage have been incorporated throughout the site (e.g headings, product descriptions, between strong tags etc).
+<br><br>
+An example is the hero section, which includes an SEO optimised heading and button containing keywords in an organic manner (as opposed to stuffing, or keyword spamming).
+<br>
+<table>
+<tr>
+<td>
+
+![seo hero example](documentation/seo-hero-example.webp)
+</td>
+</tr>
+</table>
+<br>
+A <b>sitemap.xml</b> file has been included in the root directory of the project that will allow search engine spiders to identify and crawl through the site's pages.
+<br>
+<br>
+A <b>robots.txt</b> file has also been added to the root directory of the project that will define what areas of the site are accessible to search engine spiders.
+
+<br>
+<br>
+<br>
+</details>
+
+
+
+
+
+
+<br>
+
+[Back to Top](#chocelegance)
+
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->
+<br>
+<br>
+<br>
 
 ## Design 
 
@@ -378,17 +423,19 @@ The ERD below was generated using graphviz.
 <br>
 </details>
 
+<br>
 
 [Back to Top](#chocelegance)
+
+
+
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- FEATURES SECTION -->
 <br>
 <br>
 <br>
-
-
-
-
-
-
 
 ## Features
 

@@ -227,6 +227,7 @@ ERD
 <td>
 5 custom models were developed for the project:
 <br>
+<br>
 <ul>
 <li>
 1 Faq Model
@@ -253,7 +254,6 @@ ERD
 </li>
 </ul>
 
-<br>
 </td>
 </tr>
 

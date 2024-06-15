@@ -28,7 +28,7 @@ Chocelegance if the 5th and final project submission as part of the Code Institu
 <br><br>
 It is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, register a user profile, generating email notifications upon successful registration or successful purchases, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
 <br><br>
-The site was built using the Django framework, HTML 5, CSS 3, Javascript, Python, Heroku, Stripe and AWS.
+The site was built using the Django framework, HTML 5, CSS 3, Javascript, Bootstrap, Python, Heroku, Stripe and AWS.
 <br>
 <br>
 <br>
@@ -135,7 +135,7 @@ The more vibrant shades of bright purple/violet have associations with romance, 
 <table>
 <tr><th> Urbanist </th></tr>
 <tr><td>
-The site uses the 'Urbanist' front from Google Fonts.
+The site uses the 'Urbanist' font from Google Fonts.
 <br>
 <br>
 This font was chosen as I felt it's appearance was clean, crisp, modern and consistent with the Chocelegance brand.
@@ -165,7 +165,7 @@ This font was chosen as I felt it's appearance was clean, crisp, modern and cons
 <tr><th> <b>Am I Responsive?</b> </th></tr>
 <tr>
 <td>
-The site was designed following the principles of mobile first design. All initial CSS style rules were implemented for use on mobile devices with a min-width screen size of 320px, from there the layout was adapted as needed for progressively larger screens using media queries.
+The site was designed following the principles of mobile first design. All initial CSS and Bootstrap style rules were implemented for use on mobile devices with a min-width screen size of 320px, from there the layout was adapted as needed for progressively larger screens using media queries.
 <br>
 <br>
 The screenshot below was taken from the site:
@@ -238,27 +238,34 @@ ERD
 
 <ol>
 <li>
-Faq Model
+<b>Faq Model</b>
+<br>
+This model holds the questions and answers that are displayed to the user in the 'About' page. This content is updated by the superuser directly from the admin panel.
 </li>
-
+<br>
 <li>
-ChocolateReview Model
+<b>ChocolateReview Model</b>
+This model holds the chocolate reviews that are added by the user in the chocolate details page. The reviews are submitted with the 'publish' status set to 'No', once reviewed by the superuser in the admin panel, the 'publish' status can then be set to 'Yes', which will trigger the review to be displayed on the site.
 </li>
-
+<br>
 <li>
-Chocolate Model
+<b>Chocolate Model</b>
+This model holds all the relevant details about the chocolates sold on the site. This model can be created, updated, edited and deleted by a superuser directly from the site without the need to log in to the admin panel.
 </li>
-
+<br>
 <li>
-ChocolateCategory Model
+<b>ChocolateCategory Model</b>
+This model holds the different categories of chocolates sold on the site (e.g Dark Vegan Chocolate, Milk Gluten-Free Chocolate etc). These values are updated from the admin panel.
 </li>
-
+<br>
 <li>
-Testimonial Model
+<b>Testimonial Model</b>
+This model holds the testimonials that are injected into the home page carousel. This content is updated in the admin panel by a superuser.
 </li>
-
+<br>
 <li>
-DietaryType Model
+<b>DietaryType Model</b>
+This model holds the different dietary types that are catered to (e.g Keto, Vegan, Gluten-Free). This content is updated in the admin panel by a superuser.
 </li>
 </ol>
 

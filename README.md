@@ -225,34 +225,35 @@ ERD
 
 <tr>
 <td>
-5 custom models were developed for the project.
+5 custom models were developed for the project:
+<br>
 <ul>
 <li>
-1 Faq
+1 Faq Model
 </li>
 
 <li>
-2 ChocolateReview
+2 ChocolateReview Model
 </li>
 
 <li>
-3 Chocolate
+3 Chocolate Model
 </li>
 
 <li>
-4 ChocolateCategory
+4 ChocolateCategory Model
 </li>
 
 <li>
-5 Testimonial
+5 Testimonial Model
 </li>
 
 <li>
-6 DietaryType
+6 DietaryType Model
 </li>
 </ul>
 
-
+<br>
 </td>
 </tr>
 

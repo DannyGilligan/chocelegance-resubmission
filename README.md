@@ -113,9 +113,12 @@ The more vibrant shades of bright purple/violet have associations with romance, 
 </td>
 </tr>
 </table>
+
+[Back to Design](#design)
 <br>
 <br>
 <br>
+
 </details>
 <!-- Colour scheme section section ends above this line -->
 
@@ -125,10 +128,9 @@ The more vibrant shades of bright purple/violet have associations with romance, 
 
 <details>
 <summary><b> Font </b></summary>
-
-
-
-<tr><th> <b>Urbanist (from Google Fonts)</b> </th></tr>
+<br>
+<table>
+<tr><th> Urbanist </th></tr>
 <tr><td>
 The site uses the 'Urbanist' front from Google Fonts. This font was chosen as I felt it's appearance was clean, crisp and modern and consistent with the Chocelegance brand.
 </td></tr>
@@ -183,12 +185,12 @@ https://ui.dev/amiresponsive
 
 
 
-<!-- spacer -->
+
 <details>
   <summary><b> Wireframes </b></summary>
 <br>
 <details>  
-  <summary>  <i>Enter Username</i> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <i>Enter Username</i> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 <!-- Wireframe 1 1 begins -->
 The initial landing page will display the 'FIFA Women's World Cup Quiz 2023' logo, along with an input field to enter a username, and an 'enter' button. 

@@ -21,9 +21,9 @@
 
 ## Introduction
 
-Chocelegance if the 5th and final project submission as part of the Code Institute DIploma in Full Stack Software Engineering.
+Chocelegance if the 5th and final project submission as part of the Code Institute DIploma in Full Stack Software Development.
 <br><br>
-It is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements).
+It is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, register a user profile, generating email notifications upon successful registration or successful purchases, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
 <br><br>
 The site was built using the Django framework, HTML 5, CSS 3, Javascript, Python, Heroku, Stripe and AWS.
 <br>
@@ -225,7 +225,7 @@ ERD
 
 <tr>
 <td>
-5 custom models were developed for the project:
+6 custom models were developed for the project:
 <br>
 <br>
 <ul>
@@ -253,7 +253,10 @@ ERD
 6 DietaryType Model
 </li>
 </ul>
-
+<br>
+The ERD below was generated using graphviz.
+<br>
+<br>
 </td>
 </tr>
 

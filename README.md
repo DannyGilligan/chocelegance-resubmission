@@ -43,7 +43,7 @@ Business and customer goals, marketing and Facebook mockup.
   <summary><b> Business Overview </b></summary>
 <br>
 
-Chocelegance is an online B2C business offering hand crafted, diet friendly chocolates to customers with specialised dietary requirements.
+Chocelegance is an online B2C operation offering hand crafted, diet friendly chocolates to customers with specialised dietary requirements.
 <br><br>
 The business is operated by a small team of artisan chocolatiers who share a passion for the nuances involved in fine chocolate making, and want to share this passion with a niche set of customers that are not well served by the current offerings on the market.
 <br><br>
@@ -61,30 +61,64 @@ The business is currently at a small scale, with limited inventory being kept on
 <br>
 
 There are several chocolate makers in Amsterdam with an online presence and established customer base. These are well entrenched competitiors with diverse product ranges. Some examples are listed below:
-<br><br>
+<br>
 
 [Vanroselen](https://www.vanroselen.nl/)
-<br><br>
+<br>
 
 [Ganache](https://www.ganacheamsterdam.com/)
-<br><br>
+<br>
 
 [Artichoc](https://artichoc.nl/)
-<br><br>
+<br>
 
 [Candela](https://chocolade-versturen.nl/)
-<br><br>
+<br>
 
 [Puccini](https://puccinibomboni.com/)
 <br><br>
 All of these competitors offer high quality chocolates, however, they do not target customers with specific dietary requirements exclusively. The goal of Chocelegance is to capture this segement of the market and focus exclusively on serving their needs.
 <br><br>
-Of the competitors listed above, Puccini has been used as a source of inspiration for the Chocelegance site. The images and descriptions have present on their site have been used for the purposes of this project. All images have been credited in the credits section.
+Of the competitors listed above, Puccini has been used as a source of inspiration for the Chocelegance site. The images and descriptions present on their site have been used for the purposes of this project.
+<br><br>
+All images have been credited in the credits section.
 <br>
 <br>
 </details>
 
+<details>
+  <summary><b> Keyword Research </b></summary>
+<br>
 
+A list of broad general topics relevant to the business was created, then lists of short-tail keywords were was created, followed by a list of long-tail keywords.
+<br><br>
+These keywords were then rationalised to remove any that Chocelegance would not have any authority on.
+<br><br>
+The remaining keywords were then checked in wordtracker for relevance, see screenshot below.
+<br><br>
+
+<table>
+<tr>
+<td>
+
+![keyword research](documentation/keyword-research.webp)
+</td>
+</tr>
+</table>
+<br>
+<br>
+An example of the keyword research on [wordtracker.com](https://www.wordtracker.com/) is shown below.
+<br><br>
+
+<table>
+<tr>
+<td>
+
+![keyword research](documentation/word-tracker-example.webp)</td></tr></table>
+<br>
+<br>
+<br>
+</details>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->
 

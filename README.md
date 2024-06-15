@@ -133,7 +133,7 @@ An example of the keyword research on [wordtracker.com](https://www.wordtracker.
 The keywords identified during the research stage have been incorporated throughout the site (e.g headings, product descriptions, between strong tags etc).
 <br><br>
 An example is the hero section, which includes an SEO optimised heading and button containing keywords in an organic manner (as opposed to stuffing, or keyword spamming).
-<br>
+<br><br>
 <table>
 <tr>
 <td>
@@ -142,6 +142,12 @@ An example is the hero section, which includes an SEO optimised heading and butt
 </td>
 </tr>
 </table>
+<br>
+The SEO keywords have been included in the head of the base.html file, in the 'names' and 'description' meta tags to further improve the SEO aspect of the site.
+<br><br>
+
+![seo-meta-tags](documentation/seo-meta-attributes.webp)
+<br>
 <br>
 A <b>sitemap.xml</b> file has been included in the root directory of the project that will allow search engine spiders to identify and crawl through the site's pages.
 <br>

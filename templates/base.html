@@ -14,8 +14,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO Keywords -->
-  <meta name="description" content="Chocelegance, we make hand crafted, organic, vegan, keto friendly and gluten-free chocolates for diet conscious chocolate lovers">
-  <meta name="keywords" content="chocs, cocoa, dark chocolate, milk chocolate, white chocolate, natural, love, present, dietary, nutrition, delicious, artisan, craft, treat yourself with chocolate, valentine's day gift, healthy chocolates, hand crafted chocolates, protein, pure, non-gmo, plant based, foody, allergy, niche, chocolatier, veganism, bio, gluten, coeliac, keto friendly diet, guilt free, luxury chocolate, high quality chocolates, buy romantic gift, all natural ingredients, vegan friendly, romance, anniversary, sweet and tasty treats">
+  <meta name="description"
+    content="Chocelegance, we make hand crafted, organic, vegan, keto friendly and gluten-free chocolates for diet conscious chocolate lovers">
+  <meta name="keywords"
+    content="chocs, cocoa, dark chocolate, milk chocolate, white chocolate, natural, love, present, dietary, nutrition, delicious, artisan, craft, treat yourself with chocolate, valentine's day gift, healthy chocolates, hand crafted chocolates, protein, pure, non-gmo, plant based, foody, allergy, niche, chocolatier, veganism, bio, gluten, coeliac, keto friendly diet, guilt free, luxury chocolate, high quality chocolates, buy romantic gift, all natural ingredients, vegan friendly, romance, anniversary, sweet and tasty treats">
 
   {% endblock %}
 
@@ -42,6 +44,9 @@
   <link rel="mask-icon" href="{% static 'favicon/safari-pinned-tab.svg' %}" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Mailchimp signup form styles -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 
   {% endblock %}
 
@@ -237,36 +242,94 @@
 
     </section>
 
-    
+
 
     <section class="footer-newsletter mx-auto text-center">
       <div class="mx-auto">
-        <p>
-          Get exclusive offers and discount codes by subscribing to our monthly newsletter
-        </p>
+
+        <div id="mc_embed_shell">
+
+          <div id="mc_embed_signup">
+            <form
+              action="https://herokuapp.us17.list-manage.com/subscribe/post?u=6debefe32746ae4fb58cf7629&amp;id=d65eb2c650&amp;f_id=0041c2e1f0"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank">
+              <div id="mc_embed_signup_scroll">
+                <p>Subscribe to our newsletter for discounts and promotions!</p>
+                <div class="mc-field-group"><label for="mce-EMAIL">Email Address (required) <span
+                      class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email"
+                    id="mce-EMAIL" required="" value="" placeholder="Enter email address (required)"></div>
+                <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display: none;"></div>
+                  <div class="response" id="mce-success-response" style="display: none;"></div>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <!-- /* real people should not fill this in and expect good things - do not remove this or risk form bot
+                  signups */ -->
+                  <input type="text" name="b_6debefe32746ae4fb58cf7629_d65eb2c650" tabindex="-1" value="">
+                </div>
+                <div class="optionalParent">
+                  <div class="clear foot">
+                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                    <p style="margin: 0px auto;"><a href="http://eepurl.com/iR3FwM"
+                        title="Mailchimp - email marketing made easy and fun"><span
+                          style="display: inline-block; background-color: white; border-radius: 4px;"><img
+                            class="refferal_badge"
+                            src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                            alt="Intuit Mailchimp"
+                            style="width: 7rem; height: 2rem;"></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+          <script type="text/javascript">
+            (function ($) {
+              window.fnames = new Array();
+              window.ftypes = new Array();
+              fnames[0] = 'EMAIL';
+              ftypes[0] = 'email';
+              fnames[1] = 'FNAME';
+              ftypes[1] = 'text';
+              fnames[2] = 'LNAME';
+              ftypes[2] = 'text';
+              fnames[3] = 'ADDRESS';
+              ftypes[3] = 'address';
+              fnames[4] = 'PHONE';
+              ftypes[4] = 'phone';
+              fnames[5] = 'BIRTHDAY';
+              ftypes[5] = 'birthday';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+          </script>
+        </div>
+
+
+
+
+
       </div>
-           <!-- Mailchimp signup form here -->       
     </section>
 
     <section class="footer-content">
 
       <div>
-        <a class="text-white" href="{% url 'privacy' %}" 
-        aria-label="visit our privacy policy page">
+        <a class="text-white" href="{% url 'privacy' %}" aria-label="visit our privacy policy page">
           Privacy policy
         </a>
       </div>
 
       <div>
         <a class="text-white" href="https://www.cacao-trace.com" rel="sponsored" target="_blank"
-        aria-label="visit the cacao-trace site">
+          aria-label="visit the cacao-trace site">
           Cacao-Trace &reg; Ethical Partner
         </a>
       </div>
 
       <div>
-        <a class="text-white" href="{% url 'terms' %}" 
-        aria-label="visit our terms and conditions page">
+        <a class="text-white" href="{% url 'terms' %}" aria-label="visit our terms and conditions page">
           Terms & conditions
         </a>
       </div>
@@ -280,6 +343,28 @@
   {% block postloadjs %}
   <script type="text/javascript">
     $('.toast').toast('show');
+  </script>
+
+  <!-- Mailchimp signup form scripts -->
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  <script type="text/javascript">
+    (function ($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = 'EMAIL';
+      ftypes[0] = 'email';
+      fnames[1] = 'FNAME';
+      ftypes[1] = 'text';
+      fnames[2] = 'LNAME';
+      ftypes[2] = 'text';
+      fnames[3] = 'ADDRESS';
+      ftypes[3] = 'address';
+      fnames[4] = 'PHONE';
+      ftypes[4] = 'phone';
+      fnames[5] = 'BIRTHDAY';
+      ftypes[5] = 'birthday';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
   </script>
 
   {% endblock %}

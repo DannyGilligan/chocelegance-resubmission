@@ -169,7 +169,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 
     position: sticky;
     top: 100vh;
-    left: 1%;
+    margin-left: auto;
+    margin-right: auto;
     width: 98%;
     font-size: .6rem;
 
@@ -182,7 +183,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
-    height: 6.5rem;
+    height: 14rem;
     padding-top: .4rem;
     margin-top: 5rem !important;
     padding-left: .7rem;
@@ -207,6 +208,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 .footer-newsletter {
+    display: flex;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -218,12 +220,144 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 }
 
 .footer-content {
-    padding-top: 0rem !important;
+    padding-top: .4rem !important;
     padding-left: .7rem;
     padding-right: .7rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ MAILCHIMP SIGNUP FORM */
+
+
+#mc_embed_signup{
+    background:transparent;
+    clear:left;
+    font:14px;
+    width: 100%;
+    display: flex;
+}
+
+#mc_embed_signup .foot {
+    display: flex !important;
+}
+
+#mc-embedded-subscribe-form {
+    margin: .2rem !important;
+}
+/* #mc_embed_signup {
+    padding-top: .3rem;
+    border: none;
+    text-align: center;
+    width: 100%;
+}  */
+
+/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+
+#mc_embed_signup div.response {
+    background-color: #c71585;
+    color: white;
+    border-radius: 8px !important;
+    margin-top: 0 !important;
+    margin-bottom: .4rem !important;
+    width: fit-content !important;
+    float: left !important;
+    padding: .4rem  !important;
+}
+
+#mc_embed_signup div #mce-responses {
+    font-size: .7rem;
+    margin: 0 !important;
+}
+
+#mc_embed_signup .mc-field-group {
+    padding-bottom: .7rem !important;
+}
+
+#mc_embed_signup #mce-success-response {
+    color: white !important;
+}
+
+/* positions input field horizontally */
+#mc_embed_signup_scroll {
+    display: inline-block !important;
+} 
+
+#mce-EMAIL::placeholder {
+    color: #551b8c;
+    opacity: .6;
+}
+
+
+
+
+/* Custom */
+/* Signup form container */
+
+
+
+
+/* Input Styles */
+#mce-EMAIL { 
+    color: #551b8c;
+    font-size: .9rem;
+    border: 1px solid #551b8c ;
+    background-color: #fff;
+    padding: .3rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0;
+    width: 100% !important;
+} 
+
+/* positions button horizontally in line with input */
+.clear { 
+    display: inline-block;
+} 
+
+/* Button Styles */
+.button {
+    font-size: .9rem !important;
+    color: #fff !important;
+    padding-top: .3rem !important;
+    padding-bottom: .3rem !important;
+    background-color: #551b8c !important;
+    border: 1px solid #882bde !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    border-radius: 3px !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    line-height: inherit !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0 0px 1px white !important;
+}
+
+.button:hover {
+    background: #c71585 !important;
+    color: white !important;
+    box-shadow: 0 0px 10px #ed82ed !important;
+    text-decoration: none !important;
+} 
+
+:-webkit-input-placeholder { color: #ABB0B2 ; } /* WebKit browsers */ 
+:-moz-placeholder { color: #ABB0B2 ; } /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder { color: #ABB0B2 ; } /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { color: #ABB0B2 ; } /* Internet Explorer 10+ */
+
+@media (max-width: 768px) { /* positions input field and button underneath each other with 100% width for tablet and mobile */
+  
+/* .mc-field-group { display: block; max-width: 100%; }
+#mce-EMAIL { padding: .7em 0 .7em 1em; width: 96%; margin: 0; }
+.clear { display: block; width: 100% }
+.button { width: 40%; margin: .5em 0 0 0; } */
+  
 }
 
 

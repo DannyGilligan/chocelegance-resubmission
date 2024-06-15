@@ -24,12 +24,13 @@
 
 ## Introduction
 
-Chocelegance if the 5th and final project submission as part of the Code Institute DIploma in Full Stack Software Development.
+Chocelegance is the 5th and final project submission as part of the Code Institute DIploma in Full Stack Software Development.
 <br><br>
-It is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, register a user profile, generating email notifications upon successful registration or successful purchases, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
+It is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, registering a user profile and email verification, generating email confirmations upon successful purchases, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
 <br><br>
-The site was built using the Django framework, HTML 5, CSS 3, Javascript, Bootstrap, Python, Heroku, Stripe and AWS.
+The site was built using the Django framework, HTML 5, CSS 3, Javascript, Bootstrap, Python, Heroku, ElephantSQL, Stripe and AWS.
 <br>
+A link to the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/).
 <br>
 <br>
 
@@ -428,11 +429,22 @@ https://github.com/openai/openai-cookbook/issues/154
 <td>Gitpod</td>
 <td>Site development, IDE</td>
 <td>https://www.gitpod.io/docs/introduction</td>
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="documentation/icon-postgresql.webp" alt="Heroku" title="Heroku"/></code>
+</div>
+</td>
+<td>ElephantSQL</td>
+<td>Database hosting</td>
+<td>https://www.elephantsql.com/</td>
+</tr>
+<!-- spacer -->
 </tr>
 <!-- spacer -->
 <tr><td>
 <div>
-	<code><img width="50" src="documentation/icon-heroku.webp" alt="Heroku" title="Heroku"/></code>
+	<code><img width="50" height="50" src="documentation/icon-heroku.webp" alt="Heroku" title="Heroku"/></code>
 </div>
 </td>
 <td>Heroku</td>

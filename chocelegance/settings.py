@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     # Other apps
     'crispy_forms',
     'storages',
+    'django_extensions',
 
 ]
 
@@ -240,3 +241,10 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+# Used to generate ERD by graphviz
+GRAPH_MODELS ={
+'all_applications': False,
+'graph_models': True,
+'app_labels': ['about', 'cart', 'checkout', 'chocolates', 'home', 'testimonials', 'profiles'],
+}

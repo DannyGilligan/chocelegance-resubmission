@@ -8,6 +8,7 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
+* [Business Model](#business-model)
 * [Features](#features)
 * [Design](#design)
 * [User Stories](#user-stories)
@@ -37,6 +38,52 @@ A link to the deployed site can be found [here](https://chocelegance-resubmissio
 ## Business Model
 
 Business and customer goals, marketing and Facebook mockup.
+
+<details>
+  <summary><b> Business Overview </b></summary>
+<br>
+
+Chocelegance is an online B2C business offering hand crafted, diet friendly chocolates to customers with specialised dietary requirements.
+<br><br>
+The business is operated by a small team of artisan chocolatiers who share a passion for the nuances involved in fine chocolate making, and want to share this passion with a niche set of customers that are not well served by the current offerings on the market.
+<br><br>
+A typical customer persona is a chocolate lover who wants to experience the rich taste of hand made chocolates, but needs to stay within a strict set of dietary parameters. The customer base for chocolates is skewed towards female buyers, as such, the branding and communications are aimed at satisifying the needs of this customer persona, while avoiding alienating male shoppers (who typically enjoy buying chocolates as gifts).
+<br><br>
+The business is currently at a small scale, with limited inventory being kept on hand. Chocolates will be made to order, as the business grows, a more sophisticated inventory management system will be implemented.
+<br>
+<br>
+<br>
+</details>
+
+
+<details>
+  <summary><b> Competitors </b></summary>
+<br>
+
+There are several chocolate makers in Amsterdam with an online presence and established customer base. These are well entrenched competitiors with diverse product ranges. Some examples are listed below:
+<br><br>
+
+[Vanroselen](https://www.vanroselen.nl/)
+<br><br>
+
+[Ganache](https://www.ganacheamsterdam.com/)
+<br><br>
+
+[Artichoc](https://artichoc.nl/)
+<br><br>
+
+[Candela](https://chocolade-versturen.nl/)
+<br><br>
+
+[Puccini](https://puccinibomboni.com/)
+<br><br>
+All of these competitors offer high quality chocolates, however, they do not target customers with specific dietary requirements exclusively. The goal of Chocelegance is to capture this segement of the market and focus exclusively on serving their needs.
+<br><br>
+Of the competitors listed above, Puccini has been used as a source of inspiration for the Chocelegance site. The images and descriptions have present on their site have been used for the purposes of this project. All images have been credited in the credits section.
+<br>
+<br>
+</details>
+
 
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->

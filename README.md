@@ -1,7 +1,10 @@
+## Chocelegance
+
 ![hero image](documentation/readme-hero-image.webp)
 <br>
 <br>
 <br>
+
 ## Table of Contents
 
 * [Introduction](#introduction)
@@ -135,7 +138,8 @@ The more vibrant shades of bright purple/violet have associations with romance, 
 The site uses the 'Urbanist' front from Google Fonts.
 <br>
 <br>
-This font was chosen as I felt it's appearance was clean, crisp and modern and consistent with the Chocelegance brand.
+This font was chosen as I felt it's appearance was clean, crisp, modern and consistent with the Chocelegance brand.
+<br>
 </td></tr>
 <tr><td>
 
@@ -143,6 +147,8 @@ This font was chosen as I felt it's appearance was clean, crisp and modern and c
 
 </td></tr>
 </table> 
+
+[Back to Design](#design)
 <br>
 <br>
 <br>
@@ -180,6 +186,7 @@ https://ui.dev/amiresponsive
 </tr>
 </table> 
 
+[Back to Design](#design)
 <br>
 <br>
 <br>
@@ -228,31 +235,33 @@ ERD
 6 custom models were developed for the project:
 <br>
 <br>
-<ul>
+
+<ol>
 <li>
-1 Faq Model
+Faq Model
 </li>
 
 <li>
-2 ChocolateReview Model
+ChocolateReview Model
 </li>
 
 <li>
-3 Chocolate Model
+Chocolate Model
 </li>
 
 <li>
-4 ChocolateCategory Model
+ChocolateCategory Model
 </li>
 
 <li>
-5 Testimonial Model
+Testimonial Model
 </li>
 
 <li>
-6 DietaryType Model
+DietaryType Model
 </li>
-</ul>
+</ol>
+
 <br>
 The ERD below was generated using graphviz.
 <br>
@@ -268,7 +277,10 @@ The ERD below was generated using graphviz.
 </tr>
 
 </table>
-
+[Back to Design](#design)
+<br>
+<br>
+<br>
 </details>
 
 

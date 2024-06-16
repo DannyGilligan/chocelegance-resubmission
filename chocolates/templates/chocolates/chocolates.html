@@ -211,6 +211,8 @@
 
 {% block postloadjs %}
 {{ block.super }}
+
+{% if request.user.is_authenticated %}
 <!-- Script for displaying dialogue box when clicking delete in super user options -->
 <script>
 
@@ -229,6 +231,7 @@
 
     // JS Code block validated in JS Hint, no errors
 </script>
+{% endif %}
 
 
 <!-- Script for back to top button -->

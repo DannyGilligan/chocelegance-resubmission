@@ -313,6 +313,7 @@
 {% block postloadjs %}
 {{ block.super }}
 
+{% if request.user.is_authenticated %}
 <script>
     // This provides a defence against accidental product deletion by hiding the
     // edit and delete buttons when the delete button is clicked, and displaying
@@ -329,6 +330,7 @@
 
     // JS Code block validated in JS Hint, no errors
 </script>
+{% endif %}
 
 {% include 'chocolates/includes/quantity_input_script.html' %}
 {% endblock %}

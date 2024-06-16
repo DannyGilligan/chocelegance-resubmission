@@ -101,7 +101,7 @@
             <input class="form-control border border-purple rounded-lg" type="text" name="q"
               placeholder="Search for chocolates..">
             <div class="input-group-append">
-              <button name="search-form-button" class="form-control btn btn-purple border border-purple rounded-2" type="submit">
+              <button aria-label="search-form-button" class="form-control btn btn-purple border border-purple rounded-2" type="submit">
                 <span class="icon">
                   <i class="fas fa-search"></i>
                 </span>
@@ -127,7 +127,7 @@
             </a>
 
             <!-- Account log in dtl logic, from base.html -->
-            <div class="dropdown-menu pr-1 border-purple" aria-labelledby="user-options-main-nav">
+            <div class="dropdown-menu pr-1 border-purple">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
               <a href="{% url 'add_chocolate' %}" class="dropdown-item purple-text">Chocolate Management</a>

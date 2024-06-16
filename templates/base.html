@@ -127,7 +127,7 @@
             </a>
 
             <!-- Account log in dtl logic, from base.html -->
-            <div class="dropdown-menu border-purple" aria-labelledby="user-options-main-nav">
+            <div class="dropdown-menu pr-1 border-purple" aria-labelledby="user-options-main-nav">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
               <a href="{% url 'add_chocolate' %}" class="dropdown-item purple-text">Chocolate Management</a>

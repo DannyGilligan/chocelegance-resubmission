@@ -269,10 +269,12 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     width: 104% !important;
     font-size: .7rem;
     margin: 0 !important;
+    line-height: 1 !important;
 }
 
 #mc_embed_signup .mc-field-group {
-    padding-bottom: .7rem !important;
+    padding-bottom: .4rem !important;
+    min-height: 40px !important;
 }
 
 #mc_embed_signup #mce-success-response {
@@ -1675,7 +1677,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     }
 
     .footer {
-        height: 15rem;
+        height: 14rem;
     }
 
     .footer-socials {
@@ -1694,7 +1696,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
         font-size: .9rem;
         padding-left: 0;
         padding-right: 0;
-        margin-top: .7rem;
+        margin-top: .4rem;
     }
 
     .footer-newsletter {

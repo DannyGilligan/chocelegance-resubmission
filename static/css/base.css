@@ -1484,6 +1484,8 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
 .secondaryAction {
     margin-top: 3rem !important;
     color: #551b8c;
+    padding-left: .4rem;
+    padding-right: .4rem;
 }
 
 .allauth-form-inner-content .footer {

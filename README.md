@@ -21,7 +21,7 @@
 * [Acknowledgements](#acknowledgements)
 
 
-<br>
+
 <br>
 <br>
 
@@ -98,11 +98,12 @@ All images have been credited in the credits section.
   <summary><b> Keyword Research </b></summary>
 <br>
 
-A list of broad general topics relevant to the business was created, then lists of short-tail keywords were was created, followed by a list of long-tail keywords.
+A list of broad general topics relevant to the business was created, then lists of short-tail and long-tail keywords were created and reviewed.
 <br><br>
 These keywords were then rationalised to remove any that Chocelegance would not have any authority on.
 <br><br>
-The remaining keywords were then checked in wordtracker for relevance, see screenshot below.
+
+The remaining keywords were then checked in [wordtracler.com](https://www.wordtracker.com/) for relevance, see screenshot below.
 <br><br>
 
 <table>
@@ -130,7 +131,7 @@ An example of the keyword research on [wordtracker.com](https://www.wordtracker.
 <details>
   <summary><b> SEO Improvements </b></summary>
 <br>
-The keywords identified during the research stage have been incorporated throughout the site (e.g headings, product descriptions, between strong tags etc).
+The keywords identified during the research stage have been incorporated throughout the site (e.g in headings, product descriptions, between strong tags etc).
 <br><br>
 An example is the hero section, which includes an SEO optimised heading and button containing keywords in an organic manner (as opposed to stuffing, or keyword spamming).
 <br><br>

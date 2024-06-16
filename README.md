@@ -29,7 +29,7 @@
 
 Chocelegance is the 5th and final project submission as part of the Code Institute DIploma in Full Stack Software Development.
 <br><br>
-The project is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, registering a user profile and email verification, generating email confirmations upon successful purchases, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
+The project is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, registering a user profile. user email verification, generating email confirmations upon successful purchases, user ratings and reviews, disaplying testimonials and frequently asked questions, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
 <br><br>
 The site was built using the Django framework, HTML 5, CSS 3, Javascript, Bootstrap, Python, Heroku, ElephantSQL, Stripe and AWS.
 <br><br>
@@ -101,8 +101,7 @@ All images have been credited in the credits section.
 A list of broad general topics relevant to the business was created, then lists of short-tail and long-tail keywords were created and reviewed.
 <br><br>
 These keywords were then rationalised to remove any that Chocelegance would not have any authority on.
-<br><br>
-
+<br>
 The remaining keywords were then checked in [wordtracker.com](https://www.wordtracker.com/) for relevance, see screenshot below.
 <br><br>
 
@@ -505,16 +504,6 @@ https://github.com/openai/openai-cookbook/issues/154
 <!-- spacer -->
 <tr><td>
 <div>
-	<code><img width="50" src="documentation/icon-bootstrap.webp" alt="Bootstrap" title="Bootstrap"/></code>
-</div>
-</td>
-<td>Bootstrap</td>
-<td>CSS/Javascript Styling Framework</td>
-<td>https://getbootstrap.com/</td>
-</tr>
-<!-- spacer -->
-<tr><td>
-<div>
 	<code><img width="50" src="documentation/icon-python.webp" alt="Python" title="Python"/></code>
 </div>
 </td>
@@ -554,6 +543,16 @@ https://github.com/openai/openai-cookbook/issues/154
 <td>https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/</td>
 </tr>
 <!-- spacer -->
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="documentation/icon-bootstrap.webp" alt="Bootstrap" title="Bootstrap"/></code>
+</div>
+</td>
+<td>Bootstrap</td>
+<td>CSS/Javascript Styling Framework</td>
+<td>https://getbootstrap.com/</td>
+</tr>
 <!-- spacer -->
 <tr><td>
 <div>

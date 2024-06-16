@@ -20,6 +20,7 @@
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
             <a href="{% url 'add_chocolate' %}" class="dropdown-item purple-text">Chocolate Management</a>
+            <a href="{% url 'admin:index' %}" target="_blank" class="dropdown-item purple-text">Site Admin Panel</a>
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item purple-text">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item purple-text">Logout</a>

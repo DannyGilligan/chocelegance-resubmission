@@ -55,9 +55,9 @@ Chocelegance is an online B2C operation offering hand crafted, diet friendly cho
 <br><br>
 The business is operated by a small team of artisan chocolatiers who share a passion for the nuances involved in fine chocolate making, and want to share this passion with a niche set of customers that are not well served by the current offerings on the market.
 <br><br>
-A typical customer persona is a chocolate lover who wants to experience the rich taste of hand made chocolates, but needs to stay within a strict set of dietary parameters. The customer base for chocolates is skewed towards female buyers, as such, the branding and communications are aimed at satisifying the needs of this customer persona, while avoiding alienating male shoppers (who typically enjoy buying chocolates as gifts).
+A typical customer persona is a chocolate lover who wants to experience the rich taste of hand made chocolates, but needs to stay within a strict set of dietary parameters.
 <br><br>
-The business is currently at a small scale, with limited inventory being kept on hand. Chocolates will be made to order, as the business grows, a more sophisticated inventory management system will be implemented.
+The business is currently at a small scale, with limited inventory being kept on hand. Chocolates will be made to order, as demand grows, a more sophisticated inventory management system will be implemented to faciliate scalable growth.
 <br>
 <br>
 <br>
@@ -103,7 +103,7 @@ A list of broad general topics relevant to the business was created, then lists 
 These keywords were then rationalised to remove any that Chocelegance would not have any authority on.
 <br><br>
 
-The remaining keywords were then checked in [wordtracler.com](https://www.wordtracker.com/) for relevance, see screenshot below.
+The remaining keywords were then checked in [wordtracker.com](https://www.wordtracker.com/) for relevance, see screenshot below.
 <br><br>
 
 <table>
@@ -115,6 +115,7 @@ The remaining keywords were then checked in [wordtracler.com](https://www.wordtr
 </tr>
 </table>
 <br>
+
 An example of the keyword research on [wordtracker.com](https://www.wordtracker.com/) is shown below.
 <br><br>
 

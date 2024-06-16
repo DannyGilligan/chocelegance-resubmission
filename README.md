@@ -29,12 +29,15 @@
 
 Chocelegance is the 5th and final project submission as part of the Code Institute DIploma in Full Stack Software Development.
 <br><br>
-The project is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, registering a user profile. user email verification, generating email confirmations upon successful purchases, user ratings and reviews, disaplying testimonials and frequently asked questions, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
+The project is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free).
 <br><br>
-The site was built using the Django framework, HTML 5, CSS 3, Javascript, Bootstrap, Python, Heroku, ElephantSQL, Stripe and AWS.
+The features include the ability to make purchases directly from the site, registering a user profile, user email verification, generating email confirmations upon successful purchases, user ratings and reviews, disaplying testimonials and frequently asked questions, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
+<br><br>
+The site was built using the Django framework, Python, HTML 5, CSS 3, Javascript, Bootstrap, Heroku, ElephantSQL, Stripe and AWS.
 <br><br>
 A link to the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/).
-
+<br><br>
+A link to the admin panel of the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/admin)
 <br>
 
 [Back to Top](#chocelegance)
@@ -45,7 +48,7 @@ A link to the deployed site can be found [here](https://chocelegance-resubmissio
 
 ## Business Overview
 
-Overview of the business mode, competitors, SEO and marketing.
+Overview of the business model, competitors, SEO and marketing.
 
 <details>
   <summary><b> Business Model </b></summary>
@@ -68,7 +71,7 @@ The business is currently at a small scale, with limited inventory being kept on
   <summary><b> Competitors </b></summary>
 <br>
 
-There are several chocolate makers in Amsterdam with an online presence and established customer base. These are well entrenched competitiors with diverse product ranges. Some examples are listed below:
+There are several chocolate makers in the Netherlands with an online presence and established customer base. These are well entrenched competitiors with diverse product ranges. Some examples are listed below:
 <br>
 
 [Vanroselen](https://www.vanroselen.nl/)
@@ -101,7 +104,7 @@ All images used have been credited in the credits section.
 A list of broad general topics relevant to the business was created, then lists of short-tail and long-tail keywords were created and reviewed.
 <br><br>
 These keywords were then rationalised to remove any that Chocelegance would not have any authority on.
-<br>
+<br><br>
 The remaining keywords were then checked in [wordtracker.com](https://www.wordtracker.com/) for relevance, see screenshot below.
 <br><br>
 
@@ -165,22 +168,22 @@ A <b>robots.txt</b> file has also been added to the root directory of the projec
 <br>
 As Chocelegance is currently a small operation, the preference is to leverage cost-effective marketing strategies that are suitable for a limited budget.
 <br><br>
-The marketing strategy will initially include a newsletter subscription, and a Facebook page. Content will be updated on a weekly basis, with the goal of creating rich and engaging media that has potential to be organically 'shareable' on social media.
+The marketing strategy will initially include a newsletter subscription, and a Facebook page. Content will be published on a weekly basis, with the goal of creating rich and engaging media that has potential to be organically 'shareable' on social media.
 <br><br>
 <details>
-<summary>  Newsletter </summary>
+<summary>  <i>Newsletter</i> </summary>
 <br>
 A newsletter sign up form has been added to the footer of the site, and a Mailchimp campaign has been created to capture the subscriber email addresses.
-<br>
+<br><br>
 Once a user subscribes, their email address is saved to the campaign.
 <br><br>
 
 
 <table>
 <tr>
-<td>
+<th>
 Newsletter Signup Form
-</td>
+</th>
 </tr>
 
 <tr>
@@ -218,8 +221,28 @@ Mailchimp Campaign
 </details>
 
 <details>
-<summary>  Facebook Page </summary>
+<summary>  <i>Facebook Page</i> </summary>
 <br>
+To avoid the risk of an actual Facebook page being deleted, for the purposes of this project a mockup has been created instead.
+<br></rb>
+This page would serve as a way to promote the business by sharing relevant communications and promotions with potential customers. It would also serve as a way to contact Chocelegance directly with any queries.
+<br><br>
+
+<table>
+<tr>
+<th>
+Facebook Page Mockup
+</th>
+</tr>
+
+<tr>
+<td>
+
+![Facebook mockup](!documentation/marketing-facebook.webp)
+</td>
+</tr>
+</table>
+
 
 </details>
 
@@ -452,7 +475,7 @@ This model holds the chocolate reviews that are added by the user in the chocola
 <li>
 <b>Chocolate Model</b>
 <br>
-This model holds all the relevant details about the chocolates sold on the site. This model can be created, updated, edited and deleted by a superuser directly from the site without the need to log in to the admin panel. Located in 'Chocolate' app.
+This model holds all the relevant details about the chocolates sold on the site. The values in this model can be created, read, updated, and deleted by a superuser directly from the site without the need to log in to the admin panel. Located in 'Chocolate' app.
 </li>
 <br>
 <li>
@@ -659,7 +682,7 @@ https://github.com/openai/openai-cookbook/issues/154
 </div>
 </td>
 <td>Amazon Web Services</td>
-<td>App hosting</td>
+<td>Media & Static file hosting</td>
 <td>https://aws.amazon.com/<td>
 </tr>
 <!-- spacer -->

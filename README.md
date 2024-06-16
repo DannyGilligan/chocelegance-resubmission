@@ -406,7 +406,7 @@ This model holds the different categories of chocolates sold on the site (e.g Da
 <li>
 <b>Testimonial Model</b>
 <br>
-This model holds the testimonials that are injected into the home page carousel. This content is updated in the admin panel by a superuser. Located in 'Home' app.
+This model holds the testimonials that are injected into the home page carousel. This content is updated in the admin panel by a superuser. Located in 'Testimonials' app.
 </li>
 <br>
 <li>

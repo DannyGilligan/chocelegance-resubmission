@@ -212,7 +212,7 @@
 {% block postloadjs %}
 {{ block.super }}
 <!-- Script for displaying dialogue box when clicking delete in super user options -->
-<script type="text/javascript">
+<script>
 
     // accesses the parent divs via the 'this' keyword to hide and display the relevant containers when the 'delete' button is clicked
     $('.pre-delete-button-main').click(function (e) {
@@ -232,7 +232,7 @@
 
 
 <!-- Script for back to top button -->
-<script type="text/javascript">
+<script>
     $('.btt-link').click(function (e) {
         window.scrollTo(0, 0);
     });
@@ -242,7 +242,7 @@
 
 
 <!-- Script to handle the logic for the sorting the chocolate categories -->
-<script type="text/javascript">
+<script>
     $('#sort-selector').change(function () {
         var selector = $(this);
         var currentUrl = new URL(window.location);

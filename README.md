@@ -455,7 +455,10 @@ ERD
 
 <tr>
 <td>
-6 custom models were developed for the project:
+
+The project uses [ElephantSQL](https://www.elephantsql.com/) to host the database.
+
+6 custom database models were developed for the project:
 <br>
 <br>
 

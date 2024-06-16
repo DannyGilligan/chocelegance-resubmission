@@ -31,13 +31,13 @@ Chocelegance is the 5th and final project submission as part of the Code Institu
 <br><br>
 The project is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free).
 <br><br>
-The features include the ability to make purchases directly from the site, registering a user profile, user email verification, generating email confirmations upon successful purchases, user ratings and reviews, disaplying testimonials and frequently asked questions, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
+The features include the ability to make purchases directly from the site, registering a user profile, user email verification, generating email confirmations upon successful purchases, user ratings and reviews, displaying testimonials, frequently asked questions, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
 <br><br>
 The site was built using the Django framework, Python, HTML 5, CSS 3, Javascript, Bootstrap, Heroku, ElephantSQL, Stripe and AWS.
 <br><br>
 A link to the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/).
 <br><br>
-A link to the admin panel of the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/admin)
+A link to the admin panel of the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/admin) (credentials provided in submission form).
 <br>
 
 [Back to Top](#chocelegance)
@@ -48,7 +48,7 @@ A link to the admin panel of the deployed site can be found [here](https://choce
 
 ## Business Overview
 
-Overview of the business model, competitors, SEO and marketing.
+An overview of the business model, competitors, SEO and marketing strategy is included below.
 
 <details>
   <summary><b> Business Model </b></summary>
@@ -225,7 +225,7 @@ Mailchimp Campaign
 <br>
 To avoid the risk of an actual Facebook page being deleted, for the purposes of this project a mockup has been created instead.
 <br></rb>
-This page would serve as a way to promote the business by sharing relevant communications and promotions with potential customers. It would also serve as a way to contact Chocelegance directly with any queries.
+This page would serve as a way to promote the business by sharing relevant communications and promotions with potential customers.<br><br>It would also serve as a way for customers to contact Chocelegance directly with any queries.
 <br><br>
 
 <table>
@@ -457,9 +457,8 @@ ERD
 <td>
 
 The project uses [ElephantSQL](https://www.elephantsql.com/) to host the database.
-
-6 custom database models were developed for the project:
 <br>
+6 custom database models were developed for the project:
 <br>
 
 <ol>
@@ -570,6 +569,8 @@ https://github.com/openai/openai-cookbook/issues/154
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- TECHNOLOGIES USED SECTION -->
 
 ## Technologies Used 
+
+An overview of the technologies used throughout the development of the project is shown below.
 
 #### 
 <table>

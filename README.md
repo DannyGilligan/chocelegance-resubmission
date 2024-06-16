@@ -45,7 +45,7 @@ A link to the deployed site can be found [here](https://chocelegance-resubmissio
 
 ## Business Overview
 
-Business and customer goals, marketing and Facebook mockup.
+Overview of the business mode, competitors, SEO and marketing.
 
 <details>
   <summary><b> Business Model </b></summary>
@@ -87,9 +87,9 @@ There are several chocolate makers in Amsterdam with an online presence and esta
 <br><br>
 All of these competitors offer high quality chocolates, however, they do not target customers with specific dietary requirements exclusively. The goal of Chocelegance is to capture this segement of the market and focus exclusively on serving their needs.
 <br><br>
-Of the competitors listed above, Puccini has been used as a source of inspiration for the Chocelegance site. The images and descriptions present on their site have been used for the purposes of this project.
+Of the competitors listed above, Puccini has been used as a source of inspiration for the Chocelegance site. The images and descriptions present on their site have been used for the purposes of this project, the chocolate images and names have been fully customised for the project, however the chocolate descriptions are a direct copy from their site.
 <br><br>
-All images have been credited in the credits section.
+All images used have been credited in the credits section.
 <br>
 <br>
 </details>
@@ -163,7 +163,39 @@ A <b>robots.txt</b> file has also been added to the root directory of the projec
 <details>
 <summary><b> Marketing </b></summary>
 <br>
+As Chocelegance is currently a small operation, the preference is to leverage cost-effective marketing strategies that are suitable for a limited budget.
+<br>
+The marketing strategy will initially include a newsletter subscription, and a Facebook page. Content will be updated on a weekly basis, with the goal of creating rich and engaging media that has potential to be organically 'shareable' on social media.
+<br>
+<details>
+<summary>  Newsletter </summary>
+<br>
+A newsletter sign up form has been added to the footer of the site, and a Mailchimp campaign has been created to capture the subscriber email addresses.
+<br>
+Once a user subscribes, their email address is saved to the campaign.
+<br>
 
+![newsletter-signup](documentation/marketing-newsletter.webp)
+
+<br><br>
+
+The campaign in Mailchimp stores all user email address to be included in future newsletter publications.
+
+<br>
+
+![mailchimp](documentation/marketing-mailchimp.webp)
+
+<br>
+<br>
+<br>
+
+</details>
+
+<details>
+<summary>  Facebook Page </summary>
+<br>
+
+</details>
 
 
 </details>

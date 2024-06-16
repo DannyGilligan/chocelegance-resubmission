@@ -43,12 +43,12 @@ A link to the deployed site can be found [here](https://chocelegance-resubmissio
 <br>
 <br>
 
-## Business Model
+## Business Overview
 
 Business and customer goals, marketing and Facebook mockup.
 
 <details>
-  <summary><b> Business Overview </b></summary>
+  <summary><b> Business Model </b></summary>
 <br>
 
 Chocelegance is an online B2C operation offering hand crafted, diet friendly chocolates to customers with specialised dietary requirements.

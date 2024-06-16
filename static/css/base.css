@@ -332,6 +332,7 @@ https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-cs
     color: white !important;
     box-shadow: 0 0px 10px #ed82ed !important;
     text-decoration: none !important;
+    border: 1px solid #ed82ed  !important;
 } 
 
 

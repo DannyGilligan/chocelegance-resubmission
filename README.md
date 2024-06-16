@@ -29,7 +29,7 @@
 
 Chocelegance is the 5th and final project submission as part of the Code Institute DIploma in Full Stack Software Development.
 <br><br>
-It is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, registering a user profile and email verification, generating email confirmations upon successful purchases, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
+The project is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free requirements). The features include the ability to make purchases directly from the site, registering a user profile and email verification, generating email confirmations upon successful purchases, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
 <br><br>
 The site was built using the Django framework, HTML 5, CSS 3, Javascript, Bootstrap, Python, Heroku, ElephantSQL, Stripe and AWS.
 <br><br>
@@ -615,6 +615,17 @@ https://github.com/openai/openai-cookbook/issues/154
 <td>Stripe</td>
 <td>Payment Processing</td>
 <td>https://www.stripe.com/<td>
+</tr>
+<!-- spacer -->
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="documentation/icon-mailchimp.webp" alt="mailchimp" title="stripe"/></code>
+</div>
+</td>
+<td>Mailchimp</td>
+<td>Newsletter Marketing</td>
+<td>https://www.mailchimp.com/<td>
 </tr>
 <!-- spacer -->
 <!-- Technology Used 1 ends -->

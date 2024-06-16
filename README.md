@@ -90,7 +90,7 @@ There are several chocolate makers in the Netherlands with an online presence an
 <br><br>
 All of these competitors offer high quality chocolates, however, they do not target customers with specific dietary requirements exclusively. The goal of Chocelegance is to capture this segement of the market and focus exclusively on serving their needs.
 <br><br>
-Of the competitors listed above, Puccini has been used as a source of inspiration for the Chocelegance site. The images and descriptions present on their site have been used for the purposes of this project, the chocolate images and names have been fully customised for the project, however the chocolate descriptions are a direct copy from their site.
+Of the competitors listed above, [Puccini](https://puccinibomboni.com/) has been used as a source of inspiration for the Chocelegance site. The images and descriptions present on their site have been used for the purposes of this project, the chocolate images and names have been fully customised for the project, however the chocolate descriptions and the text in the about page are almost entirely a direct copy from their site.
 <br><br>
 All images used have been credited in the credits section.
 <br>

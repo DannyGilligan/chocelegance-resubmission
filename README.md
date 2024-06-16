@@ -164,26 +164,52 @@ A <b>robots.txt</b> file has also been added to the root directory of the projec
 <summary><b> Marketing </b></summary>
 <br>
 As Chocelegance is currently a small operation, the preference is to leverage cost-effective marketing strategies that are suitable for a limited budget.
-<br>
+<br><br>
 The marketing strategy will initially include a newsletter subscription, and a Facebook page. Content will be updated on a weekly basis, with the goal of creating rich and engaging media that has potential to be organically 'shareable' on social media.
-<br>
+<br><br>
 <details>
-<summary>  Newsletter </summary>
+<summary>  Newsletter </summary>
 <br>
 A newsletter sign up form has been added to the footer of the site, and a Mailchimp campaign has been created to capture the subscriber email addresses.
 <br>
 Once a user subscribes, their email address is saved to the campaign.
-<br>
+<br><br>
+
+
+<table>
+<tr>
+<td>
+Newsletter Signup Form
+</td>
+</tr>
+
+<tr>
+<td>
 
 ![newsletter-signup](documentation/marketing-newsletter.webp)
+</td>
+</tr>
+</table>
 
-<br><br>
+<br>
 
 The campaign in Mailchimp stores all user email address to be included in future newsletter publications.
 
 <br>
+<table>
+<tr>
+<th>
+Mailchimp Campaign
+</th>
+</tr>
+
+<tr>
+<td>
 
 ![mailchimp](documentation/marketing-mailchimp.webp)
+</td>
+</tr>
+</table>
 
 <br>
 <br>
@@ -192,7 +218,7 @@ The campaign in Mailchimp stores all user email address to be included in future
 </details>
 
 <details>
-<summary>  Facebook Page </summary>
+<summary>  Facebook Page </summary>
 <br>
 
 </details>

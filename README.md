@@ -467,8 +467,8 @@ ERD
 <td>
 
 The project uses [ElephantSQL](https://www.elephantsql.com/) to host the database.
-<br>
-6 custom database models were developed for the project:
+<br><br>
+6 custom database models have been developed to capture and store relevant data:
 <br>
 
 <ol>
@@ -1115,7 +1115,7 @@ An overview of materials referenced and images used during the development of th
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Guide to installing GraphViz, in Code Institute Slack channel, by Sean Young_Hackteam
+<tr><td> Tips on installing GraphViz, in Code Institute Slack channel, by Sean Young_Hackteam
  </td>
 <td> 
 
@@ -1123,7 +1123,7 @@ An overview of materials referenced and images used during the development of th
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Tip to save favicon in static folder, in Code Institute Slack channel, by Jo Heyndels
+<tr><td> Tips on saving favicon in static folder, in Code Institute Slack channel, by Jo Heyndels
  </td>
 <td> 
 
@@ -1131,7 +1131,7 @@ An overview of materials referenced and images used during the development of th
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Tip to fix JS quanity form bug, in Code Institute Slack channel, by Ed Bradley
+<tr><td> Tips on fixing JS quantity form bug, in Code Institute Slack channel, by Ed Bradley
  </td>
 <td> 
 

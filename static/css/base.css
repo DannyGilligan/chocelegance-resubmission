@@ -963,6 +963,7 @@ a.category-badge>span.badge:hover {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    box-shadow: 0 0px 50px #ed82ed !important;
 }
 
 .btt-button i {

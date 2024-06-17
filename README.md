@@ -1154,7 +1154,7 @@ stripe==9.9.0<br>
 <table>
 <tr><th><b> Image </b></th><th><b> Production File Name </b></th><th><b> Source </b></th></tr>
 <!-- image 1 begins -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![dark-choc-gluten-free-coffee-date-final](documentation/image_credits/dark-choc-gluten-free-coffee-date-final.webp)
 </td>
@@ -1166,7 +1166,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- image 1 ends -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_1_thumb](documentation/image_credits/dark-choc-gluten-free-cognac-crown-final.webp)
 </td>
@@ -1178,7 +1178,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_2_thumb](documentation/image_credits/milk-choc-gluten-free-cranberry-zombie-final.webp)
 </td>
@@ -1190,7 +1190,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_3_thumb](documentation/image_credits/milk-choc-gluten-free-manjari-magic-final.webp)
 </td>
@@ -1202,7 +1202,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_4_thumb](documentation/image_credits/white-choc-gluten-free-currant-crunch-final.webp)
 </td>
@@ -1214,7 +1214,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_5_thumb](documentation/image_credits/white-choc-gluten-free-vanilla-victory-final.webp)
 </td>
@@ -1226,7 +1226,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_6_thumb](documentation/image_credits/dark-choc-keto-amarena-delight-final.webp)
 </td>
@@ -1238,7 +1238,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_7_thumb](documentation/image_credits/dark-choc-keto-caramel-fusion-final.webp)
 </td>
@@ -1250,7 +1250,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_8_thumb](documentation/image_credits/milk-choc-keto-apple-embrace-final.webp)
 </td>
@@ -1262,7 +1262,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_9_thumb](documentation/image_credits/milk-choc-keto-plum-paradise-final.webp)
 </td>
@@ -1274,7 +1274,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![miss_image_10_thumb](documentation/image_credits/white-choc-calvados-final.webp)
 </td>
@@ -1287,7 +1287,7 @@ stripe==9.9.0<br>
 </tr>
 <!-- Miss Images end here -->
 <!-- Goal Images start here -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![goal_image_0_thumb](documentation/image_credits/white-choc-limoncello-liaison-final.webp)
 </td>
@@ -1299,7 +1299,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![goal_image_1_thumb](documentation/image_credits/dark-choc-vegan-thyme-adventure-updated.webp)
 </td>
@@ -1311,7 +1311,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![goal_image_2_thumb](documentation/image_credits/dark-choc-vegan-walnut-wonder-updated.webp)
 </td>
@@ -1323,7 +1323,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![goal_image_3_thumb](documentation/image_credits/milk-choc-vegan-pepper-surprise-updated.webp)
 </td>
@@ -1335,7 +1335,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![goal_image_4_thumb](documentation/image_credits/milk-choc-vegan-plush-pecan-updatedl.webp)
 </td>
@@ -1347,7 +1347,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![goal_image_5_thumb](documentation/image_credits/white-choc-vegan-currant-affair-updated.webp)
 </td>
@@ -1359,7 +1359,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![goal_image_6_thumb](documentation/image_credits/white-choc-vegan-villianous-vanilla-updated.webp)
 </td>
@@ -1371,7 +1371,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="40">
+<tr><td width="50">
 
 ![goal_image_7_thumb](documentation/image_credits/hero-image-credit.webp)
 </td>

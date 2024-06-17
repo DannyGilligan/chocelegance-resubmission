@@ -38,7 +38,7 @@ The site was built using the Django framework, Python, HTML 5, CSS 3, Javascript
 A link to the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/).
 <br><br>
 A link to the admin panel of the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/admin) (credentials provided in submission form).
-<br>
+<br><br>
 
 [Back to Top](#chocelegance)
 
@@ -168,7 +168,7 @@ A <b>robots.txt</b> file has also been added to the root directory of the projec
 <br>
 As Chocelegance is currently a small operation, the preference is to leverage cost-effective marketing strategies that are suitable for a limited budget.
 <br><br>
-The marketing strategy will initially include a newsletter subscription, and a Facebook page. Content will be published on a weekly basis, with the goal of creating rich and engaging media that has potential to be organically 'shareable' on social media.
+The marketing strategy will initially include a newsletter subscription, and a Facebook page. Content will be published on a weekly basis, with the goal of creating rich and engaging media that has the potential to be organically 'shareable' on social media.
 <br><br>
 <details>
 <summary>  <i>Newsletter</i> </summary>
@@ -574,7 +574,7 @@ This was preventing me from installing the correct AllAuth package, after trying
 
 https://github.com/openai/openai-cookbook/issues/154
 
-
+<br>
 
 [Back to Top](#chocelegance)
 
@@ -838,7 +838,7 @@ stripe==9.9.0<br>
 
 ## Credits
 
-An overview of materials references and images used during the development of the project is shown below.
+An overview of materials referenced and images used during the development of the project is shown below.
 
 <!-- The Credits section is shown below, this will be disaplyed in a collapsible format, with a sub section for reference content/materials and a sub section for images, with each item shown in tabular form -->
 <details>
@@ -1107,6 +1107,37 @@ An overview of materials references and images used during the development of th
 [here](https://www.w3schools.com/cssref/css3_pr_animation.php)
 
 </td></tr>
+<!-- spacer -->
+<tr><td> Solution to Django email error (runtime.txt fix), in Code Institute Slack channel, by Roman Rakic </td>
+<td> 
+
+[here](https://code-institute-room.slack.com/archives/C026VTHQDNY/p1711548670431029?thread_ts=1711547601.933219&cid=C026VTHQDNY)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Guide to installing GraphViz, in Code Institute Slack channel, by Sean Young_Hackteam
+ </td>
+<td> 
+
+[here](https://code-institute-room.slack.com/archives/C7HS3U3AP/p1618224655315000?thread_ts=1618179147.312700&cid=C7HS3U3AP)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Tip to save favicon in static folder, in Code Institute Slack channel, by Jo Heyndels
+ </td>
+<td> 
+
+[here](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1667981758347029?thread_ts=1667981265.461969&cid=C7EJUQT2N)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Tip to fix JS quanity form bug, in Code Institute Slack channel, by Ed Bradley
+ </td>
+<td> 
+
+[here](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1668538758607109?thread_ts=1668535011.445709&cid=C7EJUQT2N)
+
+</td></tr>
 
 
 <!-- TABLE ENDS BELOW THIS LINE! -->
@@ -1365,6 +1396,7 @@ An overview of materials references and images used during the development of th
 <!-- Images credits end here -->
 
 
+<br>
 
 [Back to Top](#chocelegance)
 

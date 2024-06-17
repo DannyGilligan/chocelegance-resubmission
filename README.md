@@ -1154,7 +1154,7 @@ stripe==9.9.0<br>
 <table>
 <tr><th><b> Image </b></th><th><b> Production File Name </b></th><th><b> Source </b></th></tr>
 <!-- image 1 begins -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![dark-choc-gluten-free-coffee-date-final](documentation/image_credits/dark-choc-gluten-free-coffee-date-final.webp)
 </td>
@@ -1162,11 +1162,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.sbs.com.au/news/article/what-must-happen-for-matildas-to-progress-to-world-cup-knockout/hn6ggt6eq)
+[here](https://puccinibomboni.com/en/bonbon/coffee)
 </td>
 </tr>
 <!-- image 1 ends -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_1_thumb](documentation/image_credits/dark-choc-gluten-free-cognac-crown-final.webp)
 </td>
@@ -1174,11 +1174,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.ctvnews.ca/mobile/sports/italians-in-tears-after-loss-to-south-africa-knocks-them-out-of-women-s-world-cup-1.6503519)
+[here](https://puccinibomboni.com/en/bonbon/cognac)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_2_thumb](documentation/image_credits/milk-choc-gluten-free-cranberry-zombie-final.webp)
 </td>
@@ -1186,11 +1186,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.forbes.com/sites/maryroeloffs/2023/08/06/us-knocked-out-of-womens-world-cup-after-dramatic-loss-to-sweden/)
+[here](https://puccinibomboni.com/en/bonbon/cranberry)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_3_thumb](documentation/image_credits/milk-choc-gluten-free-manjari-magic-final.webp)
 </td>
@@ -1198,11 +1198,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.forbes.com/sites/asifburhan/2023/08/16/england-defeat-hosts-australia-to-reach-first-womens-world-cup-final/)
+[here](https://puccinibomboni.com/en/bonbon/manjari)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_4_thumb](documentation/image_credits/white-choc-gluten-free-currant-crunch-final.webp)
 </td>
@@ -1210,11 +1210,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://edition.cnn.com/sport/live-news/uswnt-sweden-womens-world-cup-knockout/h_9d56c79135d15aab65841753a8692a16)
+[here](https://puccinibomboni.com/en/bonbon/rum-currant)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_5_thumb](documentation/image_credits/white-choc-gluten-free-vanilla-victory-final.webp)
 </td>
@@ -1222,11 +1222,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://domesticolammy.medium.com/salma-paralluelo-and-my-uneven-connection-with-womens-football-a8a99bc4dd10)
+[here](https://puccinibomboni.com/en/bonbon/vanilla-poppyseed)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_6_thumb](documentation/image_credits/dark-choc-keto-amarena-delight-final.webp)
 </td>
@@ -1234,11 +1234,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.the-express.com/sport/soccer/109905/USWNT-lose-top-spot-FIFA-Rankings)
+[here](https://puccinibomboni.com/en/bonbon/amarena-cherry)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_7_thumb](documentation/image_credits/dark-choc-keto-caramel-fusion-final.webp)
 </td>
@@ -1246,11 +1246,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.foxsports.com.au/football/world-cup/changed-sport-forever-australia-reacts-to-matildas-devastating-world-cup-exit/news-story/de2c94a88de3019c2af2e7eae2f81774)
+[here](https://puccinibomboni.com/en/bonbon/caramel)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_8_thumb](documentation/image_credits/milk-choc-keto-apple-embrace-final.webp)
 </td>
@@ -1258,11 +1258,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.bbc.com/sport/football/66611861)
+[here](https://puccinibomboni.com/en/bonbon/apple)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_9_thumb](documentation/image_credits/milk-choc-keto-plum-paradise-final.webp)
 </td>
@@ -1270,11 +1270,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.abc.net.au/news/2023-07-25/womens-world-cup-live-updates-new-zealand-philippines-var/102644612)
+[here](https://puccinibomboni.com/en/bonbon/plum)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![miss_image_10_thumb](documentation/image_credits/white-choc-calvados-final.webp)
 </td>
@@ -1282,12 +1282,12 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.goal.com/en/news/shock-germany-out-womens-world-cup-group-stages-south-korea/bltb2277dcbc1244f38)
+[here](https://puccinibomboni.com/en/bonbon/calvados)
 </td>
 </tr>
 <!-- Miss Images end here -->
 <!-- Goal Images start here -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![goal_image_0_thumb](documentation/image_credits/white-choc-limoncello-liaison-final.webp)
 </td>
@@ -1295,11 +1295,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.theguardian.com/football/commentisfree/2023/aug/16/womens-world-cup-2023-matildas-fan-guide)
+[here](https://puccinibomboni.com/en/bonbon/limoncello)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![goal_image_1_thumb](documentation/image_credits/dark-choc-vegan-thyme-adventure-updated.webp)
 </td>
@@ -1307,11 +1307,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.flashscore.com/news/soccer-world-cup-women-south-africa-s-joy-at-women-s-world-cup-win-brings-hope-of-change-back-home/n9c0NhLj/)
+[here](https://puccinibomboni.com/en/bonbon/thyme)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![goal_image_2_thumb](documentation/image_credits/dark-choc-vegan-walnut-wonder-updated.webp)
 </td>
@@ -1319,11 +1319,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.latimes.com/sports/soccer/story/2023-08-19/womens-world-cup-sweden-beats-australia-bronze-medal)
+[here](https://puccinibomboni.com/en/bonbon/walnut)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![goal_image_3_thumb](documentation/image_credits/milk-choc-vegan-pepper-surprise-updated.webp)
 </td>
@@ -1331,23 +1331,23 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://eu.usatoday.com/story/sports/soccer/2023/08/11/sweden-stakes-claim-as-a-women-s-world-cup-favorite-by-stopping-japan-2-1-in-quarterfinals/70572973007/)
+[here](https://puccinibomboni.com/en/bonbon/pepper)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![goal_image_4_thumb](documentation/image_credits/milk-choc-vegan-plush-pecan-updatedl.webp)
 </td>
-<td>milk-choc-vegan-plush-pecan-updatedl</td>
+<td>milk-choc-vegan-plush-pecan-updated</td>
 
 <td>
 
-[here](https://newsrnd.com/sports/2023-08-08-france-morocco-(4-0)--les-bleues-join-the-quarters-of-the-women-s-world-cup-without-trembling.BJXjfpknn.html)
+[here](https://puccinibomboni.com/en/bonbon/pecan)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![goal_image_5_thumb](documentation/image_credits/white-choc-vegan-currant-affair-updated.webp)
 </td>
@@ -1355,11 +1355,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.nzherald.co.nz/sport/fifa-womens-world-cup-2023-football-ferns-crash-back-down-to-earth-with-shock-loss-to-the-philippines/PCDJNAO7SRCRTFMBTGIB5RNWNM/)
+[here](https://puccinibomboni.com/en/bonbon/rum-currant)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![goal_image_6_thumb](documentation/image_credits/white-choc-vegan-villianous-vanilla-updated.webp)
 </td>
@@ -1367,11 +1367,11 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.skysports.com/football/story-telling/37390/12944561/20-of-the-best-images-from-the-womens-world-cup)
+[here](https://puccinibomboni.com/en/bonbon/vanilla-poppyseed)
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
+<tr><td width="40">
 
 ![goal_image_7_thumb](documentation/image_credits/hero-image-credit.webp)
 </td>
@@ -1379,7 +1379,7 @@ stripe==9.9.0<br>
 
 <td>
 
-[here](https://www.forbes.com/sites/asifburhan/2020/03/02/fifa-inspectors-assess-potential-hosts-of-the-2023-womens-world-cup/)
+[here](https://www.freepik.com/free-photo/closeup-shot-chocolate-candy-isolated_15520864.htm#fromView=search&page=1&position=50&uuid=eb6bdc3a-bad6-494e-adec-5352ef9d1007)
 </td>
 </tr>
 <!-- spacer -->

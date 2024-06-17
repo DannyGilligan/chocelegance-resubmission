@@ -1152,7 +1152,7 @@ stripe==9.9.0<br>
 <br>
 
 <table>
-<tr><th><b> Thumb </b></th><th><b> Production File Name </b></th><th><b> Source </b></th></tr>
+<tr><th><b> Image </b></th><th><b> Production File Name </b></th><th><b> Source </b></th></tr>
 <!-- image 1 begins -->
 <tr><td width="25">
 
@@ -1168,9 +1168,9 @@ stripe==9.9.0<br>
 <!-- image 1 ends -->
 <tr><td width="25">
 
-![miss_image_1_thumb](assets/documentation//thumbnails/miss_image_1_thumbnail.webp)
+![miss_image_1_thumb](documentation/image_credits/dark-choc-gluten-free-cognac-crown-final.webp)
 </td>
-<td>miss_image_1</td>
+<td>dark-choc-gluten-free-cognac-crown-final</td>
 
 <td>
 
@@ -1180,9 +1180,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_2_thumb](assets/documentation/thumbnails/miss_image_2_thumbnail.webp)
+![miss_image_2_thumb](documentation/image_credits/milk-choc-gluten-free-cranberry-zombie-final.webp)
 </td>
-<td>miss_image_2</td>
+<td>milk-choc-gluten-free-cranberry-zombie-final</td>
 
 <td>
 
@@ -1192,9 +1192,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_3_thumb](assets/documentation/thumbnails/miss_image_3_thumbnail.webp)
+![miss_image_3_thumb](documentation/image_credits/milk-choc-gluten-free-manjari-magic-final.webp)
 </td>
-<td>miss_image_3</td>
+<td>milk-choc-gluten-free-manjari-magic-final</td>
 
 <td>
 
@@ -1204,9 +1204,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_4_thumb](assets/documentation/thumbnails/miss_image_4_thumbnail.webp)
+![miss_image_4_thumb](documentation/image_credits/white-choc-gluten-free-currant-crunch-final.webp)
 </td>
-<td>miss_image_4</td>
+<td>white-choc-gluten-free-currant-crunch-final</td>
 
 <td>
 
@@ -1216,9 +1216,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_5_thumb](assets/documentation/thumbnails/miss_image_5_thumbnail.webp)
+![miss_image_5_thumb](documentation/image_credits/white-choc-gluten-free-vanilla-victory-final.webp)
 </td>
-<td>miss_image_5</td>
+<td>white-choc-gluten-free-vanilla-victory-final</td>
 
 <td>
 
@@ -1228,9 +1228,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_6_thumb](assets/documentation/thumbnails/miss_image_6_thumbnail.webp)
+![miss_image_6_thumb](documentation/image_credits/dark-choc-keto-amarena-delight-final.webp)
 </td>
-<td>miss_image_6</td>
+<td>dark-choc-keto-amarena-delight-final</td>
 
 <td>
 
@@ -1240,9 +1240,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_7_thumb](assets/documentation/thumbnails/miss_image_7_thumbnail.webp)
+![miss_image_7_thumb](documentation/image_credits/dark-choc-keto-caramel-fusion-final.webp)
 </td>
-<td>miss_image_7</td>
+<td>dark-choc-keto-caramel-fusion-final</td>
 
 <td>
 
@@ -1252,9 +1252,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_8_thumb](assets/documentation/thumbnails/miss_image_8_thumbnail.webp)
+![miss_image_8_thumb](documentation/image_credits/milk-choc-keto-apple-embrace-final.webp)
 </td>
-<td>miss_image_8</td>
+<td>milk-choc-keto-apple-embrace-final</td>
 
 <td>
 
@@ -1264,9 +1264,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_9_thumb](assets/documentation/thumbnails/miss_image_9_thumbnail.webp)
+![miss_image_9_thumb](documentation/image_credits/milk-choc-keto-plum-paradise-final.webp)
 </td>
-<td>miss_image_9</td>
+<td>milk-choc-keto-plum-paradise-final</td>
 
 <td>
 
@@ -1276,9 +1276,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![miss_image_10_thumb](assets/documentation/thumbnails/miss_image_10_thumbnail.webp)
+![miss_image_10_thumb](documentation/image_credits/white-choc-calvados-final.webp)
 </td>
-<td>miss_image_10</td>
+<td>white-choc-calvados-final</td>
 
 <td>
 
@@ -1289,9 +1289,9 @@ stripe==9.9.0<br>
 <!-- Goal Images start here -->
 <tr><td width="25">
 
-![goal_image_0_thumb](assets/documentation/thumbnails/goal_image_0_thumbnail.webp)
+![goal_image_0_thumb](documentation/image_credits/white-choc-limoncello-liaison-final.webp)
 </td>
-<td>goal_image_0</td>
+<td>white-choc-limoncello-liaison-final</td>
 
 <td>
 
@@ -1301,9 +1301,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![goal_image_1_thumb](assets/documentation/thumbnails/goal_image_1_thumbnail.webp)
+![goal_image_1_thumb](documentation/image_credits/dark-choc-vegan-thyme-adventure-updated.webp)
 </td>
-<td>goal_image_1</td>
+<td>dark-choc-vegan-thyme-adventure-updated</td>
 
 <td>
 
@@ -1313,9 +1313,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![goal_image_2_thumb](assets/documentation/thumbnails/goal_image_2_thumbnail.webp)
+![goal_image_2_thumb](documentation/image_credits/dark-choc-vegan-walnut-wonder-updated.webp)
 </td>
-<td>goal_image_2</td>
+<td>dark-choc-vegan-walnut-wonder-updated</td>
 
 <td>
 
@@ -1325,9 +1325,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![goal_image_3_thumb](assets/documentation/thumbnails/goal_image_3_thumbnail.webp)
+![goal_image_3_thumb](documentation/image_credits/milk-choc-vegan-pepper-surprise-updated.webp)
 </td>
-<td>goal_image_3</td>
+<td>milk-choc-vegan-pepper-surprise-updated</td>
 
 <td>
 
@@ -1337,9 +1337,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![goal_image_4_thumb](assets/documentation/thumbnails/goal_image_4_thumbnail.webp)
+![goal_image_4_thumb](documentation/image_credits/milk-choc-vegan-plush-pecan-updatedl.webp)
 </td>
-<td>goal_image_4</td>
+<td>milk-choc-vegan-plush-pecan-updatedl</td>
 
 <td>
 
@@ -1349,9 +1349,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![goal_image_5_thumb](assets/documentation/thumbnails/goal_image_5_thumbnail.webp)
+![goal_image_5_thumb](documentation/image_credits/white-choc-vegan-currant-affair-updated.webp)
 </td>
-<td>goal_image_5</td>
+<td>white-choc-vegan-currant-affair-updated</td>
 
 <td>
 
@@ -1361,9 +1361,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![goal_image_6_thumb](assets/documentation/thumbnails/goal_image_6_thumbnail.webp)
+![goal_image_6_thumb](documentation/image_credits/white-choc-vegan-villianous-vanilla-updated.webp)
 </td>
-<td>goal_image_6</td>
+<td>white-choc-vegan-villianous-vanilla-updated</td>
 
 <td>
 
@@ -1373,9 +1373,9 @@ stripe==9.9.0<br>
 <!-- spacer -->
 <tr><td width="25">
 
-![goal_image_7_thumb](assets/documentation/thumbnails/goal_image_7_thumbnail.webp)
+![goal_image_7_thumb](documentation/image_credits/hero-image-credit.webp)
 </td>
-<td>goal_image_7</td>
+<td>hero-image</td>
 
 <td>
 
@@ -1383,78 +1383,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="25">
 
-![goal_image_8_thumb](assets/documentation/thumbnails/goal_image_8_thumbnail.webp)
-</td>
-<td>goal_image_8</td>
-
-<td>
-
-[here](https://www.theguardian.com/football/2023/jul/27/brazil-womens-world-cup-fans-france-revival)
-</td>
-</tr>
-<!-- spacer -->
-<tr><td width="25">
-
-![goal_image_9_thumb](assets/documentation/thumbnails/goal_image_9_thumbnail.webp)
-</td>
-<td>goal_image_9</td>
-
-<td>
-
-[here](https://shekicks.net/matildas-end-lionesses-30-game-unbeaten-run/)
-</td>
-</tr>
-<!-- spacer -->
-<tr><td width="25">
-
-![goal_image_10_thumb](assets/documentation/thumbnails/goal_image_10_thumbnail.webp)
-</td>
-<td>goal_image_10</td>
-
-<td>
-
-[here](https://www.uefa.com/womensworldcup/news/0283-1876eee8e56e-635398217fd4-1000--republic-of-ireland-at-the-2023-women-s-world-cup-fixtures-r/)
-</td>
-</tr>
-<!-- Goal images end here -->
-<!-- Miscellaneous images start here -->
-<tr><td width="25">
-
-![hero_image_updated_thumb](assets/documentation/thumbnails/official_logo_thumbnail.webp)
-</td>
-<td>hero_image_updated</td>
-
-<td>
-
-[here](https://www.printmag.com/branding-identity-design/2023-fifa-womens-world-cup/)
-</td>
-</tr>
-<!-- spacer -->
-<tr><td width="25">
-
-![favicon_source_thumb](assets/documentation/thumbnails/favicon_source_thumbnail.webp)
-</td>
-<td>favicon</td>
-
-<td>
-
-[here](https://seeklogo.com/vector-logo/495259/fifa-womens-world-cup-2023)
-</td>
-</tr>
-<!-- spacer -->
-<tr><td width="25">
-
-![favicon_source_thumb](assets/documentation/thumbnails/quiz_over_pic_thumb.webp)
-</td>
-<td>end_quiz_image</td>
-
-<td>
-
-[here](https://www.uefa.com/womensworldcup/news/027a-166817b8be17-9e0082e122cd-1000--spain-win-2023-women-s-world-cup-all-the-results/)
-</td>
-</tr>
 <!-- spacer -->
 </table>
 </details>

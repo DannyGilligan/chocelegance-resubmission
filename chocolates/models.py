@@ -95,14 +95,14 @@ class Chocolate(models.Model):
     choc_dietary_type = models.ForeignKey(
         'DietaryType',
         null=True,
-        blank=True,
+        blank=False,
         on_delete=models.SET_NULL
     )
 
     choc_category_display = models.ForeignKey(
         'ChocolateCategory',
         null=True,
-        blank=True,
+        blank=False,
         on_delete=models.SET_NULL
     )
 
@@ -110,7 +110,7 @@ class Chocolate(models.Model):
         default="",
         max_length=200,
         null=True,
-        blank=True
+        blank=False
     )
 
     choc_friendly_name = models.CharField(
@@ -120,7 +120,7 @@ class Chocolate(models.Model):
     choc_description = models.TextField()
 
     choc_rating = models.DecimalField(
-        max_digits=3, decimal_places=2, null=True, blank=True, validators=[MinValueValidator(Decimal('0.01'))]
+        max_digits=3, decimal_places=2, blank=True, null=True, validators=[MinValueValidator(Decimal('0.01'))]
     )
 
     choc_image = models.ImageField(null=True, blank=True)
@@ -129,19 +129,19 @@ class Chocolate(models.Model):
 
     choc_price = models.DecimalField(validators=[MinValueValidator(1), MaxValueValidator(100)], max_digits=5, decimal_places=2, blank=False)
 
-    choc_pieces = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_pieces = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
     choc_ingredients = models.TextField()
 
-    choc_calories = models.FloatField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_calories = models.FloatField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
-    choc_fat = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_fat = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
-    choc_protein = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_protein = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
-    choc_carbs = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_carbs = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
-    choc_sugar = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_sugar = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
     def get_choc_rating(self):
         """

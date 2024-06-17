@@ -9,10 +9,10 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
-* [Business Model](#business-model)
-* [Features](#features)
+* [Business Overview](#business-overview)
 * [Design](#design)
 * [User Stories](#user-stories)
+* [Features](#features)
 * [Bugs](#bugs)
 * [Manual Testing](#manual-testing)
 * [Deployment](#deployment)
@@ -31,7 +31,7 @@ Chocelegance is the 5th and final project submission as part of the Code Institu
 <br><br>
 The project is an e-Commerce platform that allows an artisan chocolatier to sell hand crafted chocolates for customers with specific dietary requirements (such as Keto, Vegan and Gluten-Free).
 <br><br>
-The features include the ability to make purchases directly from the site, registering a user profile, user email verification, generating email confirmations upon successful purchases, user ratings and reviews, displaying testimonials, frequently asked questions, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
+The features include the ability to make purchases directly from the site, registering a user profile, user email verification, generating email confirmations upon successful purchases, user ratings and reviews, displaying testimonials and frequently asked questions, security protocols preventing access to unauthorised views/pages and CRUD functionality for superusers.
 <br><br>
 The site was built using the Django framework, Python, HTML 5, CSS 3, Javascript, Bootstrap, Heroku, ElephantSQL, Stripe and AWS.
 <br><br>
@@ -223,25 +223,32 @@ Mailchimp Campaign
 <details>
 <summary>  <i>Facebook Page</i> </summary>
 <br>
-To avoid the risk of an actual Facebook page being deleted, for the purposes of this project a mockup has been created instead.
-<br></rb>
-This page would serve as a way to promote the business by sharing relevant communications and promotions with potential customers.<br><br>It would also serve as a way for customers to contact Chocelegance directly with any queries.
+A Facebook page was set up as part of the marketing startegy.
+<br></br>
+This page will serve as a way to promote the business by sharing relevant communications and promotions with potential customers.
 <br><br>
+It would also serve as a way for customers to contact Chocelegance directly with any queries.
+<br><br>
+The page can be found [here](https://www.facebook.com/profile.php?id=61561170177708).
+<br></br>
+In the event that the page is deleted, a full screen capture is available below.
+</br>
+
+<details>
+<summary>   <i>Facebook page screen capture</i></summary>
 
 <table>
 <tr>
-<th>
-Facebook Page Mockup
-</th>
-</tr>
-
-<tr>
 <td>
 
-![Facebook mockup](!documentation/marketing-facebook.webp)
+![Facebook-page](documentation/facebook-page-full-capture.webp)
 </td>
 </tr>
 </table>
+</br>
+</br>
+</br>
+</details>
 
 
 </details>

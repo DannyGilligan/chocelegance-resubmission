@@ -133,7 +133,7 @@ class Chocolate(models.Model):
 
     choc_ingredients = models.TextField()
 
-    choc_calories = models.FloatField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_calories = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
     choc_fat = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
 

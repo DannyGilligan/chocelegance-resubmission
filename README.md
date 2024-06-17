@@ -1154,7 +1154,7 @@ stripe==9.9.0<br>
 <table>
 <tr><th><b> Thumb </b></th><th><b> Production File Name </b></th><th><b> Source </b></th></tr>
 <!-- image 1 begins -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![dark-choc-gluten-free-coffee-date-final](documentation/image_credits/dark-choc-gluten-free-coffee-date-final.webp)
 </td>
@@ -1166,7 +1166,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- image 1 ends -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_1_thumb](assets/documentation//thumbnails/miss_image_1_thumbnail.webp)
 </td>
@@ -1178,7 +1178,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_2_thumb](assets/documentation/thumbnails/miss_image_2_thumbnail.webp)
 </td>
@@ -1190,7 +1190,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_3_thumb](assets/documentation/thumbnails/miss_image_3_thumbnail.webp)
 </td>
@@ -1202,7 +1202,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_4_thumb](assets/documentation/thumbnails/miss_image_4_thumbnail.webp)
 </td>
@@ -1214,7 +1214,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_5_thumb](assets/documentation/thumbnails/miss_image_5_thumbnail.webp)
 </td>
@@ -1226,7 +1226,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_6_thumb](assets/documentation/thumbnails/miss_image_6_thumbnail.webp)
 </td>
@@ -1238,7 +1238,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_7_thumb](assets/documentation/thumbnails/miss_image_7_thumbnail.webp)
 </td>
@@ -1250,7 +1250,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_8_thumb](assets/documentation/thumbnails/miss_image_8_thumbnail.webp)
 </td>
@@ -1262,7 +1262,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_9_thumb](assets/documentation/thumbnails/miss_image_9_thumbnail.webp)
 </td>
@@ -1274,7 +1274,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![miss_image_10_thumb](assets/documentation/thumbnails/miss_image_10_thumbnail.webp)
 </td>
@@ -1287,7 +1287,7 @@ stripe==9.9.0<br>
 </tr>
 <!-- Miss Images end here -->
 <!-- Goal Images start here -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_0_thumb](assets/documentation/thumbnails/goal_image_0_thumbnail.webp)
 </td>
@@ -1299,7 +1299,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_1_thumb](assets/documentation/thumbnails/goal_image_1_thumbnail.webp)
 </td>
@@ -1311,7 +1311,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_2_thumb](assets/documentation/thumbnails/goal_image_2_thumbnail.webp)
 </td>
@@ -1323,7 +1323,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_3_thumb](assets/documentation/thumbnails/goal_image_3_thumbnail.webp)
 </td>
@@ -1335,7 +1335,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_4_thumb](assets/documentation/thumbnails/goal_image_4_thumbnail.webp)
 </td>
@@ -1347,7 +1347,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_5_thumb](assets/documentation/thumbnails/goal_image_5_thumbnail.webp)
 </td>
@@ -1359,7 +1359,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_6_thumb](assets/documentation/thumbnails/goal_image_6_thumbnail.webp)
 </td>
@@ -1371,7 +1371,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_7_thumb](assets/documentation/thumbnails/goal_image_7_thumbnail.webp)
 </td>
@@ -1383,7 +1383,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_8_thumb](assets/documentation/thumbnails/goal_image_8_thumbnail.webp)
 </td>
@@ -1395,7 +1395,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_9_thumb](assets/documentation/thumbnails/goal_image_9_thumbnail.webp)
 </td>
@@ -1407,7 +1407,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![goal_image_10_thumb](assets/documentation/thumbnails/goal_image_10_thumbnail.webp)
 </td>
@@ -1420,7 +1420,7 @@ stripe==9.9.0<br>
 </tr>
 <!-- Goal images end here -->
 <!-- Miscellaneous images start here -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![hero_image_updated_thumb](assets/documentation/thumbnails/official_logo_thumbnail.webp)
 </td>
@@ -1432,7 +1432,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![favicon_source_thumb](assets/documentation/thumbnails/favicon_source_thumbnail.webp)
 </td>
@@ -1444,7 +1444,7 @@ stripe==9.9.0<br>
 </td>
 </tr>
 <!-- spacer -->
-<tr><td width="50">
+<tr><td width="25">
 
 ![favicon_source_thumb](assets/documentation/thumbnails/quiz_over_pic_thumb.webp)
 </td>

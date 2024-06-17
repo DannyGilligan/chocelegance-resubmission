@@ -106,10 +106,12 @@
                             </a>
                         </div>
                         {% else %}
+                        <div class="choc-image-container">
                         <a href="{% url 'chocolate_detail' chocolate.id %}">
                             <img class="card-img-top img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.webp"
                                 alt="{{ chocolate.choc_name }}">
                         </a>
+                        </div>
                         {% endif %}
 
                         <!-- Card body, from chocolates.html -->

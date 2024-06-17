@@ -120,7 +120,7 @@ class Chocolate(models.Model):
     choc_description = models.TextField()
 
     choc_rating = models.DecimalField(
-        max_digits=3, decimal_places=2, blank=True, null=True, validators=[MinValueValidator(Decimal('0.01'))]
+        max_digits=3, decimal_places=2, blank=True, null=True, validators=[MinValueValidator(Decimal('0.00'))]
     )
 
     choc_image = models.ImageField(null=True, blank=True)

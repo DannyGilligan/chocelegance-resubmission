@@ -223,16 +223,17 @@ Mailchimp Campaign
 <details>
 <summary>  <i>Facebook Page</i> </summary>
 <br>
-A Facebook page was set up as part of the marketing startegy.
+A Facebook page was set up as part of the marketing strategy.
 <br></br>
 This page will serve as a way to promote the business by sharing relevant communications and promotions with potential customers.
 <br><br>
 It would also serve as a way for customers to contact Chocelegance directly with any queries.
 <br><br>
+
 The page can be found [here](https://www.facebook.com/profile.php?id=61561170177708).
 <br></br>
 In the event that the page is deleted, a full screen capture is available below.
-</br>
+</br></br>
 
 <details>
 <summary>   <i>Facebook page screen capture</i></summary>

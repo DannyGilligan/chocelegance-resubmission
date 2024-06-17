@@ -49,10 +49,17 @@
 {% block postloadjs %}
     {{ block.super }}
 
-    <!-- Changes the text for the form slug field label to give more user friendly instruction -->
+    
     <script>
+        // Changes the text for the form slug field label to give more user friendly instruction
         document.getElementById('div_id_choc_name').firstElementChild.innerText = "Choc slug field (lower case characters, words separated by hyphens)";
+
+        // Hides the choc_rating form field, not necessary to add value on this page, should be rated by customers only
+        document.getElementById('div_id_choc_rating').style.display = 'none';
     </script>
+
+
+
 
     <!-- Script to handle the custom select image field -->
     <script>

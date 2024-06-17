@@ -133,15 +133,15 @@ class Chocolate(models.Model):
 
     choc_ingredients = models.TextField()
 
-    choc_calories = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_calories = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(500)])
 
-    choc_fat = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_fat = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(500)])
 
-    choc_protein = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_protein = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(500)])
 
-    choc_carbs = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_carbs = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(500)])
 
-    choc_sugar = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    choc_sugar = models.PositiveIntegerField(blank=True, default=1, validators=[MinValueValidator(1), MaxValueValidator(500)])
 
     def get_choc_rating(self):
         """

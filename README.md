@@ -838,6 +838,8 @@ stripe==9.9.0<br>
 
 ## Credits
 
+An overview of materials references and images used during the development of the project is shown below.
+
 <!-- The Credits section is shown below, this will be disaplyed in a collapsible format, with a sub section for reference content/materials and a sub section for images, with each item shown in tabular form -->
 <details>
     <summary><b>Reference Materials Used</b></summary>
@@ -1109,6 +1111,9 @@ stripe==9.9.0<br>
 
 <!-- TABLE ENDS BELOW THIS LINE! -->
 </table>
+<br>
+<br>
+<br>
 </details>
 <!-- Reference Materials credits section ends here -->
 
@@ -1353,21 +1358,11 @@ stripe==9.9.0<br>
 
 <!-- spacer -->
 </table>
+<br>
+<br>
+<br>
 </details>
 <!-- Images credits end here -->
-
-
-
-<br>
-<br>
-<br>
-
-
-
-
-
-
-
 
 
 

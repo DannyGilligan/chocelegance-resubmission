@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
+from decimal import Decimal
 
 
 # Custom Model 1
@@ -112,34 +114,34 @@ class Chocolate(models.Model):
     )
 
     choc_friendly_name = models.CharField(
-        max_length=200, null=True, blank=True
+        max_length=200, null=True, blank=False
     )
 
     choc_description = models.TextField()
 
     choc_rating = models.DecimalField(
-        max_digits=3, decimal_places=2, null=True, blank=True
+        max_digits=3, decimal_places=2, null=True, blank=True, validators=[MinValueValidator(Decimal('0.01'))]
     )
 
     choc_image = models.ImageField(null=True, blank=True)
 
     choc_image_url = models.URLField(max_length=2000, null=True, blank=True)
 
-    choc_price = models.DecimalField(max_digits=5, decimal_places=2)
+    choc_price = models.DecimalField(validators=[MinValueValidator(1), MaxValueValidator(100)], max_digits=5, decimal_places=2, blank=False)
 
-    choc_pieces = models.IntegerField(null=True, blank=True)
+    choc_pieces = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
     choc_ingredients = models.TextField()
 
-    choc_calories = models.FloatField(null=True, blank=True)
+    choc_calories = models.FloatField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
-    choc_fat = models.FloatField()
+    choc_fat = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
-    choc_protein = models.FloatField()
+    choc_protein = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
-    choc_carbs = models.FloatField()
+    choc_carbs = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
-    choc_sugar = models.FloatField()
+    choc_sugar = models.PositiveIntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(100)])
 
     def get_choc_rating(self):
         """

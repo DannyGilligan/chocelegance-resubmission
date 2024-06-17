@@ -875,7 +875,7 @@ An overview of materials referenced and images used during the development of th
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Chocolate descriptions used across site, www.puccinibomboni.com </td>
+<tr><td> Chocolate descriptions, about texxt and images used across site, www.puccinibomboni.com </td>
 <td> 
 
 [here](https://puccinibomboni.com/)
@@ -1136,6 +1136,22 @@ An overview of materials referenced and images used during the development of th
 <td> 
 
 [here](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1668538758607109?thread_ts=1668535011.445709&cid=C7EJUQT2N)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> How to set max and min validators in model field, by Stackoverflow user Tom
+ </td>
+<td> 
+
+[here](https://stackoverflow.com/questions/42425933/how-do-i-set-a-default-max-and-min-value-for-an-integerfield-django)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> How to allow only positive decimal numbers in model field, by Stackoverflow user Alasdair
+ </td>
+<td> 
+
+[here](https://stackoverflow.com/questions/12384460/allow-only-positive-decimal-numbers)
 
 </td></tr>
 

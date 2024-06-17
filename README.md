@@ -845,38 +845,38 @@ stripe==9.9.0<br>
 <table>
 <tr><th><b> Description </b></th><th><b> Link </b></th></tr>
 <!-- Reference Material 1 begins -->
-<tr><td> Code Institute LMS Javascript Essentials Content </td>
+<tr><td> Code Institute 'Boutique Ado' Walkthrough Project </td>
 <td> 
 
 [here](https://codeinstitute.net/) 
 
 </td></tr>
 <!-- Reference Material 1 ends -->
-<tr><td> Javascript tutorial video produced by 'Bro Code' YouTube Channel</td>
+<tr><td> Code Institute PP5 Walkthrough Video, by Kasia Bogucka</td>
 <td> 
 
-[here](https://www.youtube.com/watch?v=8dWL3wF_OMw)  
+[here](https://youtu.be/i7clFOYiwS0)  
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Javascript 30 for 30 tutorials produced by Wes Bos</td>
+<tr><td> Code Institute README.md guide, by Kasia Bogucka</td>
 <td> 
 
-[here](https://javascript30.com/)
+[here](https://youtu.be/l1DE7L-4eKQ?si=YlDWOkkzvTBjbgs3)
 
 </td></tr>
 <!-- spacer -->
-<tr><td> W3 Schools Javascript Tutorial, Exercises and Quiz, published by w3schools.com </td>
+<tr><td> Code Institute E-Commerce Guide to MVP, by Kasia Bogucka </td>
 <td> 
 
-[here](https://www.w3schools.com/js/default.asp) 
+[here](https://youtu.be/i7clFOYiwS0) 
 
 </td></tr>
 <!-- spacer -->
-<tr><td> JS Challenger exercises, published by jschallenger.com </td>
+<tr><td> Chocolate descriptions used across site, www.puccinibomboni.com </td>
 <td> 
 
-[here](https://www.jschallenger.com/)
+[here](https://puccinibomboni.com/)
 
 </td></tr>
 <!-- spacer -->
@@ -887,52 +887,52 @@ stripe==9.9.0<br>
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Code Institute README.md Tutorial by Kasia Bogucka </td>
+<tr><td> Boostrap carousel implentation in Django, by Stackoverflow user simopopov </td>
 <td> 
 
-[here](https://www.youtube.com/watch?v=l1DE7L-4eKQ)  
+[here](https://stackoverflow.com/questions/27219078/bootstrap-carousel-implementation-in-django)  
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Code Institute Guide to MVP (PP2) by Kasia Bogucka </td>
+<tr><td> Advice on Python 'setup.py egg_info' error, by Github user ocona </td>
 <td> 
 
-[here](https://www.youtube.com/watch?v=wsOvkf22B_A)  
+[here](https://github.com/openai/openai-cookbook/issues/154)  
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Official FIFA 2023 Women's World Cup colour scheme published by schemecolor.com </td>
+<tr><td> Slide effect on bootstrap dropdown menus, by Stackoverflow user cogell </td>
 <td> 
 
-[here](https://www.schemecolor.com/fifa-womens-world-cup-2023-logo.php)  
+[here](https://stackoverflow.com/questions/12115833/adding-a-slide-effect-to-bootstrap-dropdown)  
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Official FIFA 2023 Women's World Cup font, downloaded from fontshub.pro </td>
+<tr><td> How to style a checkbox, published by www.sentry.io </td>
 <td> 
 
-[here](https://fontshub.pro/font/fwwc-2023-download)
+[here](https://sentry.io/answers/how-to-style-a-checkbox-using-css/)
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Flexbox guide, published by css-tricks.com </td>
+<tr><td> How to style a Bootstrap accordion, by Stackoverflow user Sahil Dhir </td>
 <td> 
 
-[here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
+[here](https://stackoverflow.com/questions/75398511/style-header-of-bootstrap-accordion-that-has-the-class-collapse-show)  
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Guide to self-hosting fonts, published by Kevin Powell </td>
+<tr><td> Text used for user testimonials, published by www.thehappychocolatier.com </td>
 <td> 
 
-[here](https://www.youtube.com/watch?v=zK-yy6C2Nck)
+[here](https://www.thehappychocolatier.com/testimonials/)
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Centering items using Flexbox, published by MDN Web Docs </td>
+<tr><td> Change style of carousel control buttons, by Stackoverflow user nifoem bar </td>
 <td> 
 
-[here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container)  
+[here](https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel)  
 
 </td></tr>
 <!-- spacer -->
@@ -943,32 +943,32 @@ stripe==9.9.0<br>
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Code used for CSS gradient effects provided by cssgradient.io </td>
+<tr><td> Thread on hiding parent elements with onclick function, by Stackoverflow user DextrousDave </td>
 <td> 
 
-[here](https://cssgradient.io/)
+[here](https://stackoverflow.com/questions/17399897/hide-parent-element-with-onclick-function)
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Guide for using the CSS 'fade in' animation, published by Jamie Juviler </td>
+<tr><td> Tutorial on creating product reviews in Django, by YouTube channel 'Code With Stein' </td>
 <td> 
 
-[here](https://blog.hubspot.com/website/css-fade-in)
+[here](https://www.youtube.com/watch?v=8iCqlFyFu2s)
 
 </td></tr>
 <!-- spacer -->
 </td></tr>
-<tr><td> Guide on scaling an element up and down gracefully on hover, by Stackoverflow user Roy </td>
+<tr><td> Rounding a value in a DTL variable, by Stackoverflow user arulmr </td>
 <td> 
 
-[here](https://stackoverflow.com/a/36227036)
+[here](https://stackoverflow.com/questions/18185351/how-can-i-round-a-value-in-django-template-without-using-the-filter)
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Guide for styling input placeholder text, published by MDN Web Docs </td>
+<tr><td> Text used for FAQs section in About page, published by www.chocolatecompany.nl </td>
 <td> 
 
-[here](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder) 
+[here](https://www.chocolatecompany.nl/en/service/faq/) 
 
 </td></tr>
 <!-- spacer -->
@@ -1029,17 +1029,17 @@ stripe==9.9.0<br>
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Github emojis cheatsheet, by Github user ikatyang </td>
+<tr><td> Sticky footer guide, published by www.css-tricks.com </td>
 <td> 
 
-[here](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+[here](https://css-tricks.com/a-clever-sticky-footer-technique/)
 
 </td></tr>
 <!-- spacer -->
 <tr><td> Site used to convert png to favicon, favicon.io </td>
 <td> 
 
-[here](https://favicon.io/favicon-converter/)
+[here](https://realfavicongenerator.net/)
 
 </td></tr>
 <!-- spacer -->
@@ -1078,45 +1078,24 @@ stripe==9.9.0<br>
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Introduction to the pillars of OOP, by Chandrakishor Gupta </td>
+<tr><td> Site used to generate sitemap.xml </td>
 <td> 
 
-[here](https://datatrained.com/post/four-pillars-of-oops/)
+[here](https://www.xml-sitemaps.com/)
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Guide on HTML Radio Input Tags, published by w3schools.com </td>
+<tr><td> Adding admin panel to a DTL url, by Stackoverflow user Arpit Solanki </td>
 <td> 
 
-[here](https://www.w3schools.com/tags/att_input_type_radio.asp)
+[here](https://stackoverflow.com/questions/45122421/refer-to-admin-site-using-url-admin-in-app-django)
 
 </td></tr>
 <!-- spacer -->
-<tr><td> How to use a submit button outside the form, by joshbranchaud </td>
+<tr><td> Udemy Masterclass course, by instructor Ashutosh Pawar </td>
 <td> 
 
-[here](https://til.hashrocket.com/posts/v2s2gxgifj-submit-a-form-with-a-button-outside-the-form)
-
-</td></tr>
-<!-- spacer -->
-<tr><td> Guide to mobile first responsive design, published by Code Institute </td>
-<td> 
-
-[here](https://www.youtube.com/watch?v=JcaX60ZscgA)
-
-</td></tr>
-<!-- spacer -->
-<tr><td> Guide to displaying a 'flash' effect animation, by Stackoverflow user Rohith </td>
-<td> 
-
-[here](https://stackoverflow.com/questions/16791851/a-flash-of-color-using-pure-css-transitions)
-
-</td></tr>
-<!-- spacer -->
-<tr><td> Guide on adding minlength and maxlength HTML attributes, published by MDN Web Docs </td>
-<td> 
-
-[here](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/minlength)
+[here](https://uber.udemy.com/course/django-course/learn/lecture/16355734#overview)
 
 </td></tr>
 <!-- spacer -->
@@ -1126,21 +1105,9 @@ stripe==9.9.0<br>
 [here](https://www.w3schools.com/cssref/css3_pr_animation.php)
 
 </td></tr>
-<!-- spacer -->
-<tr><td> How to add whitespace characters to README.md, by Stackoverflow user Tim Smith </td>
-<td> 
 
-[here](https://stackoverflow.com/questions/44810511/how-to-add-empty-spaces-into-md-markdown-readme-on-github)
 
-</td></tr>
-<!-- spacer -->
-<tr><td> How to align text in table headers in README.md markdown, published by markdownguide.org </td>
-<td> 
-
-[here](https://www.markdownguide.org/extended-syntax/)
-
-</td></tr>
-<!-- spacer -->
+<!-- TABLE ENDS BELOW THIS LINE! -->
 </table>
 </details>
 <!-- Reference Materials credits section ends here -->

@@ -660,6 +660,62 @@ The ERD below was generated using graphviz.
 
 ## Features
 
+An overview of the main features of the site is included below.
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Header Navbar</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Header Navber
+</th>
+</tr>
+
+<tr>
+<td>
+A responsive navigation bar has been developed for the site that includes links to all key sections of the site:
+<ul>
+<li>
+My account (includes register, log in and log out links)
+</li>
+<li>
+Shopping cart
+</li>
+<li>
+Search bar
+</li>
+<li>
+All chocolates (include 'sort by' dropdown menu)
+</li>
+<li>
+Keto chocolates (includes chocolate type dropdown menu)
+</li>
+<li>
+Vegan chocolates (includes chocolate type dropdown menu)
+</li>
+<li>
+Gluten-free chocolate (includes chocolate type dropdown menu)
+</li>
+<li>
+About page
+</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-1-header-nav.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
 
 
 

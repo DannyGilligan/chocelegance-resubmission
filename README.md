@@ -555,7 +555,7 @@ https://ui.dev/amiresponsive
   <summary> User Profile Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
-![Wireframe_01](documentation/wireframes/wireframe-about-page.webp)
+![Wireframe_01](documentation/wireframes/wireframe-profile-page.webp)
 </details>
 <!-- Wireframe ends -->
 <br>

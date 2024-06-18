@@ -152,7 +152,7 @@ class Chocolate(models.Model):
 
     choc_calories = models.PositiveIntegerField(
         blank=True,
-        default=1,
+        default=0,
         validators=[MinValueValidator(0), MaxValueValidator(500)]
     )
 

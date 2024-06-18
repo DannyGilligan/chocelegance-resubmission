@@ -71,7 +71,7 @@ The business is currently at a small scale, with limited inventory being kept on
   <summary><b> Competitors </b></summary>
 <br>
 
-There are several chocolate makers in the Netherlands with an online presence and established customer base. These are well entrenched competitiors with diverse product ranges. Some examples are listed below:
+There are several chocolate makers in the Netherlands with an online presence and established customer base. These are well entrenched competitors with diverse product ranges. Some examples are listed below:
 <br>
 
 [Vanroselen](https://www.vanroselen.nl/)
@@ -171,7 +171,7 @@ As Chocelegance is currently a small operation, the preference is to leverage co
 The marketing strategy will initially include a newsletter subscription, and a Facebook page. Content will be published on a weekly basis, with the goal of creating rich and engaging media that has the potential to be organically 'shareable' on social media.
 <br><br>
 <details>
-<summary>  <i>Newsletter</i> </summary>
+<summary> <i>Newsletter</i> </summary>
 <br>
 A newsletter sign up form has been added to the footer of the site, and a Mailchimp campaign has been created to capture the subscriber email addresses.
 <br><br>
@@ -221,7 +221,7 @@ Mailchimp Campaign
 </details>
 
 <details>
-<summary>  <i>Facebook Page</i> </summary>
+<summary> <i>Facebook Page</i> </summary>
 <br>
 A Facebook page was set up as part of the marketing strategy.
 <br></br>
@@ -1051,13 +1051,7 @@ An overview of materials referenced and images used during the development of th
 
 </td></tr>
 <!-- spacer -->
-<tr><td> Code used for spherical shading on main button developed by 'The Anonymous Koder' </td>
-<td> 
 
-[here](https://codepen.io/theanonymouskoder/pen/PomjmeY?editors=1100)  
-
-</td></tr>
-<!-- spacer -->
 <tr><td> Thread on hiding parent elements with onclick function, by Stackoverflow user DextrousDave </td>
 <td> 
 

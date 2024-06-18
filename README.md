@@ -11,9 +11,8 @@
 * [Introduction](#introduction)
 * [Business Overview](#business-overview)
 * [Design](#design)
-* [User Stories](#user-stories)
 * [Features](#features)
-* [Bugs](#bugs)
+* [User Stories](#user-stories)
 * [Manual Testing](#manual-testing)
 * [Deployment](#deployment)
 * [Technologies Used](#technologies-used)
@@ -669,7 +668,7 @@ An overview of the main features of the site is included below.
 <table>
 <tr>
 <th>
-Header Navber
+Header Navbar
 </th>
 </tr>
 
@@ -734,8 +733,8 @@ Allauth Security/Authentication
 
 <tr>
 <td>
-Django's Allauth package has been used to provide:
-<br>
+Django's Allauth package has been implemented in the site, and used to provide:
+<br><br>
 <ul>
 <li>
 User signup
@@ -812,7 +811,9 @@ Testimonial Carousel
 
 <tr>
 <td>
-A responsive carousel has been developed to display user testimonials on the home page. The content for this is entered by the superuser in the admin panel.
+A responsive carousel has been developed to display user testimonials on the home page.
+<br><br>
+The content for this is entered by the superuser in the admin panel.
 <br><br>
 
 </td>
@@ -1029,7 +1030,7 @@ User Reviews
 <tr>
 <td>
 Users are presented with reviews and ratings for each chocolate, if none exist, a prompt to log in and leave one will be displayed instead.
-<br>
+<br><br>
 A form is also present on the chocolate details page with a drop down menu allowing users to leave a star rating (out of 5).
 <br><br>
 A textfield allows the user to input a brief review (this is a required field).
@@ -1247,7 +1248,7 @@ Complete order button
 <br>
 
 Once the details have been added successfully and 'complete order' has been clicked, a loading overlay will be displayed while the card details are being processed by Stripe.
-
+<br>
 </td>
 </tr>
 
@@ -1305,7 +1306,7 @@ Stripe Webhooks
 
 <tr>
 <td>
-Stripe webhooks have been implemented for the site, allowing transactions to be captured even if the user's connection to the site if affected during the checkout process.
+Stripe webhooks have been implemented for the site, allowing transactions to be captured and completed even if the user's connection to the site is affected during the checkout process.
 <br><br>
 
 </td>
@@ -1434,7 +1435,7 @@ If the user has registered for an account, and is currently authenticated, they 
 This allows the user to save their default delivery delivery details which can then be used to prepopulate the checkout form on future purchases, and also provides them with their order history which allows them to conveniently review past purchases.
 <br><br>
 Another benefit of registering for an account is the ability to leave reviews on the site.
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1462,9 +1463,10 @@ About Us
 
 <tr>
 <td>
-An 'About Us' section provides the user with more information about the business (this text has been adapted from https://puccinibomboni.com).
+
+An 'About Us' section provides the user with more information about the business, this text has been adapted from the [Puccini Bomboni](https://puccinibomboni.com/over-ons) site.
 <br><br>
-The text has been optimised by using SEO keywords in appropriate semantic tags.
+The text has also been optimised by using SEO keywords in appropriate semantic tags.
 <br><br>
 </td>
 </tr>
@@ -1571,21 +1573,7 @@ The admin panel can also be accessed directly from the site through the admin pa
 </details>
 <!-- Feature ends above this line -->
 
-
-
-
-
-
-
-
-
-
-
-
 <br>
-
-
-
 
 
 
@@ -1595,6 +1583,7 @@ The admin panel can also be accessed directly from the site through the admin pa
 <br>
 <br>
 <br>
+
 ## User Stories
 
 

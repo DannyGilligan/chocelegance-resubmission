@@ -558,7 +558,9 @@ https://ui.dev/amiresponsive
 ![Wireframe_01](documentation/wireframes/wireframe-about-page.webp)
 </details>
 <!-- Wireframe ends -->
-
+<br>
+<br>
+<br>
 </details>
 <!-- Wireframe section ends above this line -->
 

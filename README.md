@@ -492,7 +492,7 @@ https://ui.dev/amiresponsive
   <summary> Chocolate Details Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
-![Wireframe_01](documentation/wireframes/wireframe-chocolate-details-page.webp)
+![Wireframe_01](documentation/wireframes/wireframe-chocolates-details.webp)
 </details>
 <!-- Wireframe ends -->
 

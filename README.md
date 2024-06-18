@@ -435,7 +435,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Sign Up Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Sign Up Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-sign-up.webp)
@@ -444,7 +444,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Email Verification Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Email Verification Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-verify-email.webp)
@@ -453,7 +453,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Confirm Email Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Confirm Email Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-confirm-email.webp)
@@ -462,7 +462,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Sign In Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Sign In Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-sign-in.webp)
@@ -471,7 +471,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Home Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Home Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-home-page.webp)
@@ -480,7 +480,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Main Chocolates Menu </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Main Chocolates Menu</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-main-chocolates-menu.webp)
@@ -489,7 +489,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Chocolate Details Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Chocolate Details Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-chocolates-details.webp)
@@ -498,7 +498,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Shopping Cart </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Shopping Cart</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-shopping-cart.webp)
@@ -507,7 +507,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Checkout Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Checkout Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-checkout-page.webp)
@@ -516,7 +516,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Order Confirmation </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Order Confirmation</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-order-confirmation.webp)
@@ -525,7 +525,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Add Chocolate Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Add Chocolate Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-add-chocolate.webp)
@@ -534,7 +534,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> Edit Chocolate Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>Edit Chocolate Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-edit-chocolate.webp)
@@ -543,7 +543,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> About Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>About Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-about-page.webp)
@@ -552,7 +552,7 @@ https://ui.dev/amiresponsive
 
 <!-- Wireframe begins -->
 <details>  
-  <summary> User Profile Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> <I>User Profile Page</I> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 
 ![Wireframe_01](documentation/wireframes/wireframe-profile-page.webp)

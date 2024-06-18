@@ -664,7 +664,7 @@ An overview of the main features of the site is included below.
 
 <!-- Feature starts below this line -->
 <details>
-<summary> <b>Header Navbar</b> </summary>
+<summary> <b>Header / Navbar</b> </summary>
 <br>
 <table>
 <tr>
@@ -676,7 +676,11 @@ Header Navber
 <tr>
 <td>
 A responsive navigation bar has been developed for the site that includes links to all key sections of the site:
+<br>
 <ul>
+<li>
+Main chocelegance logo
+</li>
 <li>
 My account (includes register, log in and log out links)
 </li>
@@ -687,7 +691,7 @@ Shopping cart
 Search bar
 </li>
 <li>
-All chocolates (include 'sort by' dropdown menu)
+All chocolates (includes 'sort by' dropdown menu)
 </li>
 <li>
 Keto chocolates (includes chocolate type dropdown menu)
@@ -702,6 +706,7 @@ Gluten-free chocolate (includes chocolate type dropdown menu)
 About page
 </li>
 </ul>
+<br>
 </td>
 </tr>
 
@@ -715,6 +720,860 @@ About page
 
 </details>
 <!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Allauth User Authentication</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Allauth Security/Authentication
+</th>
+</tr>
+
+<tr>
+<td>
+Django's Allauth package has been used to provide:
+<br>
+<ul>
+<li>
+User signup
+</li>
+<li>
+Email verification
+</li>
+<li>
+Email confirmation
+</li>
+<li>
+User role based login features (e.g superuser with crud options and admin rights)
+</li>
+<li>
+Account security
+</li>
+
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-2-allauth-verification.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>SEO Optimised Hero Section</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+SEO Optimised Hero Section
+</th>
+</tr>
+
+<tr>
+<td>
+The main hero section contains an attention grabbing, high quality image relevant to the core business. The text and button have also been optimised using semantic HTML and relevant SEO keywords.
+<br>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-3-seo-optimised-hero-section.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Testimonial Carousel</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Testimonial Carousel
+</th>
+</tr>
+
+<tr>
+<td>
+A responsive carousel has been developed to display user testimonials on the home page. The content for this is entered by the superuser in the admin panel.
+<br>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-4-testimonials-carousel.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Footer / Newsletter Signup</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Footer / Newsletter Signup
+</th>
+</tr>
+
+<tr>
+<td>
+A responsive footer has been developed that contains:
+<br>
+<ul>
+<li>
+Social media links (using 'no follow' and 'sponsored' rel attributes where appropriate)
+</li>
+<li>
+Privacy policy link
+</li>
+<li>
+Terms and conditions link
+</li>
+<li>
+Mailhcimp newsletter subscribtion form (with space for confirmation messages)
+</li>
+
+</ul>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-5-footer-newsletter.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Chocolate Main Menu</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Chocolate Main Menu
+</th>
+</tr>
+
+<tr>
+<td>
+A responsive main menu page for the chocolates offered on the site has been developed. This page includes:
+<br>
+<ul>
+<li>
+Chocolate sorting options
+</li>
+<li>
+A bootstrap card for each chocolate containing a vibrant image
+</li>
+<li>
+Chocolate name
+</li>
+<li>
+Chocolate price
+</li>
+<li>
+Chocolate type
+</li>
+<li>
+Dietary category
+</li>
+<li>
+Superuser options (edit and delete)
+</li>
+<li>
+Chocolate rating
+</li>
+
+</ul>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-6-chocolate-menu-sorting.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Chocolate Details Page</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Chocolate Details Page
+</th>
+</tr>
+
+<tr>
+<td>
+A responsive details page for the chocolates offered on the site has been developed. This page includes:
+<br>
+<ul>
+<li>
+A bootstrap card for the chocolate containing a vibrant image
+</li>
+<li>
+Chocolate name
+</li>
+<li>
+Chocolate price
+</li>
+<li>
+Chocolate type
+</li>
+<li>
+Dietary category
+</li>
+<li>
+Chocolate Description
+</li>
+<li>
+Number of chocolate pieces included
+</li>
+<li>
+Ingredients
+</li>
+<li>
+Nutrional information
+</li>
+<li>
+Superuser options (edit and delete)
+</li>
+<li>
+Chocolate rating
+</li>
+<li>
+Number of reviews submitted
+</li>
+<li>
+User reviews submitted (if any)
+</li>
+<li>
+User review form and submit button
+</li>
+<li>
+Quantity form
+</li>
+<li>
+Add to cart button
+</li>
+<li>
+Keep shopping button
+</li>
+
+</ul>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-7-chocolate-details.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>User Reviews</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+User Reviews
+</th>
+</tr>
+
+<tr>
+<td>
+Users are presented with reviews and ratings for each chocolate, if none exist, a prompt to log in and leave one will be displayed instead.
+<br>
+A form is also present on the chocolate details page with a drop down menu allowing users to leave a star rating (out of 5).
+<br><br>
+A textfield allows the user to input a brief review (this is a required field).
+<br><br>
+Once the rating and review is ready, the user can click the submit button to commit the review.
+<br><br>
+To note, the rating will be visible immediately, however the text will require approval by the superuser in the admin panel by setting the 'publish' status to 'Yes' (this is to prevent any inappropriate content being displayed on the site).
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-8-user-reviews.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Superuser Options</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Superuser Options
+</th>
+</tr>
+
+<tr>
+<td>
+If the user is authenticated as a superuser, additional options will be displayed on the main chocolate menu and chocolate details pages, these allow the superuser to edit or delete a chocolate without the need to log in to the admin panel.
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-9a-superuser-options.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+Clicking the edit button will display the 'edit chocolate' page.
+<br><br>
+Clicking the delete button will display an additional confirmation dialogue, this is a defensive feature to prevent accidental deletions.
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-9b-superuser-options.webp)
+</td>
+</tr>
+
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Toast Messages</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Toast Messages
+</th>
+</tr>
+
+<tr>
+<td>
+Toast messages are used extensively throughout the site to provide the user with helpful messages and notifications to confirm user actions.
+<br><br>
+Signing in or logging out will trigger toast messages confirming the actions were successful.
+<br><br>
+Any error messages when filling out forms will trigger a toast error message.
+<br><br>
+Navigating to the 'edit chocolate' page will trigger a toast info message alerting the user they are about to edit the chocolate details.
+<br><br>
+Deleting a chocolate will trigger a toast message confirming the deletion was successful.
+<br><br>
+Adding chocolates to the cart, and completing a purchase will trigger a toast message confirming the actions were successful.
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-10-toast-messages.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Shopping Cart</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Shopping Cart
+</th>
+</tr>
+
+<tr>
+<td>
+The shopping cart page displays relevant details relating to the order:
+<br>
+<ul>
+<li>
+Vibrant chocolate image
+</li>
+<li>
+Chocolate name
+</li>
+<li>
+Item price
+</li>
+<li>
+A quantity form allowing user to update the quantity, or remove completely from cart
+</li>
+<li>
+A subtotal field
+</li>
+<li>
+Total quanity of items in cart
+</li>
+<li>
+Cart total
+</li>
+<li>
+Deliver cost
+</li>
+<li>
+Order total
+</li>
+<li>
+Prompt to spend more to reach free delivery threshold
+</li>
+<li>
+Keep shopping button
+</li>
+<li>
+Secure checkout button
+</li>
+</ul>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-11-shopping-cart.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Checkout</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Checkout
+</th>
+</tr>
+
+<tr>
+<td>
+The shopping cart page displays an order summary, and forms allowing the user to enter the relevant details to process the transaction:
+<br>
+<ul>
+<li>
+Full name
+</li>
+<li>
+Email address
+</li>
+<li>
+Delivery details
+</li>
+<li>
+Payment details
+</li>
+<li>
+A notification box alerting the user to the amount that will be charged
+</li>
+<li>
+Adjust cart button
+</li>
+<li>
+Complete order button
+</li>
+<br>
+
+Once the details have been added successfully and 'complete order' has been clicked, a loading overlay will be displayed while the card details are being processed by Stripe.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-11-shopping-cart.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Email Confirmations</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Email Confirmations
+</th>
+</tr>
+
+<tr>
+<td>
+Email confirmations will be sent to the email address entered by the user upon completion of a successful purchase.
+<br>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-21-email-confirmation.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Stripe Webhooks</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Stripe Webhooks
+</th>
+</tr>
+
+<tr>
+<td>
+Stripe webhooks have been implemented for the site, allowing transactions to be captured even if the user's connection to the site if affected during the checkout process.
+<br>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-22-webhooks.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Order Confirmation</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Order Confirmation
+</th>
+</tr>
+
+<tr>
+<td>
+Upon completion of a successful purchase, the user is directed to an order confirmation screen containing all details relating to the order.
+<br>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-13-order-confirmation.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Chocolate Management (Add Chocolate)</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Chocolate Management (Add Chocolate)
+</th>
+</tr>
+
+<tr>
+<td>
+If the user is authenticated, they will have access to the 'chocolate management' page from a link in the 'My Account' dropdown menu.
+<br><br>
+This page will allow the user to add a chocolate to the 'Chocolate' model without the need to log in to the admin panel.
+<br>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-14-chocolate-management-add.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Chocolate Management (Edit Chocolate)</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Chocolate Management (Add Chocolate)
+</th>
+</tr>
+
+<tr>
+<td>
+If the user is authenticated, they will have access to the 'edit' button on the main chocolate menu screen and the chocolate details page.
+<br><br>
+This page will allow the user to edit a chocolate to the 'Chocolate' model without the need to log in to the admin panel.
+<br>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-15-chocolate.management-edit.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Profile Page</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Profle Page
+</th>
+</tr>
+
+<tr>
+<td>
+If the user has registered for an account, and is currently authenticated, they will be provided with access to the 'My Profile' link in the 'My Account' drop down menu.
+<br>
+This allows the user to save their default delivery delivery details which can then be used to prepopulate the checkout form on future purchases, and also provides them with their order history which allows them to conveniently review past purchases.
+<br>
+Another benefit of registering for an account is the ability to leave reviews on the site.
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-16-user-profile.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>About Us</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+About Us
+</th>
+</tr>
+
+<tr>
+<td>
+An 'About Us' section provides the user with more information about the business (this text has been adapted from https://puccinibomboni.com).
+<br>
+The text has been optimised by using SEO keywords in appropriate semantic tags.
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-17-seo-optimised-about.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Contact Us</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Contact Us
+</th>
+</tr>
+
+<tr>
+<td>
+A 'Contact Us' section provides the user with more information on how to make contact with the business.
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-18-contact-us.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>FAQs</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+FAQs
+</th>
+</tr>
+
+<tr>
+<td>
+A responsive bootstrap accordion has been included in the 'About' page and injected with data from the FAQs model using DTL loops and variables.
+<br>
+The content for this section is updated by the superuser directly from the admin panel.
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-19-faqs-accordion.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+<!-- Feature starts below this line -->
+<details>
+<summary> <b>Admin</b> </summary>
+<br>
+<table>
+<tr>
+<th>
+Admin
+</th>
+</tr>
+
+<tr>
+<td>
+The admin panel allows the superuser to update all models directly, and provides them with the ability to control the access rights of users.
+<br>
+The admin panel can also be accessed directly from the site through the admin panel link in the 'My Account' drop down menu (once user is authenticated as a superuser).
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+![feature](documentation/features/features-20-admin-panel.webp)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Feature ends above this line -->
+
+
+
+
+
+
 
 
 

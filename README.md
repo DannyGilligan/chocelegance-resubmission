@@ -56,7 +56,7 @@ An overview of the business model, competitors, SEO and marketing strategy is in
 
 Chocelegance is an online B2C operation offering hand crafted, diet friendly chocolates to customers with specialised dietary requirements.
 <br><br>
-The business is operated by a small team of artisan chocolatiers who share a passion for the nuances involved in fine chocolate making, and want to share this passion with a niche set of customers that are not well served by the current offerings on the market.
+The business is operated by a sole artisan chocolatier who has a passion for the nuances involved in fine chocolate making, and wants to share this passion with a niche set of customers that are not well served by the current offerings on the market.
 <br><br>
 A typical customer persona is a chocolate lover who wants to experience the rich taste of hand made chocolates, but needs to stay within a strict set of dietary parameters.
 <br><br>
@@ -196,7 +196,7 @@ Newsletter Signup Form
 
 <br>
 
-The campaign in Mailchimp stores all user email address to be included in future newsletter publications.
+The campaign in Mailchimp stores all user email addresses to be included in future newsletter publications.
 
 <br>
 <table>
@@ -227,7 +227,7 @@ A Facebook page was set up as part of the marketing strategy.
 <br></br>
 This page will serve as a way to promote the business by sharing relevant communications and promotions with potential customers.
 <br><br>
-It would also serve as a way for customers to contact Chocelegance directly with any queries.
+It will also serve as a way for customers to contact Chocelegance directly with any queries.
 <br><br>
 
 The page can be found [here](https://www.facebook.com/profile.php?id=61561170177708).
@@ -432,24 +432,135 @@ https://ui.dev/amiresponsive
 <details>
   <summary><b> Wireframes </b></summary>
 <br>
+
+<!-- Wireframe begins -->
 <details>  
-  <summary> <i>Enter Username</i> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+  <summary> Sign Up Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
-<!-- Wireframe 1 1 begins -->
-The initial landing page will display the 'FIFA Women's World Cup Quiz 2023' logo, along with an input field to enter a username, and an 'enter' button. 
 
-Validation will occur here, if the username does not meet the requirements a dialogue box will be displayed. If the input is accepted, the value will be assigned to a 'userName' variable.
-
-The 'Enter' button will run the validation function and display the 'Quiz Rules' screen.
-
-To note, the quiz will exist on a single page of HTML, with different sections being displayed to, or hidden from, the user depending on the context.
-
-![Wireframe_01](assets/documentation/wireframe01_enter_username.webp)
+![Wireframe_01](documentation/wireframes/wireframe-sign-up.webp)
 </details>
-<!-- Wireframe 1 ends -->
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Email Verification Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-verify-email.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Confirm Email Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-confirm-email.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Sign In Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-sign-in.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Home Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-home-page.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Main Chocolates Menu </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-main-chocolates-menu.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Chocolate Details Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-chocolate-details-page.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Shopping Cart </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-shopping-cart.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Checkout Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-checkout-page.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Order Confirmation </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-order-confirmation.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Add Chocolate Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-add-chocolate.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> Edit Chocolate Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-edit-chocolate.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> About Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-about-page.webp)
+</details>
+<!-- Wireframe ends -->
+
+<!-- Wireframe begins -->
+<details>  
+  <summary> User Profile Page </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
+<br>
+
+![Wireframe_01](documentation/wireframes/wireframe-about-page.webp)
+</details>
+<!-- Wireframe ends -->
 
 </details>
-<!-- Wireframe section ends here -->
+<!-- Wireframe section ends above this line -->
 
 
 <details>

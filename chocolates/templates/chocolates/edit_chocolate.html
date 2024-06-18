@@ -25,21 +25,22 @@
         <div class="col-12 col-md-6">
 
             <!-- Form used to add chocolate details, enctype attribute allows images to be uploaded -->
-            <form method="POST" action="{% url 'edit_chocolate' chocolate.id %}" class="form mb-3 purple-text font-weight-bold" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_chocolate' chocolate.id %}"
+                class="form mb-3 purple-text font-weight-bold" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
-                    {% if field.name != 'choc_image' %}
-                        {{ field | as_crispy_field }}
-                    {% else %}
-                        {{ field }}
-                    {% endif %}
+                {% if field.name != 'choc_image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
                 {% endfor %}
                 <div class="choc-mgmt-button-container">
                     <a class="cancel-choc-mgmt" href="{% url 'chocolates' %}">Cancel</a>
                     <button class="update-choc-mgmt" type="submit">Update Chocolate</button>
                 </div>
             </form>
-            
+
         </div>
     </div>
 </div>
@@ -47,23 +48,23 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
+{{ block.super }}
 
-    
-    <script>
 
-        // Changes the text for the form slug field label to give more user friendly instruction
-        document.getElementById('div_id_choc_name').firstElementChild.innerText = "Choc slug field (lower case characters, words separated by hyphens)";
+<script>
+    // Changes the text for the form slug field label to give more user friendly instruction
+    document.getElementById('div_id_choc_name').firstElementChild.innerText =
+        "Choc slug field (lower case characters, words separated by hyphens)";
 
-        // Hides the choc_rating form field, not necessary to add value on this page, should be rated by customers only
-        document.getElementById('div_id_choc_rating').style.display = 'none'
-    </script>
+    // Hides the choc_rating form field, not necessary to add value on this page, should be rated by customers only
+    document.getElementById('div_id_choc_rating').style.display = 'none';
+</script>
 
-    <!-- Script to handle the custom select image field -->
-    <script>
-        $('.new-image').change(function() {
-            var file = $('.new-image')[0].files[0];
-            $('#filename').text(`Image will be set to: ${file.name}`);
-        });
-    </script>
+<!-- Script to handle the custom select image field -->
+<script>
+    $('.new-image').change(function () {
+        var file = $('.new-image')[0].files[0];
+        $('#filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
 {% endblock %}

@@ -676,7 +676,7 @@ Header Navber
 <tr>
 <td>
 A responsive navigation bar has been developed for the site that includes links to all key sections of the site:
-<br>
+<br><br>
 <ul>
 <li>
 Main chocelegance logo
@@ -724,7 +724,7 @@ About page
 <!-- Feature starts below this line -->
 <details>
 <summary> <b>Allauth User Authentication</b> </summary>
-<br>
+<br><br>
 <table>
 <tr>
 <th>
@@ -754,7 +754,7 @@ Account security
 </li>
 
 </ul>
-
+<br>
 </td>
 </tr>
 
@@ -783,7 +783,7 @@ SEO Optimised Hero Section
 <tr>
 <td>
 The main hero section contains an attention grabbing, high quality image relevant to the core business. The text and button have also been optimised using semantic HTML and relevant SEO keywords.
-<br>
+<br><br>
 
 </td>
 </tr>
@@ -813,7 +813,7 @@ Testimonial Carousel
 <tr>
 <td>
 A responsive carousel has been developed to display user testimonials on the home page. The content for this is entered by the superuser in the admin panel.
-<br>
+<br><br>
 
 </td>
 </tr>
@@ -843,7 +843,7 @@ Footer / Newsletter Signup
 <tr>
 <td>
 A responsive footer has been developed that contains:
-<br>
+<br><br>
 <ul>
 <li>
 Social media links (using 'no follow' and 'sponsored' rel attributes where appropriate)
@@ -888,7 +888,7 @@ Chocolate Main Menu
 <tr>
 <td>
 A responsive main menu page for the chocolates offered on the site has been developed. This page includes:
-<br>
+<br><br>
 <ul>
 <li>
 Chocolate sorting options
@@ -945,7 +945,7 @@ Chocolate Details Page
 <tr>
 <td>
 A responsive details page for the chocolates offered on the site has been developed. This page includes:
-<br>
+<br><br>
 <ul>
 <li>
 A bootstrap card for the chocolate containing a vibrant image
@@ -1037,7 +1037,7 @@ A textfield allows the user to input a brief review (this is a required field).
 Once the rating and review is ready, the user can click the submit button to commit the review.
 <br><br>
 To note, the rating will be visible immediately, however the text will require approval by the superuser in the admin panel by setting the 'publish' status to 'Yes' (this is to prevent any inappropriate content being displayed on the site).
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1066,7 +1066,7 @@ Superuser Options
 <tr>
 <td>
 If the user is authenticated as a superuser, additional options will be displayed on the main chocolate menu and chocolate details pages, these allow the superuser to edit or delete a chocolate without the need to log in to the admin panel.
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1082,7 +1082,7 @@ If the user is authenticated as a superuser, additional options will be displaye
 Clicking the edit button will display the 'edit chocolate' page.
 <br><br>
 Clicking the delete button will display an additional confirmation dialogue, this is a defensive feature to prevent accidental deletions.
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1122,7 +1122,7 @@ Navigating to the 'edit chocolate' page will trigger a toast info message alerti
 Deleting a chocolate will trigger a toast message confirming the deletion was successful.
 <br><br>
 Adding chocolates to the cart, and completing a purchase will trigger a toast message confirming the actions were successful.
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1151,7 +1151,7 @@ Shopping Cart
 <tr>
 <td>
 The shopping cart page displays relevant details relating to the order:
-<br>
+<br><br>
 <ul>
 <li>
 Vibrant chocolate image
@@ -1220,7 +1220,7 @@ Checkout
 <tr>
 <td>
 The shopping cart page displays an order summary, and forms allowing the user to enter the relevant details to process the transaction:
-<br>
+<br><br>
 <ul>
 <li>
 Full name
@@ -1243,6 +1243,7 @@ Adjust cart button
 <li>
 Complete order button
 </li>
+</ul>
 <br>
 
 Once the details have been added successfully and 'complete order' has been clicked, a loading overlay will be displayed while the card details are being processed by Stripe.
@@ -1275,7 +1276,7 @@ Email Confirmations
 <tr>
 <td>
 Email confirmations will be sent to the email address entered by the user upon completion of a successful purchase.
-<br>
+<br><br>
 
 </td>
 </tr>
@@ -1305,7 +1306,7 @@ Stripe Webhooks
 <tr>
 <td>
 Stripe webhooks have been implemented for the site, allowing transactions to be captured even if the user's connection to the site if affected during the checkout process.
-<br>
+<br><br>
 
 </td>
 </tr>
@@ -1335,7 +1336,7 @@ Order Confirmation
 <tr>
 <td>
 Upon completion of a successful purchase, the user is directed to an order confirmation screen containing all details relating to the order.
-<br>
+<br><br>
 
 </td>
 </tr>
@@ -1367,7 +1368,7 @@ Chocolate Management (Add Chocolate)
 If the user is authenticated, they will have access to the 'chocolate management' page from a link in the 'My Account' dropdown menu.
 <br><br>
 This page will allow the user to add a chocolate to the 'Chocolate' model without the need to log in to the admin panel.
-<br>
+<br><br>
 
 </td>
 </tr>
@@ -1399,7 +1400,7 @@ Chocolate Management (Add Chocolate)
 If the user is authenticated, they will have access to the 'edit' button on the main chocolate menu screen and the chocolate details page.
 <br><br>
 This page will allow the user to edit a chocolate to the 'Chocolate' model without the need to log in to the admin panel.
-<br>
+<br><br>
 
 </td>
 </tr>
@@ -1429,10 +1430,11 @@ Profle Page
 <tr>
 <td>
 If the user has registered for an account, and is currently authenticated, they will be provided with access to the 'My Profile' link in the 'My Account' drop down menu.
-<br>
+<br><br>
 This allows the user to save their default delivery delivery details which can then be used to prepopulate the checkout form on future purchases, and also provides them with their order history which allows them to conveniently review past purchases.
-<br>
+<br><br>
 Another benefit of registering for an account is the ability to leave reviews on the site.
+<br>
 </td>
 </tr>
 
@@ -1461,9 +1463,9 @@ About Us
 <tr>
 <td>
 An 'About Us' section provides the user with more information about the business (this text has been adapted from https://puccinibomboni.com).
-<br>
+<br><br>
 The text has been optimised by using SEO keywords in appropriate semantic tags.
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1492,7 +1494,7 @@ Contact Us
 <tr>
 <td>
 A 'Contact Us' section provides the user with more information on how to make contact with the business.
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1521,9 +1523,9 @@ FAQs
 <tr>
 <td>
 A responsive bootstrap accordion has been included in the 'About' page and injected with data from the FAQs model using DTL loops and variables.
-<br>
+<br><br>
 The content for this section is updated by the superuser directly from the admin panel.
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1552,9 +1554,9 @@ Admin
 <tr>
 <td>
 The admin panel allows the superuser to update all models directly, and provides them with the ability to control the access rights of users.
-<br>
+<br><br>
 The admin panel can also be accessed directly from the site through the admin panel link in the 'My Account' drop down menu (once user is authenticated as a superuser).
-<br>
+<br><br>
 </td>
 </tr>
 
@@ -1580,7 +1582,19 @@ The admin panel can also be accessed directly from the site through the admin pa
 
 
 
+<br>
 
+
+
+
+
+
+[Back to Top](#chocelegance)
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- FEATURES SECTION -->
+<br>
+<br>
+<br>
 ## User Stories
 
 

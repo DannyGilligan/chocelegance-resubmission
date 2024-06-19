@@ -2957,6 +2957,8 @@ No Errors :heavy_check_mark:
 <summary> <i>CSS</i> </summary>
 <br>
 
+The CSS files used throughout the project were checked in the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Results below:
+<br>
 <table>
 <tr>
 <th>
@@ -2991,7 +2993,7 @@ About App
 </td>
 
 <td>
-No Error 
+No Errors
 <br>
 :heavy_check_mark:
 </td>
@@ -3012,7 +3014,7 @@ Checkout App
 </td>
 
 <td>
-No Error 
+No Errors 
 <br>
 :heavy_check_mark:
 </td>
@@ -3033,7 +3035,7 @@ Project root directory
 </td>
 
 <td>
-No Error 
+No Errors 
 <br>
 :heavy_check_mark:
 </td>
@@ -3055,7 +3057,7 @@ Profiles App
 </td>
 
 <td>
-No Error 
+No Errors 
 <br>
 :heavy_check_mark:
 </td>
@@ -3069,8 +3071,248 @@ No Error
 <!-- CSS Validation ends above this line -->
 
 
+<!-- Javascript Validation starts below this line -->
+<details>
+<summary> <i>Javascript</i> </summary>
+<br>
+
+All Javascript code blocks were passed through the [JSHint validator](https://jshint.com/). Results below:
+<br><br>
+<table>
+
+<tr>
+<th>
+File Name
+</th>
+
+<th>
+File Location
+</th>
+
+<th>
+
+Image
+</th>
+
+<th>Result</th>
+</tr>
+
+<!-- spacer -->
+
+<tr>
+<td>
+cart.html
+</td>
+
+<td>
+Cart App
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-cart-html.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
+
+<!-- spacer -->
+
+<tr>
+<td>
+stripe_elements.js
+</td>
+
+<td>
+Checkout App
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-stripe-elements.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
+
+<!-- spacer -->
+
+<tr>
+<td>
+quantity_input_script.html
+</td>
+
+<td>
+Chocolates App
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-quantity-input-script.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
+
+<!-- spacer -->
+
+<tr>
+<td>
+chocolate_detail.html
+</td>
+
+<td>
+Chocolates App
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-chocolate-detail-html.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
 
 
+<!-- spacer -->
+
+<tr>
+<td>
+chocolates.html
+</td>
+
+<td>
+Chocolates App
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-chocolate-html.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
+
+
+<!-- spacer -->
+
+<tr>
+<td>
+add_chocolate.html
+</td>
+
+<td>
+Chocolates App
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-add-chocolate-html.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
+
+
+<!-- spacer -->
+
+<tr>
+<td>
+edit_chocolate.html
+</td>
+
+<td>
+Chocolates App
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-edit-chocolate-html.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
+
+<!-- spacer -->
+
+<tr>
+<td>
+countryfield.js
+</td>
+
+<td>
+Profiles App
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-countryfield.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
+
+
+<!-- spacer -->
+
+<tr>
+<td>
+main-nav.html
+</td>
+
+<td>
+Root Templates Directory
+</td>
+
+<td>
+
+![image](documentation/manual_testing/js_validation/js-main-nav.webp)
+</td>
+
+<td>
+No Errors 
+<br>
+:heavy_check_mark:
+</td>
+</tr>
+
+</table>
+<br>
+<br>
+<br>
+</details>
 
 
 

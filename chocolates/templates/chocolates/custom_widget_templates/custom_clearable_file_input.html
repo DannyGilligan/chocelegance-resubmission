@@ -16,7 +16,10 @@
 <!-- Form input for chocolate image, from customer_clearable_file_input.html -->
 <span class="btn btn-black rounded-0 btn-file">
     <!-- Select Image button, from customer_clearable_file_input.html -->
-    Select Image <input class="new-image" type="{{ widget.type }}" name="{{ widget.name }}"
+
+    <!-- The original code resulted in a duplicate ID error, however, a Code Institute student, Katie Dunne, highlighted a solution in her repository for the same issue, I copied the same solution from her repo found here https://github.com/KSDunne/summit_style. The solution can be found in the 'resolved bugs' section. It invoves changing the ID to a 'data-category'.  -->
+
+    Select Image <input data-category="new-image" type="{{ widget.type }}" name="{{ widget.name }}"
         {% include "django/forms/widgets/attrs.html" %}>
 </span>
 

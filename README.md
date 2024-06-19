@@ -38,6 +38,11 @@ A link to the deployed site can be found [here](https://chocelegance-resubmissio
 <br><br>
 A link to the admin panel of the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/admin) (credentials provided in submission form).
 <br><br>
+To simulate a purchase on the site, please use the card details below:
+<br><br>
+Card No: 4242 4242 4242 4242 Exp: 04/25 CCV: 242 ZIP: 42424
+
+<br>
 
 [Back to Top](#chocelegance)
 
@@ -1585,8 +1590,8 @@ The admin panel can also be accessed directly from the site through the admin pa
 
 
 <details>
-<summary><b>Future Features</b></summary>
-
+<summary><b> Future Features</b></summary>
+<br>
 <details>
 <summary> <i>Event Catering Quote Calculation</i></summary>
 <br>
@@ -1615,12 +1620,14 @@ With time this system will become more 'intelligent' and perhaps feed into a fin
 <br>
 <br>
 </details>
+<br>
 
+[Back to Features](#features)
 
 </details>
 
 
-
+<br>
 
 [Back to Top](#chocelegance)
 

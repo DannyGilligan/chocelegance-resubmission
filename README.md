@@ -667,7 +667,7 @@ An overview of the main features of the site is included below.
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Header / Navbar</i> </summary>
+<summary>  <i>Header / Navbar</i> </summary>
 <br>
 <table>
 <tr>
@@ -726,7 +726,7 @@ About page
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Allauth User Authentication</i> </summary>
+<summary>  <i>Allauth User Authentication</i> </summary>
 <br><br>
 <table>
 <tr>
@@ -774,7 +774,7 @@ Account security
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>SEO Optimised Hero Section</i> </summary>
+<summary>  <i>SEO Optimised Hero Section</i> </summary>
 <br>
 <table>
 <tr>
@@ -804,7 +804,7 @@ The main hero section contains an attention grabbing, high quality image relevan
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Testimonial Carousel</i> </summary>
+<summary>  <i>Testimonial Carousel</i> </summary>
 <br>
 <table>
 <tr>
@@ -836,7 +836,7 @@ The content for this is entered by the superuser in the admin panel.
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Footer / Newsletter Signup</i> </summary>
+<summary>  <i>Footer / Newsletter Signup</i> </summary>
 <br>
 <table>
 <tr>
@@ -881,7 +881,7 @@ Mailhcimp newsletter subscribtion form (with space for confirmation messages)
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Chocolate Main Menu</i> </summary>
+<summary>  <i>Chocolate Main Menu</i> </summary>
 <br>
 <table>
 <tr>
@@ -938,7 +938,7 @@ Chocolate rating
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Chocolate Details Page</i> </summary>
+<summary>  <i>Chocolate Details Page</i> </summary>
 <br>
 <table>
 <tr>
@@ -1022,7 +1022,7 @@ Keep shopping button
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>User Reviews</i> </summary>
+<summary>  <i>User Reviews</i> </summary>
 <br>
 <table>
 <tr>
@@ -1059,7 +1059,7 @@ To note, the rating will be visible immediately, however the text will require a
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Superuser Options</i> </summary>
+<summary>  <i>Superuser Options</i> </summary>
 <br>
 <table>
 <tr>
@@ -1105,7 +1105,7 @@ Clicking the delete button will display an additional confirmation dialogue, thi
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Toast Messages</i> </summary>
+<summary>  <i>Toast Messages</i> </summary>
 <br>
 <table>
 <tr>
@@ -1144,7 +1144,7 @@ Adding chocolates to the cart, and completing a purchase will trigger a toast me
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Shopping Cart</i> </summary>
+<summary>  <i>Shopping Cart</i> </summary>
 <br>
 <table>
 <tr>
@@ -1213,7 +1213,7 @@ Secure checkout button
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Checkout</i> </summary>
+<summary>  <i>Checkout</i> </summary>
 <br>
 <table>
 <tr>
@@ -1269,7 +1269,7 @@ Once the details have been added successfully and 'complete order' has been clic
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Email Confirmations</i> </summary>
+<summary>  <i>Email Confirmations</i> </summary>
 <br>
 <table>
 <tr>
@@ -1299,7 +1299,7 @@ Email confirmations will be sent to the email address entered by the user upon c
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Stripe Webhooks</i> </summary>
+<summary>  <i>Stripe Webhooks</i> </summary>
 <br>
 <table>
 <tr>
@@ -1329,7 +1329,7 @@ Stripe webhooks have been implemented for the site, allowing transactions to be 
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Order Confirmation</i> </summary>
+<summary>  <i>Order Confirmation</i> </summary>
 <br>
 <table>
 <tr>
@@ -1359,7 +1359,7 @@ Upon completion of a successful purchase, the user is directed to an order confi
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Chocolate Management (Add Chocolate)</i> </summary>
+<summary>  <i>Chocolate Management (Add Chocolate)</i> </summary>
 <br>
 <table>
 <tr>
@@ -1391,7 +1391,7 @@ This page will allow the user to add a chocolate to the 'Chocolate' model withou
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Chocolate Management (Edit Chocolate)</i> </summary>
+<summary>  <i>Chocolate Management (Edit Chocolate)</i> </summary>
 <br>
 <table>
 <tr>
@@ -1423,7 +1423,7 @@ This page will allow the user to edit a chocolate to the 'Chocolate' model witho
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Profile Page</i> </summary>
+<summary>  <i>Profile Page</i> </summary>
 <br>
 <table>
 <tr>
@@ -1456,7 +1456,7 @@ Another benefit of registering for an account is the ability to leave reviews on
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>About Us</i> </summary>
+<summary>  <i>About Us</i> </summary>
 <br>
 <table>
 <tr>
@@ -1488,7 +1488,7 @@ The text has also been optimised by using SEO keywords in appropriate semantic t
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Contact Us</i> </summary>
+<summary>  <i>Contact Us</i> </summary>
 <br>
 <table>
 <tr>
@@ -1517,7 +1517,7 @@ A 'Contact Us' section provides the user with more information on how to make co
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>FAQs</i> </summary>
+<summary>  <i>FAQs</i> </summary>
 <br>
 <table>
 <tr>
@@ -1548,7 +1548,7 @@ The content for this section is updated by the superuser directly from the admin
 
 <!-- Feature starts below this line -->
 <details>
-<summary>  <i>Admin</i> </summary>
+<summary>  <i>Admin</i> </summary>
 <br>
 <table>
 <tr>

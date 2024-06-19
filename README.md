@@ -1678,6 +1678,12 @@ Status
 [#3](https://github.com/DannyGilligan/chocelegance-project/issues/3)
 </td>
 
+<!-- Epic ID -->
+<td>
+
+[#8](https://github.com/DannyGilligan/chocelegance-project/issues/8)
+</td>
+
 <!-- User Story -->
 <td>
 As a user, I can view range of chocolates available on the site, so I can choose which chocolates to purchase.

@@ -2456,7 +2456,7 @@ The site performed well in the SEO, Accessibility and Best Practises categories,
 I suspect that the Heroku platform may be contributing to the poor score (the app is hosted on the free tier level).
 <br><br>
 To note, initially the Lighthouse testing resulted in an error being logged to the console relating to a 3rd party extension/cookie. The test was then reperformed in 'Incognito' mode, which eliminated the issue.
-<br>
+<br><br>
 
 <table>
 <tr>
@@ -2477,6 +2477,475 @@ Lighthouse Testing Results
 <br>
 </details>
 
+<details>
+<summary><b>Code Validation</b></summary>
+<br>
+
+<!-- ************************************************************************************************************************************************************* -->
+
+<!-- HTML validation starts below this line -->
+<details>
+<summary> <i>HTML</i> </summary>
+<br>
+
+To validate the HTML, each page rendered on the website was visited, then the 'page source' was copied, then pasted into the [W3C Validator](https://validator.w3.org/) as a direct input.
+<br>
+
+<details>
+<summary>  Home Page</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-1-home-page.webp)
+</td>
+</tr>
+</table>
+
+</details>
+
+
+<details>
+<summary>  Main Chocolates Menu</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-2-main-chocolates-menu.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+<details>
+<summary>  Chocolate Details Page</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/8/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-3-chocolate-details.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+<details>
+<summary>  Shopping Cart</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/cart/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-4-shopping-cart.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+<details>
+<summary>  Checkout</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/checkout/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-5-checkout.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+<details>
+<summary>  Order Confirmation</summary>
+
+<table>
+<tr>
+<th>
+
+Direct link not applicable, however checkout_success.html is the template being rendered.
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-6-order-confirmation.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+<details>
+<summary>  Error 404 Page</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/404test)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-7-404-error.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+<details>
+<summary>  About Page</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/about/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-8-about-page.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>  Chocolate Management (Add Chocolate)</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/chocolates/add/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-9-add-choc.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>  Profile Page</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/profile/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-11-profile-page.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>  Logout Page</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/accounts/logout/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-12-logout-page.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>  Signup Page</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/accounts/signup/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-13-signup-page.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>  Signin Page</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/accounts/login/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-14-signin-page.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+
+
+<details>
+<summary>  Forgot Password</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/accounts/password/reset/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-15-forgot-password.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>  Privacy Policy</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/privacy/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-16-privacy-policy.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>  Terms and Conditions</summary>
+
+<table>
+<tr>
+<th>
+
+[Link Here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/terms/)
+</th>
+</tr>
+
+<tr>
+<td>
+
+![image](documentation/manual_testing/html_validation/html-17-terms.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
+</table>
+
+</details>
+
+<br>
+<br>
+<br>
+</details>
+<!-- HTML Validation ends above this line -->
 
 
 
@@ -2487,7 +2956,24 @@ Lighthouse Testing Results
 
 
 
-, bugs (resolved and unresolved), Lighthouse testing, code validation, user story testing, features testing.
+
+
+
+
+
+<!-- ************************************************************************************************************************************************************* -->
+
+</details>
+<!-- Code validation ends above this line -->
+
+
+
+
+
+
+
+
+, bugs (resolved and unresolved), code validation, features testing.
 
 
 

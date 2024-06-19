@@ -2954,7 +2954,7 @@ No Errors :heavy_check_mark:
 
 <!-- CSS Validation begins below this line -->
 <details>
-<summary><b>CSS</b></summary>
+<summary> <i>CSS</i> </summary>
 <br>
 
 <table>
@@ -2991,7 +2991,9 @@ About App
 </td>
 
 <td>
-No Error :heavy-check-mark:
+No Error 
+<br>
+:heavy_check_mark:
 </td>
 </tr>
 
@@ -3010,7 +3012,9 @@ Checkout App
 </td>
 
 <td>
-No Error :heavy-check-mark:
+No Error 
+<br>
+:heavy_check_mark:
 </td>
 </tr>
 
@@ -3029,7 +3033,9 @@ Project root directory
 </td>
 
 <td>
-No Error :heavy-check-mark:
+No Error 
+<br>
+:heavy_check_mark:
 </td>
 </tr>
 
@@ -3049,7 +3055,9 @@ Profiles App
 </td>
 
 <td>
-No Error :heavy-check-mark:
+No Error 
+<br>
+:heavy_check_mark:
 </td>
 </tr>
 <br>

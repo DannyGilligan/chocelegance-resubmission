@@ -2986,7 +2986,8 @@ About App
 </td>
 
 <td>
-Validation
+
+![image](documentation/manual_testing/css_validation/css-about.webp)
 </td>
 
 <td>
@@ -3004,7 +3005,8 @@ Checkout App
 </td>
 
 <td>
-Validation
+
+![image](documentation/manual_testing/css_validation/css-checkout.webp)
 </td>
 
 <td>
@@ -3022,7 +3024,8 @@ Project root directory
 </td>
 
 <td>
-Validation
+
+![image](documentation/manual_testing/css_validation/css-base.webp)
 </td>
 
 <td>
@@ -3041,23 +3044,21 @@ Profiles App
 </td>
 
 <td>
-Validation
+
+![image](documentation/manual_testing/css_validation/css-profile.webp)
 </td>
 
 <td>
 No Error :heavy-check-mark:
 </td>
 </tr>
-
-
-
-
+<br>
 </table>
-
-
-
+<br>
+<br>
+<br>
 </details>
-
+<!-- CSS Validation ends above this line -->
 
 
 

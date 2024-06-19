@@ -1647,7 +1647,7 @@ An overview of the User Stories related to the project is shown below.
 
 <details>
 <summary> <b>User Stories</b></summary>
-
+<br>
 <table>
 <tr>
 
@@ -2381,6 +2381,76 @@ Closed
 
 ## Manual Testing
 
+An overview of the manual testing performed for the project is included below.
+
+<details>
+<summary><b>Browser Compatibility</b></summary>
+<br>
+Several popular browsers were tested for functionality. The site behaved as expected on all browsers tested.
+<br>
+<br>
+<table>
+
+<tr>
+<th>
+Browser
+</th>
+
+<th>
+Status
+</th>
+</tr>
+
+<tr>
+<td>
+Google Chrome
+</td>
+
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+
+<tr>
+<td>
+Mozilla Firefox
+</td>
+
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+
+<tr>
+<td>
+Microsoft Edge
+</td>
+
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+
+<tr>
+<td>
+Apple Safari
+</td>
+
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+
+</table>
+<br>
+<br>
+<br>
+</details>
+
+
+
+
+
 Responsive, browser compatibility, bugs (resolved and unresolved), Lighthouse testing, code validation, user story testing, features testing.
 
 
@@ -2519,13 +2589,17 @@ An overview of the technologies used throughout the development of the project i
 <td>https://www.heroku.com</td>
 </tr>
 <!-- spacer -->
-<tr><td>
+<tr>
+<td>
 <div>
 	<code><img width="50" src="documentation/icon-aws.webp" alt="aws" title="aws"/></code>
 </div>
 </td>
+
 <td>Amazon Web Services</td>
+
 <td>Media & Static file hosting</td>
+
 <td>https://aws.amazon.com/<td>
 </tr>
 <!-- spacer -->

@@ -1584,10 +1584,10 @@ The admin panel can also be accessed directly from the site through the admin pa
 
 
 
-<detail>
+<details>
 <summary><b>Future Features</b></summary>
 
-<detail>
+<details>
 <summary> <i>Event Catering Quote Calculation</i></summary>
 <br>
 Chocelegance is in a prime position to offer catering for special events and occasions to customers.
@@ -1600,10 +1600,10 @@ Once all the data has been submitted, an amount will be displayed to the user wh
 <br>
 <br>
 <br>
-</detail>
+</details>
 
 
-<detail>
+<details>
 <summary> <i>Inventory Management System</i></summary>
 <br>
 As the business grows, it will become necessary to implement a more sophisticated inventory management system.
@@ -1614,10 +1614,10 @@ With time this system will become more 'intelligent' and perhaps feed into a fin
 <br>
 <br>
 <br>
-</detail>
+</details>
 
 
-</detail>
+</details>
 
 
 

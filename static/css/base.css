@@ -485,7 +485,7 @@ input[id="id-save-info"] {
 .error404button:hover {
     background: #c71585;
     border: 1px solid #ed82ed;
-    box-shadow: 0px 0px 15pxx #ed82ed;
+    box-shadow: 0px 0px 15px #ed82ed;
 }
 
 .error404button a {

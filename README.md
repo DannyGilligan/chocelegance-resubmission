@@ -2489,7 +2489,7 @@ Lighthouse Testing Results
 <br>
 
 To validate the HTML, each page rendered on the website was visited, then the 'page source' was copied, then pasted into the [W3C Validator](https://validator.w3.org/) as a direct input. Results below:
-<br>
+<br><br>
 
 <details>
 <summary>  Home Page</summary>
@@ -2952,8 +2952,111 @@ No Errors :heavy_check_mark:
 </details>
 <!-- HTML Validation ends above this line -->
 
+<!-- CSS Validation begins below this line -->
+<details>
+<summary><b>CSS</b></summary>
+<br>
+
+<table>
+<tr>
+<th>
+Filename
+</th>
+
+<th>
+Location
+</th>
+
+<th>
+Validation
+</th>
+
+<th>
+Result
+</th>
+</tr>
+
+<tr>
+<td>
+about.css
+</td>
+
+<td>
+About App
+</td>
+
+<td>
+Validation
+</td>
+
+<td>
+No Error :heavy-check-mark:
+</td>
+</tr>
+
+<tr>
+<td>
+checkout.css
+</td>
+
+<td>
+Checkout App
+</td>
+
+<td>
+Validation
+</td>
+
+<td>
+No Error :heavy-check-mark:
+</td>
+</tr>
+
+<tr>
+<td>
+base.css
+</td>
+
+<td>
+Project root directory
+</td>
+
+<td>
+Validation
+</td>
+
+<td>
+No Error :heavy-check-mark:
+</td>
+</tr>
 
 
+<tr>
+<td>
+profile.css
+</td>
+
+<td>
+Profiles App
+</td>
+
+<td>
+Validation
+</td>
+
+<td>
+No Error :heavy-check-mark:
+</td>
+</tr>
+
+
+
+
+</table>
+
+
+
+</details>
 
 
 

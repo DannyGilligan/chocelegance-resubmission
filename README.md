@@ -2488,12 +2488,12 @@ Lighthouse Testing Results
 <summary> <i>HTML</i> </summary>
 <br>
 
-To validate the HTML, each page rendered on the website was visited, then the 'page source' was copied, then pasted into the [W3C Validator](https://validator.w3.org/) as a direct input.
+To validate the HTML, each page rendered on the website was visited, then the 'page source' was copied, then pasted into the [W3C Validator](https://validator.w3.org/) as a direct input. Results below:
 <br>
 
 <details>
 <summary>  Home Page</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2508,14 +2508,19 @@ To validate the HTML, each page rendered on the website was visited, then the 'p
 ![image](documentation/manual_testing/html_validation/html-1-home-page.webp)
 </td>
 </tr>
+<tr>
+<td>
+No Errors :heavy_check_mark:
+</td>
+</tr>
 </table>
-
+<br>
 </details>
 
 
 <details>
 <summary>  Main Chocolates Menu</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2537,13 +2542,13 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 <details>
 <summary>  Chocolate Details Page</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2565,13 +2570,13 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 <details>
 <summary>  Shopping Cart</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2593,13 +2598,13 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 <details>
 <summary>  Checkout</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2621,13 +2626,13 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 <details>
 <summary>  Order Confirmation</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2649,13 +2654,13 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 <details>
 <summary>  Error 404 Page</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2677,13 +2682,13 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 <details>
 <summary>  About Page</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2705,14 +2710,14 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 
 <details>
 <summary>  Chocolate Management (Add Chocolate)</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2734,14 +2739,14 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 
 <details>
 <summary>  Profile Page</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2763,14 +2768,14 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 
 <details>
 <summary>  Logout Page</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2792,14 +2797,14 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 
 <details>
 <summary>  Signup Page</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2821,14 +2826,14 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 
 <details>
 <summary>  Signin Page</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2850,7 +2855,7 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
@@ -2858,7 +2863,7 @@ No Errors :heavy_check_mark:
 
 <details>
 <summary>  Forgot Password</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2880,14 +2885,14 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 
 <details>
 <summary>  Privacy Policy</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2909,14 +2914,14 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 
 
 <details>
 <summary>  Terms and Conditions</summary>
-
+<br>
 <table>
 <tr>
 <th>
@@ -2938,7 +2943,7 @@ No Errors :heavy_check_mark:
 </td>
 </tr>
 </table>
-
+<br>
 </details>
 
 <br>

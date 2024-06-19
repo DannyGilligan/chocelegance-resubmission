@@ -5089,6 +5089,8 @@ Navigate to permissions and update CORS values as shown in image
 </li>
 <li>
 Edit bucket policy
+
+[image](documentation/deployment/aws-edit-bucket-policy.webp)
 </li>
 <li>
 Generate policy

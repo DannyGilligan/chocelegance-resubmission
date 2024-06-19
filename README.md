@@ -3076,7 +3076,7 @@ No Errors
 <summary> <i>Javascript</i> </summary>
 <br>
 
-All Javascript code blocks were passed through the [JSHint validator](https://jshint.com/). Results below:
+All Javascript code blocks were passed through the [JSHint validator](https://jshint.com/) (with the exception of the Mailchimp script). Results below:
 <br><br>
 <table>
 
@@ -3091,7 +3091,7 @@ File Location
 
 <th>
 
-Image
+Validation
 </th>
 
 <th>Result</th>
@@ -3313,6 +3313,574 @@ No Errors
 <br>
 <br>
 </details>
+<!-- Javascript validation ends above this line -->
+
+
+
+<!-- Python validation starts below this line -->
+<details>
+<summary> <i>Python</i> </summary>
+<br>
+
+All Python Code was passed through the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#). 
+<br><br>
+The App location, name and result for each file are shown below:
+<br><br>
+
+<!-- spacer -->
+<details>
+<summary>  About App - admin.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/about-admin.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  About App - models.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/about-models.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  About App - urls.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/about-urls.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  About App - views.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/about-views.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Cart App - contexts.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/cart-contexts.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Cart App - urls.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/cart-urls.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Cart App - views.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/cart-views.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Checkout App - admin.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/checkout-admin.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Checkout App - forms.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/checkout-forms.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Checkout App - models.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/checkout-models.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Checkout App - signals.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/checkout-signals.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Checkout App - urls.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/checkout-urls.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Checkout App - views.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/checkout-views.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Checkout App - webhook_handler.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/checkout-webhook-handler.webpp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Checkout App - webhooks.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/checkout-webhooks.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Chocelegance App - urls.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocelegance-urls.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Chocelegance App - views.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocelegance-views.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Chocelegance App - wsgi.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocelegance-wsgi.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Chocolates App - admin.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocolates-admin.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Chocolates App - forms.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocolates-forms.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Chocolates App - models.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocolates-models.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Chocolates App - urls.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocolates-urls.webp)
+</tr>
+</table>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  Chocolates App - views.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocolates-views.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Chocolates App - widgets.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/chocolates-widgets.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Home App - urls.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/home-urls.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Home App - views.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/home-views.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Profiles App - forms.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/profiles-forms.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Profiles App - models.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/profiles-models.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Profiles App - urls.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/profiles-urls.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Profiles App - views.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/profiles-views.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Testimonials App - admin.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/testimonials-admin.webp)
+</tr>
+</table>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  Testimonials App - models.py</summary>
+<br>
+<table>
+<tr>
+<th>
+No Errors :heavy_check_mark:
+</th>
+</tr>
+<tr>
+
+![image](documentation/manual_testing/python_validation/testimonials-models.webp)
+</tr>
+</table>
+</details>
+
+<br>
+<br>
+<br>
+</details>
+<!-- Python validation ends above this line -->
+
+
+
+
 
 
 

@@ -3877,7 +3877,9 @@ No Errors :heavy_check_mark:
 <br>
 </details>
 <!-- Python validation ends above this line -->
-
+<br>
+<br>
+<br>
 </details>
 <!-- Code validation ends above this line -->
 
@@ -3887,8 +3889,6 @@ No Errors :heavy_check_mark:
 <br>
 The User Stories were tested for functionality and to ensure no errors were encountered in the code execution. Results below:
 <br><br>
-
-<!-- ******************************************************************************************************************* -->
 
 
 <!-- spacer -->
@@ -4884,6 +4884,100 @@ An overview of the technologies used throughout the development of the project i
 <br>
 
 ## Deployment
+
+An overview of the deployment steps for the project is shown below.
+
+<details>
+<summary><b>ElephantSQL</b></summary>
+<br>
+<ol>
+<li>
+
+Create account at [ElephantSQL](https://www.elephantsql.com/)
+</li>
+
+<li>
+
+Click on create new instance
+</li>
+
+<li>
+
+Enter a name for the instance
+</li>
+
+<li>
+
+Select region and data center, click review
+</li>
+
+<li>
+
+Click create instance
+</li>
+
+<li>
+
+Note database URL
+</li>
+
+</ol>
+
+</details>
+<!-- deployment for elephantSQL ends above this line -->
+
+
+<details>
+<summary><b>Heroku</b></summary>
+<br>
+<ol>
+<li>
+
+Create account at [Heroku](heroku.com)
+</li>
+
+<li>
+Click on New, then Create New App
+</li>
+<li>
+Enter an App name, select region, then create app
+</li>
+<li>
+Navigate to settings
+</li>
+<li>
+Enter database URL noted from ElephantSQL instance
+</li>
+<li>
+In IDE, install dj_database_url and psycopg2
+</li>
+<li>
+Connect to ElephantSQL database and migrate
+</li>
+<li>
+In Heroku, navigate to Deploy tab and connect to Github repository
+</li>
+<li>
+Enable automatic deployments to ensure changes are pushed to Heroku
+</li>
+
+</ol>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Prerequisties, installs, IDE, deployments, forking, cloning, heroku, AWS, Stripe.
 

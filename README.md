@@ -4636,11 +4636,74 @@ Criteria met :heavy_check_mark:
 </details>
 <!-- User story testing ends above this line -->
 
+<details>
+<summary><b>Bugs</b></summary>
+<br>
+
+<details>
+<summary>  <i>Resolved Bugs</i></summary>
+<br>
+I was unable to add all the bugs I resolved to the readme, I'm quickly adding 3 that come to mind as particularly troubelsome. 
+<table>
+<tr>
+<td>
+When trying to install Django AllAuth 0.41.0 I ran into the error message below<br>
+<b>"Python setup.py egg_info did not run successfully when installing"</b><br>
+This was preventing me from installing the correct AllAuth package, after trying different approaches such as installing different versions of Django and Python, I found a post that suggested installing a specific version of 'Setuptools', I installed Setuptools version 67.4.0 which appears to have resolved the issue regarding the AllAuth installation
+
+https://github.com/openai/openai-cookbook/issues/154
+</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<td>
+<b>ImproperlyConfiguredException, could not load boto3 S3 bindings when running collectstatic in heroku</b>
+<br><br>
+Issue preventing deployment in heroku, was a serious issue, eventually found a solution with amazing help from my mentor Martina Terlevic. Issue was compatibility with Django verions.<br><br>
+Updgraded <b>urlibb3</b>, and upgraded <b>boto3</b> and upgraded <b>requests</b>.<br><br>
+Issue was then resolved, and could deploy app to heroku.
+</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<td>
+<b>SMTP.starttls() unexpected argument 'keyfile'</b>
+<br><br>
+Issue preventing confirmation emails being sent from Django, no emails were being sent, resulted in Server 500 error.<br><br>
+Found solution in Code Institute Slack channel, needed to add runtime.txt to root directory with python version 3.9.18, Roman Racik credited in credits section.
+</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+</details>
+<!-- Resolved bugs end above this line -->
 
 
 
-, bugs (resolved and unresolved)
 
+<details>
+<summary>  <i>Unresolved Bugs</i></summary>
+<br>
+
+The choc_rating field in the Chocolate model is not being updated as expected when user ratings are added from the form in the chocolate details page.<br><br>
+I've attempted to overwrite the default save behavious of the Chocolate model with a 'private method', however it is not functioning as expected and will need further investigation.<br><br>
+Ratings can still be added manually via the admin panel by selecting a chocolate and updating the choc_rating field as needed.
+
+</details>
+<!-- Unresolved bugs ends above this line -->
+
+
+
+</details>
+<!-- Bugs ends above this line -->
 
 
 
@@ -4650,11 +4713,7 @@ Criteria met :heavy_check_mark:
 
 ### Resolved Bugs
 
-When trying to install Django AllAuth 0.41.0 I ran into the error message below<br>
-"Python setup.py egg_info did not run successfully when installing"<br>
-This was preventing me from installing the correct AllAuth package, after trying different approaches such as installing different versions of Django and Python, I found a post that suggested installing a specific version of 'Setuptools', I installed Setuptools version 67.4.0 which appears to have resolved the issue regarding the AllAuth installation
 
-https://github.com/openai/openai-cookbook/issues/154
 
 <br>
 

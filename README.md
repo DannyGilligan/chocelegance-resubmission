@@ -661,6 +661,10 @@ The ERD below was generated using graphviz.
 
 An overview of the main features of the site is included below.
 
+<details>
+<summary><b>Existing Features</b></summary>
+
+
 <!-- Feature starts below this line -->
 <details>
 <summary> <b>Header / Navbar</b> </summary>
@@ -1572,8 +1576,9 @@ The admin panel can also be accessed directly from the site through the admin pa
 
 </details>
 <!-- Feature ends above this line -->
+</details>
+<!-- Existing Features ends above this line -->
 
-<br>
 
 
 
@@ -2179,6 +2184,19 @@ An overview of materials referenced and images used during the development of th
 [here](https://stackoverflow.com/questions/12384460/allow-only-positive-decimal-numbers)
 
 </td></tr>
+<!-- spacer -->
+<tr><td> Tip on using incognito mode for Lighthouse testing to eliminate errors caused by extensions, in Code Institute Slack channel, by Niki Tester
+ </td>
+<td> 
+
+[here](https://code-institute-room.slack.com/archives/C7HD37Q1F/p1679439880325099?thread_ts=1679428205.806569&cid=C7HD37Q1F)
+
+</td></tr>
+<!-- spacer -->
+
+
+
+
 
 
 <!-- TABLE ENDS BELOW THIS LINE! -->

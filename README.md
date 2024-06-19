@@ -4701,17 +4701,9 @@ Ratings can still be added manually via the admin panel by selecting a chocolate
 <!-- Unresolved bugs ends above this line -->
 
 
-
 </details>
 <!-- Bugs ends above this line -->
 
-
-
-
-
-
-
-### Resolved Bugs
 
 
 

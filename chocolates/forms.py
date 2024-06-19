@@ -4,7 +4,9 @@ from .models import Chocolate, ChocolateCategory
 
 
 class ChocolateForm(forms.ModelForm):
-
+    """
+    This form is used to add or edit the Chocolate model directly from the site (superuser)
+    """
     # This inner Meta class defines the model and fields to use in the form
     class Meta:
         model = Chocolate

@@ -5114,6 +5114,11 @@ Review and create policy
 <li>
 Create User and add to Group
 </li>
+<li>
+IMPORTANT! There is only one chance to download the access keys, once the process is complete.
+
+[image](documentation/deployment/aws.access-keys.webp)
+</li>
 </ol>
 </details>
 

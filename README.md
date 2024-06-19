@@ -5090,12 +5090,12 @@ Navigate to permissions and update CORS values as shown in image
 <li>
 Edit bucket policy
 
-[image](documentation/deployment/aws-edit-bucket-policy.webp)
+![image](documentation/deployment/aws-edit-bucket-policy.webp)
 </li>
 <li>
 Generate policy
 
-[image](documentation/deployment/aws-generate-policy.webp)
+![image](documentation/deployment/aws-generate-policy.webp)
 </li>
 <li>
 Ensure ACLs is enabled and save
@@ -5121,7 +5121,7 @@ Create User and add to Group
 <li>
 IMPORTANT! There is only one chance to download the access keys, once the process is complete.
 
-[image](documentation/deployment/aws.access-keys.webp)
+![image](documentation/deployment/aws.access-keys.webp)
 </li>
 </ol>
 </details>

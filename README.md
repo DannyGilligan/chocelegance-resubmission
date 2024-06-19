@@ -3953,28 +3953,693 @@ Criteria met :heavy_check_mark:
 </details>
 
 
+<!-- spacer -->
+<details>
+<summary>  #10 As a user, I can see the Keto, Vegan or Gluten-Free dietary types in the navbar, so that I can quickly access the chocolates I am interested in. </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The dietary categories are displayed correctly in the navbar.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
 
 
+<!-- spacer -->
+<details>
+<summary>  #11 As a user, I can see the current total of my shopping cart, so that I can stay informed of the amount I am spending.  </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Current total in cart updates correctly after items added.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
 
 
+<!-- spacer -->
+<details>
+<summary>  #13 As a user, I can see the Dark Chocolate, Milk Chocolate and White chocolate categories in the navbar dropdown menus, so that I can choose the chocolate category I am interested in.   </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The Dark, Milk and White chocolate links in the drop down menu are displayed correctly.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  #14 As a user, I can easily and quickly register for an account, so that I can create a profile, leave chocolate reviews and have access to my order history.    </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The account registration procees flow works correctly.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
 
 
+<!-- spacer -->
+<details>
+<summary>  #15 As a user, I can easily log in and log out of the site, so that I can use the site effectively.     </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The Allauth login and logout functionality works correctly.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
 
 
+<!-- spacer -->
+<details>
+<summary>  #16 As a user, I can retrieve my password in the event that it is forgotten, so that I can access the site.</summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The 'forgot password' process flow works correctly.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
 
 
+<!-- spacer -->
+<details>
+<summary>  #17 As a user, I can verify my email address, so that my account can be verified using Allauth. </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The email verification functionality works as expected.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
 
 
+<!-- spacer -->
+<details>
+<summary>  #18 As a user, I can create a personal user profile, so that I can save default delivery information, leave chocolate reviews, view my order history.  </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
 
+<!-- **** -->
 
-<!-- ******************************************************************************************************************* -->
+<tr>
+<td>
+The profile functionality works as expected, default delivery information can be updated, and the order history is displayed correctly.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
 </details>
 
 
 
+<!-- spacer -->
+<details>
+<summary>  #20 As a user, I can sort the chocolates on the main menu page, so that I can see navigate the chocolate menu and see the chocolates from lowest price to highest etc.</summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The sorting function works correctly, for name, price and category, however a bug has been identified with the rating from user reviews. This is documented in the unresolved bugs section, and also in the agile project board.
+</td>
+<td>
+Criteria not met
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
 
 
-, bugs (resolved and unresolved) features testing.
+<!-- spacer -->
+<details>
+<summary>  #21 As a user, I can sort the chocolates within a specific dietary type, so that I can browse the selection using my preferred sorting method. </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Chocolates can be sorted within the category by name and price, however a bug has been identified with the rating sorting.
+</td>
+<td>
+Criteria not met
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+<!-- spacer -->
+<details>
+<summary>  #22 As a user, I can use the search form to search for a chocolate, so that I can make a selection to purchase.   </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The search form functions as expected.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #23 As a user, I can see the results of my search, so that I can browse the returned results.    </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Search results are displayed correctly.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #25 As a user, I can select of adjust the quantity of chocolates I wish to purchase, so that I can purchase the desired amount.  </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Quantity form functions as excpected.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #27 As a user, I can enter the necessary details, so that I can complete the purchase.   </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The forms on the checkout page work as expected.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #28 As a user, I can view an order confirmation after successful purchase, so that I can review the details of the purchase.    </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The order confirmation page displays correctly after a successful purchase.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #29 As a user, I can receive an email confirmation after a successful purchase, so that I can review the details.    </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The email confirmations are received successfully.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #31 As a superuser, I can add a chocolate, so that the chocolate selection can be managed.    </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Chocolates can be added successfully.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #32 As a superuser, I can edit the chocolate details directly from site, so that I can make amendments quickly to the chocolates on the site.     </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The functionality to edit chocolate details from the site directly behaves as expected.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #33 As a superuser, I can delete a chocolate directly from the site, so that I can administer changes efficiently without accessing the admin panel.      </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The functionality to delete chocolate details from the site directly behaves as expected.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #35 As a user, I can leave a star rating for a chocolate, so that I can let other users know my perception of the quality.      </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Star ratings can be left successfully in the chocolate details page.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #36 As a user, I can leave a review in the textfield in the review section of the chocolate detail page, so that I can let other customers know my perception of the quality.      </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Reviews can be successfully left in the textfield in the review section and submitted.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #37 As a superuser, I can review submitted review and publish if appropriate, so that the review is displayed on the chocolate details page.</summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+The functionality to approve the review in the admin panel behaves as expected.
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+</details>
+<!-- User story testing ends above this line -->
+
+
+
+
+, bugs (resolved and unresolved)
 
 
 

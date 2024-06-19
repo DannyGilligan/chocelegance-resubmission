@@ -4890,36 +4890,36 @@ An overview of the deployment steps for the project is shown below.
 <details>
 <summary><b>Required Installs</b></summary>
 <br>
-asgiref==3.8.1<br><br>
-boto3==1.34.124<br><br>
-botocore==1.34.124<br><br>
-chardet==3.0.4<br><br>
-dj-database-url==0.5.0<br><br>
-Django==3.2.25<br><br>
-django-allauth==0.41.0<br><br>
-django-countries==7.2.1<br><br>
-django-crispy-forms==1.14.0<br><br>
-django-extensions==3.2.3<br><br>
-django-storages==1.14.3<br><br>
-docutils==0.15.2<br><br>
-graphviz==0.20.3<br><br>
-gunicorn==20.0.4<br><br>
-idna==2.8<br><br>
-jmespath==0.10.0<br><br>
-oauthlib==3.2.2<br><br>
-pillow==10.3.0<br><br>
-psycopg2==2.9.9<br><br>
-pydot==2.0.0<br><br>
-pydotplus==2.0.2<br><br>
-pyparsing==3.1.2<br><br>
-python3-openid==3.2.0<br><br>
-pytz==2024.1<br><br>
-requests==2.32.3<br><br>
-requests-oauthlib==2.0.0<br><br>
-s3transfer==0.10.1<br><br>
-setuptools==67.4.0<br><br>
-sqlparse==0.5.0<br><br>
-stripe==9.9.0<br><br>
+asgiref==3.8.1<br>
+boto3==1.34.124<br>
+botocore==1.34.124<br>
+chardet==3.0.4<br>
+dj-database-url==0.5.0<br>
+Django==3.2.25<br>
+django-allauth==0.41.0<br>
+django-countries==7.2.1<br>
+django-crispy-forms==1.14.0<br>
+django-extensions==3.2.3<br>
+django-storages==1.14.3<br>
+docutils==0.15.2<br>
+graphviz==0.20.3<br>
+gunicorn==20.0.4<br>
+idna==2.8<br>
+jmespath==0.10.0<br>
+oauthlib==3.2.2<br>
+pillow==10.3.0<br>
+psycopg2==2.9.9<br>
+pydot==2.0.0<br>
+pydotplus==2.0.2<br>
+pyparsing==3.1.2<br>
+python3-openid==3.2.0<br>
+pytz==2024.1<br>
+requests==2.32.3<br>
+requests-oauthlib==2.0.0<br>
+s3transfer==0.10.1<br>
+setuptools==67.4.0<br>
+sqlparse==0.5.0<br>
+stripe==9.9.0<br>
 <br>
 <br>
 <br>
@@ -4998,9 +4998,68 @@ Enable automatic deployments to ensure changes are pushed to Heroku
 <!-- deployment for heroku ends above this line -->
 
 
+<details>
+<summary><b>AWS</b></summary>
+<br>
+<ol>
+<li>
 
+Create account at [AWS](aws.amazon.com)
+</li>
+<li>
+Navigate to S3 and create bucket
+</li>
+<li>
+Enter a bucket name
+</li>
+<li>
+Ensure 'Block All Public Access' is unticked
+</li>
+<li>
+Click create bucket
+</li>
+<li>
+Navigate to properties and edit static website hosting
+</li>
+<li>
+Click enable and and give default index.html and error.html values, then click save
+</li>
+<li>
+Navigate to permissions and update CORS values as shown in image
 
+![aws](documentation/deployment/aws-cors.webp)
+</li>
+<li>
+Edit bucket policy
+</li>
+<li>
+Generate policy
+</li>
+<li>
+Ensure ACLs is enabled and save
+</li>
+<li>
+Ensure ACL is set to 'list' and save
+</li>
+<li>
+Create User Group
+</li>
+<li>
+Attach policy Group
+</li>
+<li>
+Import AmazonS3FullAccessPolicy
+</li>
+<li>
+Review and create policy
+</li>
+<li>
+Create User and add to Group
+</li>
+</ol>
+</details>
 
+<!-- AWS deployment ends above this line -->
 
 
 

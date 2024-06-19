@@ -1703,7 +1703,7 @@ Closed
 <!-- Issue ID -->
 <td>
 
-[#3](https://github.com/DannyGilligan/chocelegance-project/issues/3)
+[#9](https://github.com/DannyGilligan/chocelegance-project/issues/9)
 </td>
 
 <!-- Epic ID -->
@@ -1712,11 +1712,9 @@ Closed
 [#8](https://github.com/DannyGilligan/chocelegance-project/issues/8)
 </td>
 
-
-
 <!-- User Story -->
 <td>
-As a user, I can view range of chocolates available on the site, so I can choose which chocolates to purchase.
+As a role user, I can view the details of an individual chocolate, so that I can decide whether to purchase or not.
 </td>
 
 <!-- Status -->
@@ -1726,6 +1724,648 @@ Closed
 
 </tr>
 <!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#10](https://github.com/DannyGilligan/chocelegance-project/issues/10)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#8](https://github.com/DannyGilligan/chocelegance-project/issues/8)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can see the Keto, Vegan or Gluten-Free dietary types in the navbar, so that I can quickly access the chocolates I am interested in.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#11](https://github.com/DannyGilligan/chocelegance-project/issues/11)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#8](https://github.com/DannyGilligan/chocelegance-project/issues/8)
+</td>
+
+<!-- User Story -->
+<td>
+As a role user, I can see the current total of my shopping cart, so that I can stay informed of the amount I am spending.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#13](https://github.com/DannyGilligan/chocelegance-project/issues/13)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#8](https://github.com/DannyGilligan/chocelegance-project/issues/8)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can see the Dark Chocolate, Milk Chocolate and White chocolate categories in the navbar dropdown menus, so that I can choose the chocolate category I am interested in.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#14](https://github.com/DannyGilligan/chocelegance-project/issues/14)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#12](https://github.com/DannyGilligan/chocelegance-project/issues/12)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can easily and quickly register for an account, so that I can create a profile, leave chocolate reviews and have access to my order history.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#15](https://github.com/DannyGilligan/chocelegance-project/issues/15)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#12](https://github.com/DannyGilligan/chocelegance-project/issues/12)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can easily log in and log out of the site, so that I can use the site effectively.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#16](https://github.com/DannyGilligan/chocelegance-project/issues/16)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#12](https://github.com/DannyGilligan/chocelegance-project/issues/12)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can retrieve my password in the event that it is forgotten, so that I can access the site.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#17](https://github.com/DannyGilligan/chocelegance-project/issues/17)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#12](https://github.com/DannyGilligan/chocelegance-project/issues/12)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can verify my email address, so that my account can be verified using Allauth.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#18](https://github.com/DannyGilligan/chocelegance-project/issues/18)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#12](https://github.com/DannyGilligan/chocelegance-project/issues/12)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can create a personal user profile, so that I can save default delivery information, leave chocolate reviews, view my order history.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#20](https://github.com/DannyGilligan/chocelegance-project/issues/20)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#19](https://github.com/DannyGilligan/chocelegance-project/issues/19)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can sort the chocolates on the main menu page, so that I can see navigate the chocolate menu and see the chocolates from lowest price to highest etc.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#21](https://github.com/DannyGilligan/chocelegance-project/issues/21)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#19](https://github.com/DannyGilligan/chocelegance-project/issues/19)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can sort the chocolates within a specific dietary type, so that I can browse the selection using my preferred sorting method.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#22](https://github.com/DannyGilligan/chocelegance-project/issues/22)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#19](https://github.com/DannyGilligan/chocelegance-project/issues/19)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can use the search form to search for a chocolate, so that I can make a selection to purchase.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#23](https://github.com/DannyGilligan/chocelegance-project/issues/23)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#19](https://github.com/DannyGilligan/chocelegance-project/issues/19)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can see the results of my search, so that I can browse the returned results.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#25](https://github.com/DannyGilligan/chocelegance-project/issues/25)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#24](https://github.com/DannyGilligan/chocelegance-project/issues/24)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can select of adjust the quantity of chocolates I wish to purchase, so that I can purchase the desired amount.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#27](https://github.com/DannyGilligan/chocelegance-project/issues/27)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#24](https://github.com/DannyGilligan/chocelegance-project/issues/24)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can enter the necessary details, so that I can complete the purchase.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#28](https://github.com/DannyGilligan/chocelegance-project/issues/28)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#24](https://github.com/DannyGilligan/chocelegance-project/issues/24)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can view an order confirmation after successful purchase, so that I can review the details of the purchase.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#29](https://github.com/DannyGilligan/chocelegance-project/issues/29)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#24](https://github.com/DannyGilligan/chocelegance-project/issues/24)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can receive an email confirmation after a successful purchase, so that I can review the details.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here --> 
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#31](https://github.com/DannyGilligan/chocelegance-project/issues/31)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#30](https://github.com/DannyGilligan/chocelegance-project/issues/30)
+</td>
+
+<!-- User Story -->
+<td>
+As a superuser, I can add a chocolate, so that the chocolate selection can be managed.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here --> 
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#32](https://github.com/DannyGilligan/chocelegance-project/issues/32)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#30](https://github.com/DannyGilligan/chocelegance-project/issues/30)
+</td>
+
+<!-- User Story -->
+<td>
+As a superuser, I can edit the chocolate details directly from site, so that I can make amendments quickly to the chocolates on the site.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here --> 
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#33](https://github.com/DannyGilligan/chocelegance-project/issues/33)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#30](https://github.com/DannyGilligan/chocelegance-project/issues/30)
+</td>
+
+<!-- User Story -->
+<td>
+As a superuser, I can delete a chocolate directly from the site, so that I can administer changes efficiently without accessing the admin panel.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here --> 
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#35](https://github.com/DannyGilligan/chocelegance-project/issues/35)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#34](https://github.com/DannyGilligan/chocelegance-project/issues/34)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can leave a star rating for a chocolate, so that I can let other users know my perception of the quality.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here --> 
+
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#36](https://github.com/DannyGilligan/chocelegance-project/issues/36)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#34](https://github.com/DannyGilligan/chocelegance-project/issues/34)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can leave a review in the textfield in the review section of the chocolate detail page, so that I can let other customers know my perception of the quality.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here --> 
+
+
+<!-- **** User Story starts below here **** -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#37](https://github.com/DannyGilligan/chocelegance-project/issues/37)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#34](https://github.com/DannyGilligan/chocelegance-project/issues/34)
+</td>
+
+<!-- User Story -->
+<td>
+As a superuser, I can review submitted review and publish if appropriate, so that the review is displayed on the chocolate details page.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here --> 
+
+
+
 
 
 

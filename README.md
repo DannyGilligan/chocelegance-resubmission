@@ -2240,6 +2240,15 @@ An overview of materials referenced and images used during the development of th
 
 </td></tr>
 <!-- spacer -->
+<!-- spacer -->
+<tr><td> Solution to duplicate ID/Class HTML validation error in 'Add Chocolate' and 'Edit Chocolate' pages, by Code Institute Student Katie Dunne (see resolved bugs section in repo below)
+ </td>
+<td> 
+
+[here](https://github.com/KSDunne/summit_style)
+
+</td></tr>
+<!-- spacer -->
 
 
 

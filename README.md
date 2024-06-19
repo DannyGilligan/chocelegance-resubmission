@@ -5052,6 +5052,13 @@ Enable automatic deployments to ensure changes are pushed to Heroku
 <details>
 <summary><b>AWS</b></summary>
 <br>
+<b>Summary:</b><br><br>
+Create Group
+Create Policy
+Create User
+Create Access Keys
+
+
 <ol>
 <li>
 

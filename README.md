@@ -5053,10 +5053,10 @@ Enable automatic deployments to ensure changes are pushed to Heroku
 <summary><b>AWS</b></summary>
 <br>
 <b>Summary:</b><br><br>
-Create Group
-Create Policy
-Create User
-Create Access Keys
+<b>Create Group</b><br>
+<b>Create Policy</b><br>
+<b>Create User</b><br>
+<b>Create Access Keys</b><br>
 
 
 <ol>

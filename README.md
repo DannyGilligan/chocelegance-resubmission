@@ -1772,7 +1772,7 @@ Closed
 
 <!-- User Story -->
 <td>
-As a role user, I can see the current total of my shopping cart, so that I can stay informed of the amount I am spending.
+As a user, I can see the current total of my shopping cart, so that I can stay informed of the amount I am spending.
 </td>
 
 <!-- Status -->
@@ -2364,34 +2364,30 @@ Closed
 </tr>
 <!-- User Story ends above here --> 
 
-
-
-
-
-
-
-
-
-
 </table>
-
-
-
-
-
-
-
-
+<!-- User Story table ends above here --> 
 
 </details>
+<!-- User Story section ends above here --> 
 
+<br>
 
+[Back to Top](#chocelegance)
 
-
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- MANUAL TESTING SECTION -->
+<br>
+<br>
+<br>
 
 ## Manual Testing
 
 Responsive, browser compatibility, bugs (resolved and unresolved), Lighthouse testing, code validation, user story testing, features testing.
+
+
+
+
+
+
 
 
 ### Resolved Bugs

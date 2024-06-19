@@ -2448,10 +2448,46 @@ Apple Safari
 </details>
 
 
+<details>
+<summary><b>Lighthouse Testing</b></summary>
+<br>
+The site performed well in the SEO, Accessibility and Best Practises categories, however performance requires further optimisation.
+<br><br>
+I suspect that the Heroku platform may be contributing to the poor score (the app is hosted on the free tier level).
+<br><br>
+To note, initially the Lighthouse testing resulted in an error being logged to the console relating to a 3rd party extension/cookie. The test was then reperformed in 'Incognito' mode, which eliminated the issue.
+<br>
+
+<table>
+<tr>
+<th>
+Lighthouse Testing Results
+</th>
+</tr>
+
+<tr>
+<td>
+
+![lighthouse](documentation/manual_testing/testing-lighthouse.webp)
+</td></tr>
+</table>
+
+<br>
+<br>
+<br>
+</details>
 
 
 
-Responsive, browser compatibility, bugs (resolved and unresolved), Lighthouse testing, code validation, user story testing, features testing.
+
+
+
+
+
+
+
+
+, bugs (resolved and unresolved), Lighthouse testing, code validation, user story testing, features testing.
 
 
 

@@ -5092,6 +5092,8 @@ Edit bucket policy
 </li>
 <li>
 Generate policy
+
+[image](documentation/deployment/aws-generate-policy.webp)
 </li>
 <li>
 Ensure ACLs is enabled and save

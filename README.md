@@ -3878,29 +3878,103 @@ No Errors :heavy_check_mark:
 </details>
 <!-- Python validation ends above this line -->
 
-
-
-
-
-
-
-
-
-
-
-<!-- ************************************************************************************************************************************************************* -->
-
 </details>
 <!-- Code validation ends above this line -->
 
 
+<details>
+<summary><b>User Story Testing</b></summary>
+<br>
+The User Stories were tested for functionality and to ensure no errors were encountered in the code execution. Results below:
+<br><br>
+
+<!-- ******************************************************************************************************************* -->
+
+
+<!-- spacer -->
+<details>
+<summary>  #3 As a user, I can view range of chocolates available on the site, so I can choose which chocolates to purchase. </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Chocolates are displayed correctly in chocolate main menu
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
+
+
+<!-- spacer -->
+<details>
+<summary>  #9 As a role user, I can view the details of an individual chocolate, so that I can decide whether to purchase or not.  </summary>
+<br>
+<table>
+<tr>
+<th>
+Acceptance Criteria
+</th>
+<th>
+Result
+</th>
+</tr>
+
+<!-- **** -->
+
+<tr>
+<td>
+Chocolate details are displayed correctly in chocolate details page
+</td>
+<td>
+Criteria met :heavy_check_mark:
+</td>
+</tr>
+
+</table>
+
+<br>
+</details>
 
 
 
 
 
 
-, bugs (resolved and unresolved), code validation, features testing.
+
+
+
+
+
+
+
+
+
+
+<!-- ******************************************************************************************************************* -->
+</details>
+
+
+
+
+
+, bugs (resolved and unresolved) features testing.
 
 
 

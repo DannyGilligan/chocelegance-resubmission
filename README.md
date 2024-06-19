@@ -37,10 +37,7 @@ The site was built using the Django framework, Python, HTML 5, CSS 3, Javascript
 A link to the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/).
 <br><br>
 A link to the admin panel of the deployed site can be found [here](https://chocelegance-resubmission-4fbe05dd3cfa.herokuapp.com/admin) (credentials provided in submission form).
-<br><br>
-To simulate a purchase on the site, please use the card details below:
-<br><br>
-Card No: 4242 4242 4242 4242 Exp: 04/25 CCV: 242 ZIP: 42424
+
 
 <br>
 
@@ -1200,6 +1197,7 @@ Keep shopping button
 Secure checkout button
 </li>
 </ul>
+
 <br>
 </td>
 </tr>
@@ -1255,9 +1253,12 @@ Complete order button
 </li>
 </ul>
 <br>
-
 Once the details have been added successfully and 'complete order' has been clicked, a loading overlay will be displayed while the card details are being processed by Stripe.
 <br>
+To simulate a purchase on the site, please use the card details below:
+<br><br>
+Card No: 4242 4242 4242 4242 Exp: 04/25 CCV: 242 ZIP: 42424
+<br><br>
 </td>
 </tr>
 
@@ -1581,9 +1582,11 @@ The admin panel can also be accessed directly from the site through the admin pa
 
 </details>
 <!-- Feature ends above this line -->
-<br>
 
 [Back to Features](#features)
+<br>
+<br>
+<br>
 </details>
 <!-- Existing Features ends above this line -->
 
@@ -1593,7 +1596,7 @@ The admin panel can also be accessed directly from the site through the admin pa
 <summary><b> Future Features</b></summary>
 <br>
 <details>
-<summary> <i>Event Catering Quote Calculation</i></summary>
+<summary> <i>Event Catering Quote Model</i></summary>
 <br>
 Chocelegance is in a prime position to offer catering for special events and occasions to customers.
 <br><br>
@@ -1620,10 +1623,12 @@ With time this system will become more 'intelligent' and perhaps feed into a fin
 <br>
 <br>
 </details>
-<br>
+
 
 [Back to Features](#features)
-
+<br>
+<br>
+<br>
 </details>
 
 
@@ -1631,14 +1636,108 @@ With time this system will become more 'intelligent' and perhaps feed into a fin
 
 [Back to Top](#chocelegance)
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- FEATURES SECTION -->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- USER STORIES SECTION -->
 <br>
 <br>
 <br>
 
 ## User Stories
 
+An overview of the User Stories related to the project is shown below.
 
+<details>
+<summary> <b>User Stories</b></summary>
+
+<table>
+<tr>
+
+<th>
+Issue ID
+</th>
+
+<th>
+Epic ID
+</th>
+
+<th>
+User Story
+</th>
+
+<th>
+Status
+</th>
+
+</tr>
+
+<!-- User Story starts below here -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#3](https://github.com/DannyGilligan/chocelegance-project/issues/3)
+</td>
+
+<!-- User Story -->
+<td>
+As a user, I can view range of chocolates available on the site, so I can choose which chocolates to purchase.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+<!-- User Story starts below here -->
+<tr>
+
+<!-- Issue ID -->
+<td>
+
+[#3](https://github.com/DannyGilligan/chocelegance-project/issues/3)
+</td>
+
+<!-- Epic ID -->
+<td>
+
+[#8](https://github.com/DannyGilligan/chocelegance-project/issues/8)
+</td>
+
+
+
+<!-- User Story -->
+<td>
+As a user, I can view range of chocolates available on the site, so I can choose which chocolates to purchase.
+</td>
+
+<!-- Status -->
+<td>
+Closed
+</td>
+
+</tr>
+<!-- User Story ends above here -->
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+</details>
 
 
 
@@ -2241,7 +2340,7 @@ An overview of materials referenced and images used during the development of th
 </td></tr>
 <!-- spacer -->
 <!-- spacer -->
-<tr><td> Solution to duplicate ID/Class HTML validation error in 'Add Chocolate' and 'Edit Chocolate' pages, by Code Institute Student Katie Dunne (see resolved bugs section in repo below)
+<tr><td> Solution to duplicate ID/Class HTML validation error in 'Add Chocolate' and 'Edit Chocolate' pages, by Code Institute Student Katie Dunne (see resolved bugs section in the linked repository)
  </td>
 <td> 
 

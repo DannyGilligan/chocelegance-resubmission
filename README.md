@@ -4888,6 +4888,46 @@ An overview of the technologies used throughout the development of the project i
 An overview of the deployment steps for the project is shown below.
 
 <details>
+<summary><b>Required Installs</b></summary>
+<br>
+asgiref==3.8.1
+boto3==1.34.124
+botocore==1.34.124
+chardet==3.0.4
+dj-database-url==0.5.0
+Django==3.2.25
+django-allauth==0.41.0
+django-countries==7.2.1
+django-crispy-forms==1.14.0
+django-extensions==3.2.3
+django-storages==1.14.3
+docutils==0.15.2
+graphviz==0.20.3
+gunicorn==20.0.4
+idna==2.8
+jmespath==0.10.0
+oauthlib==3.2.2
+pillow==10.3.0
+psycopg2==2.9.9
+pydot==2.0.0
+pydotplus==2.0.2
+pyparsing==3.1.2
+python3-openid==3.2.0
+pytz==2024.1
+requests==2.32.3
+requests-oauthlib==2.0.0
+s3transfer==0.10.1
+setuptools==67.4.0
+sqlparse==0.5.0
+stripe==9.9.0
+<br>
+<br>
+<br>
+</details>
+
+
+
+<details>
 <summary><b>ElephantSQL</b></summary>
 <br>
 <ol>
@@ -4895,34 +4935,25 @@ An overview of the deployment steps for the project is shown below.
 
 Create account at [ElephantSQL](https://www.elephantsql.com/)
 </li>
-
 <li>
-
 Click on create new instance
 </li>
-
 <li>
-
 Enter a name for the instance
 </li>
-
 <li>
-
 Select region and data center, click review
 </li>
-
 <li>
-
 Click create instance
 </li>
-
 <li>
-
 Note database URL
 </li>
-
 </ol>
-
+<br>
+<br>
+<br>
 </details>
 <!-- deployment for elephantSQL ends above this line -->
 
@@ -4935,7 +4966,6 @@ Note database URL
 
 Create account at [Heroku](heroku.com)
 </li>
-
 <li>
 Click on New, then Create New App
 </li>
@@ -4960,12 +4990,12 @@ In Heroku, navigate to Deploy tab and connect to Github repository
 <li>
 Enable automatic deployments to ensure changes are pushed to Heroku
 </li>
-
 </ol>
-
-
+<br>
+<br>
+<br>
 </details>
-
+<!-- deployment for heroku ends above this line -->
 
 
 

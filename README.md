@@ -5747,3 +5747,24 @@ An overview of materials referenced and images used during the development of th
 <br>
 
 ## Acknowledgements
+
+
+I'd like to acknowledge and thank Bethany on the Student Support team for her help on arranging the submission for this project, and the entire team there for their help throughout the course. Also thanks Kamil for the helpful PP5 calls. I've been incedibly impressed with and grateful for the support shown by everyone at Code Institute :pray: 
+<br><br>
+I'd also like to say a huge thank you to Martina Terlevic for all the mentor calls during the course, I've always left the calls feeling more energised and motivated! Your help was vital on this project, and you helped save the day by troubleshooting that 'boto3' issue on the deployment! Thank you so much :pray:
+<br></br>
+Thanks to all the students on Slack who left helpful comments on threads, they were really useful for this project (all credited!).
+<br><br>
+This course conincided with a slightly difficult patch in life, but I've found it incredibly rewarding and enjoyable. From not knowing what a 'repo' was, to finally getting a website up and running and looking pretty decent, it's been a very satisfying adventure!
+
+
+
+
+<br>
+
+[Back to Top](#chocelegance)
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ACKNOWLEDGEMENTS SECTION -->
+<br>
+<br>
+<br>
